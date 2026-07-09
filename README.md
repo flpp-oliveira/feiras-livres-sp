@@ -60,6 +60,19 @@ pip install openpyxl shapely
 
 (Os scripts de geocodificação usam só a biblioteca padrão do Python.)
 
+Os scripts que chamam o Nominatim/OSM pedem um contato (exigência da política
+de uso). Defina a variável `OSM_CONTACT` **antes** de rodá-los — assim seu
+e-mail nunca fica no código:
+
+```bash
+# Windows (cmd):
+set OSM_CONTACT=seu-email@exemplo.com
+# PowerShell:
+$env:OSM_CONTACT = "seu-email@exemplo.com"
+# Linux/macOS:
+export OSM_CONTACT=seu-email@exemplo.com
+```
+
 ### O fluxo
 
 ```

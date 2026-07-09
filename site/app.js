@@ -162,7 +162,7 @@
     if (f.lat == null || f.lng == null || f.lat === "" || f.lng === "") return;
     var m = L.marker([+f.lat, +f.lng], { icon: iconeFeira(f.dia, f.categoria, escalaAtual), riseOnHover: true });
     m.bindPopup(popupHTML(f), { autoPan: false }); // evita que o popup empurre o mapa e desfaça a centralizacao
-    m.bindTooltip(nomeFeira(f) + " · " + f.bairro, { direction: "top", offset: [0, -34], opacity: 0.95 });
+    m.bindTooltip(esc(nomeFeira(f)) + " · " + esc(f.bairro), { direction: "top", offset: [0, -34], opacity: 0.95 });
     m.feira = f;
     todos.push(m);
   });

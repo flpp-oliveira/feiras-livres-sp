@@ -2,11 +2,14 @@
 """Resgata as feiras sem coordenada usando o CEP via BrasilAPI (v2) e ViaCEP+Nominatim como fallback."""
 import csv, json, re, urllib.request, time, os
 
+# contato exigido pela politica do Nominatim; defina a env var OSM_CONTACT ao rodar
+CONTATO = os.environ.get('OSM_CONTACT', 'contato@exemplo.com')
+
 def in_sp(lat, lng):
     return -24.02 <= lat <= -23.35 and -46.84 <= lng <= -46.36
 
 def get(url, timeout=15):
-    req = urllib.request.Request(url, headers={'User-Agent': 'feiras-sp/1.0 (contato felippeprofissionalsi@gmail.com)'})
+    req = urllib.request.Request(url, headers={'User-Agent': f'feiras-sp/1.0 (contato {CONTATO})'})
     return json.load(urllib.request.urlopen(req, timeout=timeout))
 
 def brasilapi(cep):

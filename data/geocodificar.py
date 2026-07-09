@@ -10,7 +10,9 @@ Saida: feiras_geo.csv
 import csv, json, os, re, time, urllib.request, urllib.parse
 
 IN, OUT, CACHE = 'feiras_limpo.csv', 'feiras_geo.csv', 'geocode_cache.json'
-UA = 'feiras-livres-sp/1.0 (mapa feiras livres SP; contato felippeprofissionalsi@gmail.com)'
+# contato exigido pela politica do Nominatim; defina a env var OSM_CONTACT ao rodar
+CONTATO = os.environ.get('OSM_CONTACT', 'contato@exemplo.com')
+UA = f'feiras-livres-sp/1.0 (mapa feiras livres SP; {CONTATO})'
 SLEEP = 1.1
 # bbox do municipio de Sao Paulo
 def in_sp(lat, lng):
