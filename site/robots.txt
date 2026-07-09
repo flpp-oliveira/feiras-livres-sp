@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://feiras-livres-sp.pages.dev/sitemap.xml
