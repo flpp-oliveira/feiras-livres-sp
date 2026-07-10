@@ -148,10 +148,20 @@
     coords.push([+f.lat, +f.lng]);
   });
   var limites = coords.length ? L.latLngBounds(coords).pad(0.03) : null;
+
+  // trava o afastamento no zoom que mostra TODAS as feiras. Recalculado a cada
+  // mudanca de tamanho (rotacao / barra do navegador no mobile): se ficasse so
+  // no load, a trava vinha alta demais e "prendia" o zoom antes de ver tudo.
+  function atualizarZoomMin() {
+    if (!limites) return;
+    map.setMinZoom(0);                          // solta a trava pra medir o fit real
+    map.setMinZoom(map.getBoundsZoom(limites)); // trava no zoom que enquadra tudo
+  }
+
   if (limites) {
     map.fitBounds(limites);
-    map.setMinZoom(map.getZoom()); // nao deixa afastar mais que a visao inicial
     map.setMaxBounds(L.latLngBounds(coords).pad(0.3)); // permite pan pelos arredores, sem sair da regiao
+    atualizarZoomMin();
   }
 
   var escalaAtual = escalaPins();
@@ -184,13 +194,20 @@
     todos.forEach(function (m) { m.setIcon(iconeFeira(m.feira.dia, m.feira.categoria, escalaAtual)); });
   });
 
-  // recalcula o tamanho do mapa quando a janela muda (evita tiles faltando)
-  window.addEventListener("resize", function () { map.invalidateSize(); });
+  // recalcula o tamanho do mapa e a trava de zoom quando a janela muda
+  // (evita tiles faltando e mantem o "ver tudo" correto ao girar o celular)
+  var zoomMinTimer;
+  window.addEventListener("resize", function () {
+    map.invalidateSize();
+    clearTimeout(zoomMinTimer);
+    zoomMinTimer = setTimeout(atualizarZoomMin, 200);
+  });
   setTimeout(function () {
     map.invalidateSize();
     // so re-enquadra a cidade se a localizacao ainda nao assumiu o mapa
     // (evita o mapa "pular" de volta depois de focar em voce)
     if (limites && !userPos) map.fitBounds(limites);
+    atualizarZoomMin();
   }, 250);
 
   // ---- toast (mensagens rapidas) ----
