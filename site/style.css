@@ -23,7 +23,7 @@ body {
 }
 button { font: inherit; color: inherit; }
 
-#app { display: flex; height: 100vh; }
+#app { display: flex; height: 100vh; height: 100dvh; }
 
 /* ================= Sidebar ================= */
 #sidebar {
@@ -499,10 +499,11 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
   #vazio { left: 0; }
   #toast { transform: translateX(-50%) translateY(14px); }
   #toast.show { transform: translateX(-50%) translateY(0); }
-  /* no mobile a lista "perto" vira faixa no rodape, entao o botao sobe pro topo */
+  /* no mobile a lista "perto" vira faixa no rodape: relocate + zoom sobem pro
+     topo-direita, alinhados e colados num cluster (zoom sem a margem do Leaflet) */
   #voltar-localizacao { right: 16px; left: auto; bottom: auto; top: 64px; }
-  /* zoom tambem sobe, senao fica atras da faixa "perto de mim" no rodape */
-  .leaflet-control-container .leaflet-bottom.leaflet-right { margin-bottom: 0; bottom: auto; top: 122px; right: 16px; position: absolute; }
+  .leaflet-control-container .leaflet-bottom.leaflet-right { margin-bottom: 0; bottom: auto; top: 106px; right: 16px; position: absolute; }
+  .leaflet-control-container .leaflet-bottom.leaflet-right .leaflet-control-zoom { margin: 0; }
 
   /* painel vira faixa no rodape no mobile */
   #lista-perto {
