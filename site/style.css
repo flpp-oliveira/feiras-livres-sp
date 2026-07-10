@@ -94,18 +94,6 @@ button { font: inherit; color: inherit; }
   color: rgba(255, 255, 255, .82);
   font-size: .74rem; letter-spacing: .01em;
 }
-.count {
-  margin: 16px 0 0;
-  font-size: .8rem;
-  background: rgba(255, 255, 255, .15);
-  border: 1px solid rgba(255, 255, 255, .24);
-  border-radius: 999px;
-  padding: 6px 14px;
-  display: inline-block;
-  position: relative; z-index: 1;
-}
-.count strong { font-size: 1rem; font-weight: 800; }
-#total-info { color: rgba(255, 255, 255, .72); }
 
 /* botoes de acao rapida */
 .acoes { display: flex; gap: 10px; }

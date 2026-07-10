@@ -167,8 +167,6 @@
     todos.push(m);
   });
 
-  var comCoord = todos.length;
-
   // indices p/ busca por area (bairro/distrito/zona) -> markers daquela area
   var porBairro = {}, porDistrito = {}, porZona = {};
   todos.forEach(function (m) {
@@ -218,7 +216,6 @@
     camada.clearLayers();
     var visiveis = todos.filter(function (m) { return passa(m.feira); });
     visiveis.forEach(function (m) { camada.addLayer(m); });
-    document.getElementById("visiveis").textContent = visiveis.length;
     document.getElementById("vazio").hidden = visiveis.length !== 0;
     if (userPos) renderListaPerto();
   }
@@ -606,11 +603,6 @@
     btnColapsar.textContent = colapsada ? "›" : "‹";
     btnColapsar.setAttribute("aria-label", colapsada ? "Expandir filtros" : "Colapsar filtros");
   });
-
-  // total info (feiras sem coordenada)
-  var semCoord = FEIRAS.length - comCoord;
-  var info = document.getElementById("total-info");
-  info.textContent = "de " + FEIRAS.length + (semCoord ? " (" + semCoord + " sem localização)" : "");
 
   aplicar();
 
