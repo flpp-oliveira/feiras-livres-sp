@@ -141,9 +141,10 @@ cep_coords*.json    ┘                          │
    > GeoSampa / [codigourbano/distritos-sp](https://github.com/codigourbano/distritos-sp)
    > e coloque em `data/`.
 
-6. **Gerar o arquivo do site**:
+6. **Gerar os arquivos do site**:
    ```bash
-   python gerar_dados.py       # escreve ../site/feiras-data.js
+   python gerar_dados.py       # escreve ../site/feiras-data.js (dados do mapa)
+   python gerar_lista.py       # escreve ../site/lista.html (pagina de SEO por bairro)
    ```
 
 7. **Publicar a mudança**: incremente o `?v=NN` no `index.html`, teste local e
@@ -151,12 +152,16 @@ cep_coords*.json    ┘                          │
 
 ### Se as coordenadas não precisarem mudar
 
-Se só quiser regenerar o `feiras-data.js` a partir do `feiras_geo.csv` que já
+Se só quiser regenerar os arquivos do site a partir do `feiras_geo.csv` que já
 existe (ex.: mexeu num campo de exibição), basta o último passo:
 
 ```bash
 python gerar_dados.py
+python gerar_lista.py
 ```
+
+> `lista.html` é a página de texto rastreável pelo Google (todas as feiras por
+> zona/bairro, com endereço e dia — **sem coordenadas**, de propósito).
 
 ### Estado atual
 

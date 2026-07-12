@@ -288,6 +288,10 @@ input[type="search"]:focus {
   font-weight: 700;
   color: var(--verde-esc);
 }
+#sidebar footer .link-lista {
+  color: var(--verde-esc); font-weight: 700; text-decoration: none;
+}
+#sidebar footer .link-lista:hover { text-decoration: underline; }
 
 /* ================= Mapa ================= */
 #map { flex: 1; height: 100%; background: #e8ece4; }
