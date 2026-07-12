@@ -72,7 +72,7 @@ def main():
     P.append('  <title>Lista de feiras livres de São Paulo por bairro e dia</title>')
     P.append('  <meta name="description" content="Lista completa das ' + str(total) +
              ' feiras livres de São Paulo, organizadas por zona e bairro, com endereço e dia da semana." />')
-    P.append('  <link rel="canonical" href="https://feiras-livres-sp.pages.dev/lista" />')
+    P.append('  <link rel="canonical" href="https://feiraslivresp.com.br/lista" />')
     P.append('  <link rel="icon" href="favicon.ico" sizes="any" />')
     P.append('  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />')
     P.append('  <link rel="apple-touch-icon" href="apple-touch-icon.png" />')
