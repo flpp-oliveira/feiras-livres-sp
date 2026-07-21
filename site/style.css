@@ -391,10 +391,13 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 #lista-perto.minimizado #lp-itens { display: none; }
 #lp-itens { list-style: none; margin: 0; padding: 0; overflow-y: auto; max-height: 495px; }
 #lp-itens li {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: flex-start; gap: 10px;
   padding: 10px 14px; border-bottom: 1px solid var(--borda); cursor: pointer;
   transition: background .12s;
 }
+/* alinha bolinha e distancia com a PRIMEIRA linha do nome (itens de 2 linhas) */
+#lp-itens .lp-dot { margin-top: 3px; }
+#lp-itens .lp-dist { margin-top: 1px; }
 #lp-itens li:hover { background: var(--verde-claro); }
 #lp-itens li:last-child { border-bottom: none; }
 .lp-dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); }
