@@ -524,7 +524,7 @@
     arr.sort(function (a, b) { return a.d - b.d; });
     var dentro = arr.filter(function (x) { return x.d <= RAIO; }).length;
     lpTitulo.innerHTML = dentro
-      ? "🧺 <strong>" + dentro + "</strong> feira" + (dentro > 1 ? "s" : "") + " num raio de " + RAIO + " km"
+      ? "🧺 Feiras até " + RAIO + " km <span class=\"lp-qtd\">" + dentro + "</span>"
       : "Nenhuma feira em " + RAIO + " km — veja as mais próximas:";
 
     lpItens.innerHTML = "";
