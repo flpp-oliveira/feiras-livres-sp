@@ -8,6 +8,11 @@
   <title>Feiras Livres de São Paulo — Mapa</title>
   <meta name="description" content="Mapa interativo com as 968 feiras livres de São Paulo: filtre por dia da semana e categoria, busque por bairro e veja as feiras mais perto de você." />
   <link rel="canonical" href="https://feiraslivresp.com.br/" />
+
+  <!-- adianta DNS+TLS com o CDN dos tiles do mapa (melhora o LCP na 1ª visita) -->
+  <link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossorigin />
+  <link rel="preconnect" href="https://b.basemaps.cartocdn.com" crossorigin />
+
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -35,9 +40,9 @@
   <!-- Dados estruturados (schema.org) — nivel do app, sem despejar as feiras -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Feiras Livres de São Paulo","url":"https://feiraslivresp.com.br/","description":"Mapa interativo com as 968 feiras livres de São Paulo: dia, endereço, categoria e as mais perto de você.","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"pt-BR","isAccessibleForFree":true,"about":{"@type":"Thing","name":"Feiras livres de São Paulo"},"areaServed":{"@type":"City","name":"São Paulo"}}</script>
 
-  <link rel="stylesheet" href="fonts/fonts.css?v=41" />
-  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=41" />
-  <link rel="stylesheet" href="style.css?v=41" />
+  <link rel="stylesheet" href="fonts/fonts.css?v=42" />
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=42" />
+  <link rel="stylesheet" href="style.css?v=42" />
 </head>
 <body>
   <div id="app">
@@ -132,9 +137,9 @@
     <button id="toggle-sidebar" type="button" aria-label="Mostrar/ocultar filtros">☰ Filtros</button>
   </div>
 
-  <script src="vendor/leaflet/leaflet.js?v=41"></script>
-  <script src="feiras-data.js?v=41"></script>
-  <script src="app.js?v=41"></script>
+  <script src="vendor/leaflet/leaflet.js?v=42"></script>
+  <script src="feiras-data.js?v=42"></script>
+  <script src="app.js?v=42"></script>
 
   <!-- Cloudflare Web Analytics (medição sem cookies; token é público por design) -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2eb060762d524d85ad7d70e2b67fa203"}'></script>
