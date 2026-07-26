@@ -621,6 +621,27 @@
     btnColapsar.setAttribute("aria-label", colapsada ? "Expandir filtros" : "Colapsar filtros");
   });
 
+  // ---- aviso sobre a qualidade dos dados (so na primeira visita) ----
+  var CHAVE_AVISO = "feirasp:aviso-dados";
+  function jaViuAviso() {
+    try { return localStorage.getItem(CHAVE_AVISO) === "1"; } catch (e) { return false; }
+  }
+  function mostrarAvisoDados() {
+    if (jaViuAviso()) return;
+    var box = document.getElementById("aviso-dados");
+    document.getElementById("aviso-ok").addEventListener("click", function () {
+      box.classList.remove("show");
+      // modo privado do Safari lanca ao gravar: nesse caso o aviso volta na proxima visita
+      try { localStorage.setItem(CHAVE_AVISO, "1"); } catch (e) {}
+      setTimeout(function () { box.hidden = true; }, 260);
+    });
+    box.hidden = false;
+    void box.offsetWidth; // forca o reflow pra transicao rodar ao sair do [hidden]
+    box.classList.add("show");
+  }
+  // espera o mapa desenhar (e o pedido de localizacao resolver) pra nao competir
+  setTimeout(mostrarAvisoDados, 1400);
+
   aplicar();
 
   // ao abrir, ja pede a localizacao pra mostrar as feiras perto de voce
