@@ -40,9 +40,9 @@
   <!-- Dados estruturados (schema.org) — nivel do app, sem despejar as feiras -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Feiras Livres de São Paulo","url":"https://feiraslivresp.com.br/","description":"Mapa interativo com as 968 feiras livres de São Paulo: dia, endereço, categoria e as mais perto de você.","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"pt-BR","isAccessibleForFree":true,"about":{"@type":"Thing","name":"Feiras livres de São Paulo"},"areaServed":{"@type":"City","name":"São Paulo"}}</script>
 
-  <link rel="stylesheet" href="fonts/fonts.css?v=49" />
-  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=49" />
-  <link rel="stylesheet" href="style.css?v=49" />
+  <link rel="stylesheet" href="fonts/fonts.css?v=50" />
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=50" />
+  <link rel="stylesheet" href="style.css?v=50" />
 </head>
 <body>
   <div id="app">
@@ -134,7 +134,11 @@
 
     <div id="dica-localizacao" role="note" hidden>
       <span>Toque aqui para ver as feiras perto de você</span>
-      <button id="dica-fechar" type="button" aria-label="Fechar dica">×</button>
+      <button id="dica-fechar" type="button" aria-label="Fechar dica">
+        <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+          <path d="M5 5l14 14M19 5L5 19"></path>
+        </svg>
+      </button>
     </div>
 
     <button id="voltar-localizacao" type="button" aria-label="Ver as feiras perto de mim">
@@ -149,9 +153,9 @@
     <button id="toggle-sidebar" type="button" aria-label="Mostrar/ocultar filtros">☰ Filtros</button>
   </div>
 
-  <script src="vendor/leaflet/leaflet.js?v=49"></script>
-  <script src="feiras-data.js?v=49"></script>
-  <script src="app.js?v=49"></script>
+  <script src="vendor/leaflet/leaflet.js?v=50"></script>
+  <script src="feiras-data.js?v=50"></script>
+  <script src="app.js?v=50"></script>
 
   <!-- Cloudflare Web Analytics (medição sem cookies; token é público por design) -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2eb060762d524d85ad7d70e2b67fa203"}'></script>
