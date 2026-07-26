@@ -158,6 +158,8 @@ def main():
     P.append('  <footer class="rodape">')
     P.append('    <p>Dados: Prefeitura de São Paulo / SMSUB (set/2024). '
              'Veja também o <a href="/">mapa interativo</a>.</p>')
+    P.append('    <p><a href="/termos">Termos de uso</a> · '
+             '<a href="/privacidade">Política de Privacidade</a></p>')
     P.append('  </footer>')
     P.append('  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" '
              'data-cf-beacon=\'{"token": "' + TOKEN + '"}\'></script>')

@@ -293,6 +293,8 @@ input[type="search"]:focus {
   color: var(--verde-esc); font-weight: 700; text-decoration: none;
 }
 #sidebar footer .link-lista:hover { text-decoration: underline; }
+#sidebar footer .legais a { color: var(--cinza); text-decoration: none; }
+#sidebar footer .legais a:hover { color: var(--verde-esc); text-decoration: underline; }
 
 /* ================= Mapa ================= */
 #map { flex: 1; height: 100%; background: #e8ece4; }
@@ -421,7 +423,9 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 #voltar-localizacao {
   position: absolute; right: 10px; bottom: 106px; z-index: 1090;
   width: 36px; height: 36px; border-radius: 50%; border: none;
-  background: #cfd3ce; color: #7a8079;
+  /* desligado ele NAO e um botao inerte: e quem liga a localizacao. Branco com
+     icone verde le como acionavel; o cinza antigo passava ideia de desabilitado. */
+  background: var(--card); color: var(--verde-esc);
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   box-shadow: 0 3px 10px rgba(0,0,0,.18);
@@ -435,6 +439,31 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 }
 #voltar-localizacao.ativo:hover { filter: brightness(1.1); }
 #voltar-localizacao.ativo:active { box-shadow: 0 3px 10px rgba(29, 107, 47, .4); }
+
+/* dica que aponta pro botao de localizacao (primeira visita) */
+#dica-localizacao {
+  position: absolute; right: 56px; bottom: 106px; z-index: 1095;
+  display: flex; align-items: center; gap: 8px;
+  max-width: 210px; padding: 9px 8px 9px 13px;
+  background: #21251f; color: #fff;
+  border-radius: 11px; box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+  font-size: .78rem; font-weight: 600; line-height: 1.35;
+  opacity: 0; transform: translateX(8px);
+  transition: opacity .25s ease, transform .25s ease;
+}
+#dica-localizacao.show { opacity: 1; transform: translateX(0); }
+#dica-localizacao::after {          /* setinha apontando pro botao */
+  content: ""; position: absolute; right: -6px; bottom: 13px;
+  width: 12px; height: 12px; background: #21251f; transform: rotate(45deg);
+  border-radius: 2px;
+}
+#dica-fechar {
+  flex-shrink: 0; width: 22px; height: 22px; padding: 0;
+  border: none; border-radius: 50%; cursor: pointer;
+  background: rgba(255, 255, 255, .16); color: #fff;
+  font-size: .95rem; line-height: 1;
+}
+#dica-fechar:hover { background: rgba(255, 255, 255, .3); }
 
 /* zoom do mapa: direita, na base (o botao de localizacao fica empilhado acima dele) */
 
@@ -546,6 +575,9 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
   /* no mobile a lista "perto" vira faixa no rodape: relocate + zoom sobem pro
      topo-direita, alinhados e colados num cluster (zoom sem a margem do Leaflet) */
   #voltar-localizacao { right: 16px; left: auto; bottom: auto; top: 64px; }
+  /* no mobile o botao esta no topo-direita: a dica vai pro lado esquerdo dele */
+  #dica-localizacao { right: 62px; bottom: auto; top: 66px; }
+  #dica-localizacao::after { bottom: auto; top: 13px; }
   .leaflet-control-container .leaflet-bottom.leaflet-right { margin-bottom: 0; bottom: auto; top: 106px; right: 16px; position: absolute; }
   .leaflet-control-container .leaflet-bottom.leaflet-right .leaflet-control-zoom { margin: 0; }
 

@@ -556,11 +556,17 @@
     btnLpMin.setAttribute("aria-label", "Minimizar lista");
     setBotaoAtivo("perto", false);
     btnVoltarLoc.classList.remove("ativo");
+    btnVoltarLoc.setAttribute("aria-label", "Ver as feiras perto de mim");
   }
 
+  // botao redondo do mapa: com a localizacao desligada ELE é quem a liga (no
+  // celular a barra lateral vem fechada, entao o "Perto de mim" nao esta visivel);
+  // com ela ligada, volta a centralizar no usuario.
   var btnVoltarLoc = document.getElementById("voltar-localizacao");
   btnVoltarLoc.addEventListener("click", function () {
-    if (userPos) map.setView([userPos.lat, userPos.lng], ZOOM_LOCALIZACAO);
+    fecharDica();
+    if (userPos) { map.setView([userPos.lat, userPos.lng], ZOOM_LOCALIZACAO); return; }
+    ativarPerto(false);
   });
 
   var btnLpMin = document.getElementById("lp-min");
@@ -588,6 +594,8 @@
       map.setView([userPos.lat, userPos.lng], ZOOM_LOCALIZACAO);
       renderListaPerto();
       btnVoltarLoc.classList.add("ativo");
+      btnVoltarLoc.setAttribute("aria-label", "Voltar para minha localização");
+      fecharDica();
     }, function () {
       btnPerto.disabled = false; lblPerto.textContent = "Perto de mim";
       if (!auto) toast("Não foi possível obter sua localização");
@@ -598,16 +606,20 @@
     ativarPerto(false);
   });
 
-  // pede a localizacao automaticamente ao abrir (sem insistir com quem ja negou)
+  // So ativa sozinho quem JA concedeu a permissao antes (nesse caso o navegador
+  // nao pergunta nada e o site abre centralizado). Quem nunca decidiu NAO recebe
+  // o prompt no load: o "nao" fica gravado quase pra sempre no navegador, e negar
+  // por reflexo no segundo zero queimaria a funcao. Esses veem a dica no botao.
+  var geoNegada = false;
   function pedirLocalizacaoNoInicio() {
     if (!navigator.geolocation) return;
-    if (navigator.permissions && navigator.permissions.query) {
-      navigator.permissions.query({ name: "geolocation" })
-        .then(function (p) { if (p.state !== "denied") ativarPerto(true); })
-        .catch(function () { ativarPerto(true); });
-    } else {
-      ativarPerto(true);
-    }
+    if (!(navigator.permissions && navigator.permissions.query)) return; // sem API: nao arrisca o prompt
+    navigator.permissions.query({ name: "geolocation" })
+      .then(function (p) {
+        if (p.state === "granted") ativarPerto(true);
+        else if (p.state === "denied") geoNegada = true;
+      })
+      .catch(function () {});
   }
 
   document.getElementById("toggle-sidebar").addEventListener("click", function () {
@@ -633,14 +645,41 @@
       box.classList.remove("show");
       // modo privado do Safari lanca ao gravar: nesse caso o aviso volta na proxima visita
       try { localStorage.setItem(CHAVE_AVISO, "1"); } catch (e) {}
-      setTimeout(function () { box.hidden = true; }, 260);
+      setTimeout(function () { box.hidden = true; mostrarDicaLocalizacao(); }, 260);
     });
     box.hidden = false;
     void box.offsetWidth; // forca o reflow pra transicao rodar ao sair do [hidden]
     box.classList.add("show");
   }
-  // espera o mapa desenhar (e o pedido de localizacao resolver) pra nao competir
-  setTimeout(mostrarAvisoDados, 1400);
+  // ---- dica apontando pro botao de localizacao (so na primeira visita) ----
+  // aparece DEPOIS que o aviso sai: nunca os dois elementos juntos na tela.
+  var CHAVE_DICA = "feirasp:dica-localizacao";
+  var dicaTimer;
+  function fecharDica() {
+    var d = document.getElementById("dica-localizacao");
+    if (d.hidden) return;
+    clearTimeout(dicaTimer);
+    d.classList.remove("show");
+    try { localStorage.setItem(CHAVE_DICA, "1"); } catch (e) {}
+    setTimeout(function () { d.hidden = true; }, 260);
+  }
+  function mostrarDicaLocalizacao() {
+    if (userPos || geoNegada) return; // ja localizado, ou negou: a dica so frustraria
+    try { if (localStorage.getItem(CHAVE_DICA) === "1") return; } catch (e) {}
+    var d = document.getElementById("dica-localizacao");
+    d.hidden = false;
+    void d.offsetWidth;
+    d.classList.add("show");
+    dicaTimer = setTimeout(fecharDica, 9000);
+  }
+  document.getElementById("dica-fechar").addEventListener("click", fecharDica);
+  map.on("click dragstart", fecharDica); // interagiu com o mapa: ja se virou sozinho
+
+  // espera o mapa desenhar pra nao competir com a montagem da tela
+  setTimeout(function () {
+    if (jaViuAviso()) mostrarDicaLocalizacao();
+    else mostrarAvisoDados();
+  }, 1400);
 
   aplicar();
 
