@@ -102,10 +102,12 @@ button { font: inherit; color: inherit; }
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* conteudo a esquerda: centralizar deixava os icones em x diferentes nos dois
+     botoes (os rotulos tem larguras diferentes) e eles nao formavam coluna */
+  justify-content: flex-start;
   gap: 7px;
   white-space: nowrap;
-  padding: 9px 8px;
+  padding: 9px 10px;
   border-radius: var(--radius);
   border: 1.5px solid var(--borda);
   background: var(--card);
@@ -293,8 +295,8 @@ input[type="search"]:focus {
   color: var(--verde-esc); font-weight: 700; text-decoration: none;
 }
 #sidebar footer .link-lista:hover { text-decoration: underline; }
-#sidebar footer .legais a { color: var(--cinza); text-decoration: none; }
-#sidebar footer .legais a:hover { color: var(--verde-esc); text-decoration: underline; }
+#sidebar footer .legais a { color: var(--verde-esc); font-weight: 600; text-decoration: none; }
+#sidebar footer .legais a:hover { text-decoration: underline; }
 
 /* ================= Mapa ================= */
 #map { flex: 1; height: 100%; background: #e8ece4; }
