@@ -441,22 +441,27 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 #voltar-localizacao.ativo:active { box-shadow: 0 3px 10px rgba(29, 107, 47, .4); }
 
 /* dica que aponta pro botao de localizacao (primeira visita) */
+/* posicao vem do JS (posicionarDica): o alvo muda de botao entre desktop e mobile */
 #dica-localizacao {
-  position: absolute; right: 56px; bottom: 106px; z-index: 1095;
+  position: absolute; z-index: 1095;
   display: flex; align-items: center; gap: 8px;
   max-width: 210px; padding: 9px 8px 9px 13px;
   background: #21251f; color: #fff;
   border-radius: 11px; box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
   font-size: .78rem; font-weight: 600; line-height: 1.35;
-  opacity: 0; transform: translateX(8px);
+  opacity: 0;
   transition: opacity .25s ease, transform .25s ease;
 }
+#dica-localizacao.seta-dir { transform: translateX(8px); }   /* caixa a esquerda do alvo */
+#dica-localizacao.seta-esq { transform: translateX(-8px); }  /* caixa a direita do alvo */
 #dica-localizacao.show { opacity: 1; transform: translateX(0); }
 #dica-localizacao::after {          /* setinha apontando pro botao */
-  content: ""; position: absolute; right: -6px; bottom: 13px;
+  content: ""; position: absolute; top: 50%; margin-top: -6px;
   width: 12px; height: 12px; background: #21251f; transform: rotate(45deg);
   border-radius: 2px;
 }
+#dica-localizacao.seta-dir::after { right: -6px; }
+#dica-localizacao.seta-esq::after { left: -6px; }
 #dica-fechar {
   flex-shrink: 0; width: 22px; height: 22px; padding: 0;
   border: none; border-radius: 50%; cursor: pointer;
@@ -575,9 +580,6 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
   /* no mobile a lista "perto" vira faixa no rodape: relocate + zoom sobem pro
      topo-direita, alinhados e colados num cluster (zoom sem a margem do Leaflet) */
   #voltar-localizacao { right: 16px; left: auto; bottom: auto; top: 64px; }
-  /* no mobile o botao esta no topo-direita: a dica vai pro lado esquerdo dele */
-  #dica-localizacao { right: 62px; bottom: auto; top: 66px; }
-  #dica-localizacao::after { bottom: auto; top: 13px; }
   .leaflet-control-container .leaflet-bottom.leaflet-right { margin-bottom: 0; bottom: auto; top: 106px; right: 16px; position: absolute; }
   .leaflet-control-container .leaflet-bottom.leaflet-right .leaflet-control-zoom { margin: 0; }
 

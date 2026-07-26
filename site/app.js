@@ -628,6 +628,7 @@
 
   var btnColapsar = document.getElementById("colapsar-sidebar");
   btnColapsar.addEventListener("click", function () {
+    fecharDica(); // com a barra recolhida o "Perto de mim" some, e a dica ficaria orfa
     var colapsada = document.getElementById("app").classList.toggle("sidebar-colapsada");
     btnColapsar.textContent = colapsada ? "›" : "‹";
     btnColapsar.setAttribute("aria-label", colapsada ? "Expandir filtros" : "Colapsar filtros");
@@ -663,17 +664,47 @@
     try { localStorage.setItem(CHAVE_DICA, "1"); } catch (e) {}
     setTimeout(function () { d.hidden = true; }, 260);
   }
+  // no desktop a barra lateral esta aberta, entao o alvo e o botao rotulado
+  // "Perto de mim"; no mobile ela vem fechada e sobra o botao redondo do mapa.
+  function noDesktop() { return window.innerWidth > 760; }
+  function posicionarDica(d) {
+    var desktop = noDesktop();
+    var r = (desktop ? btnPerto : btnVoltarLoc).getBoundingClientRect();
+    d.querySelector("span").textContent =
+      (desktop ? "Clique" : "Toque") + " aqui para ver as feiras perto de você";
+    d.classList.remove("seta-esq", "seta-dir");
+    if (desktop) {                       // caixa a DIREITA do botao, sobre o mapa
+      d.style.left = Math.round(r.right + 12) + "px";
+      d.style.right = "auto";
+      d.classList.add("seta-esq");
+    } else {                             // caixa a ESQUERDA do botao redondo
+      d.style.right = Math.round(window.innerWidth - r.left + 12) + "px";
+      d.style.left = "auto";
+      d.classList.add("seta-dir");
+    }
+    d.style.top = Math.round(r.top + r.height / 2 - d.offsetHeight / 2) + "px";
+  }
   function mostrarDicaLocalizacao() {
     if (userPos || geoNegada) return; // ja localizado, ou negou: a dica so frustraria
     try { if (localStorage.getItem(CHAVE_DICA) === "1") return; } catch (e) {}
     var d = document.getElementById("dica-localizacao");
-    d.hidden = false;
+    d.hidden = false;      // precisa estar visivel pra medir a altura no posicionamento
+    posicionarDica(d);
     void d.offsetWidth;
     d.classList.add("show");
     dicaTimer = setTimeout(fecharDica, 9000);
   }
   document.getElementById("dica-fechar").addEventListener("click", fecharDica);
   map.on("click dragstart", fecharDica); // interagiu com o mapa: ja se virou sozinho
+  // reposiciona depois que o layout assenta (girar o celular troca o alvo
+  // desktop <-> mobile, e medir cedo demais pega a largura antiga)
+  var dicaPosTimer;
+  window.addEventListener("resize", function () {
+    var d = document.getElementById("dica-localizacao");
+    if (d.hidden) return;
+    clearTimeout(dicaPosTimer);
+    dicaPosTimer = setTimeout(function () { posicionarDica(d); }, 200);
+  });
 
   // espera o mapa desenhar pra nao competir com a montagem da tela
   setTimeout(function () {
