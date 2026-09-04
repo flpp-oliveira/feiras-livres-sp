@@ -127,10 +127,10 @@
   function popupHTML(f) {
     var rota = "https://www.google.com/maps/dir/?api=1&destination=" + f.lat + "," + f.lng;
     return '<div class="popup-feira">' +
-      '<h3><span class="popup-emoji">' + emojiCat(f.categoria) + "</span>" + campo(nomeFeira(f)) + "</h3>" +
       '<span class="badge" style="background:' + corDia(f.dia) + '">' + esc(f.dia) + "</span> " +
       '<span class="badge badge-cat">' + emojiCat(f.categoria) + " " + esc(f.categoria) + "</span>" +
       "<dl>" +
+      "<dt>Rua</dt><dd>" + campo(nomeFeira(f)) + "</dd>" +
       "<dt>Bairro</dt><dd>" + campo(f.bairro) + "</dd>" +
       "<dt>Distrito</dt><dd>" + campo(f.distrito) + "</dd>" +
       "<dt>Referência</dt><dd>" + campo(f.referencia) + "</dd>" +
