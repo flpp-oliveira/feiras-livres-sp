@@ -22,7 +22,8 @@ feiras-livres-sp/
 └── data/                 → a "cozinha": pipeline que gera feiras-data.js
     ├── feiras.xlsx       → planilha oficial da prefeitura (fonte-mãe)
     ├── *.py              → scripts do pipeline (ver abaixo)
-    ├── mymaps_coords.csv → coordenadas do Google My Maps (fonte prioritária)
+    ├── pbi_coords.csv    → coordenadas do painel oficial da prefeitura (fonte prioritária)
+    ├── mymaps_coords.csv → coordenadas do Google My Maps (1º fallback)
     └── ...
 ```
 
@@ -79,19 +80,20 @@ export OSM_CONTACT=seu-email@exemplo.com
 feiras.xlsx
    │  limpar_feiras.py
    ▼
-feiras_limpo.csv  ──────────────┐
-   │                            │ (coordenadas, em cascata)
-   │  geocodificar.py           │
-   ▼                            │
-geocode_cache.json  ┐           │
-mymaps_coords.csv   ├─ merge_coords.py ─► feiras_geo.csv
-cep_coords*.json    ┘                          │
-   ▲                                           │  adicionar_distrito.py
-   │ resgatar_cep.py / resgatar_cep2.py        ▼  (+ distritos.geojson)
+feiras_limpo.csv  ──────────────────┐
+   │                                │ (coordenadas, em cascata)
+   │  geocodificar.py               │
+   ▼                                │
+pbi_coords.csv       ┐              │
+geocode_cache.json   │              │
+mymaps_coords.csv    ├─ merge_coords.py ─► feiras_geo.csv
+cep_coords*.json     ┘                          │
+   ▲                                            │  adicionar_distrito.py
+   │ resgatar_cep.py / resgatar_cep2.py         ▼  (+ distritos.geojson)
    └───────── (feiras ainda sem coord) ◄── feiras_geo.csv (com distrito)
-                                               │  gerar_dados.py
-                                               ▼
-                                     site/feiras-data.js
+                                                │  gerar_dados.py
+                                                ▼
+                                      site/feiras-data.js
 ```
 
 ### Passo a passo
@@ -105,19 +107,28 @@ cep_coords*.json    ┘                          │
    python limpar_feiras.py
    ```
 
-3. **Obter as coordenadas.** Há três fontes, combinadas por prioridade:
+3. **Obter as coordenadas.** Há quatro fontes, combinadas por prioridade:
 
-   - **Google My Maps** (melhor precisão) → `mymaps_coords.csv`.
-     Passo manual: importar as feiras no [My Maps](https://mymaps.google.com),
-     deixar o Google geocodificar e exportar as coordenadas para esse CSV
-     (`id,lat,lng`).
-   - **Nominatim / OpenStreetMap** (automático, gratuito, 1 req/s) →
-     preenche `geocode_cache.json`:
+   - **Painel oficial da Prefeitura** (Power BI, atualizado mensalmente,
+     prioridade máxima) → `pbi_coords.csv`. A tabela do painel guarda
+     Latitude/Longitude como colunas reais (não é geocodificação automática
+     do visual de mapa). Reexecute quando quiser atualizar:
+     ```bash
+     python atualizar_pbi_coords.py
+     ```
+     (Não precisa rodar toda vez — só quando o painel tiver dado atualizado.
+     Bate direto na API pública do relatório, sem abrir navegador.)
+   - **Google My Maps** (1º fallback, para feiras sem match no painel) →
+     `mymaps_coords.csv`. Passo manual: importar as feiras no
+     [My Maps](https://mymaps.google.com), deixar o Google geocodificar e
+     exportar as coordenadas para esse CSV (`id,lat,lng`).
+   - **Nominatim / OpenStreetMap** (2º fallback, automático, gratuito,
+     1 req/s) → preenche `geocode_cache.json`:
      ```bash
      python geocodificar.py      # pode interromper e retomar; usa cache
      ```
-   - **Combinar tudo** em `feiras_geo.csv` (Google tem prioridade, Nominatim
-     e CEP tapam os buracos):
+   - **Combinar tudo** em `feiras_geo.csv` (painel da prefeitura tem
+     prioridade; Google, Nominatim e CEP tapam os buracos, nessa ordem):
      ```bash
      python merge_coords.py
      ```
@@ -182,5 +193,7 @@ viewers antigos, logs).
 ## Créditos
 
 - Dados das feiras: **Prefeitura de São Paulo / SMSUB** (set/2024).
-- Coordenadas: Google (via My Maps) e OpenStreetMap — podem ter imprecisão.
-- Mapa base: © OpenStreetMap · © CARTO. Biblioteca: Leaflet.
+- Coordenadas: painel oficial da Prefeitura (Power BI, atualizado mensalmente),
+  com Google (via My Maps), OpenStreetMap e CEP como fallback — podem ter
+  imprecisão.
+- Mapa base: © OpenStreetMap. Biblioteca: Leaflet.
