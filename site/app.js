@@ -55,8 +55,8 @@
   // ---- mapa base ----
   var map = L.map("map", { zoomControl: false, maxBoundsViscosity: 1.0 }).setView([-23.5505, -46.6333], 11);
   L.control.zoom({ position: "bottomright" }).addTo(map);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; CARTO',
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 19
   }).addTo(map);
   map.attributionControl.setPrefix(""); // remove o "Leaflet" (a lib nao exige credito)
