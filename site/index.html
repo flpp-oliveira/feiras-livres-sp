@@ -2,16 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; img-src 'self' data: https://*.basemaps.cartocdn.com; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; img-src 'self' data: https://*.tile.openstreetmap.org; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#2b8a3e" />
   <title>Feiras Livres de São Paulo — Mapa</title>
   <meta name="description" content="Mapa interativo com as 968 feiras livres de São Paulo: filtre por dia da semana e categoria, busque por bairro e veja as feiras mais perto de você." />
   <link rel="canonical" href="https://feiraslivresp.com.br/" />
 
-  <!-- adianta DNS+TLS com o CDN dos tiles do mapa (melhora o LCP na 1ª visita) -->
-  <link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossorigin />
-  <link rel="preconnect" href="https://b.basemaps.cartocdn.com" crossorigin />
+  <!-- adianta DNS+TLS com o servidor dos tiles do mapa (melhora o LCP na 1ª visita) -->
+  <link rel="preconnect" href="https://a.tile.openstreetmap.org" crossorigin />
+  <link rel="preconnect" href="https://b.tile.openstreetmap.org" crossorigin />
 
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
