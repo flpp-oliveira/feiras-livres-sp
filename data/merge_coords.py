@@ -1,10 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-Combina as coordenadas de duas fontes em feiras_geo.csv:
-  1) mymaps_coords.csv  -> geocoder do GOOGLE (extraido do My Maps) [prioridade]
-  2) geocode_cache.json -> Nominatim/OSM (tapa os buracos)
+Combina as coordenadas de quatro fontes em feiras_geo.csv:
+  1) pbi_coords.csv      -> PAINEL OFICIAL da prefeitura (Power BI, atualizado
+                             mensalmente) [prioridade maxima]
+  2) mymaps_coords.csv   -> geocoder do GOOGLE (extraido do My Maps)
+  3) geocode_cache.json  -> Nominatim/OSM (tapa os buracos)
+  4) cep_coords*.json    -> resgate por CEP (ultimo recurso)
 Valida bbox de Sao Paulo e marca a coluna 'fonte'.
 Re-executavel: rode de novo apos o Nominatim terminar pra completar.
+
+Sobre pbi_coords.csv: extraido do backend do painel oficial de Feiras Livres
+da prefeitura (Power BI, "Feiras PBI - drive"), que mantem Latitude/Longitude
+como colunas reais no modelo -- nao e geocodificacao automatica do visual de
+mapa. Chave de juncao e o N.Feira (mesmo id usado aqui), no formato "NNNN-D".
+Ver REGISTRO_DE_DECISOES.md para como essa extracao foi feita.
 """
 import csv, json, os
 
@@ -14,10 +23,11 @@ def in_sp(lat, lng):
     return -24.02 <= lat <= -23.35 and -46.84 <= lng <= -46.36
 
 feiras = list(csv.DictReader(open('feiras_limpo.csv', encoding='utf-8-sig')))
+pbi = {r['id']: (r['lat'], r['lng']) for r in csv.DictReader(open('pbi_coords.csv', encoding='utf-8'))} if os.path.exists('pbi_coords.csv') else {}
 google = {r['id']: (r['lat'], r['lng']) for r in csv.DictReader(open('mymaps_coords.csv', encoding='utf-8'))}
 cache = json.load(open('geocode_cache.json', encoding='utf-8')) if os.path.exists('geocode_cache.json') else {}
 
-# resgates por CEP (BrasilAPI/Nominatim e AwesomeAPI) - tier 3
+# resgates por CEP (BrasilAPI/Nominatim e AwesomeAPI) - tier 4
 cep = {}
 for arq in ('cep_coords.json', 'cep_coords2.json'):
     if os.path.exists(arq):
@@ -31,7 +41,9 @@ for f in feiras:
     i = f['id']
     lat = lng = ''
     fonte = 'sem_coordenada'
-    if i in google and in_sp(*google[i]):
+    if i in pbi and in_sp(*pbi[i]):
+        lat, lng = pbi[i]; fonte = 'painel_prefeitura'
+    elif i in google and in_sp(*google[i]):
         lat, lng = google[i]; fonte = 'google'
     elif i in cache and str(cache[i].get('geocode_status', '')).startswith('ok') and in_sp(cache[i]['lat'], cache[i]['lng']):
         lat, lng = cache[i]['lat'], cache[i]['lng']; fonte = 'nominatim'
