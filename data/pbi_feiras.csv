@@ -1,0 +1,976 @@
+﻿id,lat,lng,categoria_pbi,dia_pbi,endereco_pbi,subprefeitura_pbi
+1001-4,-23.5569885,-46.6284503,Tradicional,Domingo,"Rua Teixeira Leite C/ São Paulo, 553 - Liberdade - São Paulo , 01514-010",Sé
+1002-2,-23.5387433,-46.6149628,Tradicional,Domingo,"Rua Conselheiro Belisario, 400 - Bras - São Paulo , 03012-000",Mooca
+1003-0,-23.5773576,-46.6227437,Tradicional,Domingo,"Rua Ingles De Souza, 400 - Cambuci - São Paulo , 01546-010",Sé
+1004-9,-23.527224,-46.6979779,Tradicional,Domingo,"Rua Fabia C Aurelia, 701 - Vila Romana - São Paulo , 05046-000",Lapa
+1005-7,-23.5514911,-46.599643,Tradicional,Domingo,"Rua Bresser, 2701 - Mooca - São Paulo , 03162-030",Mooca
+1006-5,-23.5429031,-46.5938736,Tradicional,Domingo,"Rua Belarmino Matos, 10 - Quarta Parada - São Paulo , 03062-030",Mooca
+1007-3,-23.5732611,-46.6056448,Tradicional,Domingo,"Rua Agostinho Gomes, 352 - Ipiranga - São Paulo , 04206-000",Ipiranga
+1008-1,-23.5497159,-46.5731826,Tradicional,Domingo,"Rua Tuiuti, 2753 - Tatuape - São Paulo , 03307-005",Mooca
+1009-0,-23.5871347,-46.6146422,Tradicional,Domingo,"Rua Oliveira Melo, 350 - Vila São Jose - São Paulo , 04271-000",Ipiranga
+1010-3,-23.5729421,-46.6469935,Tradicional,Domingo,"Rua Cel Oscar Porto, 429 - Paraiso - São Paulo , 04003-042",Vila Mariana
+1011-1,-23.5391639,-46.6491898,Tradicional,Domingo,"Rua Sebastiao Pereira, 553 - Sta Cecilia - São Paulo , 01225-020",Sé
+1012-0,-23.5790562,-46.5847934,Tradicional,Domingo,"Rua Jose Zappi, 255 - Vila Prudente - São Paulo , 03128-140",Vila Prudente
+1013-8,-23.5650339,-46.5832228,Tradicional,Domingo,"Rua Terezina, 615 - Alto Da Mooca - São Paulo , 03185-010",Mooca
+1014-6,-23.4858295,-46.6383709,Tradicional,Domingo,"Av Engenheiro Caetano Alvares, 5200 - Mandaqui - São Paulo , 02413-100",Santana/Tucuruvi
+1015-4,-23.6134706,-46.609397,Tradicional,Domingo,"Av Inhaiba, 250 - Moinho Velho - São Paulo , 04292-050",Ipiranga
+1016-2,-23.5974099,-46.5654708,Tradicional,Domingo,"Rua Dr Vicente Giacaglini, 50 - Vila Bela - São Paulo , 03203-000",Sapopemba
+1017-0,-23.6031419,-46.6643298,Tradicional,Domingo,"Av Lavandisca, 644 - Moema - São Paulo , 04515-011",Vila Mariana
+1018-9,-23.4951775,-46.6281876,Tradicional,Domingo,"Rua Vicente Soares, 50 - Sta Terezinha - São Paulo , 02403-070",Santana/Tucuruvi
+1019-7,-23.5038803,-46.6611137,Tradicional,Domingo,"Av Baruel, 661 - Baruel - São Paulo , 02522-000",Casa Verde/Cachoeirinha
+1020-0,-23.5003177,-46.6542547,Tradicional,Domingo,"Rua Carlos Belmiro Correa, 461 - Parque Peruche - São Paulo , 02532-012",Casa Verde/Cachoeirinha
+1021-9,-23.4869125,-46.6788155,Tradicional,Domingo,"Av Eulina, 331 - Jd Primavera - São Paulo , 02755-140",Casa Verde/Cachoeirinha
+1022-7,-23.4950429,-46.685379,Tradicional,Domingo,"Rua Benedito Guedes De Oliveira, 450 - Vila Palmeiras - São Paulo , 02727-030",Freguesia/Brasilândia
+1023-5,-23.4828509,-46.6142729,Tradicional,Domingo,"Rua Casa Forte, 100 - Tucuruvi - São Paulo , 02336-040",Santana/Tucuruvi
+1024-3,-23.4938846,-46.5791133,Tradicional,Domingo,"Rua Ataliba Vieira, 200 - Medeiros - São Paulo , 02216-000",Vila Maria/Vila Guilherme
+1025-1,-23.5038483,-46.5786321,Tradicional,Domingo,"Rua Kaneda, 300 - Jd Japao - São Paulo , 02132-030",Vila Maria/Vila Guilherme
+1026-0,-23.4679533,-46.5904837,Tradicional,Domingo,"Rua Benjamim Pereira, 331 - Jacana - São Paulo , 02274-001",Jaçanã/Tremenbé
+1027-8,-23.471214,-46.6611232,Tradicional,Domingo,"Rua Dos Patis, 335 - Vila Bela Vista - São Paulo , 02613-000",Casa Verde/Cachoeirinha
+1028-6,-23.6183838,-46.6354013,Tradicional,Domingo,"Rua Carneiro Da Cunha, 608 - Vila Da Saude - São Paulo , 04144-000",Vila Mariana
+1029-4,-23.5928117,-46.7297553,Tradicional,Domingo,"Rua Ibiapaba, 252 - Vila Sonia - São Paulo , 05625-020",Butantã
+1030-8,-23.5655409,-46.5361651,Tradicional,Domingo,"Av Trumain C/ Henrique Morize, 500 - Vila Formosa - São Paulo , 03366-000",Aricanduva/Formosa /Carrão
+1031-6,-23.5413385,-46.5453798,Tradicional,Domingo,"Rua Comen Gil Pinheiro, 325 - Vila California - São Paulo , 03406-000",Aricanduva/Formosa /Carrão
+1032-4,-23.5174119,-46.5393605,Tradicional,Domingo,"Rua Omacha, 530 - Penha - São Paulo , 03610-020",Penha
+1033-2,-23.5963365,-46.5415926,Tradicional,Domingo,"Rua Carlos Cesar, 50 - Vila Divina Pastora - São Paulo , 03265-020",Vila Prudente
+1034-0,-23.5458344,-46.5187971,Tradicional,Domingo,"Praça Bauxita, 202 - Vila Dalila - São Paulo , 03520-050",Penha
+1035-9,-23.5258762,-46.5196305,Tradicional,Domingo,"Rua Nilza, 373 - Vila Esperanca - São Paulo , 03651-120",Penha
+1036-7,-23.5391052,-46.4886052,Tradicional,Domingo,"Rua Benedito Leal, 398 - Parque Artur Alvim - São Paulo , 03567-060",Penha
+1037-5,-23.5379194,-46.4537446,Tradicional,Domingo,"Rua Ken Sugaya, 100 - Itaquera - São Paulo , 08210-100",Itaquera
+1038-3,-23.4903899,-46.4753695,Tradicional,Domingo,"Rua Shobee Kumagai, 6996 - Ermelino Matarazzo - São Paulo , 03809-020",Ermelino Matarazzo
+1039-1,-23.5475093,-46.4094261,Tradicional,Domingo,"Rua Coutinho E Melo, 100 - Guaianazes - São Paulo , 08411-090",Guaianases
+1040-5,-23.4782578,-46.7000916,Tradicional,Domingo,"Es Do Sabao, 448 - Cruz Das Almas - São Paulo , 02806-000",Freguesia/Brasilândia
+1041-3,-23.497217,-46.7132322,Tradicional,Domingo,"Rua Antonio Correia, 618 - Vila Bonilha - São Paulo , 02917-050",Pirituba/Jaraguá
+1042-1,-23.5977149,-46.6288885,Tradicional,Domingo,"Rua Jureia, 41 - Sta Cruz - São Paulo , 04140-110",Vila Mariana
+1043-0,-23.511646,-46.7554894,Tradicional,Domingo,"Rua Agamenon Magalhaes, 138 - Sta Edwiges - São Paulo , 05105-090",Lapa
+1044-8,-23.6410552,-46.6365678,Tradicional,Domingo,"Praça Nova America, 15 - Cid Vargas - São Paulo , 04316-090",Jabaquara
+1045-6,-23.5993564,-46.4860971,Tradicional,Domingo,"Rua Joaquim Gouveia Franco, 173 - Cid São Matheus - São Paulo , 03961-020",São Mateus
+1046-4,-23.5751854,-46.5640059,Tradicional,Domingo,"Rua Buenopolis, 117 - Vila Diva - São Paulo , 03161-010",Mooca
+1047-2,-23.5027055,-46.4314517,Tradicional,Domingo,"Av Prof Assis Veloso, 820 - Jd São Vicente - São Paulo , 08021-470",São Miguel Paulista
+1048-0,-23.5692113,-46.753999,Tradicional,Domingo,"Rua Jose Joaquim Seabra, 1186 - Vila Tiradentes - São Paulo , 05364-000",Butantã
+1049-9,-23.5815782,-46.5151996,Tradicional,Domingo,"Rua Prof Alzira De O Gilioli, 177 - Vila Rica - São Paulo , 03905-100",Aricanduva/Formosa /Carrão
+1050-2,-23.5977686,-46.52524,Tradicional,Domingo,"Rua Dr Tolstoi De Carvalho, 1000 - Sapopemba - São Paulo , 03269-020",Sapopemba
+1051-0,-23.4685176,-46.6046905,Tradicional,Domingo,"Rua Mere Marie Annais Do Sion, 100 - Vila Nova Mazzei - São Paulo , 02343-030",Santana/Tucuruvi
+1052-9,-23.4803683,-46.5900355,Tradicional,Domingo,"Rua Canedos, 1000 - Vila Gustavo - São Paulo , 02252-010",Santana/Tucuruvi
+1053-7,-23.5295784,-46.6731686,Tradicional,Domingo,"Rua Dr Costa Junior C Tanabi, 500 - Agua Branca - São Paulo , 05002-000",Lapa
+1054-5,-23.6039377,-46.6165744,Tradicional,Domingo,"Rua Assungui C/ Americo Ribeiro, 100 - Vila Gumercindo - São Paulo , 04131-000",Ipiranga
+1055-3,-23.551983,-46.5352217,Tradicional,Domingo,"Rua Luis Pinto, 99999 - Vila Carrao - São Paulo , 03427-000",Aricanduva/Formosa /Carrão
+1056-1,-23.5140405,-46.745443,Tradicional,Domingo,"Rua Pedro Henrique De O Braganca, 676 - Vila Jaguara - São Paulo , 05117-002",Lapa
+1057-0,-23.4743584,-46.6813481,Tradicional,Domingo,"Rua Rodolfo Marcos Teofilo, 248 - Jd Eliseo - São Paulo , 02862-100",Freguesia/Brasilândia
+1058-8,-23.5932513,-46.6469111,Tradicional,Domingo,"Rua Dra Neyde Apparecida Sollito, 12 - Vila Clementino - São Paulo , 04022-040",Vila Mariana
+1059-6,-23.5985522,-46.6758022,Tradicional,Domingo,"Rua Helion Povoa, 165 - Vila Olimpia - São Paulo , 04546-080",Pinheiros
+1060-0,-23.4980607,-46.5949887,Tradicional,Domingo,"Rua Luciano Broinizzi C Japi, 200 - Vila Ede - São Paulo , 02083-120",Vila Maria/Vila Guilherme
+1061-8,-23.5017634,-46.3971287,Tradicional,Domingo,"Rua Valente De Novaes, 60 - Jd Camargo - São Paulo , 08120-420",Itaim Paulista
+1062-6,-23.5140413,-46.4996637,Tradicional,Domingo,"Rua Francisco Souza Queiroz, 92 - Vila Rio Branco - São Paulo , 03874-100",Ermelino Matarazzo
+1063-4,-23.4783949,-46.4220979,Tradicional,Domingo,"Rua Camomila, 852 - Jd Helena - São Paulo , 08090-530",São Miguel Paulista
+1065-0,-23.6137062,-46.6189622,Tradicional,Domingo,"Praça Bras Goncalves, 99 - Jd Da Saude - São Paulo , 04148-040",Ipiranga
+1066-9,-23.632765,-46.5870577,Tradicional,Domingo,"Rua Antonio Lamas, 320 - Vila Cristalia - São Paulo , 04257-190",Ipiranga
+1067-7,-23.6663223,-46.6386065,Tradicional,Domingo,"Rua Hugo Vitor Da Silva, 50 - Americanopolis - São Paulo , 04340-040",Jabaquara
+1068-5,-23.5073202,-46.5371557,Tradicional,Domingo,"Rua Goita, 100 - Cangaiba - São Paulo , 03715-040",Penha
+1070-7,-23.6366395,-46.7495706,Tradicional,Domingo,"Rua Francisco Soares, 246 - Parque Regina - São Paulo , 05774-300",Campo Limpo
+1071-5,-23.747041,-46.687765,Tradicional,Domingo,"Rua Jose Bezerra Filho, 1 - Parque Grajau - São Paulo , 04842-340",Capela Do Socorro
+1073-1,-23.51497,-46.5088594,Tradicional,Domingo,"Av Cachoeira Santa Cruz, 751 - Jd Popular - São Paulo , 03625-000",Ermelino Matarazzo
+1074-0,-23.589277,-46.7940437,Tradicional,Domingo,"Rua Aderbal Stresser, 25 - Jd Arpoador - São Paulo , 05566-000",Butantã
+1075-8,-23.6131562,-46.5057981,Tradicional,Domingo,"Rua Alm Otacilio Cunha, 100 - Parque Sta Madalena - São Paulo , 03982-190",Sapopemba
+1076-6,-23.6504378,-46.6616368,Tradicional,Domingo,"Rua Alba C Joaquim Morais, 302 - Sta Catarina - São Paulo , 04346-000",Jabaquara
+1077-4,-23.6761157,-46.6942407,Tradicional,Domingo,"Rua Arnaldo Magnicaro, 370 - Jd Jurubatuba - São Paulo , 04691-060",Santo Amaro
+1078-2,-23.6311554,-46.7670599,Tradicional,Domingo,"Av Amadeu Da Silva Samello, 1 - Campo Limpo - São Paulo , 05760-140",Campo Limpo
+1079-0,-23.6593436,-46.6659444,Tradicional,Domingo,"Av Cupece, 1784 - Cid Ademar - São Paulo , 04366-000",Cidade Ademar
+1080-4,-23.7138918,-46.6985757,Tradicional,Domingo,"Rua Nossa Senhora Do Outeiro, 10 - Cid Dutra - São Paulo , 04807-010",Capela Do Socorro
+1081-2,-23.6021031,-46.6903501,Tradicional,Domingo,"Av Nova Independencia, 600 - Cid Moncoes - São Paulo , 04570-001",Pinheiros
+1082-0,-23.6867678,-46.7702909,Tradicional,Domingo,"Rua Marcelino Coelho, 34 - Jd Angela - São Paulo , 04939-010",M'Boi Mirim
+1083-9,-23.727204,-46.7032972,Tradicional,Domingo,"Rua Antonio Pereira Taques, 100 - Jd Presidente - São Paulo , 04828-120",Capela Do Socorro
+1084-7,-23.6816643,-46.638434,Tradicional,Domingo,"Av Angelo Cristianini, 50 - Jd Miriam - São Paulo , 04424-000",Cidade Ademar
+1085-5,-23.6525995,-46.7379066,Tradicional,Domingo,"Rua Arraial Dos Couros, 33 - Jd São Luiz - São Paulo , 05843-140",M'Boi Mirim
+1086-3,-23.6904528,-46.7100679,Tradicional,Domingo,"Av Inacio Cunha Leme, 357 - Jd Ipanema - São Paulo , 04784-145",Capela Do Socorro
+1087-1,-23.6919078,-46.6603914,Tradicional,Domingo,"Rua Augusto De Castro, 74 - Pedreira - São Paulo , 04466-090",Cidade Ademar
+1088-0,-23.6690799,-46.7847557,Tradicional,Domingo,"Es De Itapecerica, 6303 - Parque Fernanda - São Paulo , 05858-003",Campo Limpo
+1089-8,-23.6115703,-46.704233,Tradicional,Domingo,"Rua Barao De Monte Mor, 50 - Paineiras Do Morumbi - São Paulo , 05687-010",Butantã
+1090-1,-23.6514472,-46.7125616,Tradicional,Domingo,"Av Mario Lopes Leao, 710 - Sto Amaro - São Paulo , 04754-010",Santo Amaro
+1091-0,-23.5527367,-46.5030577,Tradicional,Domingo,"Rua Palmeira Laca, 15 - Jd Eliane - São Paulo , 03577-090",Itaquera
+1092-8,-23.8507782,-46.7164256,Tradicional,Domingo,"Praça Pedro Rocha, S/N - Parelheiros - São Paulo , 04892-017",Parelheiros
+1094-4,-23.6740112,-46.7499056,Tradicional,Domingo,"Rua Albino Correa De Campos, 14 - Vila Remo - São Paulo , 05831-020",M'Boi Mirim
+1095-2,-23.6185531,-46.5117713,Tradicional,Domingo,"Rua Tome Da Rocha, 100 - Jd Elba - São Paulo , 03980-070",Sapopemba
+1096-0,-23.6757674,-46.6620269,Tradicional,Domingo,"Rua Estanislau Moniusko, 1300 - Vila Joanisa - São Paulo , 04429-010",Cidade Ademar
+1097-9,-23.4673689,-46.6812205,Tradicional,Domingo,"Av Guilherme De Almeida, 107 - Parque Belem - São Paulo , 02866-040",Freguesia/Brasilândia
+1099-5,-23.5056981,-46.3822734,Tradicional,Domingo,"Av Academia De São Paulo, 772 - Jd Camargo Novo - São Paulo , 08121-400",Itaim Paulista
+1102-9,-23.4829884,-46.421486,Tradicional,Domingo,"Rua São Goncalo Do Rio Das Pedras, 132 - Parque Paulistano - São Paulo , 08081-000",São Miguel Paulista
+1104-5,-23.5423679,-46.7463947,Tradicional,Domingo,"Rua Barcelona, 99 - Jaguare - São Paulo , 05331-010",Lapa
+1105-3,-23.5183639,-46.4580215,Tradicional,Domingo,"Rua Flor De Caboclo, 1 - Parque Guarani - São Paulo , 08235-360",Itaquera
+1106-1,-23.5967491,-46.4409385,Tradicional,Domingo,"Rua Luiza De Jesus Ferreira, 30 - Jd Roseli - São Paulo , 08380-048",São Mateus
+1107-0,-23.6219024,-46.5891954,Tradicional,Domingo,"Lg Leon De Tolstoi C/ Any, 430 - Vila Independencia - São Paulo , 04241-010",Ipiranga
+1108-8,-23.5605488,-46.4913201,Tradicional,Domingo,"Rua Jasmim Da Espanha, 100 - Jd Brasilia - São Paulo , 03585-040",Itaquera
+1110-0,-23.5965129,-46.5009408,Tradicional,Domingo,"Rua Douradoquara, 50 - Jd Paraguassu - São Paulo , 03939-010",São Mateus
+1111-8,-23.4964289,-46.673118,Tradicional,Domingo,"Rua Maria Elisa Siqueira, 130 - Vila Barbosa - São Paulo , 02558-000",Casa Verde/Cachoeirinha
+1113-4,-23.5243719,-46.4130941,Tradicional,Domingo,"Rua Benedito De Souza Borges, 33 - Jd Robru - São Paulo , 08150-340",Itaim Paulista
+1114-2,-23.5757572,-46.7234015,Tradicional,Domingo,"Rua Luis Antonio Martins, 21 - Butantã - São Paulo , 05539-060",Butantã
+1115-0,-23.6622197,-46.7883172,Tradicional,Domingo,"Rua Serra Dos Dois Irmaos, 10 - Jd Das Rosas - São Paulo , 05890-300",Campo Limpo
+1117-7,-23.4556224,-46.5898558,Tradicional,Domingo,"Av Antonelo Da Messina, 100 - Vila Zilda - São Paulo , 02318-000",Jaçanã/Tremenbé
+1118-5,-23.6462583,-46.7791978,Tradicional,Domingo,"Rua Carlos Nahas C/ Carlos Lacerda, 1 - Jd Rosana - São Paulo , 05789-000",Campo Limpo
+1119-3,-23.6950646,-46.7793888,Tradicional,Domingo,"Rua Manoel Da Costa Dantas, 99 - Jd Ranieri - São Paulo , 04942-000",M'Boi Mirim
+1121-5,-23.662455,-46.7540432,Tradicional,Domingo,"Rua Maria Benedita Rodrigues, 42 - Parque Sto Antonio - São Paulo , 05851-300",M'Boi Mirim
+1123-1,-23.6860524,-46.6481218,Tradicional,Domingo,"Rua Rainha Das Missoes, 70 - Vila Missionaria - São Paulo , 04430-010",Cidade Ademar
+1124-0,-23.5761876,-46.4848081,Tradicional,Domingo,"Rua Xavier Palmerim, 35 - Parque Savoy City - São Paulo , 08275-340",Itaquera
+1125-8,-23.4839309,-46.389066,Tradicional,Domingo,"Rua Cachoeira Mangaval, 37 - Itaim Paulista - São Paulo , 08190-350",São Miguel Paulista
+1126-6,-23.4078598,-46.7632217,Tradicional,Domingo,"Rua Eng Nogueira Soares, 45 - Jd Do Russo - São Paulo , 05205-110",Perus
+1127-4,-23.7673973,-46.6846111,Tradicional,Domingo,"Rua Benedita Martins Ramos, 115 - Jd Tres Coracoes - São Paulo , 04855-290",Capela Do Socorro
+1128-2,-23.6768404,-46.6499626,Tradicional,Domingo,"Rua Delfino Facchina, 4040 - Jd Vera Lucia - São Paulo , 04409-080",Cidade Ademar
+1129-0,-23.5844147,-46.7910414,Tradicional,Domingo,"Rua Gabriel De Carvalho, 32 - Jd Boa Vista - São Paulo , 05583-080",Butantã
+1130-4,-23.523346,-46.6282767,Tradicional,Domingo,"Rua Guapore, 210 - Ponte Pequena - São Paulo , 01109-030",Sé
+1131-2,-23.6191684,-46.4698809,Tradicional,Domingo,"Rua Leonor De Siqueira, 50 - Jd Vera Cruz - São Paulo , 08310-500",São Mateus
+1133-9,-23.5524645,-46.6775094,Tradicional,Domingo,"Rua Oscar Freire, 2400 - Sumare - São Paulo , 05409-012",Pinheiros
+1134-7,-23.5478192,-46.4343841,Tradicional,Domingo,"Praça Bom Pastor, 265 - Itaquera - São Paulo , 08255-500",Itaquera
+1135-5,-23.4515015,-46.5960823,Tradicional,Domingo,"Rua Penaforte, 55 - Jd Paulistana - São Paulo , 02318-260",Jaçanã/Tremenbé
+1138-0,-23.5018044,-46.5161802,Tradicional,Domingo,"Praça Do Horticultores, 415 - Eng Goulart - São Paulo , 03723-040",Penha
+1139-8,-23.7256388,-46.6851159,Tradicional,Domingo,"Es Do Capoeirao, 8 - Jd Colonial - São Paulo , 04821-310",Capela Do Socorro
+1141-0,-23.4501217,-46.7328755,Tradicional,Domingo,"Rua Pastoril De Almenara, 50 - Parque Pan Americano - São Paulo , 02993-040",Pirituba/Jaraguá
+1142-8,-23.5129735,-46.4332689,Tradicional,Domingo,"Rua Criuva, 12 - Vila Progresso - São Paulo , 08245-300",São Miguel Paulista
+1143-6,-23.5021631,-46.5079658,Tradicional,Domingo,"Rua Pastoril De Itapetinga, 12 - Vila Silvia - São Paulo , 03729-000",Penha
+1144-4,-23.6730396,-46.7427299,Tradicional,Domingo,"Av Inacio Dias Da Silva, 80 - Piraporinha - São Paulo , 04913-180",M'Boi Mirim
+1146-0,-23.6757477,-46.7759758,Tradicional,Domingo,"Rua Dr Humberto Pascale, 106 - Jd Jangadeiro - São Paulo , 05884-310",Campo Limpo
+1147-9,-23.7509671,-46.6787964,Tradicional,Domingo,"Av Trinta E Sete Conj Faria Lima, 10 - Parque Cocaia - São Paulo , 04840-460",Capela Do Socorro
+1149-5,-23.4606543,-46.6520823,Tradicional,Domingo,"Rua São Lourenco Do Sul, 201 - Jd Peri Alto - São Paulo , 02633-060",Casa Verde/Cachoeirinha
+1150-9,-23.5512445,-46.479742,Tradicional,Domingo,"Rua Cesar Dias, 10 - Itaquera - São Paulo , 03591-000",Penha
+1151-7,-23.5995369,-46.3980068,Tradicional,Domingo,"Rua Padre Aldemar Moreira, 250 - Sta Etelvina - São Paulo , 08471-010",Cidade Tiradentes
+1152-5,-23.4869251,-46.5697547,Tradicional,Domingo,"Rua Combate Lagoa Branca, 100 - Vila Sabrina - São Paulo , 02141-080",Vila Maria/Vila Guilherme
+1153-3,-23.5979119,-46.7526382,Tradicional,Domingo,"Rua Edward Carmilo, 675 - Jd Celeste - São Paulo , 05528-001",Butantã
+1154-1,-23.5488414,-46.6428115,Tradicional,Domingo,"Rua Major Quedinho, 89 - Consolacao - São Paulo , 01050-030",Sé
+1155-0,-23.6146916,-46.5018814,Tradicional,Domingo,"Av Arquiteto Vila Nova Artigas, 1 - Sapopemba - São Paulo , 03928-240",Sapopemba
+1161-4,-23.7386093,-46.6942265,Tradicional,Domingo,"Rua Benedito Marcello, 167 - Parque São Paulo - São Paulo , 04843-225",Capela Do Socorro
+1165-7,-23.520027,-46.3981421,Tradicional,Domingo,"Rua Augusto Albereci, 15 - Jd Nazare - São Paulo , 08142-500",Itaim Paulista
+1171-1,-23.5051878,-46.4492369,Tradicional,Domingo,"Rua Tejuguacu, 50 - Vila Jacui - São Paulo , 08060-310",São Miguel Paulista
+1173-8,-23.6934325,-46.6952504,Tradicional,Domingo,"Rua Inacio De Almeida Arruda, S/N - Vila Da Paz - São Paulo , 04777-050",Capela Do Socorro
+1174-6,-23.7767654,-46.6940843,Tradicional,Domingo,"Rua Luar De Lagrimas, 15 - Jd Novo Horizonte - São Paulo , 04856-210",Capela Do Socorro
+1175-4,-23.5391666,-46.6375803,Tradicional,Domingo,"Rua Dos Andradas C/ Timbiras, 100 - Sta Efigenia - São Paulo , 01208-000",Sé
+1177-0,-23.6625003,-46.7796475,Tradicional,Domingo,"Rua Modelar, 50 - Capao Redondo - São Paulo , 05868-790",Campo Limpo
+1179-7,-23.5235473,-46.4729256,Tradicional,Domingo,"Rua Terra Brasileira, 50 - Vila Suica - São Paulo , 08223-355",Itaquera
+1183-5,-23.5656289,-46.3958944,Tradicional,Domingo,"Av Utaro Kanai C/ Festa Chinesa, 546 - Jd São Paulo - São Paulo , 08465-000",Guaianases
+1184-3,-23.5902566,-46.3948422,Tradicional,Domingo,"Rua Bartolino De Padua, 200 - Itaquera - São Paulo , 08470-780",Cidade Tiradentes
+1190-8,-23.4523512,-46.577835,Tradicional,Domingo,"Rua Ari Da Rocha Miranda, S/N - Vila Nova Galvao - São Paulo , 02281-190",Jaçanã/Tremenbé
+1192-4,-23.5562868,-46.6400059,Tradicional,Domingo,"Rua Santo Amaro, 100 - Bela Vista - São Paulo , 01315-000",Sé
+1193-2,-23.5863971,-46.8036992,Tradicional,Domingo,"Rua Cachoeira Do Arrependimento, 100 - Jd Arpoador - São Paulo , 05574-440",Butantã
+1194-0,-23.6113772,-46.454893,Tradicional,Domingo,"Av Bassano Del Grapa, 100 - Jd Vila Carrao - São Paulo , 08340-420",São Mateus
+1197-5,-23.5557714,-46.6395571,Tradicional,Domingo,"Rua Salto De Itarare, 30 - Jd Jose Maria - São Paulo , 02982-020",Pirituba/Jaraguá
+1198-3,-23.5710914,-46.6581094,Tradicional,Domingo,"Al Lorena, 400 - Jd America - São Paulo , 01424-002",Pinheiros
+1199-1,-23.6464736,-46.7575497,Tradicional,Domingo,"Rua Nsra Bom Conselho, 301 - Pinheiros - São Paulo , 05763-470",Campo Limpo
+1200-9,-23.5086361,-46.6870791,Tradicional,Domingo,"Rua Cel Euclides Machado,  - Jd Das Gracas - São Paulo , 02713-000",Casa Verde/Cachoeirinha
+1204-1,-23.6043504,-46.5958974,Tradicional,Domingo,"Rua Freire Brayner, 121 - Sacoma - São Paulo , 04235-243",Ipiranga
+1205-0,-23.630215,-46.6807207,Tradicional,Domingo,"Rua Conde De Porto Alegre, 50 - Campo Belo - São Paulo , 04608-000",Santo Amaro
+1207-6,-23.591201,-46.4167177,Tradicional,Domingo,"Av Nascer Do Sol, 100 - Sta Etelvina Cohab - São Paulo , 08485-020",Cidade Tiradentes
+1208-4,-23.5016505,-46.6713802,Tradicional,Domingo,"Praça Antonio Franco Velasco, 0 - Limao - São Paulo , 02554-020",Casa Verde/Cachoeirinha
+1209-2,-23.5073282,-46.4768511,Tradicional,Domingo,"Rua Glicerio Rodrigues, 50 - Vila Norma - São Paulo , 08062-140",São Miguel Paulista
+1210-6,-23.5603159,-46.6580977,Tradicional,Domingo,"Al Min Rocha Azevedo, 1596 - Jd Paulista - São Paulo , 01410-002",Pinheiros
+1212-2,-23.4499324,-46.6169143,Tradicional,Domingo,"Rua Maestro Bortolucci, 26 - Vila Albertina - São Paulo , 02357-040",Jaçanã/Tremenbé
+1215-7,-23.6337323,-46.4609091,Tradicional,Domingo,"Rua Morro Das Pedras, 100 - Jd São Francisco - São Paulo , 08310-100",São Mateus
+1217-3,-23.5264088,-46.408344,Tradicional,Domingo,"Rua Teodoro Bernardo Do Nascimento, 120 - Parque Sta Rita - São Paulo , 08150-000",Itaim Paulista
+1218-1,-23.437648,-46.790687,Tradicional,Domingo,"Rua Florencio Carpi, 262 - Parque Anhanguera - São Paulo , 05267-080",Perus
+1220-3,-23.4821219,-46.4235486,Tradicional,Domingo,"Av Jose Martins Lisboa, 10 - São Francisco - São Paulo , 08081-010",São Miguel Paulista
+1221-1,-23.4816467,-46.6743189,Tradicional,Domingo,"Rua Cleusa Milochi, 163 - Cachoeirinha - São Paulo , 02762-070",Casa Verde/Cachoeirinha
+1226-2,-23.5780832,-46.3923431,Tradicional,Domingo,"Rua Wilson Fernandes S Carvalho, 100 - Cid Tiradentes - São Paulo , 08473-000",Cidade Tiradentes
+1227-0,-23.500598,-46.3686084,Tradicional,Domingo,"Rua Desem Isnard Dos Reis, 37 - Itaim Paulista - São Paulo , 08130-000",Itaim Paulista
+1230-0,-23.3974225,-46.7555566,Tradicional,Domingo,"Rua Felipe Cardoso Campos, 10 - Vila Fanton - São Paulo , 05207-090",Perus
+1234-3,-23.5301237,-46.5512971,Tradicional,Domingo,"Rua Guaiauna, 200 - Penha De Franca - São Paulo , 03631-000",Penha
+1235-1,-23.5674017,-46.4177776,Tradicional,Domingo,"Av Henriqueta Noguez Brieba, 1 - Cj Hab Fazenda Do Ca - São Paulo , 08421-530",Cidade Tiradentes
+1237-8,-23.6218636,-46.4910466,Tradicional,Domingo,"Rua Carlo Coccia, 448 - Jd Nova Sapopemba - São Paulo , 03977-670",Sapopemba
+1239-4,-23.4522611,-46.6922479,Tradicional,Domingo,"Rua Vitantonio Matorosa, 448 - Jardim Princesa - São Paulo , 02856-080",Freguesia/Brasilândia
+1243-2,-23.6454899,-46.5972309,Tradicional,Domingo,"Rua Prof Arnaldo Joao Semeraro, 99 - Parque Bristol - São Paulo , 04184-000",Ipiranga
+1244-0,-23.4392643,-46.73205,Tradicional,Domingo,"Rua Samuel Bovy, 37 - Jardim City Jaragua - São Paulo , 02998-120",Pirituba/Jaraguá
+1246-7,-23.8637876,-46.712701,Tradicional,Domingo,"Rua Beija Flor, S/N - Vila Vargem Grande - São Paulo , 04895-280",Parelheiros
+1248-3,-23.5800225,-46.3874063,Tradicional,Domingo,"Rua Dr Ademar Ferreira De Carvalho, 100 - Vila Yolanda Ii - São Paulo , 08473-410",Cidade Tiradentes
+1251-3,-23.5601976,-46.3986725,Tradicional,Domingo,"Rua Jeronimo Dias Ribeiro, 50 - Jardim São Paulo - São Paulo , 08461-560",Guaianases
+1253-0,-23.6010108,-46.3985497,Tradicional,Domingo,"Rua B10,  S/N - Cidade Tiradentes - São Paulo",Guaianases
+1254-8,-23.4517164,-46.6824933,Tradicional,Domingo,"Rua Araripira, 25 - Jardim Do Recanto - São Paulo , 02877-000",Freguesia/Brasilândia
+1260-2,-23.511819,-46.6186332,Tradicional,Domingo,"Rua Anna Papini Guaranha, 1000 - Carandiru - São Paulo , 02049-010",Vila Maria/Vila Guilherme
+1262-9,-23.783212,-46.7133956,Tradicional,Domingo,"Rua Forte Do Guara, 10 - Parelheiros - São Paulo , 04865-170",Parelheiros
+1264-5,-23.5130654,-46.3851076,Tradicional,Domingo,"Rua Linaria, 80 - Itaim Paulista - São Paulo , 08142-189",Itaim Paulista
+1267-0,-23.5949839,-46.4202029,Tradicional,Domingo,"Av Ponte Da Amizade, S/N - Jardim Iguatemi - São Paulo , 08371-420",São Mateus
+1268-8,-23.6321644,-46.7288351,Tradicional,Domingo,"Rua Antonio Da Costa Barbosa, 89 - Vila Andrade - São Paulo , 05717-220",Campo Limpo
+1270-0,-23.7843498,-46.6831417,Tradicional,Domingo,"Rua Raimunda P De Alencar Da Silva, 10 - Jardim Varginha - São Paulo , 04857-010",Capela Do Socorro
+1274-2,-23.5449112,-46.3930976,Tradicional,Domingo,"Rua Gaspar Sardinha, 50 - Lageado - São Paulo , 08460-000",Guaianases
+1278-5,-23.6428638,-46.7332228,Tradicional,Domingo,"Rua Manuel Homem De Andrade, 10 - Jardim Santo Antonio - São Paulo , 05723-400",Campo Limpo
+1312-9,-23.6291117,-46.739513,Tradicional,Domingo,"Rua Cidade Do Rio Pardo, 5 - Vila Andrade - São Paulo , 05727-180",Campo Limpo
+1360-9,-23.4648044,-46.6646142,Tradicional,Domingo,"Rua Afonso Lopes Vieira, 582 - Vila Dionisia - São Paulo , 02671-100",Casa Verde/Cachoeirinha
+1370-6,-23.5414636,-46.4360186,Tradicional,Domingo,"Rua Laura Boss, 100 - Guaianases - São Paulo , 08250-730",Itaquera
+1377-3,-23.5016529,-46.7187629,Tradicional,Domingo,"Praça Grand Reserva Paulista, 2150 - Jd Iris - São Paulo , 05144-085",Pirituba/Jaraguá
+1380-3,-23.5338882,-46.4650951,Tradicional,Domingo,"Rua Andre Cavalcante, 100 - Vila Regina - São Paulo , 08225-435",Itaquera
+1390-0,-23.479188099999998,-46.7470833,Tradicional,Domingo,"Rua Amilcar De Magalhaes, 50 - Pirituba - São Paulo , 05171-240",Pirituba/Jaraguá
+1413-3,-23.5278799,-46.6733949,Orgânica,Domingo,"Rua Dona Ana Germaine Buchard, 286 - Agua Branca - São Paulo , 05002-061",Lapa
+1432-0,-23.53570499,-46.52928621,Orgânica,Domingo,"Rua Ricardo Casanova, 120 - Vila Matilde - São Paulo , 03511-020",Penha
+1488-5,-23.49295254,-46.50564391,Tradicional,Domingo,"Rua Lagoa Dentro, 2 - Vila Silvia - São Paulo , 03820-290",Penha
+1493-1,-23.5564676,-46.5607361,Tradicional,Domingo,"Rua Nello Bini, 86 - Jardim Analia Franco - São Paulo , 03337-050",Aricanduva/Formosa /Carrão
+1761-2,-23.5705631,-46.4008218,Tradicional,Domingo,"Rua Cachoeira Das Jangadas, 15, 222 - Conjunto Habitacional Inacio Monteiro - São Paulo , 08472-080",Cidade Tiradentes
+1820-1,-23.65877404,-46.76721337,Tradicional,Domingo,"Rua Tullio Mugnaini,  - Jardim Avenida - São Paulo , 05798-330",Campo Limpo
+1849-0,-23.5141268,-46.5951686,Tradicional,Domingo,"Av Nadir Dias De Figueiredo, 1253 - Vila Maria Baixa - São Paulo , 02110-000",Vila Maria/Vila Guilherme
+1854-6,-23.530922,-46.529018,Tradicional,Domingo,"Rua Atuai, 1026 - Vila Matilde - São Paulo , 03646-000",Penha
+1892-9,-23.6261055,-46.7481496,Tradicional,Domingo,"Rua Carvaxi, 10 - Parque Reboucas - São Paulo , 05735-040",Campo Limpo
+1924-0,-23.4895,-46.7377604,Tradicional,Domingo,"Av Do Anastacio, 2148 - Pirituba - São Paulo , 05119-000",Pirituba/Jaraguá
+1959-3,-23.5359866,-46.3975006,Tradicional,Domingo,"Rua Joao De Siqueira Afonso, S/N - Lageado - São Paulo , 08452-000",Guaianases
+3000-7,-23.5585974,-46.5586596,Orgânica,Terça Feira,"Rua Walter Gazarra, 1300 - Jd Analia Franco - São Paulo , 03337-000",Aricanduva/Formosa /Carrão
+3001-5,-23.5497264,-46.640692,Tradicional,Terça Feira,"Rua Santo Antonio, 22 - Bela Vista - São Paulo , 01330-050",Sé
+3003-1,-23.6212977,-46.6122475,Tradicional,Terça Feira,"Rua Stefano, 1000 - Cambuci - São Paulo , 01521-030",Sé
+3004-0,-23.54467,-46.6650304,Tradicional,Terça Feira,"Praça Charles Muller, 0 - Pacaembu - São Paulo , 01234-010",Sé
+3005-8,-23.5796916,-46.6333692,Tradicional,Terça Feira,"Rua Guimaraes Passos, 304 - Aclimacao - São Paulo , 04107-030",Vila Mariana
+3006-6,-23.5379063,-46.6007957,Tradicional,Terça Feira,"Rua Dr Carlos Guimaraes, 10 - Belem - São Paulo , 03020-030",Mooca
+3007-4,-23.539203,-46.6052598,Tradicional,Terça Feira,"Rua Firmiano Pinto, 50 - Bras - São Paulo , 03052-070",Mooca
+3008-2,-23.5396918,-46.6732384,Tradicional,Terça Feira,"Rua Min Godoy, 1261 - Perdizes - São Paulo , 05015-001",Lapa
+3009-0,-23.5811298,-46.6513128,Tradicional,Terça Feira,"Rua Joinville, 323 - Ibirapuera - São Paulo , 04008-010",Vila Mariana
+3010-4,-23.5676663,-46.5945341,Tradicional,Terça Feira,"Rua Conde Prates, 466 - Parque Da Mooca - São Paulo , 03122-000",Mooca
+3011-2,-23.5918919,-46.6081744,Tradicional,Terça Feira,"Rua Xavier De Almeida, 650 - Alto Do Ipiranga - São Paulo , 04211-001",Ipiranga
+3012-0,-23.5590835,-46.5932551,Tradicional,Terça Feira,"Rua Pires De Campos, 197 - Mooca - São Paulo , 03182-020",Mooca
+3013-9,-23.5577692,-46.5857661,Tradicional,Terça Feira,"Rua Decio Abramo, 500 - Agua Rasa - São Paulo , 03178-030",Mooca
+3014-7,-23.5180909,-46.604957,Tradicional,Terça Feira,"Rua Alfredo Mario Pizzotti, 370 - Vila Guilherme - São Paulo , 02060-040",Vila Maria/Vila Guilherme
+3015-5,-23.5359465,-46.5769553,Tradicional,Terça Feira,"Rua Andre Vidal C/ Alm Calheiros, 100 - Tatuape - São Paulo , 03065-070",Mooca
+3016-3,-23.6400221,-46.7152964,Tradicional,Terça Feira,"Rua Do Carreiro De Pedra, 100 - Vila Cruzeiro - São Paulo , 04728-020",Santo Amaro
+3017-1,-23.5979025,-46.671474,Tradicional,Terça Feira,"Rua Marcos Lopes C/ Silvania, 345 - Vila Nova Conceicao - São Paulo , 04513-080",Vila Mariana
+3018-0,-23.6039584,-46.6351512,Tradicional,Terça Feira,"Rua Afonso Celso, 1500 - Vila Mariana - São Paulo , 04119-062",Vila Mariana
+3019-8,-23.5337726,-46.7015704,Tradicional,Terça Feira,"Rua Sepetiba, 522 - Vila Romana - São Paulo , 05052-000",Lapa
+3020-1,-23.6181498,-46.6595056,Tradicional,Terça Feira,"Al Dos Araes, 1758 - Planalto Paulista - São Paulo , 04066-004",Vila Mariana
+3021-0,-23.6156055,-46.6437813,Tradicional,Terça Feira,"Av Jose Maria Witaker, 1780 - Planalto Paulista - São Paulo , 04057-000",Vila Mariana
+3022-8,-23.6219721,-46.6344463,Tradicional,Terça Feira,"Rua Paracatu, 730 - São Judas - São Paulo , 04302-022",Vila Mariana
+3023-6,-23.6383577,-46.6089405,Tradicional,Terça Feira,"Rua Brig Amilcar V Pederneiras, 200 - Vila Das Merces - São Paulo , 04173-000",Ipiranga
+3024-4,-23.5310989,-46.562215,Tradicional,Terça Feira,"Rua Mateus Gomes, 50 - Tatuape - São Paulo , 03089-060",Mooca
+3025-2,-23.4959389,-46.6050216,Tradicional,Terça Feira,"Rua Quedas, 567 - Vila Mazzei - São Paulo , 02082-030",Vila Maria/Vila Guilherme
+3026-0,-23.507442,-46.6011698,Tradicional,Terça Feira,"Praça Oscar Da Silva, 500 - Vila Guilherme - São Paulo , 02067-000",Vila Maria/Vila Guilherme
+3027-9,-23.6062742,-46.6898308,Tradicional,Terça Feira,"Rua Indiana, 1428 - Sto Amaro - São Paulo , 04562-002",Pinheiros
+3029-5,-23.490143,-46.5931551,Tradicional,Terça Feira,"Av Boschetti, 234 - Vila Gustavo - São Paulo , 02205-000",Vila Maria/Vila Guilherme
+3030-9,-23.4987269,-46.5826217,Tradicional,Terça Feira,"Av Benedito Estevao Dos Santos, 1200 - Vila Maria - São Paulo , 02136-000",Vila Maria/Vila Guilherme
+3031-7,-23.4840339,-46.6215471,Tradicional,Terça Feira,"Rua Aureliano Leal C Guatiaia, 300 - Agua Fria - São Paulo , 02334-091",Santana/Tucuruvi
+3032-5,-23.477717,-46.598481,Tradicional,Terça Feira,"Av Maestro Vila Lobos, 500 - Parque Vitoria - São Paulo , 02266-000",Santana/Tucuruvi
+3033-3,-23.4945979,-46.6475804,Tradicional,Terça Feira,"Rua Waldomiro Silveira, 28 - Imirim - São Paulo , 02536-020",Casa Verde/Cachoeirinha
+3034-1,-23.516808,-46.7213664,Tradicional,Terça Feira,"Rua Bartolomeu Bueno, 200 - Vila Anastacio - São Paulo , 05093-020",Lapa
+3035-0,-23.4993746,-46.6987035,Tradicional,Terça Feira,"Rua Chico De Paula, 61 - Nossa Senhora Do O - São Paulo , 02926-000",Freguesia/Brasilândia
+3036-8,-23.6323128,-46.6244656,Tradicional,Terça Feira,"Rua Mario Schiopa, 200 - Agua Funda - São Paulo , 04156-030",Ipiranga
+3037-6,-23.6384837,-46.6448984,Tradicional,Terça Feira,"Av Waldomiro De Lima, 437 - Vila Guarani - São Paulo , 04344-070",Jabaquara
+3038-4,-23.6000811,-46.7210113,Tradicional,Terça Feira,"Praça Roberto Gomes Pedrosa, 25 - Estadio Do Morumbi - São Paulo , 05653-070",Butantã
+3039-2,-23.576619,-46.7428311,Tradicional,Terça Feira,"Av Octacilio Tomanik, 21 - Rio Pequeno - São Paulo , 05363-000",Butantã
+3040-6,-23.7370598,-46.6904873,Tradicional,Terça Feira,"Rua Jose Antunes Cerdeira, 235 - Parque America - São Paulo , 04841-070",Capela Do Socorro
+3041-4,-23.5476165,-46.5537785,Tradicional,Terça Feira,"Rua Santa Gertrudes, 400 - Tatuape - São Paulo , 03408-020",Aricanduva/Formosa /Carrão
+3043-0,-23.5259661,-46.5367001,Tradicional,Terça Feira,"Rua Mirandinha, 399 - Penha - São Paulo , 03641-000",Penha
+3044-9,-23.5027637,-46.5294822,Tradicional,Terça Feira,"Rua Miguel Garcia, 354 - Vila Paulistania - São Paulo , 03720-170",Penha
+3045-7,-23.6204785,-46.6868636,Tradicional,Terça Feira,"Rua Roque Petrela, 300 - Brooklin Paulista - São Paulo , 04581-050",Pinheiros
+3046-5,-23.6568034,-46.6724121,Tradicional,Terça Feira,"Rua Maria Jose Rangel, 649 - Jd Prudencia - São Paulo , 04650-180",Cidade Ademar
+3047-3,-23.5115513,-46.514914,Tradicional,Terça Feira,"Av Buenos Aires, 300 - Vila Buenos Aires - São Paulo , 03736-020",Ermelino Matarazzo
+3048-1,-23.5221545,-46.5135548,Tradicional,Terça Feira,"Rua Francisco De Oliveira Braga, 132 - Vila Nova Granada - São Paulo , 03659-090",Penha
+3049-0,-23.5327135,-46.5123477,Tradicional,Terça Feira,"Rua Assis Valente C Gil Ribeiro, 666 - Vila Guilhermina - São Paulo , 03543-020",Penha
+3050-3,-23.5269834,-46.4975473,Tradicional,Terça Feira,"Rua Municipal, 1213 - Tres Maria - São Paulo , 03661-000",Penha
+3051-1,-23.4973791,-46.4249223,Tradicional,Terça Feira,"Rua Ivoturucaia, 411 - Vila Curuca Velha - São Paulo , 08030-040",Itaim Paulista
+3052-0,-23.5718694,-46.5687529,Tradicional,Terça Feira,"Rua Dr Joao Bizarro Da Nave, 50 - Vila Ema - São Paulo , 03351-100",Mooca
+3053-8,-23.4086717,-46.7504548,Tradicional,Terça Feira,"Rua Joao Batistia Fanton, 3 - Vila Fonton - São Paulo , 05203-180",Perus
+3054-6,-23.4556932,-46.5947315,Tradicional,Terça Feira,"Rua Tereza Bortolo, 300 - Jd Tremembe - São Paulo , 02352-150",Jaçanã/Tremenbé
+3055-4,-23.5508381,-46.750051,Tradicional,Terça Feira,"Rua Rolandia, 50 - Jaguare - São Paulo , 05337-070",Lapa
+3057-0,-23.5772475,-46.5544819,Tradicional,Terça Feira,"Rua Pinto Da Luz, 50 - Jd Tialha - São Paulo , 03276-110",Vila Prudente
+3058-9,-23.4908885,-46.6360976,Tradicional,Terça Feira,"Rua Itaicy, 100 - Sta Terezinha - São Paulo , 02460-030",Santana/Tucuruvi
+3059-7,-23.5898546,-46.522881,Tradicional,Terça Feira,"Rua Marques Do Recife, 330 - Vila Bancaria - São Paulo , 02841-010",Freguesia/Brasilândia
+3060-0,-23.5587756,-46.5193905,Tradicional,Terça Feira,"Av Prof Carlos Caliolli, 200 - Parque Maria Luiza - São Paulo , 03451-020",Aricanduva/Formosa /Carrão
+3061-9,-23.5906099,-46.5506799,Tradicional,Terça Feira,"Rua Domingos Pires Brito, 50 - Parque São Lucas - São Paulo , 03262-030",Vila Prudente
+3063-5,-23.5017923,-46.7603496,Tradicional,Terça Feira,"Rua Flor Cachoeira E S Do Teixeira, 48 - Vila Piaui - São Paulo , 05109-220",Lapa
+3064-3,-23.6109758,-46.6233718,Tradicional,Terça Feira,"Rua Matias Teixeira, 200 - Bosque Da Saude - São Paulo , 04136-170",Ipiranga
+3065-1,-23.5582096,-46.6804565,Tradicional,Terça Feira,"Praça Benedito Calixto, 100 - Pinheiros - São Paulo , 05406-040",Pinheiros
+3067-8,-23.4987516,-46.7094684,Tradicional,Terça Feira,"Rua Dr Joao Toniolo, 39 - Jd São Jose - São Paulo , 02932-000",Pirituba/Jaraguá
+3070-8,-23.5854388,-46.6170632,Tradicional,Terça Feira,"Rua Monte Alverne, 200 - Vila Sta Eulalia - São Paulo , 04265-060",Ipiranga
+3071-6,-23.5062938,-46.6662181,Tradicional,Terça Feira,"Rua Frederico Penteado Junior, 20 - Casa Verde - São Paulo , 02517-100",Casa Verde/Cachoeirinha
+3073-2,-23.527565,-46.6155537,Tradicional,Terça Feira,"Rua Cap Mor Passos, 225 - Pari - São Paulo , 03024-010",Mooca
+3074-0,-23.5809083,-46.5104652,Tradicional,Terça Feira,"Rua Mal Marques Porto, 120 - Vila Nova York - São Paulo , 03906-020",Aricanduva/Formosa /Carrão
+3075-9,-23.5442297,-46.5104467,Tradicional,Terça Feira,"Rua Bento Quirino, 399 - Vila Talarico - São Paulo , 03534-010",Penha
+3077-5,-23.4862061,-46.6743347,Tradicional,Terça Feira,"Rua Tomaz Antonio Vilane, 353 - Vila Sta Maria - São Paulo , 02562-000",Casa Verde/Cachoeirinha
+3078-3,-23.507257,-46.7403807,Tradicional,Terça Feira,"Rua Brig Henrique Fontenelle, 10 - Parque São Domingues - São Paulo , 05125-000",Pirituba/Jaraguá
+3079-1,-23.4704135,-46.6945029,Tradicional,Terça Feira,"Rua Jose Felix Alves Pacheco, 209 - Vila Brasilandia - São Paulo , 02835-040",Freguesia/Brasilândia
+3080-5,-23.5861183,-46.528146,Tradicional,Terça Feira,"Rua Pedro Vitorato, 474 - Jd Colorado - São Paulo , 03387-010",Sapopemba
+3081-3,-23.510103,-46.6512716,Tradicional,Terça Feira,"Rua Marambaia, 25 - Casa Verde - São Paulo , 02513-000",Casa Verde/Cachoeirinha
+3082-1,-23.5319951,-46.4793448,Tradicional,Terça Feira,"Rua Pitagoras, 579 - Jd Coimbra - São Paulo , 03693-010",Penha
+3083-0,-23.6352526,-46.5922456,Tradicional,Terça Feira,"Rua Rizzieri Negrini, 199 - Vila Arapua - São Paulo , 04257-143",Ipiranga
+3084-8,-23.507599,-46.4688171,Tradicional,Terça Feira,"Av Manoel Dos Santos Braga, 50 - Limoeiro - São Paulo , 03807-320",São Miguel Paulista
+3085-6,-23.6822041,-46.7121093,Tradicional,Terça Feira,"Rua Das Paineiras, 353 - Veleiros - São Paulo , 04771-080",Capela Do Socorro
+3087-2,-23.6746177,-46.7411818,Tradicional,Terça Feira,"Rua Estevam Fernandes, 17 - Piraporinha - São Paulo , 04913-140",M'Boi Mirim
+3090-2,-23.6701385,-46.6660404,Tradicional,Terça Feira,"Rua Salvador Rodrigues Negrao, 100 - Vila Constancia - São Paulo , 04401-160",Cidade Ademar
+3092-9,-23.485886,-46.4873288,Tradicional,Terça Feira,"Rua Belizario Benites, 115 - Jd Veronia - São Paulo , 03816-120",Ermelino Matarazzo
+3093-7,-23.6219229,-46.4644307,Tradicional,Terça Feira,"Av Mendonca E Vasconcelos, 300 - Jd Ester - São Paulo , 08330-260",São Mateus
+3094-5,-23.5679201,-46.4825246,Tradicional,Terça Feira,"Rua Estevao Dias Vergara, 100 - Jd Nsra Do Carmo - São Paulo , 08275-120",Itaquera
+3095-3,-23.5505714,-46.4259858,Tradicional,Terça Feira,"Rua Frei Antonio Faggiano, 41 - Itaquera - São Paulo , 08255-140",Itaquera
+3097-0,-23.6089311,-46.5143908,Tradicional,Terça Feira,"Rua Rio Hipiaugui, 1 - Jd Planalto - São Paulo , 03982-045",Sapopemba
+3098-8,-23.5040786,-46.5056848,Tradicional,Terça Feira,"Rua Jose Da Penha, 100 - Jd Danfer - São Paulo , 03729-150",Penha
+3099-6,-23.4920772,-46.3914349,Tradicional,Terça Feira,"Av Itaim, 150 - Itaim Paulista - São Paulo , 08110-650",Itaim Paulista
+3100-3,-23.681548,-46.7811917,Tradicional,Terça Feira,"Rua Rosario Scamarti, 5 - Jd Jangadeiro - São Paulo , 05883-000",Campo Limpo
+3101-1,-23.6574235,-46.7328998,Tradicional,Terça Feira,"Rua Salgueiro Do Campo, 85 - Jd Ibirapuera - São Paulo , 05814-210",M'Boi Mirim
+3102-0,-23.5863656,-46.7368773,Tradicional,Terça Feira,"Rua Plinio Salgado, 21 - Butantã - São Paulo , 05537-080",Butantã
+3103-8,-23.6462567,-46.7791857,Tradicional,Terça Feira,"Rua Carlos Nahas, 5 - Jd Rosana - São Paulo , 05795-160",Campo Limpo
+3104-6,-23.6006192,-46.795343,Tradicional,Terça Feira,"Av Vaticano, 4 - Jd Joao Xxiii - São Paulo , 05569-120",Butantã
+3106-2,-23.6920686,-46.7425107,Tradicional,Terça Feira,"Rua Mons Joao Pedro Fusenig, 166 - Jd Sta Gertrudes - São Paulo , 04918-210",M'Boi Mirim
+3110-0,-23.5023627,-46.4647807,Tradicional,Terça Feira,"Av Pau D'Arco Roxo, 220 - Cid Pedro Jose Nunes - São Paulo , 08061-030",São Miguel Paulista
+3111-9,-23.5199526,-46.4399404,Tradicional,Terça Feira,"Rua Inaja Guacu, 500 - Vila Progresso - São Paulo , 08240-530",São Miguel Paulista
+3112-7,-23.6138861,-46.5003079,Tradicional,Terça Feira,"Rua Joao Lopes De Lima, 300 - Jd Sapopemba - São Paulo , 03976-020",Sapopemba
+3113-5,-23.7535688,-46.6685273,Tradicional,Terça Feira,"Rua Amazonas Marcondes, 45 - Cocaia - São Paulo , 04851-230",Capela Do Socorro
+3116-0,-23.4509091,-46.684267,Tradicional,Terça Feira,"Rua Itatiba Do Sul, 100 - Jd Vista Alegre - São Paulo , 02878-100",Freguesia/Brasilândia
+3118-6,-23.4592588,-46.6684148,Tradicional,Terça Feira,"Rua Monte São Martinho, 349 - Jd Sta Cruz - São Paulo , 02674-020",Casa Verde/Cachoeirinha
+3124-0,-23.4892871,-46.4150553,Tradicional,Terça Feira,"Rua Francisco Antonio Meira, 10 - Jd Maia - São Paulo , 08180-270",São Miguel Paulista
+3127-5,-23.5080142,-46.4067551,Tradicional,Terça Feira,"Rua Lagoa Cajuba, 38 - Jd Campos - São Paulo , 08160-120",Itaim Paulista
+3129-1,-23.6180522,-46.6799328,Tradicional,Terça Feira,"Rua Gil Eanes, 44 - Campo Belo - São Paulo , 04601-040",Santo Amaro
+3132-1,-23.8088905,-46.7373271,Tradicional,Terça Feira,"Rua Henrique Roschel Christi, 344 - Jd Dos Alamos - São Paulo , 04883-255",Parelheiros
+3134-8,-23.6169923,-46.4792537,Tradicional,Terça Feira,"Rua Cachoeira De Minas, 50 - Jd Sta Adelia - São Paulo , 03973-050",São Mateus
+3135-6,-23.5266236,-46.67662,Tradicional,Terça Feira,"Rua Higino Pellegrini, S/N - Agua Branca - São Paulo , 05001-100",Lapa
+3137-2,-23.5834005,-46.674976,Tradicional,Terça Feira,"Rua Prof Tamandare De Toledo, 100 - Jd Paulista - São Paulo , 04532-020",Pinheiros
+3139-9,-23.5104905,-46.5431982,Tradicional,Terça Feira,"Rua Bartolomeu Quadros, 10 - Cangaiba - São Paulo , 03714-000",Penha
+3140-2,-23.5182268,-46.4473519,Tradicional,Terça Feira,"Rua Flor De Pelicano, 50 - Jd Casa Pintada - São Paulo , 08230-820",Itaquera
+3142-9,-23.4977528,-46.4425615,Tradicional,Terça Feira,"Av Antonio Bernardo Silvestre, 10 - Vila São Silvestre - São Paulo , 08011-390",São Miguel Paulista
+3144-5,-23.5572073,-46.6346865,Tradicional,Terça Feira,"Rua Americo De Campos, 100 - Liberdade - São Paulo , 01506-010",Sé
+3145-3,-23.5942681,-46.6254383,Tradicional,Terça Feira,"Rua Voltaire C/ Pedro Nicole, 302 - Jd Vila Mariana - São Paulo , 04116-090",Vila Mariana
+3146-1,-23.5448833,-46.4142657,Tradicional,Terça Feira,"Rua Comte Carlos Rhul, 50 - Vila Princesa Isabel - São Paulo , 08410-130",Guaianases
+3147-0,-23.4424289,-46.7356749,Tradicional,Terça Feira,"Rua Ciriaco Jimenez, 50 - Parque Nacoes Unidas - São Paulo , 02996-070",Pirituba/Jaraguá
+3149-6,-23.5917137,-46.5013183,Tradicional,Terça Feira,"Rua Seritinga, 20 - São Mateus - São Paulo , 03934-120",São Mateus
+3151-8,-23.5142369,-46.4272959,Tradicional,Terça Feira,"Rua Arvore De Cera, 37 - Jd Nova Curuca - São Paulo , 08032-270",Itaim Paulista
+3153-4,-23.6483914,-46.5998884,Noturna,Terça Feira,"Rua Henri Cross, 200 - Jd Santa Emilia - São Paulo , 04184-010",Ipiranga
+3155-0,-23.5973156,-46.4476835,Tradicional,Terça Feira,"Rua Heliodoro Paiva, 50 - Jard M Augusto - São Paulo , 08371-100",São Mateus
+3157-7,-23.6255356,-46.4457278,Tradicional,Terça Feira,"Rua Afonso Furtado De Castro, 50 - Jardim Santo Andre - São Paulo , 08390-140",São Mateus
+3158-5,-23.4391601,-46.7504558,Tradicional,Terça Feira,"Rua Aleixos Jafet, 2000 - Vila Aurora - São Paulo , 05186-005",Pirituba/Jaraguá
+3160-7,-23.5164178,-46.4608897,Noturna,Terça Feira,"Rua Rodolfo Barbosa De Castro, 50 - Parque Guarani - São Paulo , 08235-420",Itaquera
+3162-3,-23.6244852,-46.4642773,Tradicional,Terça Feira,"Av Sapopemba, 15600 - São Mateus - São Paulo , 03989-000",São Mateus
+3164-0,-23.5189215,-46.7051909,Tradicional,Terça Feira,"Rua Dronsfield, 263 - Lapa - São Paulo , 05074-000",Lapa
+3230-1,-23.5989889,-46.5164685,Tradicional,Terça Feira,"Praça Torquato Plaza, 152 - Sapopemba - São Paulo , 03271-050",Sapopemba
+3235-2,-23.4920597,-46.4417803,Tradicional,Terça Feira,"Rua Miguel Angelo Lapena, 150 - São Miguel - São Paulo , 08010-040",São Miguel Paulista
+3324-3,-23.5030775,-46.3659107,Tradicional,Terça Feira,"Rua Desem Fausto Whitaker M Alvim, 3 - Itaim Paulista - São Paulo , 08130-350",Itaim Paulista
+3400-2,-23.471317,-46.6361077,Tradicional,Terça Feira,"Rua General Jose Almeida Botelho, 100 - Mandaqui - São Paulo , 02422-090",Santana/Tucuruvi
+3401-0,-23.6070209,-46.4437962,Noturna,Terça Feira,"Tv Veneza Do Amor, 10 - Jd São Jose - São Paulo , 08345-650",São Mateus
+3402-9,-23.5423578,-46.5361244,Tradicional,Terça Feira,"Rua Tiuba, 230 - Vila Manchester - São Paulo , 03443-015",Aricanduva/Formosa /Carrão
+3489-4,-23.6403996,-46.7462863,Noturna,Terça Feira,"Rua Inacio Preto De Morais, 1 - Vila Plana - São Paulo , 05731-340",Campo Limpo
+3744-3,-23.54192,-46.44936,Noturna,Terça Feira,"Calcadão Estação Cptm Dom Bosco, 1133 - Itaquera - São Paulo , 08215-545",Itaquera
+3789-3,-23.4984221,-46.6132418,Noturna,Terça Feira,"Rua Rua Pedro Ribeiro, 1 - Santana - São Paulo , 02085-000",Santana/Tucuruvi
+3815-6,-23.40706678,-46.75466799,Noturna,Terça Feira,"Rua Antonio Bartolomeu,  - Vila Perus - São Paulo , 05204-200",Perus
+3835-0,-23.50043133,-46.39725592,Orgânica,Terça Feira,"Praça Antonio Eneas Matias - Itaim Paulista - São Paulo , 08120-090",Itaim Paulista
+3869-5,-23.6420072,-46.7669739,Noturna,Terça Feira,"Rua Jose De Salcedo, 65 - Parque Flamengo - São Paulo , 05783-120",Campo Limpo
+3900-4,-23.5507224,-46.7180067,Tradicional,Terça Feira,"Rua Pde Lariviere, 354 - Pinheiros - São Paulo , 05466-050",Pinheiros
+4000-2,-23.6079745,-46.4749318,Noturna,Quarta Feira,"Rua Edmur Witaker, 50 - São Mateus - São Paulo , 03963-060",São Mateus
+4001-0,-23.5561135,-46.6246173,Tradicional,Quarta Feira,"Rua Dr Pedro Severiano, 100 - Liberdade - São Paulo , 01518-040",Sé
+4002-9,-23.5689403,-46.6287692,Tradicional,Quarta Feira,"Rua Oliveira Peixoto, 100 - Aclimacao - São Paulo , 01530-040",Sé
+4003-7,-23.5372621,-46.6112498,Tradicional,Quarta Feira,"Rua Sampson C Mendes Junior, 50 - Bras - São Paulo , 03013-040",Mooca
+4004-5,-23.552977,-46.5994422,Tradicional,Quarta Feira,"Praça Ciro Pontes, 50 - Mooca - São Paulo , 03166-030",Mooca
+4005-3,-23.5298979,-46.6249485,Tradicional,Quarta Feira,"Rua Vidal De Negreiros, 50 - Caninde - São Paulo , 03033-050",Mooca
+4007-0,-23.5843661,-46.6245094,Tradicional,Quarta Feira,"Rua Professor Macedo Soares, 276 - Jd Da Gloria - São Paulo , 04113-090",Vila Mariana
+4008-8,-23.5788727,-46.6437253,Tradicional,Quarta Feira,"Rua Eca De Queiroz, 276 - Vila Mariana - São Paulo , 04011-031",Vila Mariana
+4009-6,-23.5762209,-46.6124651,Tradicional,Quarta Feira,"Rua Guinle C/ Frederico V Martius, 250 - Vila Monumento - São Paulo , 01548-010",Ipiranga
+4010-0,-23.5620324,-46.5969303,Tradicional,Quarta Feira,"Rua Madre De Deus, 604 - Mooca - São Paulo , 03119-000",Mooca
+4011-8,-23.5445505,-46.6881903,Tradicional,Quarta Feira,"Rua Cayowaa, 2008 - Sumarezinho - São Paulo , 01258-011",Lapa
+4012-6,-23.5982921,-46.7198765,Tradicional,Quarta Feira,"Praça Roberto Gomes Pedrosa, 520 - Itaim Bibi - São Paulo , 05653-070",Butantã
+4013-4,-23.5319741,-46.6908797,Tradicional,Quarta Feira,"Rua Tavares Bastos, 901 - Vila Pompeia - São Paulo , 05012-020",Lapa
+4015-0,-23.5021967,-46.6222386,Tradicional,Quarta Feira,"Rua Gabriel Pizza, 400 - Santana - São Paulo , 02036-011",Santana/Tucuruvi
+4016-9,-23.5018059,-46.6385618,Tradicional,Quarta Feira,"Rua Cap Manoel Novaes, 100 - Jd São Bento - São Paulo , 02017-030",Santana/Tucuruvi
+4017-7,-23.4895106,-46.6419189,Tradicional,Quarta Feira,"Rua Dr Eugenio Fortes Coelho, 100 - Chora Menino - São Paulo , 02462-060",Santana/Tucuruvi
+4018-5,-23.5014541,-46.6568757,Tradicional,Quarta Feira,"Rua Galileia, 430 - Parque Peruche - São Paulo , 02530-000",Casa Verde/Cachoeirinha
+4019-3,-23.5018618,-46.6845499,Tradicional,Quarta Feira,"Rua Antonio Munhos Bonilha, 235 - Vila Carolina - São Paulo , 02725-000",Casa Verde/Cachoeirinha
+4020-7,-23.5731538,-46.5746552,Tradicional,Quarta Feira,"Rua Min Salgado Filho, 485 - Vila Oratorio - São Paulo , 03193-020",Mooca
+4022-3,-23.5545719,-46.5726238,Tradicional,Quarta Feira,"Rua Sebastiao Barbosa, 333 - Tatuape - São Paulo , 03334-040",Mooca
+4023-1,-23.5428307,-46.567915,Tradicional,Quarta Feira,"Rua Airi, 437 - Tatuape - São Paulo , 03310-010",Mooca
+4024-0,-23.60763,-46.6686143,Tradicional,Quarta Feira,"Av Bentevi C Jauaperi, 104 - Indianopolis - São Paulo , 04524-030",Vila Mariana
+4025-8,-23.6098974,-46.6110252,Tradicional,Quarta Feira,"Rua Lino Guedes, 109 - Moinho Velho - São Paulo , 04288-120",Ipiranga
+4026-6,-23.5056498,-46.572843399999996,Tradicional,Quarta Feira,"Rua Osaka, 910 - Jd Japao - São Paulo , 02124-041",Vila Maria/Vila Guilherme
+4027-4,-23.6158723,-46.5950606,Tradicional,Quarta Feira,"Rua Japaratuba, 131 - São Joao Climaco - São Paulo , 04254-000",Ipiranga
+4028-2,-23.5312698,-46.7178455,Tradicional,Quarta Feira,"Rua Sales Junior, 500 - Alto Da Lapa - São Paulo , 05083-070",Lapa
+4029-0,-23.5034588,-46.710986,Tradicional,Quarta Feira,"Rua Salvador Sala, 425 - Piqueri - São Paulo , 02914-030",Pirituba/Jaraguá
+4030-4,-23.5731528,-46.7274005,Tradicional,Quarta Feira,"Rua Iquiririm, 496 - Vila Indiana - São Paulo , 05586-000",Butantã
+4031-2,-23.5046507,-46.5850925,Tradicional,Quarta Feira,"Rua Moreira De Vasconcelos, 200 - Vila Maria - São Paulo , 02131-090",Vila Maria/Vila Guilherme
+4032-0,-23.4802187,-46.5940265,Tradicional,Quarta Feira,"Rua Tanque Velho, 600 - Vila Gustavo - São Paulo , 02251-001",Santana/Tucuruvi
+4033-9,-23.4757534,-46.6062852,Tradicional,Quarta Feira,"Rua Aragao, 200 - Vila Mazzei - São Paulo , 02308-000",Santana/Tucuruvi
+4034-7,-23.4604128,-46.6561855,Tradicional,Quarta Feira,"Av Mariana Caligiuri Ronchetti, 237 - Vila Continental - São Paulo , 02650-000",Casa Verde/Cachoeirinha
+4035-5,-23.6486321,-46.6442497,Tradicional,Quarta Feira,"Rua Grumixamas, 374 - Vila Guarani - São Paulo , 04349-000",Jabaquara
+4036-3,-23.5144867,-46.7430273,Tradicional,Quarta Feira,"Rua Cachoeira Do Sul, 450 - Vila Jaguara - São Paulo , 05117-010",Lapa
+4037-1,-23.5174651,-46.5403213,Tradicional,Quarta Feira,"Rua Pedro Alegretti, 512 - Penha - São Paulo , 03610-010",Penha
+4038-0,-23.5216072,-46.5289391,Tradicional,Quarta Feira,"Rua Maria Carlota, 20 - Penha - São Paulo , 03647-000",Penha
+4039-8,-23.5358563,-46.528556,Tradicional,Quarta Feira,"Rua Durvalina, 151 - Vila Matilde - São Paulo , 03511-050",Penha
+4040-1,-23.5488256,-46.5298335,Tradicional,Quarta Feira,"Rua São Valentim, 120 - Vila Carrao - São Paulo , 03445-000",Aricanduva/Formosa /Carrão
+4041-0,-23.558871,-46.5506334,Tradicional,Quarta Feira,"Rua Maragojipe, 320 - Vila Formosa - São Paulo , 03412-050",Aricanduva/Formosa /Carrão
+4042-8,-23.5057838,-46.4901129,Tradicional,Quarta Feira,"Rua Boaventura R Da Silva, 200 - Ponte Raza - São Paulo , 03801-120",Ermelino Matarazzo
+4043-6,-23.5048524,-46.4541596,Tradicional,Quarta Feira,"Rua Tsutomu Henni, 720 - Vila Jacui - São Paulo , 08060-350",São Miguel Paulista
+4044-4,-23.5374246,-46.4094268,Tradicional,Quarta Feira,"Praça Andes, 200 - Guaianazes - São Paulo , 08440-180",Guaianases
+4045-2,-23.5881461,-46.5844084,Tradicional,Quarta Feira,"Rua Pedro De Godoi, 1 - Vila Zelina - São Paulo , 03138-010",Vila Prudente
+4046-0,-23.600264,-46.647946,Tradicional,Quarta Feira,"Al Agostinho Rodrigues Filho, 363 - V L Mariana - São Paulo , 04026-040",Vila Mariana
+4047-9,-23.5945635,-46.5758254,Tradicional,Quarta Feira,"Rua Pitinga, 396 - Vila Bela - São Paulo , 03146-030",Vila Prudente
+4048-7,-23.5295714,-46.7261584,Tradicional,Quarta Feira,"Rua Lauro Muller, 12 - Vila Hamburguesa - São Paulo , 05302-060",Lapa
+4049-5,-23.4631469,-46.5811288,Tradicional,Quarta Feira,"Rua Dr Carlos Bastos Aranha, 258 - Vila Nilo - São Paulo , 02276-000",Jaçanã/Tremenbé
+4050-9,-23.616324,-46.670883,Tradicional,Quarta Feira,"Rua Barao De Jaceguai, 1768 - Sto Amaro - São Paulo , 04606-004",Santo Amaro
+4051-7,-23.6600527,-46.7664196,Tradicional,Quarta Feira,"Rua Paulino Vital De Moraes, 50 - Capao Redondo - São Paulo , 05855-000",Campo Limpo
+4052-5,-23.6331992,-46.7025017,Tradicional,Quarta Feira,"Rua Alexandre Dumas, 1200 - Chac Sto Antonio - São Paulo , 04717-002",Santo Amaro
+4053-3,-23.6320741,-46.6126512,Tradicional,Quarta Feira,"Rua Cel Fawcett C/ Evolucao, 700 - Vila Moraes - São Paulo , 04167-030",Ipiranga
+4054-1,-23.6050488,-46.6085737,Tradicional,Quarta Feira,"Rua Cinco De Julho, 250 - Vila Nair - São Paulo , 04281-000",Ipiranga
+4055-0,-23.6207449,-46.60547,Tradicional,Quarta Feira,"Av Cel Jose Pires De Andrade, 600 - Vila Vera - São Paulo , 04295-001",Ipiranga
+4056-8,-23.4862722,-46.7050148,Tradicional,Quarta Feira,"Rua Jaguarurama, 129 - Nossa Senhora Do O - São Paulo , 02964-010",Freguesia/Brasilândia
+4057-6,-23.5407675,-46.5570712,Tradicional,Quarta Feira,"Rua Diamante Preto, 250 - Aricanduva - São Paulo , 03317-040",Aricanduva/Formosa /Carrão
+4058-4,-23.4552948,-46.6018691,Tradicional,Quarta Feira,"Rua Cel Esdras De Oliveira, 51 - Jd Tremembe - São Paulo , 02351-030",Jaçanã/Tremenbé
+4059-2,-23.5704629,-46.5165281,Tradicional,Quarta Feira,"Rua Petrobras, 251 - Vila Antonieta - São Paulo , 03474-060",Aricanduva/Formosa /Carrão
+4060-6,-23.6097507,-46.5275434,Tradicional,Quarta Feira,"Rua Pascoal Ranieri Mazili, 650 - Vila Ana Clara - São Paulo , 03257-180",Vila Prudente
+4061-4,-23.4687934,-46.6743568,Tradicional,Quarta Feira,"Rua Spencer Vampre, 454 - Vila Rica - São Paulo , 02860-030",Freguesia/Brasilândia
+4062-2,-23.4689652,-46.6315576,Tradicional,Quarta Feira,"Rua Ana De Barros, 100 - Sta Ines - São Paulo , 02423-020",Santana/Tucuruvi
+4063-0,-23.5117948,-46.551163,Tradicional,Quarta Feira,"Rua Eng Trindade, 20 - Penha - São Paulo , 03703-130",Penha
+4064-9,-23.5917042,-46.5357138,Tradicional,Quarta Feira,"Rua Pde Pedro Magnoni, 511 - Vila Ema - São Paulo , 03286-070",Vila Prudente
+4065-7,-23.5386342,-46.488384,Tradicional,Quarta Feira,"Rua Benedito Leal, 334 - Artur Alvim - São Paulo , 03567-060",Penha
+4066-5,-23.4943298,-46.7306451,Tradicional,Quarta Feira,"Rua Pedro Marigliani, 10 - Chac Inglesa - São Paulo , 05141-010",Pirituba/Jaraguá
+4067-3,-23.484813,-46.5744462,Tradicional,Quarta Feira,"Rua Antenor Navarro, 420 - Jd Brasil - São Paulo , 02224-100",Vila Maria/Vila Guilherme
+4068-1,-23.4840757,-46.4297038,Tradicional,Quarta Feira,"Rua Santa Rosa De Lima, 310 - Parque Paulistano - São Paulo , 08080-000",São Miguel Paulista
+4069-0,-23.5480859,-46.6884679,Tradicional,Quarta Feira,"Rua Luminarias, 100 - Jd Das Bandeiras - São Paulo , 05439-000",Pinheiros
+4070-3,-23.5366778,-46.5060667,Tradicional,Quarta Feira,"Rua Ivan Maia Vasconcelos, 183 - Jd Triana - São Paulo , 03552-130",Penha
+4071-1,-23.5975654,-46.4794038,Tradicional,Quarta Feira,"Rua Domiziano Rossi, 50 - São Mateus - São Paulo , 03966-030",São Mateus
+4072-0,-23.5189949,-46.4356336,Tradicional,Quarta Feira,"Av Mons Agnelo, 305 - Vila Progresso - São Paulo , 08240-670",São Miguel Paulista
+4074-6,-23.5532593,-46.6972697,Tradicional,Quarta Feira,"Rua Pde Artur Somensi, 48 - Vila Beatriz - São Paulo , 05443-030",Pinheiros
+4075-4,-23.4810358,-46.6942732,Tradicional,Quarta Feira,"Rua Montreal, 26 - Parque São Luis - São Paulo , 02832-050",Freguesia/Brasilândia
+4076-2,-23.6919889,-46.6698741,Tradicional,Quarta Feira,"Av Batista Maciel, 313 - Jd Ubirajara - São Paulo , 04459-110",Cidade Ademar
+4077-0,-23.7185642,-46.6890545,Tradicional,Quarta Feira,"Rua Jose Bonifacio Filho, 100 - Cid Dutra - São Paulo , 04813-060",Capela Do Socorro
+4078-9,-23.6632866,-46.6583442,Tradicional,Quarta Feira,"Rua Visconde De Sta Isabel, 120 - Cid Ademar - São Paulo , 04385-090",Cidade Ademar
+4079-7,-23.6127515,-46.6848935,Tradicional,Quarta Feira,"Rua Pensylvania, 610 - Cid Moncoes - São Paulo , 04564-002",Pinheiros
+4080-0,-23.679456,-46.640462,Tradicional,Quarta Feira,"Rua Bras De Abreu, 32 - Jd Miriam - São Paulo , 04419-090",Cidade Ademar
+4081-9,-23.6527633,-46.7379012,Tradicional,Quarta Feira,"Rua Arraial Dos Couros, 19 - Jd São Luiz - São Paulo , 05843-200",M'Boi Mirim
+4083-5,-23.6250661,-46.6685949,Tradicional,Quarta Feira,"Rua Cristovao Pereira, 1650 - Campo Belo - São Paulo , 04620-012",Santo Amaro
+4084-3,-23.6040438,-46.5382292,Tradicional,Quarta Feira,"Rua Hileia Amazonica, 420 - Jd Guairaca - São Paulo , 03245-000",Sapopemba
+4085-1,-23.6685098,-46.6898717,Tradicional,Quarta Feira,"Rua Amoipira, 50 - Vila Isa - São Paulo , 04689-070",Santo Amaro
+4086-0,-23.6484859,-46.7539579,Tradicional,Quarta Feira,"Rua Thereza Maia Pinto, 5 - Vila Prell - São Paulo , 05780-390",Campo Limpo
+4087-8,-23.4745267,-46.7418342,Tradicional,Quarta Feira,"Rua Pde Marcigaglia, 50 - Jd Regina - São Paulo , 05174-100",Pirituba/Jaraguá
+4089-4,-23.5676996,-46.759763,Tradicional,Quarta Feira,"Rua Jorge Word, 49 - Vila Dalva - São Paulo , 05386-160",Butantã
+4090-8,-23.7391039,-46.7064587,Tradicional,Quarta Feira,"Praça Jose Schunch, 529 - Vila São Jose - São Paulo , 04835-080",Capela Do Socorro
+4092-4,-23.6457168,-46.5907768,Tradicional,Quarta Feira,"Rua Jose Antonio Valadares, 476 - Jd Lear - São Paulo , 04185-020",Ipiranga
+4093-2,-23.6147112,-46.4719234,Tradicional,Quarta Feira,"Rua Pires Caleiro, 50 - Jd Vera Cruz - São Paulo , 08330-050",São Mateus
+4094-0,-23.4460835,-46.7296027,Tradicional,Quarta Feira,"Rua Antonio Sebastiao Sobrinho, 480 - Parque Pan Americano - São Paulo , 02992-110",Pirituba/Jaraguá
+4095-9,-23.6913885,-46.7026476,Tradicional,Quarta Feira,"Av Danton Jobim, 1141 - Vila Friburgo - São Paulo , 04782-001",Capela Do Socorro
+4096-7,-23.5973822,-46.7555817,Tradicional,Quarta Feira,"Rua Edward Carmillo, 1000 - Jd Celeste - São Paulo , 05528-001",Butantã
+4097-5,-23.5984457,-46.7327214,Tradicional,Quarta Feira,"Rua Salomao Waimberg, 145 - Jd Bonfiglioli - São Paulo , 05628-030",Butantã
+4098-3,-23.6273263,-46.4726092,Tradicional,Quarta Feira,"Rua Bento Do Amaral Da Silva, 15 - Parque São Rafael - São Paulo , 08320-210",São Mateus
+4100-9,-23.6278014,-46.6355759,Tradicional,Quarta Feira,"Rua Major Freire, 565 - Jabaquara - São Paulo , 04304-110",Vila Mariana
+4101-7,-23.4885418,-46.61251,Tradicional,Quarta Feira,"Rua Maria Do Carmo Sene, 128 - Vila Pauliceia - São Paulo , 02301-110",Santana/Tucuruvi
+4103-3,-23.6518801,-46.7901451,Tradicional,Quarta Feira,"Rua Agostinho Paiva, 230 - Jd Macedonia - São Paulo , 05894-230",Campo Limpo
+4105-0,-23.5188733,-46.4494674,Tradicional,Quarta Feira,"Rua Flor De Santa Cruz, 55 - Vila Verde - São Paulo , 08230-450",Itaquera
+4106-8,-23.484269,-46.384863,Tradicional,Quarta Feira,"Rua Diogo Goncalves Laco, 10 - Jd Romano - São Paulo , 08191-000",São Miguel Paulista
+4107-6,-23.50683,-46.3922249,Tradicional,Quarta Feira,"Av Jose Borges Do Canto, 8 - Jd Camargo Velho - São Paulo , 08142-010",Itaim Paulista
+4109-2,-23.5689735,-46.5227657,Tradicional,Quarta Feira,"Av Dos Pequis, 321 - Jd Vila Formosa - São Paulo , 03470-050",Aricanduva/Formosa /Carrão
+4110-6,-23.5783232,-46.5687093,Tradicional,Quarta Feira,"Rua Ernesto Giuliano, 50 - Vila São Carlos - São Paulo , 03159-090",Mooca
+4111-4,-23.7528505,-46.682999,Tradicional,Quarta Feira,"Rua São Jose Do Rio Preto, 10 - Grajau - São Paulo , 04840-460",Capela Do Socorro
+4113-0,-23.5462945,-46.5002476,Tradicional,Quarta Feira,"Rua Madre Luisa Dos Anjos, 25 - Vila Nhocune - São Paulo , 03560-010",Penha
+4117-3,-23.5576783,-46.509684,Tradicional,Quarta Feira,"Rua Uacuma, 58 - Jd Arizi - São Paulo , 03575-000",Itaquera
+4119-0,-23.5836638,-46.5596257,Tradicional,Quarta Feira,"Rua Ernesto Dos Santos, 100 - Jd Independencia - São Paulo , 03225-000",Vila Prudente
+4120-3,-23.5489198,-46.43677,Tradicional,Quarta Feira,"Rua Virginia Ferni, 50 - Cohab Ii - São Paulo , 08253-000",Itaquera
+4122-0,-23.597463,-46.4949187,Tradicional,Quarta Feira,"Av Engenho Novo, 10 - Jd Tiete - São Paulo , 03943-020",São Mateus
+4123-8,-23.606528,-46.501543,Tradicional,Quarta Feira,"Rua Walter Rummel, 1 - Sapopemba - São Paulo , 03928-110",Sapopemba
+4124-6,-23.4460211,-46.7482098,Tradicional,Quarta Feira,"Rua Vasco Balboa, 10 - Jd Ipanema - São Paulo , 05187-000",Pirituba/Jaraguá
+4125-4,-23.4787821,-46.6517801,Tradicional,Quarta Feira,"Rua Ribeirao Do Salto, 100 - Lausane Paulista - São Paulo , 02473-020",Santana/Tucuruvi
+4128-9,-23.4776095,-46.7269244,Tradicional,Quarta Feira,"Rua Goncalves De Barros, 50 - Jd Pirituba - São Paulo , 02943-000",Pirituba/Jaraguá
+4132-7,-23.6014459,-46.4009918,Tradicional,Quarta Feira,"Av Luis Jose Costa (Leandro), 50 - Cid Tiradentes Cohab - São Paulo , 08471-200",Cidade Tiradentes
+4133-5,-23.4686714,-46.6090109,Tradicional,Quarta Feira,"Praça Antonio Jose De Araujo, 60 - Palmas Do Tremembe - São Paulo , 02344-090",Santana/Tucuruvi
+4134-3,-23.7587455,-46.7067687,Tradicional,Quarta Feira,"Rua Henry Lacordaire, 100 - Jd Sta Francisca - São Paulo , 04844-660",Capela Do Socorro
+4135-1,-23.5641773,-46.6346077,Tradicional,Quarta Feira,"Rua Pandia Calogeras, 37 - Liberdade - São Paulo , 01525-020",Sé
+4136-0,-23.51577,-46.4142782,Tradicional,Quarta Feira,"Rua Jose Greef Borba, 8 - Jd Nazare - São Paulo , 08150-130",Itaim Paulista
+4138-6,-23.7340217,-46.6687363,Tradicional,Quarta Feira,"Rua Rubens De Oliveira, 1000 - Cocaia - São Paulo , 04849-210",Capela Do Socorro
+4140-8,-23.6931259,-46.7825817,Tradicional,Quarta Feira,"Rua Alberto Borges Soveral, 20 - Parque Novo Sto Amaro - São Paulo , 05875-210",M'Boi Mirim
+4153-0,-23.4599079,-46.6241774,Tradicional,Quarta Feira,"Praça Dona Mariquinha Sciascia, 0 - Tremembe - São Paulo , 02372-050",Jaçanã/Tremenbé
+4154-8,-23.609405,-46.637122,Tradicional,Quarta Feira,"Rua Caramuru, 600 - Bosque Da Saude - São Paulo , 04138-002",Vila Mariana
+4155-6,-23.6542833,-46.6379431,Tradicional,Quarta Feira,"Av Eng Armando De Arruda Pereira, 3248 - Jabaquara - São Paulo , 04325-000",Jabaquara
+4156-4,-23.5694806,-46.6521627,Tradicional,Quarta Feira,"Rua Fernao Cardim, 100 - Cerqueira Cesar - São Paulo , 01403-020",Pinheiros
+4158-0,-23.5656289,-46.3958944,Tradicional,Quarta Feira,"Av Utaro Kanai C/ Festa Chinesa, 546 - Jd São Paulo - São Paulo , 08465-000",Guaianases
+4160-2,-23.5356115,-46.4566568,Tradicional,Quarta Feira,"Rua Diogo Jose Machado, 20 - Jd Itapemirim - São Paulo , 08220-690",Itaquera
+4161-0,-23.5288437,-46.4442564,Tradicional,Quarta Feira,"Rua Candido De Godoi, 20 - Vila Brasil - São Paulo , 08210-770",Itaquera
+4162-9,-23.6081295,-46.4654142,Tradicional,Quarta Feira,"Rua Phobus, 50 - Jd Sta Barbara - São Paulo , 08340-130",São Mateus
+4163-7,-23.59027,-46.39857,Tradicional,Quarta Feira,"Rua Moises De Corena, 940 - Cid Tiradentes - São Paulo , 08475-170",Cidade Tiradentes
+4165-3,-23.49248,-46.39056,Tradicional,Quarta Feira,"Av Itaim, 180 - Vila Itaim - São Paulo , 08110-840",Itaim Paulista
+4166-1,-23.558028,-46.4759591,Tradicional,Quarta Feira,"Rua Jeronimo De Barros, 15 - Cid Lider - São Paulo , 08280-180",Itaquera
+4168-8,-23.5225569,-46.4303075,Tradicional,Quarta Feira,"Rua Guabiroba De Minas, 26 - Jd Gianetti - São Paulo , 08032-560",Itaim Paulista
+4172-6,-23.4837788,-46.4213747,Noturna,Quarta Feira,"Rua São Goncalo Do Rio Das Pedras, 200 - Vila Mara - São Paulo , 08081-000",São Miguel Paulista
+4175-0,-23.6150371,-46.6435656,Orgânica,Quarta Feira,"Av Jose Maria Whitaker, 1681 - Planalto Paulista - São Paulo , 04057-000",Vila Mariana
+4176-9,-23.5549387,-46.6355915,Tradicional,Quarta Feira,"Praça Liberdade, 5145 - Liberdade - São Paulo , 01502-001",Sé
+4181-5,-23.5519675,-46.4011262,Tradicional,Quarta Feira,"Rua Inacio Moreira, 100 - Jardim Soares - São Paulo , 08460-300",Guaianases
+4184-0,-23.4962026,-46.5906736,Tradicional,Quarta Feira,"Rua Dos Guarinos, 100 - Vila Elisa - São Paulo , 02219-160",Vila Maria/Vila Guilherme
+4186-6,-23.5066857,-46.7473848,Tradicional,Quarta Feira,"Av Elisio Cordeiro De Siqueira, 30 - Jaridm - São Paulo , 05136-000",Pirituba/Jaraguá
+4188-2,-23.7941043,-46.7346927,Tradicional,Quarta Feira,"Rua Maria Da Costa Bezerra, 30 - Parelheiros - São Paulo , 04850-050",Parelheiros
+4189-0,-23.5415182,-46.4458325,Tradicional,Quarta Feira,"Rua Antonio Gandine, 100 - Itaquera - São Paulo , 08215-290",Itaquera
+4194-7,-23.5075477,-46.6645013,Tradicional,Quarta Feira,"Praça Benito Nicoletti, 253 - Parque Souza Aranha - São Paulo , 02517-010",Casa Verde/Cachoeirinha
+4198-0,-23.5600162,-46.5380997,Tradicional,Quarta Feira,"Rua Benedito Galvao,  - Vila Carrao - São Paulo , 03433-030",Aricanduva/Formosa /Carrão
+4202-1,-23.5819938,-46.5848599,Tradicional,Quarta Feira,"Rua Ingai, 50 - Vila Prudente - São Paulo , 03132-080",Vila Prudente
+4219-6,-23.6515347,-46.7073477,Tradicional,Quarta Feira,"Praça Floriano Peixoto, 100 - Santo Amaro - São Paulo , 04750-000",Santo Amaro
+4244-7,-23.4935845,-46.4419626,Tradicional,Quarta Feira,"Rua Daniel Bernardo, 10 - Vila Americana - São Paulo , 08010-100",São Miguel Paulista
+4264-1,-23.525882,-46.670498,Tradicional,Quarta Feira,"Rua Professor Abrahao Berezin, 410 - Barra Funda - São Paulo , 01156-060",Lapa
+4306-0,-23.6297835,-46.7200732,Tradicional,Quarta Feira,"Rua Forte William, 3 - Vila Andrade - São Paulo , 05704-110",Campo Limpo
+4380-0,-23.5147373,-46.5265628,Noturna,Quarta Feira,"Rua Paulo Marques, 10 - Vila Vidal - São Paulo , 03616-210",Penha
+4386-9,-23.5003966,-46.7192759,Tradicional,Quarta Feira,"Tv São Gabriel Da Cachoeira, 386 - Jd Iris - São Paulo , 05144-085",Pirituba/Jaraguá
+4390-7,-23.550586,-46.4806019,Tradicional,Quarta Feira,"Rua Andrea Feliciani, 10 - Artur Alvim - São Paulo , 03591-020",Penha
+4400-8,-23.57352,-46.5662588,Tradicional,Quarta Feira,"Rua Adutora Do Rio Claro, 15 - Vila Regente Feijo - São Paulo , 03924-300",Sapopemba
+4401-6,-23.6175699,-46.4880939,Noturna,Quarta Feira,"Rua Augustin Luberti, 100 - Fazenda Juta - São Paulo , 03977-409",Sapopemba
+4402-4,-23.590164,-46.4830463,Tradicional,Quarta Feira,"Rua Quebedo E Vasconcelos, S/N - São Mateus - São Paulo , 03952-040",São Mateus
+4415-6,-23.6278558,-46.7002561,Tradicional,Quarta Feira,"Rua Enxovia, 454 - Santo Amaro - São Paulo , 04711-030",Santo Amaro
+4421-0,-23.4795526,-46.6281329,Noturna,Quarta Feira,"Av Eng Caetano Alvares, 6550 - Imirim - São Paulo , 02413-200",Santana/Tucuruvi
+4438-5,-23.4922375,-46.4455287,Noturna,Quarta Feira,"Praça Aleixo Monteiro Mafra, 20 - São Miguel - São Paulo , 08011-010",São Miguel Paulista
+4494-6,-23.5034642,-46.7153691,Tradicional,Quarta Feira,"Rua Preta, 1320 - Jd Iris - São Paulo , 05092-040",Pirituba/Jaraguá
+4724-4,-23.6595158002,-46.75017975,Tradicional,Quarta Feira,"Rua Musica Aquatica, 40 - Jardim Duprat - São Paulo , 05853-360",M'Boi Mirim
+4760-0,-23.5031184,-46.3659945,Tradicional,Quarta Feira,"Rua Desem Fausto Whitaker M Alvim, 7 - Itaim Paulista - São Paulo , 08130-350",Itaim Paulista
+4780-5,-23.58783846,-46.68419636,Tradicional,Quarta Feira,"Rua Jusseape, 0 - Itaim Bibi - São Paulo , 04542-110",Pinheiros
+4797-0,-23.521815,-46.6643253,Tradicional,Quarta Feira,"Rua Quirino Dos Santos, 362 - Barra Funda - São Paulo , 01141-020",Lapa
+4851-8,-23.6054062,-46.6931296,Tradicional,Quarta Feira,"Praça Gal Gentil Falcao, 0 - Cidade Monções - São Paulo , 04571-150",Pinheiros
+4904-2,-23.5437068,-46.4158717,Noturna,Quarta Feira,"Rua Centralina, 123 - Guaianases - São Paulo , 08410-100",Guaianases
+4935-2,-23.653242,-46.7047146,Tradicional,Quarta Feira,"Rua Manuel Borba, 189 - Santo Amaro - São Paulo , 04743-010",Santo Amaro
+5000-8,-23.631454,-46.593494,Noturna,Quinta Feira,"Rua Francisco Lema, 50 - Jardim Apura - São Paulo , 04257-000",Ipiranga
+5001-6,-23.5554294,-46.6549559,Tradicional,Quinta Feira,"Rua Itarare, 295 - Bela Vista - São Paulo , 01308-030",Sé
+5002-4,-23.6329183,-46.6623831,Tradicional,Quinta Feira,"Rua Tapes, 680 - Jd Aeroporto - São Paulo , 04631-011",Santo Amaro
+5003-2,-23.5272251,-46.6374063,Tradicional,Quinta Feira,"Rua Antonio Coruja, 67 - Bom Retiro - São Paulo , 01126-030",Sé
+5004-0,-23.5732305,-46.6213201,Tradicional,Quinta Feira,"Rua Teodoreto Souto, 957 - Cambuci - São Paulo , 01539-000",Sé
+5005-9,-23.5686802,-46.6641898,Tradicional,Quinta Feira,"Rua Barao De Capanema, 100 - Jd America - São Paulo , 01411-010",Pinheiros
+5006-7,-23.5262768,-46.6061797,Tradicional,Quinta Feira,"Rua Silva Teles, 1528 - Belenzinho - São Paulo , 03026-000",Mooca
+5007-5,-23.5395464,-46.5888902,Tradicional,Quinta Feira,"Rua Irma Carolina, 50 - Belenzinho - São Paulo , 03058-040",Mooca
+5008-3,-23.5489474,-46.5921723,Tradicional,Quinta Feira,"Rua Prof Machado Tolosa, 90 - Belenzinho - São Paulo , 03171-030",Mooca
+5009-1,-23.54467,-46.6650304,Tradicional,Quinta Feira,"Praça Charles Muller, 0 - Pacaembu - São Paulo , 01234-010",Sé
+5010-5,-23.5397561,-46.6729953,Tradicional,Quinta Feira,"Rua Aimbere C Caiubi, 501 - Perdizes - São Paulo , 05018-010",Lapa
+5011-3,-23.59416,-46.6128238,Tradicional,Quinta Feira,"Rua Dr Mario Vicente, 1199 - Ipiranga - São Paulo , 04270-002",Ipiranga
+5012-1,-23.5945937,-46.6402623,Tradicional,Quinta Feira,"Rua Cel Lisboa C/ Estado De Israel, 60 - Planalto Paulista - São Paulo , 04020-040",Vila Mariana
+5013-0,-23.5922044,-46.6025216,Tradicional,Quinta Feira,"Rua Lino Coutinho, 1000 - Sacoma - São Paulo , 04207-001",Ipiranga
+5014-8,-23.567094,-46.687634,Tradicional,Quinta Feira,"Rua Antonio Bicudo, 50 - Cerqueira Cezar - São Paulo , 05418-010",Pinheiros
+5015-6,-23.5606016,-46.5842008,Tradicional,Quinta Feira,"Rua Florianopolis, 50 - Alto Da Mooca - São Paulo , 03185-050",Mooca
+5016-4,-23.5759519,-46.588948,Tradicional,Quinta Feira,"Rua Domingos Da Fonseca, 321 - Vila Prudente - São Paulo , 03125-040",Mooca
+5017-2,-23.5421925,-46.5730745,Tradicional,Quinta Feira,"Rua Visconde De Itaboray, 250 - Tatuape - São Paulo , 03308-050",Mooca
+5018-0,-23.5713414,-46.5809954,Tradicional,Quinta Feira,"Rua Silva Coutinho, 50 - Vila Prudente - São Paulo , 03192-070",Mooca
+5020-2,-23.6010922,-46.5899093,Tradicional,Quinta Feira,"Rua Campante, 1000 - Vila Carioca - São Paulo , 04224-010",Ipiranga
+5022-9,-23.6136238,-46.6189488,Tradicional,Quinta Feira,"Praça Bras Goncalves, 100 - Jd Da Saude - São Paulo , 04148-040",Ipiranga
+5023-7,-23.505937,-46.6136391,Tradicional,Quinta Feira,"Rua Guaracininga, 200 - Vila Guilherme - São Paulo , 02069-020",Vila Maria/Vila Guilherme
+5024-5,-23.5006399,-46.6080836,Tradicional,Quinta Feira,"Rua Catapara, 87 - Vila Guilherme - São Paulo , 02073-010",Vila Maria/Vila Guilherme
+5025-3,-23.531672,-46.6945292,Tradicional,Quinta Feira,"Rua Silveira Rodrigues C/ Mario, 35 - Vila Romana - São Paulo , 05048-070",Lapa
+5026-1,-23.4902538,-46.627181,Tradicional,Quinta Feira,"Rua Antonio Pereira De Souza, 100 - Santana - São Paulo , 02404-060",Santana/Tucuruvi
+5027-0,-23.5040111,-46.6684777,Tradicional,Quinta Feira,"Rua Madalena Madureira, 54 - Casa Verde - São Paulo , 02551-040",Casa Verde/Cachoeirinha
+5028-8,-23.569156,-46.7052837,Tradicional,Quinta Feira,"Rua Agostinho Cantu C/ Romao Gomes, 1 - Butantã - São Paulo , 05501-010",Butantã
+5029-6,-23.539019,-46.5609003,Tradicional,Quinta Feira,"Rua Platina, 10 - Tatuape - São Paulo , 03308-010",Mooca
+5030-0,-23.5213879,-46.7103643,Tradicional,Quinta Feira,"Rua Dom Joao V C Sacadura Cabral, 85 - Alto Da Lapa - São Paulo , 05075-060",Lapa
+5031-8,-23.6252263,-46.6479738,Tradicional,Quinta Feira,"Av Ceci, 1828 - Planalto Paulista - São Paulo , 04065-003",Vila Mariana
+5032-6,-23.4750814,-46.6324901,Tradicional,Quinta Feira,"Rua Alvaro Gomes, 100 - Santana - São Paulo , 02421-010",Santana/Tucuruvi
+5033-4,-23.542208,-46.5415364,Tradicional,Quinta Feira,"Rua Dentista Barreto, 120 - Vila Carrao - São Paulo , 03420-000",Aricanduva/Formosa /Carrão
+5034-2,-23.5536263,-46.539732,Tradicional,Quinta Feira,"Rua Piramboia, 450 - Vila Sta Izabel - São Paulo , 03425-030",Aricanduva/Formosa /Carrão
+5035-0,-23.5970175,-46.5459473,Tradicional,Quinta Feira,"Rua Dr Jose Cassio Soares, 100 - Parque São Lucas - São Paulo , 03240-020",Vila Prudente
+5036-9,-23.5222522,-46.7266095,Tradicional,Quinta Feira,"Rua Alianca Liberal, 500 - Vila Leopoldina - São Paulo , 05088-020",Lapa
+5037-7,-23.465947,-46.6658238,Tradicional,Quinta Feira,"Rua Augusto Gil, 207 - Vila Nova Cachoeirinha - São Paulo , 02670-070",Casa Verde/Cachoeirinha
+5038-5,-23.4729938,-46.6893505,Tradicional,Quinta Feira,"Rua Columbia, 100 - Vila Brasilandia - São Paulo , 02844-040",Freguesia/Brasilândia
+5039-3,-23.4774894,-46.7191725,Tradicional,Quinta Feira,"Av Miguel De Castro, 1023 - Vila Zatt - São Paulo , 02950-000",Pirituba/Jaraguá
+5040-7,-23.4749668,-46.5655454,Tradicional,Quinta Feira,"Rua Liliental, 734 - Tucuruvi - São Paulo , 02231-000",Jaçanã/Tremenbé
+5041-5,-23.4987783,-46.5160603,Tradicional,Quinta Feira,"Rua Dr Augusto S Lopes, 200 - Eng Goulart - São Paulo , 03725-080",Penha
+5042-3,-23.6507916,-46.6549132,Tradicional,Quinta Feira,"Rua Franklin Magalhaes, 289 - Sta Catarina - São Paulo , 04374-000",Jabaquara
+5043-1,-23.4945604,-46.4779922,Tradicional,Quinta Feira,"Rua Vitoria Simionato, 58 - Ermelino Matarazzo - São Paulo , 03808-170",Ermelino Matarazzo
+5044-0,-23.5349096,-46.4851906,Tradicional,Quinta Feira,"Av Maraial, 323 - Jd Nordeste - São Paulo , 03691-010",Penha
+5045-8,-23.5291607,-46.4523751,Tradicional,Quinta Feira,"Rua Bento Vieira Castro, 344 - Itaquera - São Paulo , 08240-150",Itaquera
+5046-6,-23.4991895,-46.4058618,Tradicional,Quinta Feira,"Rua Vereda Do Paraiso, 18 - Itaim Paulista - São Paulo , 08110-300",Itaim Paulista
+5047-4,-23.508102,-46.5863742,Tradicional,Quinta Feira,"Av Alberto Byington, 500 - Vila Maria - São Paulo , 02127-000",Vila Maria/Vila Guilherme
+5048-2,-23.467965,-46.5935799,Tradicional,Quinta Feira,"Rua Manoel Gaya, 26 - Vila Mazzei - São Paulo , 02313-000",Jaçanã/Tremenbé
+5049-0,-23.6052484,-46.5589534,Tradicional,Quinta Feira,"Av Mata Machado, 50 - Vila California - São Paulo , 03215-000",Vila Prudente
+5050-4,-23.4960178,-46.7071569,Tradicional,Quinta Feira,"Rua Moinho Velho, 135 - Vila Nigri - São Paulo , 02832-080",Freguesia/Brasilândia
+5052-0,-23.5947499,-46.6745955,Tradicional,Quinta Feira,"Rua Joao Cachoeira C/ Dr F Haidar, 1600 - Vila Olimpia - São Paulo , 04535-008",Pinheiros
+5053-9,-23.4487241,-46.6127344,Tradicional,Quinta Feira,"Rua Elias De Souza Pinto, 37 - Vila Albertina - São Paulo , 02357-060",Jaçanã/Tremenbé
+5054-7,-23.5163048,-46.5068881,Tradicional,Quinta Feira,"Rua Andre Natale, 98 - Jd Popular - São Paulo , 03670-020",Ermelino Matarazzo
+5055-5,-23.4990113,-46.7490856,Tradicional,Quinta Feira,"Rua Sandoval Ferreira Cabral, 50 - Vila Jaguara - São Paulo , 05135-330",Pirituba/Jaraguá
+5056-3,-23.5778802,-46.5570412,Tradicional,Quinta Feira,"Rua Solidonio Leite, 50 - Vila Diva - São Paulo , 03275-000",Sapopemba
+5057-1,-23.5694872,-46.7001386,Tradicional,Quinta Feira,"Rua Eugenio De Medeiros, 200 - Pinheiros - São Paulo , 05425-010",Pinheiros
+5058-0,-23.5887237,-46.5015583,Tradicional,Quinta Feira,"Av Ouro Verde De Minas, 100 - Vila Iv Centenario - São Paulo , 03937-090",São Mateus
+5059-8,-23.6297243,-46.6802964,Tradicional,Quinta Feira,"Rua Conde De Porto Alegre, 100 - Campo Belo - São Paulo , 04606-000",Santo Amaro
+5060-1,-23.5433034,-46.703362,Tradicional,Quinta Feira,"Rua Realengo, 132 - Vila Ida - São Paulo , 05451-030",Pinheiros
+5061-0,-23.5207632,-46.5663966,Tradicional,Quinta Feira,"Rua Sold Jose Vicente De Paula, 200 - Vila Maria - São Paulo , 02180-020",Vila Maria/Vila Guilherme
+5062-8,-23.6567665,-46.6366902,Tradicional,Quinta Feira,"Rua Luiz Carlos Facchini, 50 - Vila Facchini - São Paulo , 04324-160",Jabaquara
+5063-6,-23.5959765,-46.5140245,Tradicional,Quinta Feira,"Rua Gal Porfirio Da Paz, 371 - Jd Grimaldi - São Paulo , 03918-000",Sapopemba
+5064-4,-23.5377545,-46.6385519,Tradicional,Quinta Feira,"Rua Dos Andradas, 335 - Santa Efigenia - São Paulo , 01208-001",Sé
+5065-2,-23.637613,-46.5949373,Tradicional,Quinta Feira,"Praça Dr Curado Fleury, 20 - Jd Maria Estela - São Paulo , 04180-000",Ipiranga
+5066-0,-23.4327367,-46.7122185,Tradicional,Quinta Feira,"Rua Fragata Da Constituicao, 1 - Parada De Taipas - São Paulo , 02986-080",Pirituba/Jaraguá
+5067-9,-23.6021281,-46.6164002,Tradicional,Quinta Feira,"Rua Jose Cocciuffo, 100 - Alto Do Ipiranga - São Paulo , 04121-120",Ipiranga
+5068-7,-23.5533835,-46.7501064,Tradicional,Quinta Feira,"Av Araicas, 254 - Jaguare - São Paulo , 05343-010",Lapa
+5069-5,-23.6337486,-46.772289,Tradicional,Quinta Feira,"Rua Martinho Vaz De Barros, 5 - Campo Limpo - São Paulo , 05786-150",Campo Limpo
+5070-9,-23.7091574,-46.7020309,Tradicional,Quinta Feira,"Rua São Guilherme, 7377 - Cid Dutra - São Paulo , 04806-040",Capela Do Socorro
+5071-7,-23.6250476,-46.6632858,Tradicional,Quinta Feira,"Av Invernada, 351 - Congonhas - São Paulo , 04612-060",Santo Amaro
+5073-3,-23.6374849,-46.7608953,Tradicional,Quinta Feira,"Rua Dr Renato Bueno Neto, 5 - Jd Catanduva - São Paulo , 05767-350",Campo Limpo
+5074-1,-23.6283989,-46.7033948,Tradicional,Quinta Feira,"Rua Da Paz, 1600 - Chac Sto Antonio - São Paulo , 04713-002",Santo Amaro
+5075-0,-23.6922796,-46.6602627,Tradicional,Quinta Feira,"Av Augusto De Castro, 32 - Pedreira - São Paulo , 04466-090",Cidade Ademar
+5077-6,-23.6599479,-46.6681698,Tradicional,Quinta Feira,"Rua Joao Gomes Batista, 420 - Jd Cidalia - São Paulo , 04652-160",Cidade Ademar
+5078-4,-23.6645596,-46.6707102,Tradicional,Quinta Feira,"Av Celso Dos Santos, 90 - Sto Amaro - São Paulo , 04658-240",Cidade Ademar
+5079-2,-23.6161996,-46.4978539,Tradicional,Quinta Feira,"Rua Tte Godofredo Cerqueira Leite, 213 - Jd Sapopemba - São Paulo , 03977-000",Sapopemba
+5080-6,-23.5118143,-46.4339564,Tradicional,Quinta Feira,"Av Moacir Dantas Itapicuru, 135 - Cid Nova S Miguel - São Paulo , 08042-290",São Miguel Paulista
+5081-4,-23.6713114,-46.7590313,Tradicional,Quinta Feira,"Rua Luca De Marenzio, 130 - Jd Vaz De Lima - São Paulo , 05833-350",M'Boi Mirim
+5082-2,-23.5855581,-46.7557743,Tradicional,Quinta Feira,"Rua Pde Alarico Zacarias, 21 - Vila Maria Luiza - São Paulo , 05371-020",Butantã
+5083-0,-23.5165497,-46.4230885,Tradicional,Quinta Feira,"Rua Ananai, 37 - Vila Nova Curaca - São Paulo , 08032-370",Itaim Paulista
+5084-9,-23.6759353,-46.7477214,Tradicional,Quinta Feira,"Rua Belchior Felix, 30 - Parque Fig Grande - São Paulo , 04914-120",M'Boi Mirim
+5085-7,-23.5181424,-46.49116,Tradicional,Quinta Feira,"Rua Hermenegildo Gois Parente, 110 - Jd Lisboa - São Paulo , 03678-000",Ermelino Matarazzo
+5086-5,-23.4547738,-46.7171694,Tradicional,Quinta Feira,"Rua Colonial Do Irai, 250 - Jd Maggi - São Paulo , 02982-110",Pirituba/Jaraguá
+5088-1,-23.5968672,-46.7819366,Tradicional,Quinta Feira,"Rua Prof Joao De Lorenzo, 32 - Jd São Jorge - São Paulo , 05567-010",Butantã
+5092-0,-23.4891283,-46.4110779,Tradicional,Quinta Feira,"Rua Vistosa De Madre De Deus, 51 - Jd Noemia - São Paulo , 08180-110",São Miguel Paulista
+5093-8,-23.5420513,-46.5283995,Tradicional,Quinta Feira,"Rua Cap Jose Leite, 723 - Vila Matilde - São Paulo , 03510-010",Penha
+5096-2,-23.7646429,-46.6957167,Tradicional,Quinta Feira,"Av Carlos Alberto Bastos Machado, 100 - Cocaia - São Paulo , 04856-080",Capela Do Socorro
+5098-9,-23.5536648,-46.4900939,Tradicional,Quinta Feira,"Rua Silvio Torres, 10 - Itaquera Cohab I - São Paulo , 03589-010",Penha
+5099-7,-23.6094894,-46.5058654,Tradicional,Quinta Feira,"Av Lourival Fontes, 50 - Jd Planalto - São Paulo , 03983-010",Sapopemba
+5103-9,-23.4938658,-46.6562393,Tradicional,Quinta Feira,"Rua Dr Ignacio Proenca Gouveia, 1031 - Parque Peruche - São Paulo , 02534-010",Casa Verde/Cachoeirinha
+5104-7,-23.5105415,-46.4857253,Tradicional,Quinta Feira,"Rua Honorio Emiliano Bueno, 155 - Ponte Raza - São Paulo , 03884-100",Ermelino Matarazzo
+5105-5,-23.5132991,-46.4624842,Tradicional,Quinta Feira,"Rua Lirio Da Serra, 2 - Jd Das Camelias - São Paulo , 08050-460",São Miguel Paulista
+5106-3,-23.5108964,-46.5265377,Tradicional,Quinta Feira,"Av Da Justica, 10 - Vila Rui Barbosa - São Paulo , 03734-140",Penha
+5108-0,-23.658815,-46.6446604,Tradicional,Quinta Feira,"Rua Rosalia De Castro, 559 - Vila Campestre - São Paulo , 04330-100",Jabaquara
+5111-0,-23.7712485,-46.713909,Tradicional,Quinta Feira,"Rua Mario Wilches, 10 - Jd Maria Borba - São Paulo , 04858-390",Parelheiros
+5112-8,-23.5478192,-46.4343841,Tradicional,Quinta Feira,"Praça Bom Pastor, 462 - Itaquera - São Paulo , 08420-640",Itaquera
+5116-0,-23.7372423,-46.6944299,Tradicional,Quinta Feira,"Rua Gaetano Donizetti, 100 - Parque Brasil - São Paulo , 04843-110",Capela Do Socorro
+5118-7,-23.62306,-46.50539,Tradicional,Quinta Feira,"Rua Aguias Reais, 1 - Jd Elba - São Paulo , 03978-400",Sapopemba
+5119-5,-23.5976185,-46.7663557,Tradicional,Quinta Feira,"Rua Jeronimo Fernandes, 32 - Jd Guarau - São Paulo , 05549-200",Butantã
+5120-9,-23.5891399,-46.4057402,Tradicional,Quinta Feira,"Av Dos Texteis, 800 - Itaquera - São Paulo , 08490-600",Cidade Tiradentes
+5123-3,-23.5339692,-46.4677502,Tradicional,Quinta Feira,"Rua Caxiu, 50 - Vila Campanela - São Paulo , 08225-330",Itaquera
+5125-0,-23.600304,-46.4428197,Tradicional,Quinta Feira,"Rua Cubas De Mendonca, 50 - Jd Iguatemi - São Paulo , 08380-180",São Mateus
+5129-2,-23.4877843,-46.3835704,Tradicional,Quinta Feira,"Rua Monsenhor Salim, 12 - Jd Miliunas - São Paulo , 08111-180",Itaim Paulista
+5130-6,-23.4610001,-46.6881002,Tradicional,Quinta Feira,"Rua Souza Carvalho, 21 - Jd Guarani - São Paulo , 02851-030",Freguesia/Brasilândia
+5133-0,-23.4792322,-46.578174,Tradicional,Quinta Feira,"Av Roland Garros, 1000 - Vila Ede - São Paulo , 02235-000",Vila Maria/Vila Guilherme
+5135-7,-23.5614833,-46.4652053,Tradicional,Quinta Feira,"Rua Praia De Torres, 50 - Vila Carmosina - São Paulo , 08270-220",Itaquera
+5137-3,-23.5656953,-46.6415296,Tradicional,Quinta Feira,"Rua Pio Xii, 1 - Bela Vista - São Paulo , 01322-030",Sé
+5140-3,-23.5822802,-46.5198634,Tradicional,Quinta Feira,"Rua Alfaro, 391 - Vila Rica - São Paulo , 03911-040",Aricanduva/Formosa /Carrão
+5141-1,-23.5198006,-46.4105334,Tradicional,Quinta Feira,"Rua Joao Barbosa De Lima, 38 - Jd Robru - São Paulo , 08150-200",Itaim Paulista
+5143-8,-23.6119789,-46.7042243,Tradicional,Quinta Feira,"Av Barao De Monte Mor, 21 - Real Parque Morumbi - São Paulo , 05687-010",Butantã
+5148-9,-23.4823719,-46.4158344,Tradicional,Quinta Feira,"Av Borboleta Amarela, 10 - Jd São Martinho - São Paulo , 08081-570",São Miguel Paulista
+5154-3,-23.4859977,-46.5854872,Tradicional,Quinta Feira,"Rua Geolandia, 100 - Vila Medeiros - São Paulo , 02217-000",Vila Maria/Vila Guilherme
+5158-6,-23.5184769,-46.4819002,Tradicional,Quinta Feira,"Rua Acaipe, 178 - Burgo Paulista - São Paulo , 03682-040",Ermelino Matarazzo
+5160-8,-23.5536827,-46.4055892,Tradicional,Quinta Feira,"Rua Ideal, 100 - Jd São Paulo - São Paulo , 08461-150",Guaianases
+5162-4,-23.5389921,-46.6523096,Tradicional,Quinta Feira,"Rua Martim Francisco, 20 - Sta Cecilia - São Paulo , 01226-000",Sé
+5163-2,-23.6069949,-46.483277,Tradicional,Quinta Feira,"Rua Maria Luiza Do Val Penteado, 560 - Cid São Mateus - São Paulo , 03962-040",São Mateus
+5164-0,-23.5028278,-46.3868307,Tradicional,Quinta Feira,"Rua Canal De Tutoia, 320 - Jd Camargo Novo - São Paulo , 08121-220",Itaim Paulista
+5166-7,-23.584864,-46.5713199,Tradicional,Quinta Feira,"Rua Jose Pace,  S/N - Jd Avelino - São Paulo , 03227-210",Vila Prudente
+5168-3,-23.6291117,-46.739513,Tradicional,Quinta Feira,"Rua Cidade Do Rio Pardo, 100 - Vila Andrade - São Paulo , 05727-180",Campo Limpo
+5170-5,-23.6174572,-46.465464,Tradicional,Quinta Feira,"Av Mariana De Souza Guerra, 50 - Jd Vila Nova Carrao - São Paulo , 08340-220",São Mateus
+5171-3,-23.603563,-46.451601,Tradicional,Quinta Feira,"Rua Igupiara, 30 - Jd Boa Esperanca - São Paulo , 08341-220",São Mateus
+5172-1,-23.5460945,-46.4544205,Tradicional,Quinta Feira,"Rua Venturosa, 50 - Vila Carmosina - São Paulo , 08295-350",Itaquera
+5181-0,-23.480913,-46.7476279,Tradicional,Quinta Feira,"Av Santa Monica, 300 - Jardim Santa Monica - São Paulo , 05171-000",Pirituba/Jaraguá
+5182-9,-23.6137906,-46.4828898,Tradicional,Quinta Feira,"Rua Ministro Luiz Sparano, 50 - Jardim Santa Adelia - São Paulo , 03970-050",São Mateus
+5185-3,-23.4013446,-46.7473337,Noturna,Quinta Feira,"Rua Iritua, 20 - Vila Caiuba - São Paulo , 05202-160",Perus
+5186-1,-23.5583199,-46.5588818,Tradicional,Quinta Feira,"Rua Valter Gazarra, 362 - Vila Gomes Cardim - São Paulo , 03337-055",Aricanduva/Formosa /Carrão
+5187-0,-23.6422188,-46.6969607,Orgânica,Quinta Feira,"Rua São Benedito, 1406 - Santo Amaro - São Paulo , 04735-003",Santo Amaro
+5188-8,-23.5439067,-46.4229681,Noturna,Quinta Feira,"Av Ribeirao Itaquera, 7 - Guaianazes - São Paulo , 08410-310",Guaianases
+5291-4,-23.5202622,-46.7017857,Tradicional,Quinta Feira,"Praça Melvim Jones, 1405 - Lapa - São Paulo , 05072-040",Lapa
+5380-5,-23.4726894,-46.626127,Tradicional,Quinta Feira,"Av Engenheiro Caetano Alvares, 10000 - Santana - São Paulo , 02413-200",Santana/Tucuruvi
+5390-2,-23.6044588,-46.5959748,Tradicional,Quinta Feira,"Praça Pedro Balint, 1 - Ipiranga - São Paulo , 04230-040",Ipiranga
+5401-1,-23.5554464,-46.4399669,Tradicional,Quinta Feira,"Rua Carlos Albacini, 100 - Jose Bonifacio - São Paulo , 08253-650",Itaquera
+5402-0,-23.5417362,-46.5286187,Tradicional,Quinta Feira,"Praça Flavio Jose Amadeu, 427 - Vila Matilde - São Paulo , 03512-020",Penha
+5408-9,-23.6402869,-46.7462387,Tradicional,Quinta Feira,"Rua Inacio Preto De Moraes, 50 - Vila Andrade - São Paulo , 05731-340",Campo Limpo
+5413-5,-23.5016529,-46.7187629,Noturna,Quinta Feira,"Praça Grand Reserva Paulista, 2610 - Jardim Iris - São Paulo , 05145-100",Pirituba/Jaraguá
+5720-7,-23.5806475,-46.6392652,Tradicional,Quinta Feira,"Lg Dona Ana Rosa, 33 - Vila Mariana - São Paulo , 04106-090",Vila Mariana
+5791-6,-23.53898806,-46.54705643,Noturna,Quinta Feira,"Rua Francisco Machado De Campos, 70 - Chacara California - São Paulo , 03406-040",Aricanduva/Formosa /Carrão
+5886-6,-23.545774,-46.435864,Noturna,Quinta Feira,"Av. Nagib Farah Maluf, s/n - Conj. Res. José Bonifácio, São Paulo - SP",Itaquera
+5942-0,-23.53967,-46.43186,Noturna,Quinta Feira,"Calcadão Estação Cptm José Bonifácio, 1159 - Conjunto Residencial Jose Bonifacio - São Paulo , 08253-015",Itaquera
+5960-9,-23.6713841,-46.7014485,Tradicional,Quinta Feira,"Rua Rosa Galvao Trigueirinho, 1180 - Jurubatuba - São Paulo , 04696-080",Santo Amaro
+5978-1,-23.5199493,-46.6831355,Noturna,Quinta Feira,"Rua Pablo Picasso, 1 - Perdizes - São Paulo , 05033-120",Lapa
+5982-0,-23.5845219,-46.4063855,Noturna,Quinta Feira,"Rua Frei Anibal Genova, 190 - Cidade Tiradentes - São Paulo , 08490-550",Cidade Tiradentes
+6000-3,-23.5431446,-46.6409172,Tradicional,Sexta Feira,"Av Ipiranga, 700 - Se - São Paulo , 01041-000",Sé
+6001-1,-23.5655304,-46.6261903,Tradicional,Sexta Feira,"Rua Vitorio Emanuel, 312 - Cambuci - São Paulo , 01528-030",Sé
+6002-0,-23.5553732,-46.6213474,Tradicional,Sexta Feira,"Rua Dom Bosco, 100 - Cambuci - São Paulo , 03105-020",Sé
+6003-8,-23.5575769,-46.6436118,Tradicional,Sexta Feira,"Rua Maria Jose C/ Fortaleza, 129 - Bela Vista - São Paulo , 01324-010",Sé
+6004-6,-23.5364978,-46.6202375,Tradicional,Sexta Feira,"Rua Henrique Dias, 200 - Bras - São Paulo , 03009-020",Mooca
+6005-4,-23.5498362,-46.6577413,Tradicional,Sexta Feira,"Rua Mato Grosso C/ Para, 100 - Consolacao - São Paulo , 01239-040",Sé
+6006-2,-23.5722409,-46.655073,Tradicional,Sexta Feira,"Rua Cap Pinto Ferreira C/ Batataes, 100 - Jd Paulista - São Paulo , 01423-020",Pinheiros
+6007-0,-23.5752203,-46.6498478,Tradicional,Sexta Feira,"Rua Alcino Braga C/ Sampaio Viana, 219 - Paraiso - São Paulo , 04004-020",Vila Mariana
+6008-9,-23.54467,-46.6650304,Tradicional,Sexta Feira,"Praça Charles Muller, 0 - Pacaembu - São Paulo , 01234-010",Sé
+6009-7,-23.5305512,-46.6588522,Tradicional,Sexta Feira,"Rua Camaragibe C/ Lopes Chaves, 122 - Sta Cecilia - São Paulo , 01154-010",Sé
+6010-0,-23.5816892,-46.6186445,Tradicional,Sexta Feira,"Rua Mariz E Barros, 316 - Aclimacao - São Paulo , 01545-010",Vila Mariana
+6011-9,-23.5761108,-46.6072787,Tradicional,Sexta Feira,"Rua Costa Aguiar, 261 - Ipiranga - São Paulo , 04204-000",Ipiranga
+6012-7,-23.5052989,-46.6389618,Tradicional,Sexta Feira,"Rua Tupiguaes, 260 - Santana - São Paulo , 02022-040",Santana/Tucuruvi
+6013-5,-23.5936147,-46.6438116,Tradicional,Sexta Feira,"Rua Gandavo C/ Napoleao De Barros, 276 - Vila Mariana - São Paulo , 04023-000",Vila Mariana
+6014-3,-23.5236379,-46.5888531,Tradicional,Sexta Feira,"Rua Andarai, 800 - Vila Maria - São Paulo , 02117-001",Vila Maria/Vila Guilherme
+6015-1,-23.5060442,-46.6562919,Tradicional,Sexta Feira,"Rua Caetano Desco, 155 - Casa Verde - São Paulo , 02523-080",Casa Verde/Cachoeirinha
+6016-0,-23.6005805,-46.6233444,Tradicional,Sexta Feira,"Rua Dom Antonio Alvarenga, 100 - Vila Gumercindo - São Paulo , 04129-030",Ipiranga
+6017-8,-23.6156055,-46.6437813,Tradicional,Sexta Feira,"Rua Jose Maria Witaker, 1780 - Saude - São Paulo , 04057-000",Vila Mariana
+6018-6,-23.5590636,-46.5761837,Tradicional,Sexta Feira,"Rua Bom Jesus, 50 - Alto Da Mooca - São Paulo , 03344-000",Mooca
+6019-4,-23.548741,-46.5602262,Tradicional,Sexta Feira,"Rua Antonio Camardo, 1625 - Tatuape - São Paulo , 03309-060",Mooca
+6020-8,-23.497085,-46.634727,Tradicional,Sexta Feira,"Rua Prof Lourival Gomes Machado, 100 - Vila Sta Terezinha - São Paulo , 02021-050",Santana/Tucuruvi
+6021-6,-23.4923786,-46.6200396,Tradicional,Sexta Feira,"Rua Prof Joaquim Ozorio De Azevedo, 200 - Jd São Paulo - São Paulo , 02039-050",Santana/Tucuruvi
+6023-2,-23.4908344,-46.5907471,Tradicional,Sexta Feira,"Rua Santo Antonio De Lisboa, 550 - Vila Ede - São Paulo , 02202-120",Vila Maria/Vila Guilherme
+6024-0,-23.4896052,-46.66637,Tradicional,Sexta Feira,"Rua Cesar Pena Ramos, 592 - Casa Verde - São Paulo , 02563-000",Casa Verde/Cachoeirinha
+6025-9,-23.5356513,-46.7047317,Tradicional,Sexta Feira,"Rua Salvador Caruso, 10 - Vila Ipojuca - São Paulo , 05054-060",Lapa
+6026-7,-23.6126545,-46.6633713,Tradicional,Sexta Feira,"Al Dos Anapurus, 1690 - Vila Helena - São Paulo , 04087-006",Vila Mariana
+6027-5,-23.5304206,-46.5683147,Tradicional,Sexta Feira,"Rua Santa Catarina, 284 - Tatuape - São Paulo , 03086-025",Mooca
+6028-3,-23.4964347,-46.6939148,Tradicional,Sexta Feira,"Rua Estevao Furquim, 428 - Nossa Senhora Do O - São Paulo , 02733-000",Freguesia/Brasilândia
+6029-1,-23.5108885,-46.5316849,Tradicional,Sexta Feira,"Praça Maria Helena Bonelli Palma, 355 - Vila Rui Barbosa - São Paulo , 03732-040",Penha
+6030-5,-23.537583,-46.5460264,Tradicional,Sexta Feira,"Rua Edgard De Souza, 82 - Vila Aricanduva - São Paulo , 03502-010",Penha
+6033-0,-23.6611649,-46.6424953,Tradicional,Sexta Feira,"Rua Deodoro De Campos, 100 - Jabaquara - São Paulo , 04336-010",Jabaquara
+6034-8,-23.5938006,-46.7316163,Tradicional,Sexta Feira,"Av Gal Francisco Morazan, 200 - Vila Sonia - São Paulo , 05626-010",Butantã
+6035-6,-23.5800401,-46.5745355,Tradicional,Sexta Feira,"Rua Pianco, 220 - Vila Celeste - São Paulo , 03137-070",Vila Prudente
+6036-4,-23.518351,-46.5221852,Tradicional,Sexta Feira,"Rua Sinanduva, 504 - Vila Marieta - São Paulo , 03621-010",Penha
+6037-2,-23.5320503,-46.5160457,Tradicional,Sexta Feira,"Rua Santo Alexandre, 2 - Vila Guilhermina - São Paulo , 03542-100",Penha
+6038-0,-23.5895452,-46.5761914,Tradicional,Sexta Feira,"Rua Inhagapi C/ Manaias, 275 - Vila Zelina - São Paulo , 03141-080",Vila Prudente
+6039-9,-23.5751717,-46.5506138,Tradicional,Sexta Feira,"Rua Grecco, 521 - Alto Da Mooca - São Paulo , 03373-000",Aricanduva/Formosa /Carrão
+6040-2,-23.4782744,-46.5995249,Tradicional,Sexta Feira,"Av Maestro Villa Lobos, 384 - Tucuruvi - São Paulo , 02266-000",Santana/Tucuruvi
+6041-0,-23.493458,-46.5769775,Tradicional,Sexta Feira,"Rua Geolandia, 1300 - Vila Sabrina - São Paulo , 02217-000",Vila Maria/Vila Guilherme
+6042-9,-23.5491877,-46.5125948,Tradicional,Sexta Feira,"Rua Mendonca Drumont, 185 - Jd Maringa - São Paulo , 03524-030",Penha
+6043-7,-23.5300201,-46.6849127,Tradicional,Sexta Feira,"Rua Min Ferreira Alves C/ Tucuna, 50 - Vila Pompeia - São Paulo , 05009-060",Lapa
+6044-5,-23.6249196,-46.6085821,Tradicional,Sexta Feira,"Rua Angaturama, 454 - Vila Das Merces - São Paulo , 04164-010",Ipiranga
+6045-3,-23.6013871,-46.6756423,Tradicional,Sexta Feira,"Rua Baluarte, 367 - Vila Olimpia - São Paulo , 04549-011",Pinheiros
+6046-1,-23.504993,-46.4422154,Tradicional,Sexta Feira,"Rua Helio Vessoni, 100 - Vila Sinha - São Paulo , 08020-220",São Miguel Paulista
+6047-0,-23.5215752,-46.5077732,Tradicional,Sexta Feira,"Rua Municipal, 10 - Vila Re - São Paulo , 03661-000",Penha
+6048-8,-23.584856,-46.6349608,Tradicional,Sexta Feira,"Rua Conceicao Veloso, 91 - Vila Mariana - São Paulo , 04110-120",Vila Mariana
+6049-6,-23.6196495,-46.600571,Tradicional,Sexta Feira,"Rua Prof Raul Pederneiras, 100 - Vila Conde Do Pinhal - São Paulo , 04205-040",Ipiranga
+6050-0,-23.4828789,-46.7076371,Tradicional,Sexta Feira,"Rua Antonio Gomes De Oliveira, 458 - Vila Mirian - São Paulo , 02965-000",Freguesia/Brasilândia
+6051-8,-23.582066,-46.537321,Tradicional,Sexta Feira,"Rua Joao Rodrigues Pires, 200 - Vila Guarani - São Paulo , 03280-050",Vila Prudente
+6052-6,-23.611916,-46.4726034,Tradicional,Sexta Feira,"Rua Ursa Menor, 286 - Jd Sta Adelia - São Paulo , 08330-490",São Mateus
+6053-4,-23.4830898,-46.7409751,Tradicional,Sexta Feira,"Rua Maria Lucia Duarte, 35 - Vila Mutinga - São Paulo , 05172-000",Pirituba/Jaraguá
+6054-2,-23.4836606,-46.6588825,Tradicional,Sexta Feira,"Rua Lasar Segal, 409 - Freguesia Do O - São Paulo , 02543-010",Casa Verde/Cachoeirinha
+6055-0,-23.4935048,-46.6758894,Tradicional,Sexta Feira,"Av Monte Celeste, 200 - Limao - São Paulo , 02561-000",Casa Verde/Cachoeirinha
+6056-9,-23.5365969,-46.4284607,Tradicional,Sexta Feira,"Rua Santa Edith, 100 - Jd Sta Helena - São Paulo , 08420-400",Itaquera
+6057-7,-23.6426398,-46.6544514,Tradicional,Sexta Feira,"Rua Tejupa, 40 - Jabaquara - São Paulo , 04350-020",Jabaquara
+6058-5,-23.5698973,-46.752066,Tradicional,Sexta Feira,"Av Pujais Sabate, 732 - Rio Pequeno - São Paulo , 05365-200",Butantã
+6059-3,-23.6242493,-46.586495,Tradicional,Sexta Feira,"Av Patente, 194 - Jd Patente - São Paulo , 04243-000",Ipiranga
+6060-7,-23.5895228,-46.5591049,Tradicional,Sexta Feira,"Rua Secundino Domingues, 300 - Vila Prudente - São Paulo , 03223-110",Vila Prudente
+6061-5,-23.6463966,-46.5951949,Tradicional,Sexta Feira,"Rua Claudio Ferreira Manoel, 29 - Vila Olivieri - São Paulo , 04187-200",Ipiranga
+6062-3,-23.5664838,-46.5098431,Tradicional,Sexta Feira,"Av Odilon Pires, 128 - Jd Aricanduva - São Paulo , 03455-000",Aricanduva/Formosa /Carrão
+6063-1,-23.6157798,-46.6884902,Tradicional,Sexta Feira,"Rua Godoi Colaco, 1016 - Brooklin Paulista - São Paulo , 04582-030",Pinheiros
+6064-0,-23.539164,-46.717636,Tradicional,Sexta Feira,"Rua Dardanelos, 430 - Lapa - São Paulo , 05468-010",Pinheiros
+6065-8,-23.4542895,-46.7414791,Tradicional,Sexta Feira,"Av Jerimanduba, 50 - Vila Jaragua - São Paulo , 05181-000",Pirituba/Jaraguá
+6066-6,-23.5438035,-46.495057,Tradicional,Sexta Feira,"Rua São Vitorio, 79 - Vila Nhocune - São Paulo , 03561-000",Penha
+6068-2,-23.6471511,-46.6094005,Tradicional,Sexta Feira,"Av Jose Caetano Da Rocha, 93 - Parque Bristol - São Paulo , 04193-300",Ipiranga
+6069-0,-23.5027978,-46.4944076,Tradicional,Sexta Feira,"Rua Jose Gomes Faria, 23 - Vila Cisper - São Paulo , 03819-170",Penha
+6070-4,-23.4905299,-46.6980549,Tradicional,Sexta Feira,"Rua Nazario Pagano, 24 - Jd Monjolo - São Paulo , 02961-030",Freguesia/Brasilândia
+6071-2,-23.475604,-46.6236056,Tradicional,Sexta Feira,"Rua Albertina Vieira Da S Gordo, 50 - Vila Aurora - São Paulo , 02410-000",Santana/Tucuruvi
+6072-0,-23.4095791,-46.7569196,Tradicional,Sexta Feira,"Rua Raphael Di Sandro, 100 - Perus - São Paulo , 05204-160",Perus
+6073-9,-23.6695328,-46.7698039,Tradicional,Sexta Feira,"Av Athos Thomaz Ferracio, 50 - Capao Redondo - São Paulo , 05861-000",Campo Limpo
+6074-7,-23.667757,-46.6498072,Tradicional,Sexta Feira,"Rua Antonio De Pinho Azevedo, 691 - Cid Ademar - São Paulo , 04386-020",Cidade Ademar
+6075-5,-23.6373157,-46.6920758,Tradicional,Sexta Feira,"Rua Comen Elias Zarzur, 1800 - Sto Amaro - São Paulo , 04736-002",Santo Amaro
+6076-3,-23.669832,-46.6733958,Tradicional,Sexta Feira,"Rua Joao Batista Di Vitoriano, 150 - Jd Consorcio - São Paulo , 04436-000",Santo Amaro
+6077-1,-23.6171246,-46.7571838,Tradicional,Sexta Feira,"Av Anace, 50 - Jd Umarizal - São Paulo , 05755-090",Campo Limpo
+6078-0,-23.6976574,-46.6481272,Tradicional,Sexta Feira,"Rua Dos Aniquis E Dos Caratais, 80 - Pedreira - São Paulo , 04474-000",Cidade Ademar
+6079-8,-23.6726992,-46.7122024,Tradicional,Sexta Feira,"Rua Dos Inocentes C/ Mendel, 100 - Socorro - São Paulo , 04764-050",Capela Do Socorro
+6080-1,-23.6799087,-46.6823946,Tradicional,Sexta Feira,"Rua Orlando Pinto Ribeiro, 277 - Vila Arriete - São Paulo , 04455-000",Santo Amaro
+6081-0,-23.6776302,-46.7572765,Tradicional,Sexta Feira,"Rua Itaparoquera, 130 - Vila Remo - São Paulo , 04932-060",M'Boi Mirim
+6082-8,-23.5874597,-46.7694184,Tradicional,Sexta Feira,"Rua Orestes Colombari, 21 - Vila Borges - São Paulo , 05546-020",Butantã
+6084-4,-23.4627676,-46.6750595,Tradicional,Sexta Feira,"Rua São Francisco Do Humaita, 464 - Parque Tiete - São Paulo , 02871-020",Freguesia/Brasilândia
+6085-2,-23.5762989,-46.7307827,Tradicional,Sexta Feira,"Rua Pereira Do Lago, 20 - Vila Gomes - São Paulo , 05590-000",Butantã
+6086-0,-23.5174304,-46.4737689,Tradicional,Sexta Feira,"Rua Olegario Maciel, 20 - Jd São Carlos - São Paulo , 08062-320",São Miguel Paulista
+6087-9,-23.5049777,-46.482253,Tradicional,Sexta Feira,"Rua Dario Costa Matos, 45 - Ermelino Matarazzo - São Paulo , 03805-090",Ermelino Matarazzo
+6089-5,-23.5666564,-46.4065216,Tradicional,Sexta Feira,"Av Dr Guilherme De Abreu Sodre, 1414 - Guaianazes Cohab - São Paulo , 08490-010",Cidade Tiradentes
+6091-7,-23.602677,-46.5287165,Tradicional,Sexta Feira,"Rua Nubia, 50 - Vila Tolstoi - São Paulo , 03267-090",Sapopemba
+6092-5,-23.5602276,-46.4942039,Tradicional,Sexta Feira,"Rua Pedro Luiz De Souza, 22 - Jd Brasilia - São Paulo , 03584-040",Itaquera
+6093-3,-23.686689,-46.7906465,Tradicional,Sexta Feira,"Av Moenda Velha Gomes Pedrosa, 12 - Jd São Bento Novo - São Paulo , 05880-330",M'Boi Mirim
+6095-0,-23.6123973,-46.5200267,Tradicional,Sexta Feira,"Rua Serra De Itabaiana, 87 - Parque Sta Madalena - São Paulo , 03981-040",Sapopemba
+6096-8,-23.5067493,-46.4108736,Tradicional,Sexta Feira,"Rua Anajatuba, 47 - Parque Sta Rita - São Paulo , 08160-180",Itaim Paulista
+6097-6,-23.6710356,-46.6825718,Tradicional,Sexta Feira,"Praça Alexandre N Aksakof, 272 - Vila São Pedro - São Paulo , 04676-110",Santo Amaro
+6098-4,-23.6891224,-46.7663377,Tradicional,Sexta Feira,"Rua Carmelo Cali, 6 - Vila Sta Lucia - São Paulo , 04940-070",M'Boi Mirim
+6099-2,-23.4519028,-46.5987981,Tradicional,Sexta Feira,"Rua Josino Vieira Goes, 28 - Jd Joamar - São Paulo , 02319-000",Jaçanã/Tremenbé
+6100-0,-23.5940291,-46.4896883,Tradicional,Sexta Feira,"Rua Osvaldo Nevola, 10 - São Matheus - São Paulo , 03946-000",São Mateus
+6101-8,-23.6553887,-46.7733401,Tradicional,Sexta Feira,"Rua Gastao Raul De Fonton Bosquet, 50 - Jd Ipe - São Paulo , 05797-000",Campo Limpo
+6104-2,-23.6088473,-46.747009,Tradicional,Sexta Feira,"Rua Isaac Albeniz C/ Franco Alfano, 20 - Morumbi - São Paulo , 05710-050",Butantã
+6105-0,-23.5522878,-46.4551341,Tradicional,Sexta Feira,"Rua São Felix Do Piaui, 1057 - Vila Carmosina - São Paulo , 08290-030",Itaquera
+6106-9,-23.4960823,-46.4502709,Tradicional,Sexta Feira,"Rua Silvio Cervellini, 5 - São Miguel - São Paulo , 08011-240",São Miguel Paulista
+6107-7,-23.511004,-46.421176,Tradicional,Sexta Feira,"Av Flamingo, 302 - Vila Curuca Nova - São Paulo , 08031-000",Itaim Paulista
+6108-5,-23.5842372,-46.5149111,Tradicional,Sexta Feira,"Rua Romildo Finozzi, 354 - Jd Iva - São Paulo , 03910-040",Aricanduva/Formosa /Carrão
+6111-5,-23.7319149,-46.7063964,Tradicional,Sexta Feira,"Rua Jose Luiz Monteiro, 100 - Jd Imbuias - São Paulo , 04829-240",Capela Do Socorro
+6114-0,-23.6057568,-46.5204936,Tradicional,Sexta Feira,"Rua Jose Domingues De Pontes, 50 - Jd Angela - São Paulo , 03986-100",Sapopemba
+6118-2,-23.6879288,-46.6664611,Tradicional,Sexta Feira,"Rua Eduardo Pereira Ramos, 130 - Jd Niteroi - São Paulo , 04432-000",Cidade Ademar
+6122-0,-23.5498051,-46.4401926,Tradicional,Sexta Feira,"Rua Antonio Crespo, 50 - Cohab Ii - São Paulo , 08253-300",Itaquera
+6123-9,-23.4096086,-46.7411693,Tradicional,Sexta Feira,"Rua Tiburno, 200 - Vila Malvina - São Paulo , 05223-100",Perus
+6128-0,-23.5169226,-46.4672042,Tradicional,Sexta Feira,"Av Augusto Antunes, 1000 - Vila Ramos - São Paulo , 08235-630",Itaquera
+6129-8,-23.5491217,-46.5337443,Tradicional,Sexta Feira,"Praça Haroldo Daltro, 26 - Vila Manchester - São Paulo , 03444-090",Aricanduva/Formosa /Carrão
+6138-7,-23.4378141,-46.727729,Tradicional,Sexta Feira,"Rua Dr Carmelo D'Agostinho, 90 - Jd Rincao - São Paulo , 02991-040",Pirituba/Jaraguá
+6141-7,-23.602132,-46.6702431,Tradicional,Sexta Feira,"Tv Jornalista Otavio Muniz, 50 - Moema - São Paulo , 04514-100",Vila Mariana
+6145-0,-23.493204,-46.4800963,Noturna,Sexta Feira,"Praça Benedito Ramos Rodrigues, 742 - Jardim Belem - São Paulo , 03809-170",Ermelino Matarazzo
+6151-4,-23.3999909,-46.7549638,Noturna,Sexta Feira,"Rua Antonio Bartolomeu, 20 - Vila Perus - São Paulo , 05204-200",Perus
+6155-7,-23.5882562,-46.4824953,Tradicional,Sexta Feira,"Rua Das Capitanias, 496 - Jd Nove De Julho - São Paulo , 03952-050",São Mateus
+6161-1,-23.661201,-46.6933475,Tradicional,Sexta Feira,"Rua Frei Canisio, 50 - Vila Sofia - São Paulo , 04671-240",Santo Amaro
+6164-6,-23.6064623,-46.658808,Tradicional,Sexta Feira,"Rua Caboquenas, 115 - Vila Mariana - São Paulo , 04090-010",Vila Mariana
+6165-4,-23.5105948,-46.3945713,Tradicional,Sexta Feira,"Rua Aracarana, 320 - Vila São Jose - São Paulo , 08140-400",Itaim Paulista
+6166-2,-23.5876269,-46.4096098,Tradicional,Sexta Feira,"Rua Dona Eloa Do Valle Quadros, 50 - Cid Tiradentes - São Paulo , 08485-130",Cidade Tiradentes
+6169-7,-23.5585154,-46.4007416,Tradicional,Sexta Feira,"Rua Alvaro Da Costa, 50 - Jardim São Paulo - São Paulo , 08461-420",Guaianases
+6170-0,-23.4730731,-46.7134301,Tradicional,Sexta Feira,"Rua Serra Do Cachimbo, 10 - Jardim Vitoria - São Paulo , 02976-250",Pirituba/Jaraguá
+6172-7,-23.4925009,-46.5055779,Noturna,Sexta Feira,"Rua Serra Verde, 10 - Vila Silvia - São Paulo , 03821-230",Penha
+6173-5,-23.5778552,-46.4534222,Tradicional,Sexta Feira,"Rua Manoel Bacelar, 50 - Jardim Helian - São Paulo , 08265-120",Itaquera
+6174-3,-23.6108124,-46.691834,Tradicional,Sexta Feira,"Rua Conceicao De Monte Alegre, 355 - Cidade Moncoes - São Paulo , 04563-060",Pinheiros
+6176-0,-23.5253643,-46.5488279,Tradicional,Sexta Feira,"Praça Do Rosario, 10 - Penha De Franca - São Paulo , 03634-020",Penha
+6203-0,-23.5457057,-46.4827291,Tradicional,Sexta Feira,"Praça Dilva Gomes, 124 - Penha - São Paulo , 03590-080",Penha
+6350-9,-23.5799366,-46.6293607,Tradicional,Sexta Feira,"Rua Eng Luiz Gomes C Sangirardi, 640 - Aclimacao - São Paulo , 04112-080",Vila Mariana
+6360-6,-23.6350583,-46.7103986,Tradicional,Sexta Feira,"Av Prof Alceu Maynard Araujo, 30 - Varzea De Baixo - São Paulo , 04726-160",Santo Amaro
+6370-3,-23.5048482,-46.5826569,Tradicional,Sexta Feira,"Praça Gomes Figueiredo, 200 - Vila Maria - São Paulo , 02131-000",Vila Maria/Vila Guilherme
+6380-0,-23.4471034,-46.7160413,Tradicional,Sexta Feira,"Rua Jose Pizza, 100 - Parada De Taipas - São Paulo , 02815-010",Pirituba/Jaraguá
+6390-8,-23.5154559,-46.5440374,Tradicional,Sexta Feira,"Praça Danilo Jose Fernandes, 516 - Penha - São Paulo , 03608-010",Penha
+6400-9,-23.5081347,-46.7585809,Tradicional,Sexta Feira,"Rua Jose Pereira Falcao,  - Jardim Marisa - São Paulo , 05108-100",Pirituba/Jaraguá
+6401-7,-23.6040883,-46.4501796,Tradicional,Sexta Feira,"Rua Morro Do Frade, S/N - Jd Da Conquista - São Paulo , 08341-180",Sapopemba
+6402-5,-23.552977,-46.5994422,Orgânica,Sexta Feira,"Praça Ciro Pontes, 50 - Mooca - São Paulo , 03166-030",Mooca
+6711-3,-23.4679533,-46.5904837,Noturna,Sexta Feira,"Rua Benjamim Pereira, 331 - Jacana - São Paulo , 02274-001",Jaçanã/Tremenbé
+6755-5,-23.5411679,-46.5947321,Tradicional,Sexta Feira,"Lg São Jose Do Belem, 50 - Belenzinho - São Paulo , 03057-040",Mooca
+6797-0,-23.5989889,-46.5164685,Noturna,Sexta Feira,"Praça Torquato Plaza, 152 - Vila Grimaldi - São Paulo , 03271-050",Sapopemba
+6847-0,-23.5358347,-46.5338239,Tradicional,Sexta Feira,"Av Marcondes De Brito, 484 - Chacara Seis De Outubro - São Paulo , 03509-000",Penha
+6881-0,-23.6264266,-46.7338878,Noturna,Sexta Feira,"Rua Itamira, 351 - Vila Andrade - São Paulo , 05716-080",Campo Limpo
+6892-6,-23.5036936,-46.700063,Tradicional,Sexta Feira,"Rua Rua Bruno Bertucci, 200 - Freguesia Do O - São Paulo , 02910-100",Freguesia/Brasilândia
+6912-4,-23.8283137,-46.7309089,Noturna,Sexta Feira,"Praça Júlio César De Campos, 110 - Parelheiros - São Paulo , 04890-360",Parelheiros
+6918-3,-23.4846469,-46.425396,Tradicional,Sexta Feira,"Rua Mons Lourenco Giordano, 676 - Parque Paulistano - São Paulo , 08080-330",São Miguel Paulista
+6934-5,-23.60488811,-46.69352936,Orgânica,Sexta Feira,"Praça Gal Gentil Falcao, 70 - Cidade Moncoes - São Paulo , 04571-150",Pinheiros
+6936-1,-23.654358,-46.7071178,Tradicional,Sexta Feira,"Rua Matriz, 32 - Santo Amaro - São Paulo , 04746-000",Santo Amaro
+7000-9,-23.5889463,-46.5714118,Tradicional,Sábado,"Rua Goncalo Marinho De Castro, 521 - Jd Avelino - São Paulo , 03226-040",Vila Prudente
+7001-7,-23.6450026,-46.6463917,Tradicional,Sábado,"Rua Apace, 110 - Jabaquara - São Paulo , 04347-110",Jabaquara
+7002-5,-23.570619,-46.6370276,Tradicional,Sábado,"Rua Loureiro Da Cruz C/ Urano, 1 - Aclimacao - São Paulo , 01529-020",Sé
+7003-3,-23.5335844,-46.6134901,Tradicional,Sábado,"Rua Mendes Goncalves, 100 - Pari - São Paulo , 03027-010",Mooca
+7004-1,-23.5335568,-46.6500876,Tradicional,Sábado,"Rua Adolfo Gordo, 129 - Barra Funda - São Paulo , 01217-020",Sé
+7005-0,-23.5220708,-46.6420036,Tradicional,Sábado,"Rua Jaragua, 129 - Bom Retiro - São Paulo , 01129-000",Sé
+7006-8,-23.5892619,-46.6474617,Tradicional,Sábado,"Rua Franca Pinto, 1200 - Vila Mariana - São Paulo , 04016-035",Vila Mariana
+7007-6,-23.562243,-46.6015968,Tradicional,Sábado,"Rua Tabajaras, 100 - Mooca - São Paulo , 03121-010",Mooca
+7008-4,-23.6403432,-46.6669282,Tradicional,Sábado,"Rua Helade, 80 - Vila Sta Catarina - São Paulo , 04634-000",Santo Amaro
+7009-2,-23.5633665,-46.5877608,Tradicional,Sábado,"Rua Valentim Magalhaes, 156 - Vila Leste - São Paulo , 03184-090",Mooca
+7010-6,-23.5498755,-46.5845917,Tradicional,Sábado,"Rua Serra De Jaire, 832 - Alto Da Mooca - São Paulo , 03175-001",Mooca
+7011-4,-23.5372731,-46.5831686,Tradicional,Sábado,"Rua Eng Reinaldo Cajado, 215 - Belenzinho - São Paulo , 03061-030",Mooca
+7012-2,-23.5078905,-46.6049359,Tradicional,Sábado,"Rua Marieta Da Silva, 400 - Vila Guilherme - São Paulo , 02066-031",Vila Maria/Vila Guilherme
+7013-0,-23.5094783,-46.5906613,Tradicional,Sábado,"Rua Araritaguaba, 200 - Vila Maria Baixa - São Paulo , 02122-010",Vila Maria/Vila Guilherme
+7015-7,-23.5891635,-46.5847004,Tradicional,Sábado,"Rua São Luis Do Paraitinga, 24 - Vila Zelina - São Paulo , 03152-070",Vila Prudente
+7016-5,-23.6383634,-46.6556031,Tradicional,Sábado,"Rua Bonifacio De Abreu, 50 - Parque Jabaquara - São Paulo , 04358-120",Santo Amaro
+7017-3,-23.5903397,-46.6897125,Tradicional,Sábado,"Rua São Marum, 300 - Itaim Bibi - São Paulo , 04543-017",Pinheiros
+7018-1,-23.5583023,-46.6910967,Tradicional,Sábado,"Rua Mourato Coelho, 1100 - Vila Madalena - São Paulo , 05417-002",Pinheiros
+7019-0,-23.5311975,-46.6871068,Tradicional,Sábado,"Rua Barao Do Bananal C Coari, 1000 - Vila Pompeia - São Paulo , 05024-000",Lapa
+7020-3,-23.5008756,-46.641679,Tradicional,Sábado,"Rua Francisca Biriba, 100 - Imirim - São Paulo , 02451-040",Santana/Tucuruvi
+7021-1,-23.4976256,-46.6129767,Tradicional,Sábado,"Rua Pedro Ribeiro, 100 - Santana - São Paulo , 02046-001",Santana/Tucuruvi
+7022-0,-23.4987542,-46.5827713,Tradicional,Sábado,"Rua Santa Fe Do Sul, 288 - Vila Maria - São Paulo , 02133-010",Vila Maria/Vila Guilherme
+7023-8,-23.6060086,-46.6019186,Tradicional,Sábado,"Rua Americo Samarone, 300 - Sacoma - São Paulo , 04284-000",Ipiranga
+7024-6,-23.6229778,-46.617889,Tradicional,Sábado,"Rua Divinopolis C/ Nsa Da Saude, 234 - Vila Moraes - São Paulo , 04158-000",Ipiranga
+7025-4,-23.6331468,-46.6405574,Tradicional,Sábado,"Av Diederichsen, 60 - Vila Guarani - São Paulo , 04310-000",Jabaquara
+7026-2,-23.582413,-46.7135069,Tradicional,Sábado,"Rua Ladislau Roman, 7 - Caxingui - São Paulo , 05515-030",Butantã
+7028-9,-23.4854228,-46.7220209,Tradicional,Sábado,"Rua Santa Cruz De La Sierra, 1 - Pirituba - São Paulo , 02937-080",Pirituba/Jaraguá
+7029-7,-23.6397796,-46.449997,Tradicional,Sábado,"Rua Adutora Do Rio Claro, 413 - Sapopemba - São Paulo , 03374-050",Sapopemba
+7030-0,-23.5502613,-46.5536407,Tradicional,Sábado,"Rua Areiao, 56 - Tatuape - São Paulo , 03410-020",Aricanduva/Formosa /Carrão
+7031-9,-23.5281569,-46.5512569,Tradicional,Sábado,"Rua General Socrates, 32 - Penha - São Paulo , 03632-040",Penha
+7032-7,-23.5193416,-46.5340093,Tradicional,Sábado,"Rua Eneas De Barros, 425 - Vila Santana - São Paulo , 03613-000",Penha
+7033-5,-23.5395294,-46.525722,Tradicional,Sábado,"Av Melchert, 1515 - Vila Matilde - São Paulo , 03508-000",Penha
+7034-3,-23.4748956,-46.6653308,Tradicional,Sábado,"Rua Juarana C/ Do Canavial, 45 - Vila Nova Cachoeirinha - São Paulo , 02612-150",Casa Verde/Cachoeirinha
+7035-1,-23.4899275,-46.6900215,Tradicional,Sábado,"Rua Dos Sitiantes, 360 - Limao - São Paulo , 02737-000",Freguesia/Brasilândia
+7036-0,-23.4600039,-46.6222333,Tradicional,Sábado,"Rua Almeida Merces, 72 - Tremembe - São Paulo , 02372-010",Jaçanã/Tremenbé
+7037-8,-23.5300598,-46.5051001,Tradicional,Sábado,"Rua Cachoeira Paulista, 80 - Cid Patriarca - São Paulo , 03551-000",Penha
+7038-6,-23.5549562,-46.4658573,Tradicional,Sábado,"Rua Francisco Munhoz Filho, 500 - Cid Lider - São Paulo , 08280-000",Itaquera
+7039-4,-23.556777,-46.5295923,Tradicional,Sábado,"Rua Francisca De Paula, 278 - Vila Carrao - São Paulo , 03436-000",Aricanduva/Formosa /Carrão
+7040-8,-23.6012391,-46.6115145,Tradicional,Sábado,"Rua Dona Leopoldina, 243 - Vila Nair - São Paulo , 04278-040",Ipiranga
+7041-6,-23.6108053,-46.5346806,Tradicional,Sábado,"Av Morais Costa, 1050 - Vila Reunidas - São Paulo , 03253-000",Vila Prudente
+7042-4,-23.6541717,-46.699581,Tradicional,Sábado,"Rua Eng Tomas Whately, 252 - Sto Amaro - São Paulo , 04742-130",Santo Amaro
+7043-2,-23.5774106,-46.5364874,Tradicional,Sábado,"Av Antonio Manograsso, 234 - Vila Formosa - São Paulo , 03379-000",Aricanduva/Formosa /Carrão
+7044-0,-23.4982494,-46.7053602,Tradicional,Sábado,"Rua Dr Jose De Queiros Matoso, 719 - Vila Goncalves - São Paulo , 02927-090",Freguesia/Brasilândia
+7045-9,-23.4762852,-46.5761067,Tradicional,Sábado,"Rua Paulino De Brito, 700 - Jd Brasil - São Paulo , 02223-010",Vila Maria/Vila Guilherme
+7046-7,-23.4749786,-46.587188,Tradicional,Sábado,"Rua Sebastiao De Freitas, 246 - Vila Constanca - São Paulo , 02256-010",Santana/Tucuruvi
+7047-5,-23.5148041,-46.565489,Tradicional,Sábado,"Al Sub Tenente Francisco Hierro, 300 - Parque Novo Mundo - São Paulo , 02187-040",Vila Maria/Vila Guilherme
+7048-3,-23.6156055,-46.6437813,Tradicional,Sábado,"Av Jose Maria Witaker, 1780 - Vila Clementino - São Paulo , 04057-000",Vila Mariana
+7049-1,-23.7122393,-46.6878598,Tradicional,Sábado,"Rua Francisco Barreto, 100 - Jd Primavera - São Paulo , 04812-140",Capela Do Socorro
+7050-5,-23.5320404,-46.4747176,Tradicional,Sábado,"Rua Tales De Mileto, 392 - Cid A E Carvalho - São Paulo , 03693-020",Penha
+7051-3,-23.6019409,-46.5918355,Tradicional,Sábado,"Rua Albino De Moraes, 20 - Vila Carioca - São Paulo , 04223-120",Ipiranga
+7052-1,-23.530001,-46.4347839,Tradicional,Sábado,"Rua Ibiajara, 478 - Parada Xv Novembro - São Paulo , 08246-101",Itaquera
+7053-0,-23.5049326,-46.4139693,Tradicional,Sábado,"Rua Caraipe Das Aguas, 176 - Jd Dos Ipes - São Paulo , 08161-360",Itaim Paulista
+7054-8,-23.4891687,-46.5991629,Tradicional,Sábado,"Rua Cruz De Malta, 300 - Rodrigues Alves - São Paulo , 02248-000",Santana/Tucuruvi
+7055-6,-23.4888554,-46.6395557,Tradicional,Sábado,"Rua Dona Maria Custodia, 100 - Lauzane Paulista - São Paulo , 02460-070",Santana/Tucuruvi
+7056-4,-23.6032462,-46.6232622,Tradicional,Sábado,"Rua Dom Pedro I, S/N - Vila Invernada - São Paulo , 03351-125",Mooca
+7057-2,-23.5202118,-46.4880227,Tradicional,Sábado,"Rua Joao Jose De Queiroz, 595 - São Francisco - São Paulo , 03679-000",Ermelino Matarazzo
+7058-0,-23.4706365,-46.6369545,Tradicional,Sábado,"Praça Salvador Tolezano, 100 - Lauzane Paulista - São Paulo , 02422-160",Santana/Tucuruvi
+7059-9,-23.5691074,-46.5243291,Tradicional,Sábado,"Av Dom Azeredo Coutinho, 125 - Jd Vila Formosa - São Paulo , 03470-030",Aricanduva/Formosa /Carrão
+7060-2,-23.4701227,-46.7049836,Tradicional,Sábado,"Rua Maria Nazaro Da Silva, 224 - Vila Brasilandia - São Paulo , 02809-060",Freguesia/Brasilândia
+7061-0,-23.4711602,-46.7216152,Tradicional,Sábado,"Rua Povoado Do Rio Novo, 100 - Vila Mirante - São Paulo , 02956-020",Pirituba/Jaraguá
+7062-9,-23.54467,-46.6650304,Tradicional,Sábado,"Praça Charles Muller, 0 - Pacaembu - São Paulo , 01234-010",Sé
+7063-7,-23.5820893,-46.7402576,Tradicional,Sábado,"Rua Augusto Farina,  - Jd Pinheiros - São Paulo , 05594-000",Butantã
+7064-5,-23.4853009,-46.745823,Tradicional,Sábado,"Rua Jurubim, 10 - Pirituba - São Paulo , 05170-100",Pirituba/Jaraguá
+7065-3,-23.5049182,-46.7439861,Tradicional,Sábado,"Rua Jose Ataliba Ortiz, 40 - Vila Mangalot - São Paulo , 05131-000",Pirituba/Jaraguá
+7066-1,-23.6280736,-46.4695094,Tradicional,Sábado,"Rua Joao Do Canto E Melo, 671 - Parque São Rafael - São Paulo , 08311-280",São Mateus
+7067-0,-23.5946889,-46.6661627,Tradicional,Sábado,"Rua Diogo Jacome, 291 - Ibirapuera - São Paulo , 04512-000",Vila Mariana
+7068-8,-23.510423,-46.4530269,Tradicional,Sábado,"Rua Fruto Do Paraiso, 10 - Jd Santana - São Paulo , 08050-050",São Miguel Paulista
+7069-6,-23.4584323,-46.6990322,Tradicional,Sábado,"Rua Helcio Da Silva, 50 - Vila Brasilandia - São Paulo , 02854-060",Freguesia/Brasilândia
+7070-0,-23.6672556,-46.7307367,Tradicional,Sábado,"Rua Antonio Vaz, 38 - Jd Vergueiro - São Paulo , 05818-240",M'Boi Mirim
+7071-8,-23.5989971,-46.7394459,Tradicional,Sábado,"Av Claudio Franchi, 49 - Butantã - São Paulo , 05633-000",Butantã
+7072-6,-23.6317272,-46.6947077,Tradicional,Sábado,"Rua Bela Vista, 702 - Vila Uniao - São Paulo , 04709-001",Santo Amaro
+7073-4,-23.616672,-46.669966,Tradicional,Sábado,"Rua Otavio Tarquinio De Souza, 1000 - Piraquara - São Paulo , 04613-002",Santo Amaro
+7074-2,-23.6865361,-46.6786061,Tradicional,Sábado,"Rua Joaquim Neves Monteiro, 228 - Sto Amaro - São Paulo , 04456-205",Santo Amaro
+7075-0,-23.7406873,-46.706768,Tradicional,Sábado,"Av Carlos Obheruber, 123 - Sto Amaro - São Paulo , 04836-130",Capela Do Socorro
+7076-9,-23.6445381,-46.7395496,Tradicional,Sábado,"Rua Bernardino Estazione, 12 - Vila Das Belezas - São Paulo , 05840-030",M'Boi Mirim
+7077-7,-23.6841979,-46.7055478,Tradicional,Sábado,"Av Berna, 228 - Vila Friburgo - São Paulo , 04774-020",Capela Do Socorro
+7078-5,-23.5757405,-46.776099,Tradicional,Sábado,"Rua Dr Virgilio Alvin Franco, 10 - Jd D Abril - São Paulo , 05399-130",Butantã
+7079-3,-23.6393541,-46.6050625,Tradicional,Sábado,"Rua Dr Eugenio Egas, 250 - Jd Climax - São Paulo , 04177-410",Ipiranga
+7081-5,-23.7559567,-46.6849471,Tradicional,Sábado,"Rua São Caetano Do Sul, 518 - Grajau - São Paulo , 04840-230",Capela Do Socorro
+7082-3,-23.5676984,-46.7437854,Tradicional,Sábado,"Rua Jose Alves Da Cunha Lima, 172 - Rio Pequeno - São Paulo , 05360-050",Butantã
+7083-1,-23.597921,-46.452345,Tradicional,Sábado,"Rua Diogo Garcia, 283 - Jd Planalto - São Paulo , 08370-030",São Mateus
+7084-0,-23.4880009,-46.3832703,Tradicional,Sábado,"Rua Monsenhor Salim, 4 - Jd Das Oliveiras - São Paulo , 08111-180",Itaim Paulista
+7085-8,-23.6413344,-46.7826148,Tradicional,Sábado,"Rua Antonio Viegas De Ataide, 50 - Jd Maria Sampaio - São Paulo , 05790-120",Campo Limpo
+7087-4,-23.5347267,-46.4500974,Tradicional,Sábado,"Rua Prof Brito Machado, 196 - Vila Mastrocola - São Paulo , 08215-000",Itaquera
+7088-2,-23.5812848,-46.5285758,Tradicional,Sábado,"Rua Maria Francisca Do Nascimento, 125 - Vila Cruzeiro - São Paulo , 03386-110",Aricanduva/Formosa /Carrão
+7089-0,-23.5332042,-46.5568477,Tradicional,Sábado,"Rua Adelino De Almeida Castilho, 27 - Tatuape - São Paulo , 03073-050",Mooca
+7090-4,-23.5994765,-46.5150566,Tradicional,Sábado,"Rua Jose Joaquim, 17 - Jd Grimaldi - São Paulo , 03272-000",Sapopemba
+7091-2,-23.6324564,-46.6043944,Tradicional,Sábado,"Rua Eng Jose Bueno Bicalho, 50 - Jd Tropical - São Paulo , 04176-260",Ipiranga
+7092-0,-23.4725129,-46.6441792,Tradicional,Sábado,"Rua Herison, 253 - Lauzane Paulista - São Paulo , 02442-040",Santana/Tucuruvi
+7098-0,-23.4973517,-46.4620191,Tradicional,Sábado,"Rua Antonio De Siqueira, 330 - Parque Cruzeiro Do Sul - São Paulo , 08070-190",São Miguel Paulista
+7100-5,-23.6332181,-46.4436893,Tradicional,Sábado,"Rua Duarte Teixeira Chaves, 50 - Jd Sto Andre - São Paulo , 08390-130",São Mateus
+7102-1,-23.4964956,-46.7253181,Tradicional,Sábado,"Rua Laudelino Vieira De Campos, 50 - Jd Da Felicidade - São Paulo , 05143-020",Pirituba/Jaraguá
+7103-0,-23.5290396,-46.4187047,Tradicional,Sábado,"Rua Joaquim Miguel Dutra, 237 - Jd Celia - São Paulo , 08430-450",Guaianases
+7104-8,-23.5758868,-46.7614832,Tradicional,Sábado,"Rua Dr Paulo Ribeiro Coelho, 10 - Jd Antonia - São Paulo , 05374-000",Butantã
+7106-4,-23.5496202,-46.4843563,Tradicional,Sábado,"Rua Pde Francisco De Toledo, 10 - Itaquera Cohab I - São Paulo , 03590-000",Penha
+7107-2,-23.6597278,-46.6772159,Tradicional,Sábado,"Rua Juca De Azevedo, 50 - Jd Marajoara - São Paulo , 04654-015",Cidade Ademar
+7108-0,-23.6090321,-46.4926606,Tradicional,Sábado,"Rua Victoria Marconato Zonta, 214 - Jd Sapopemba - São Paulo , 03975-090",Sapopemba
+7109-9,-23.4534823,-46.7483419,Tradicional,Sábado,"Rua Mauro Araujo Ribeiro, 46 - Cid D Abril - São Paulo , 05182-000",Pirituba/Jaraguá
+7110-2,-23.5022998,-46.6765416,Tradicional,Sábado,"Rua Salvador Ligabue, 16 - Vila Siqueira - São Paulo , 02722-110",Casa Verde/Cachoeirinha
+7111-0,-23.6772949,-46.7641506,Tradicional,Sábado,"Rua Erasmus Grasser, 12 - Jd Imbe - São Paulo , 05863-060",M'Boi Mirim
+7113-7,-23.5882627,-46.547045,Tradicional,Sábado,"Rua Antonio Fontoura Xavier, 50 - Vila Paulo Silas - São Paulo , 03264-050",Vila Prudente
+7114-5,-23.7553536,-46.7012821,Tradicional,Sábado,"Rua Dr Antonio Simoes De Carvalho, 100 - Jd São Bernardo - São Paulo , 04844-480",Capela Do Socorro
+7115-3,-23.5431255,-46.434751,Tradicional,Sábado,"Rua Laura Bossi C Alfredo Ricci, 50 - Itaquera Cohab Ii - São Paulo , 08250-730",Itaquera
+7116-1,-23.5108723,-46.514294,Tradicional,Sábado,"Av Gentil Braga, 38 - Vila Buenos Ayres - São Paulo , 03737-020",Penha
+7118-8,-23.5884834,-46.5068362,Tradicional,Sábado,"Av Rufino Fernandes Inivarri, 154 - Barreira Grande - São Paulo , 03907-020",Aricanduva/Formosa /Carrão
+7122-6,-23.6741401,-46.6385425,Tradicional,Sábado,"Rua Luis Stolb, 35 - Jd Vilas Boas - São Paulo , 04416-060",Cidade Ademar
+7123-4,-23.6161928,-46.7202281,Tradicional,Sábado,"Rua Herbert Spencer, 50 - Paraizopolis - São Paulo , 05663-010",Campo Limpo
+7125-0,-23.4688986,-46.6851577,Tradicional,Sábado,"Rua Jairo Pinto Araujo, 166 - Jd Ana Maria - São Paulo , 02844-170",Freguesia/Brasilândia
+7126-9,-23.6081972,-46.6290926,Tradicional,Sábado,"Rua Guiratinga, 610 - Chac Inglesa - São Paulo , 04141-001",Vila Mariana
+7127-7,-23.5094585,-46.3848261,Tradicional,Sábado,"Rua Anastacio Trancoso, 3 - Jd Nelia - São Paulo , 08142-020",Itaim Paulista
+7128-5,-23.4878395,-46.4870027,Tradicional,Sábado,"Rua Antonio Leite Penteado, 318 - Jd Veronia - São Paulo , 03816-000",Ermelino Matarazzo
+7132-3,-23.726896,-46.6984214,Tradicional,Sábado,"Av Do Arvoreiro, 100 - Capela Do Socorro - São Paulo , 04824-010",Capela Do Socorro
+7133-1,-23.6067269,-46.5040083,Tradicional,Sábado,"Rua Felici Tosi, 100 - Sapopemba - São Paulo , 03928-180",Sapopemba
+7134-0,-23.6441014,-46.7689728,Tradicional,Sábado,"Rua Odemis, 168 - Jd Umuarama - São Paulo , 05783-180",Campo Limpo
+7135-8,-23.7419018,-46.6742714,Tradicional,Sábado,"Av Ver Jose Gomes Moraes Neto, 100 - Parque Residencial - São Paulo , 04849-030",Capela Do Socorro
+7137-4,-23.5821354,-46.40469,Tradicional,Sábado,"Rua Coracao De Maca, 50 - Tiradentes Cohab - São Paulo , 08474-230",Cidade Tiradentes
+7139-0,-23.4315056,-46.724392,Tradicional,Sábado,"Rua Maximo Barbosa, 30 - Jd Marilu - São Paulo , 02990-000",Pirituba/Jaraguá
+7143-9,-23.6156055,-46.6437813,Tradicional,Sábado,"Av Jose Maria Witaker, 1780 - Planalto Paulista - São Paulo , 04057-000",Vila Mariana
+7144-7,-23.7067971,-46.690182,Tradicional,Sábado,"Rua Claudio Sergio Bere, 10 - Jd Satelite - São Paulo , 04815-110",Capela Do Socorro
+7146-3,-23.5277584,-46.4843166,Tradicional,Sábado,"Rua Jose Aloysio Brandao Vilela, 574 - Jd Nordeste - São Paulo , 03688-100",Penha
+7147-1,-23.5596017,-46.6364535,Tradicional,Sábado,"Rua Tagua, 1 - Liberdade - São Paulo , 01508-010",Sé
+7148-0,-23.5698982,-46.6510538,Tradicional,Sábado,"Rua Chris Tronbjerg, 10 - Paraiso - São Paulo , 04001-090",Vila Mariana
+7153-6,-23.5483013,-46.6190667,Tradicional,Sábado,"Rua Torquato Neto, 500 - Bras - São Paulo , 03041-030",Mooca
+7157-9,-23.4595084,-46.7179186,Tradicional,Sábado,"Rua Laranjeiras Do Sul, 30 - Pirituba - São Paulo , 02981-030",Pirituba/Jaraguá
+7158-7,-23.7728988,-46.6899354,Tradicional,Sábado,"Rua Marco Aurelio Marilan, 10 - Jd Almeida Prado - São Paulo , 04854-170",Capela Do Socorro
+7159-5,-23.4837187,-46.4330191,Tradicional,Sábado,"Av Pedroso Da Silva, 10 - Chac Tres Meninas - São Paulo , 08080-040",São Miguel Paulista
+7161-7,-23.5555392,-46.3975611,Tradicional,Sábado,"Rua Camargo Leme, 100 - Vila São Geraldo - São Paulo , 08460-480",Guaianases
+7162-5,-23.5630938,-46.6543732,Tradicional,Sábado,"Alameda Ribeirao Preto, 537 - Cerqueira Cezar - São Paulo , 01331-000",Sé
+7170-6,-23.4850589,-46.7099232,Tradicional,Sábado,"Praça Monsenhor Escriva, 20 - Jd São Jose - São Paulo , 02968-000",Pirituba/Jaraguá
+7171-4,-23.6941441,-46.6434879,Tradicional,Sábado,"Rua Campo De Vinha, 50 - Jd Sta Terezinha - São Paulo , 03572-090",Itaquera
+7173-0,-23.5081583,-46.4884374,Tradicional,Sábado,"Rua Rafael Frederico, 70 - Vila Ponte Rasa - São Paulo , 03880-040",Ermelino Matarazzo
+7184-6,-23.5746124,-46.7121248,Tradicional,Sábado,"Av Caxingui, 1000 - Jd Raposo Tavares - São Paulo , 05579-001",Butantã
+7192-7,-23.591201,-46.4167177,Tradicional,Sábado,"Av Nascer Do Sol, 100 - Sta Etelvina Cohab - São Paulo , 08485-020",Cidade Tiradentes
+7196-0,-23.4398953,-46.5772246,Tradicional,Sábado,"Rua Manoel Pereira Rosa, 28 - Jd Fontalis - São Paulo , 02360-001",Jaçanã/Tremenbé
+7198-6,-23.5923702,-46.4005426,Tradicional,Sábado,"Rua Cristiano Lobe, 100 - Cid Tiradentes Cohab - São Paulo , 08475-340",Cidade Tiradentes
+7200-1,-23.4481777,-46.7087371,Tradicional,Sábado,"Rua Interativa, 8 - Jardim Paulistano - São Paulo , 02820-040",Pirituba/Jaraguá
+7203-6,-23.45091,-46.7888719,Tradicional,Sábado,"Rua Presidente Felix Paiva, 150 - Jd Jaragua - São Paulo , 05265-050",Perus
+7205-2,-23.6526626,-46.7700301,Tradicional,Sábado,"Rua Francisco Da Cruz Mellao, 213 - Horto Do Ype - São Paulo , 05782-351",Campo Limpo
+7207-9,-23.5422847,-46.6456632,Tradicional,Sábado,"Rua Bento Freitas, 50 - Republica - São Paulo , 01220-000",Sé
+7208-7,-23.4949971,-46.4965089,Tradicional,Sábado,"Rua Do Acapuzal, 9 - Vila Cisper - São Paulo , 03818-120",Ermelino Matarazzo
+7209-5,-23.6025174,-46.4342548,Tradicional,Sábado,"Rua Maria Garcia Betim, 5 - Jd Das Laranjeiras - São Paulo , 08381-040",São Mateus
+7210-9,-23.5689442,-46.485297,Tradicional,Sábado,"Rua Dr Celso Pacheco Betim, 100 - Parque Savoy City - São Paulo , 03571-020",Itaquera
+7214-1,-23.5011221,-46.5363893,Tradicional,Sábado,"Rua Adelina Linhares, 10 - Jd Piratininga - São Paulo , 03717-040",Penha
+7215-0,-23.5640517,-46.7659195,Tradicional,Sábado,"Av Gustavo Berthier, 307 - Vila Dalva - São Paulo , 05386-110",Butantã
+7217-6,-23.5197862,-46.4449497,Tradicional,Sábado,"Rua Barao De Godofredo, 50 - Vila Verde - São Paulo , 08230-550",Itaquera
+7218-4,-23.5046115,-46.4729072,Tradicional,Sábado,"Rua Quilombo Do Ambrosio, 20 - Vila Monte Santo - São Paulo , 08062-020",São Miguel Paulista
+7219-2,-23.6526381,-46.6115963,Tradicional,Sábado,"Rua Cancao Do Exilio, 65 - Sacoma - São Paulo , 04194-290",Ipiranga
+7220-6,-23.5277741,-46.3964742,Tradicional,Sábado,"Rua Da Conquistag, 17 - Cdhu Camargo Velho - São Paulo , 08143-430",Itaim Paulista
+7222-2,-23.5246843,-46.4277086,Tradicional,Sábado,"Rua Jose Martins Dos Santos, 100 - Lajeado - São Paulo , 08430-110",Guaianases
+7224-9,-23.6109994,-46.5920917,Tradicional,Sábado,"Rua Embu De Heliopolis, 200 - Heliopolis - São Paulo , 04235-185",Ipiranga
+7225-7,-23.4131035,-46.7500977,Tradicional,Sábado,"Rua Recanto Dos Humildes, S/N - Recanto Dos Humildes - São Paulo , 05209-000",Perus
+7230-3,-23.6368583,-46.6003537,Tradicional,Sábado,"Praça Prof Jaime Poggi, 10 - Jardim Maria Estela - São Paulo , 04181-070",Ipiranga
+7233-8,-23.8565891,-46.70789372,Tradicional,Sábado,"Av Primavera, S/N - Vila Vargem Grande - São Paulo , 04896-360",Parelheiros
+7234-6,-23.6259018,-46.740812,Tradicional,Sábado,"Rua Colantonio, 314 - Vila Andrade - São Paulo , 05726-080",Campo Limpo
+7235-4,-23.5449906,-46.4202593,Tradicional,Sábado,"Rua Irmao Deodoro, 100 - Vila Princesa Isabel - São Paulo , 08410-410",Guaianases
+7238-9,-23.5633105,-46.4331312,Tradicional,Sábado,"Rua Prof Hasegawa, 100 - Guaianazes - São Paulo , 08260-090",Itaquera
+7239-7,-23.5344594,-46.4585974,Tradicional,Sábado,"Rua Dr Olivio Montenegro, 50 - Jardim Itapemirim - São Paulo , 08220-740",Itaquera
+7240-0,-23.447289,-46.5014301,Tradicional,Sábado,"Rua Caldas Novas, 10 - Vila Nova Esperanca - São Paulo , 05164-090",Pirituba/Jaraguá
+7241-9,-23.6326946,-46.7555068,Tradicional,Sábado,"Rua Cardoso Moreira, 100 - Jardim Olinda - São Paulo , 05766-290",Campo Limpo
+7242-7,-23.7639208,-46.7076284,Tradicional,Sábado,"Rua Marta Maria Bernardes,  - Vila Natal - São Paulo , 04865-000",Capela Do Socorro
+7244-3,-23.5346591,-46.6269916,Orgânica,Sábado,"Rua Cantareira, 1000 - Centro - São Paulo , 01103-200",Sé
+7246-0,-23.4415463,-46.7078845,Tradicional,Sábado,"Rua Alexandre Silva, 100 - Jardim Brasilia - São Paulo , 02859-010",Freguesia/Brasilândia
+7248-6,-23.769548,-46.7228717,Tradicional,Sábado,"Rua Uirapuru Do Sertao, S/N - Parelheiros - São Paulo , 04864-090",Parelheiros
+7252-4,-23.508461,-46.6619345,Tradicional,Sábado,"Rua Reims, 50 - Casa Verde - São Paulo , 02517-010",Casa Verde/Cachoeirinha
+7256-7,-23.6169325,-46.4788882,Noturna,Sábado,"Rua Cachoeira De Minas, 10 - São Mateus - São Paulo , 03971-010",São Mateus
+7263-0,-23.6656515,-46.7625109,Tradicional,Sábado,"Rua Andre Lens, 300 - Jardim São Luiz - São Paulo , 05862-130",M'Boi Mirim
+7265-6,-23.556319,-46.4532695,Tradicional,Sábado,"Rua Lagoa Feia, 303 - Vila Carmosina - São Paulo , 08290-410",Itaquera
+7267-2,-23.6333022,-46.7221829,Orgânica,Sábado,"Parque Burle Marx, 200 - Vila Andrade - São Paulo , 05707-400",Campo Limpo
+7268-0,-23.5488228,-46.4248892,Tradicional,Sábado,"Rua Rodolfo Albino Silva, 25 - Guainazes - São Paulo , 08420-580",Guaianases
+7269-9,-23.5779772,-46.4806246,Tradicional,Sábado,"Av Afonso Penteado, 2019 - Parque Do Carmo - São Paulo , 08270-001",São Mateus
+7270-2,-23.5994806,-46.4854674,Tradicional,Sábado,"Av Mateo Bei, 1900 - São Mateus - São Paulo , 03949-100",São Mateus
+7271-0,-23.5826087,-46.6530661,Orgânica,Sábado,"Rua Curitiba, 290 - Paraiso - São Paulo , 04005-030",Vila Mariana
+7272-9,-23.5667286,-46.5103573,Noturna,Sábado,"Rua Antonio Caldeira, 125 - Vila Antonieta - São Paulo , 03475-040",Aricanduva/Formosa /Carrão
+7293-1,-23.6513486,-46.7073947,Tradicional,Sábado,"Praça Floriano Peixoto, 80 - Santo Amaro - São Paulo , 04750-010",Santo Amaro
+7319-9,-23.6172379,-46.7399726,Tradicional,Sábado,"Rua Anatole De Baudot, 200 - Vila Suzana - São Paulo , 05641-100",Campo Limpo
+7354-7,-23.5278799,-46.6733949,Orgânica,Sábado,"Rua Dona Ana Germaine Buchard, 286 - Agua Branca - São Paulo , 05002-061",Lapa
+7370-9,-23.5354697,-46.4540865,Tradicional,Sábado,"Av David D Ferreira, S/N  - Itaquera - São Paulo , 08210-610",Itaquera
+7380-6,-23.5656289,-46.3958944,Tradicional,Sábado,"Av Utaro Kanai C/ Festa Chinesa, 432 - Jardim São Paulo - São Paulo , 08465-000",Guaianases
+7390-3,-23.5184233,-46.7003616,Tradicional,Sábado,"Rua Dom Romeu Alberti, 50 - Lapa De Baixo - São Paulo , 05069-050",Lapa
+7400-4,-23.663848,-46.749173,Tradicional,Sábado,"Rua Jose Rodrigues Maciel, 33 - São Luis - São Paulo , 05823-070",M'Boi Mirim
+7401-2,-23.622794,-46.5971162,Tradicional,Sábado,"Rua Santo Antonio De Categero, 100 - Vila Natalia - São Paulo , 04251-010",Ipiranga
+7406-3,-23.5134189,-46.5214051,Tradicional,Sábado,"Rua Crubixa, 40 - Vila Araguaia - São Paulo , 03735-140",Penha
+7481-0,-23.5034642,-46.7153691,Tradicional,Sábado,"Rua Preta, 10 - Jd Iris - São Paulo , 05144-060",Pirituba/Jaraguá
+7715-1,-23.53770852,-46.39890287,Tradicional,Sábado,"Rua Cabral De Ataide,  - Lajeado - São Paulo , 08451-120",Guaianases
+7726-7,-23.6002168,-46.4807591,Tradicional,Sábado,"Rua Margarida Cardoso Dos Santos, 50 - Cid São Mateus - São Paulo , 03961-010",São Mateus
+7806-9,-23.5199493,-46.6831355,Tradicional,Sábado,"Rua Pablo Picasso, 1 - Perdizes - São Paulo , 05033-120",Lapa
+7846-8,-23.5147181,-46.4544074,Tradicional,Sábado,"Rua Flor Do Espirito Santo, 10 - Vila Jacui - São Paulo , 08050-080",São Miguel Paulista
+7882-4,-23.6187242,-46.7479323,Tradicional,Sábado,"Rua Miguel Masi Neto, 657 - Jardim Das Palmas - São Paulo , 05749-330",Campo Limpo
+7920-0,-23.4996307,-46.4518336,Tradicional,Sábado,"Rua Joao Felisberto Moreira, 12 - Vila Jacui - São Paulo , 08060-140",São Miguel Paulista
+7930-8,-23.4945908,-46.4429308,Tradicional,Sábado,"Rua Daniel Bernardo, 181 - São Miguel Paulista - São Paulo , 08010-100",São Miguel Paulista
+7973-1,-23.700665,-46.6504959,Tradicional,Sábado,"Rua Piavunas, 69 - Bal São Francisco - São Paulo , 04473-040",Cidade Ademar
+7975-8,-23.5189215,-46.7051909,Tradicional,Sábado,"Rua Dronsfield, 263 - Lapa - São Paulo , 05074-000",Lapa
+7977-4,-23.5282869,-46.5706862,Tradicional,Sábado,"Rua São Felippe, 737 - Parque São Jorge - São Paulo , 03085-010",Mooca
+7981-2,-23.5868536,-46.6086236,Orgânica,Sábado,"Rua Xavier De Almeida, 112 - Ipiranga - São Paulo , 04211-000",Ipiranga
+7985-5,-23.5924279,-46.5128217,Tradicional,Sábado,"Rua Joao Da Praia, 55 - Parque Dos Bancarios - São Paulo , 03923-035",Sapopemba
