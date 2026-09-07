@@ -96,8 +96,9 @@
   // ---- mapa base ----
   var map = L.map("map", { zoomControl: false, maxBoundsViscosity: 1.0 }).setView([-23.5505, -46.6333], 11);
   L.control.zoom({ position: "bottomright" }).addTo(map);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  L.tileLayer("https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, tiles by <a href="https://www.hotosm.org/">HOT</a>',
+    subdomains: "abc",
     maxZoom: 19
   }).addTo(map);
   map.attributionControl.setPrefix(""); // remove o "Leaflet" (a lib nao exige credito)
