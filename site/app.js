@@ -44,6 +44,47 @@
     return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
+  // distancia de edicao (Levenshtein) -- usada so como fallback quando a
+  // busca exata (indexOf) nao acha nada, pra tolerar erro de digitacao
+  // ("Pinheros" -> "Pinheiros"). Tolerancia cresce com o tamanho da palavra:
+  // curta demais e quase tudo "parece" com quase tudo (muito ruido).
+  function levenshtein(a, b) {
+    var m = a.length, n = b.length;
+    if (!m) return n;
+    if (!n) return m;
+    var prev = new Array(n + 1), curr = new Array(n + 1);
+    for (var j = 0; j <= n; j++) prev[j] = j;
+    for (var i = 1; i <= m; i++) {
+      curr[0] = i;
+      for (j = 1; j <= n; j++) {
+        var custo = a[i - 1] === b[j - 1] ? 0 : 1;
+        curr[j] = Math.min(curr[j - 1] + 1, prev[j] + 1, prev[j - 1] + custo);
+      }
+      var tmp = prev; prev = curr; curr = tmp;
+    }
+    return prev[n];
+  }
+  function toleranciaFuzzy(len) {
+    if (len <= 3) return 0;   // palavra curta: so exata (senao vira ruido)
+    if (len <= 6) return 1;
+    return 2;
+  }
+  // menor distancia entre "q" e qualquer palavra de "alvo" (string com varias
+  // palavras separadas por espaco) -- null se nada ficar dentro da tolerancia
+  function distanciaFuzzyMin(q, alvo) {
+    var palavras = alvo.split(/\s+/).filter(Boolean);
+    var melhor = null;
+    for (var i = 0; i < palavras.length; i++) {
+      var p = palavras[i];
+      var tol = Math.min(toleranciaFuzzy(q.length), toleranciaFuzzy(p.length));
+      if (tol === 0) continue;
+      if (Math.abs(p.length - q.length) > tol) continue; // atalho, evita Levenshtein a toa
+      var d = levenshtein(q, p);
+      if (d <= tol && (melhor === null || d < melhor)) melhor = d;
+    }
+    return melhor;
+  }
+
   // "Rua/Avenida... + nome + numero" (numero so quando existe e nao e "S/N")
   function nomeFeira(f) {
     var nome = ((f.tipo || "") + " " + (f.logradouro || "")).trim();
@@ -333,9 +374,22 @@
       var alvo = norm([f.logradouro, f.bairro, f.subprefeitura, f.distrito, zonaDe(f)].join(" "));
       var pos = alvo.indexOf(q);
       if (pos === -1) return;
-      resultados.push({ m: m, f: f, pos: pos, comecaComRua: norm(f.logradouro).indexOf(q) === 0 });
+      resultados.push({ m: m, f: f, pos: pos, comecaComRua: norm(f.logradouro).indexOf(q) === 0, fuzzy: false });
     });
+    // nada bateu exato -> tenta tolerando erro de digitacao (so entao, pra
+    // nao competir/confundir com os resultados exatos, que sao mais confiaveis)
+    if (!resultados.length) {
+      todos.forEach(function (m) {
+        var f = m.feira;
+        var alvo = norm([f.logradouro, f.bairro, f.subprefeitura, f.distrito, zonaDe(f)].join(" "));
+        var d = distanciaFuzzyMin(q, alvo);
+        if (d === null) return;
+        resultados.push({ m: m, f: f, pos: 0, comecaComRua: false, fuzzy: true, dist: d });
+      });
+    }
     resultados.sort(function (a, b) {
+      if (a.fuzzy !== b.fuzzy) return a.fuzzy ? 1 : -1;
+      if (a.fuzzy) return a.dist - b.dist;
       if (a.comecaComRua !== b.comecaComRua) return a.comecaComRua ? -1 : 1;
       if (a.pos !== b.pos) return a.pos - b.pos;
       return a.f.logradouro.localeCompare(b.f.logradouro, "pt-BR");
@@ -358,6 +412,19 @@
     addTipo("zona", "Zona", porZona);
     addTipo("distrito", "Distrito", porDistrito);
     addTipo("bairro", "Bairro", porBairro);
+    if (!areas.length) {
+      function addTipoFuzzy(rotulo, mapa) {
+        Object.keys(mapa).forEach(function (label) {
+          var d = distanciaFuzzyMin(q, norm(label));
+          if (d !== null) areas.push({ tipo: rotulo, label: label, marcadores: mapa[label], dist: d });
+        });
+      }
+      addTipoFuzzy("Zona", porZona);
+      addTipoFuzzy("Distrito", porDistrito);
+      addTipoFuzzy("Bairro", porBairro);
+      areas.sort(function (a, b) { return a.dist - b.dist; });
+      return areas.slice(0, MAX_AREAS);
+    }
     areas.sort(function (a, b) { return b.marcadores.length - a.marcadores.length; });
     return areas.slice(0, MAX_AREAS);
   }
