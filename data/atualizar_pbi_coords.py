@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Extrai os dados oficiais do painel Power BI da Prefeitura de SP (Feiras
-Livres) e gera pbi_feiras.csv -- a base usada por combinar_fontes.py.
+Extrai os dados oficiais do painel "Feiras Livres" da Prefeitura de SP e gera
+pbi_feiras.csv -- unica fonte de dados do site (ver preparar_feiras.py).
 
 O painel publico (app.powerbi.com/view?r=...) carrega os dados batendo numa
 API do Power BI (wabi-*.analysis.windows.net/public/reports/querydata) usando
@@ -12,15 +12,14 @@ A resposta vem num formato compacto (DSR: dicionarios de valores + delta
 encoding entre linhas) que o Power BI usa pra economizar banda. A funcao
 _decodifica_dsr() reverte isso pra linhas normais.
 
-Fonte do painel: https://app.powerbi.com/view?r=<RESOURCE_KEY>
-Tabela usada: "Feiras PBI - drive" (contem Latitude/Longitude/Categoria/Dia/
-Endereco/Subprefeitura como colunas reais no modelo -- nao e geocodificacao
-automatica do visual de mapa).
-Chave de juncao com feiras_limpo.csv: N.Feira, no formato "NNNN-D".
+A tabela "Feiras PBI - drive" guarda Bairro, CEP, Latitude e Longitude como
+colunas reais no modelo (confirmado via conceptualschema, nao so pelos
+graficos do relatorio -- nenhum visual usa Bairro/CEP, mas a coluna existe).
+So "Numero" nao existe separado -- fica embutido no texto de Endereco.
+Chave: N.Feira, no formato "NNNN-D".
 
-Atualizado mensalmente pela prefeitura -- reexecute este script quando for
-atualizar os dados (ver README, secao "Atualizar os dados"), depois rode
-combinar_fontes.py.
+Atualizado mensalmente pela prefeitura -- reexecute quando for atualizar os
+dados (ver README), depois rode preparar_feiras.py.
 """
 import csv
 import json
@@ -34,8 +33,9 @@ VISUAL_ID = "93ff4e9307ca8b0adb6c"  # id interno do visual de mapa no relatorio
 QUERYDATA_URL = "https://wabi-brazil-south-api.analysis.windows.net/public/reports/querydata?synchronous=true"
 OUT = "pbi_feiras.csv"
 
-COLUNAS = ["N.Feira", "Latitude", "Longitude", "Categoria", "Dia da semana", "Endereço", "Subprefeitura"]
-NOMES_SAIDA = ["id", "lat", "lng", "categoria_pbi", "dia_pbi", "endereco_pbi", "subprefeitura_pbi"]
+COLUNAS = ["N.Feira", "Latitude", "Longitude", "Categoria", "Dia da semana",
+           "Endereço", "Bairro", "CEP", "Subprefeitura"]
+NOMES_SAIDA = ["id", "lat", "lng", "categoria", "dia", "endereco_pbi", "bairro", "cep", "subprefeitura"]
 
 
 def _corpo_da_consulta():
@@ -88,17 +88,10 @@ def _consultar():
         return json.load(resp)
 
 
-def _decodifica_dsr(dm0, vdicts, n_colunas):
+def _decodifica_dsr(dm0, n_colunas):
     """Reverte o delta-encoding do Power BI: cada linha traz so os valores que
     MUDARAM desde a anterior; 'R' e uma mascara de bits marcando quais colunas
-    repetem o valor da linha de cima. Colunas cujo valor e string (nao int)
-    ja vieram por extenso -- acontece quando o dicionario da coluna estoura
-    (Power BI so guarda os primeiros N valores distintos no dicionario)."""
-    def resolve(val, dictkey):
-        if dictkey is None or isinstance(val, str):
-            return val
-        return vdicts[dictkey][val]
-
+    repetem o valor da linha de cima."""
     prev = [None] * n_colunas
     linhas = []
     for entrada in dm0:
@@ -118,7 +111,7 @@ def _decodifica_dsr(dm0, vdicts, n_colunas):
 
 
 def _para_id_com_hifen(n_feira):
-    """10014 (int do Power BI) -> "1001-4" (formato usado em feiras_limpo.csv)."""
+    """10014 (int do Power BI) -> "1001-4" (formato usado no site)."""
     s = str(n_feira).zfill(5)
     return s[:-1] + "-" + s[-1]
 
@@ -131,9 +124,11 @@ def main():
     vdicts = ds0.get("ValueDicts", {})
 
     n = len(COLUNAS)
-    dictfor = {0: None, 1: None, 2: None}  # N.Feira, Latitude, Longitude sao numericas
+    # N.Feira, Latitude, Longitude sao numericas (sem dicionario); o resto usa
+    # dicionario de valores (D0, D1, D2... na ordem em que aparecem)
+    dictfor = {0: None, 1: None, 2: None}
     for i in range(3, n):
-        dictfor[i] = f"D{i - 3}"  # Categoria->D0, Dia->D1, Endereco->D2, Subprefeitura->D3
+        dictfor[i] = f"D{i - 3}"
 
     def resolve(val, i):
         dictkey = dictfor[i]
@@ -141,16 +136,16 @@ def main():
             return val
         return vdicts[dictkey][val]
 
-    linhas = _decodifica_dsr(dm0, vdicts, n_colunas=n)
+    linhas = _decodifica_dsr(dm0, n_colunas=n)
 
     out_rows = []
     for vals in linhas:
         vals = [resolve(v, i) for i, v in enumerate(vals)]
-        n_feira, lat, lon, categoria, dia, endereco, subprefeitura = vals
+        n_feira, lat, lon, categoria, dia, endereco, bairro, cep, subprefeitura = vals
         out_rows.append({
             "id": _para_id_com_hifen(n_feira), "lat": lat, "lng": lon,
-            "categoria_pbi": categoria, "dia_pbi": dia,
-            "endereco_pbi": endereco, "subprefeitura_pbi": subprefeitura,
+            "categoria": categoria, "dia": dia, "endereco_pbi": endereco,
+            "bairro": bairro, "cep": cep, "subprefeitura": subprefeitura,
         })
 
     with open(OUT, "w", newline="", encoding="utf-8-sig") as f:
