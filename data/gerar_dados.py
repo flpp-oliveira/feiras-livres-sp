@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Gera site/feiras-data.js a partir do CSV (feiras_geo.csv se existir, senao feiras_limpo.csv).
+Gera site/feiras-data.js a partir de feiras_geo.csv.
 Formato: window.FEIRAS = [ {id, dia, categoria, tipo, logradouro, numero, bairro,
-                            referencia, cep, subprefeitura, lat, lng}, ... ]
+                            cep, subprefeitura, lat, lng}, ... ]
 Embutido em JS para o site abrir direto do arquivo (file://) sem servidor.
 """
 import csv, json, os
 
-SRC = 'feiras_geo.csv' if os.path.exists('feiras_geo.csv') else 'feiras_limpo.csv'
+SRC = 'feiras_geo.csv'
 OUT = os.path.join('..', 'site', 'feiras-data.js')
 CAMPOS = ['id', 'dia', 'categoria', 'logradouro', 'numero', 'bairro',
-          'referencia', 'cep', 'subprefeitura', 'distrito', 'lat', 'lng']
+          'cep', 'subprefeitura', 'distrito', 'lat', 'lng']
 
 def main():
     rows = list(csv.DictReader(open(SRC, encoding='utf-8-sig')))
