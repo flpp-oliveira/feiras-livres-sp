@@ -133,7 +133,6 @@
       "<dt>Rua</dt><dd>" + campo(nomeFeira(f)) + "</dd>" +
       "<dt>Bairro</dt><dd>" + campo(f.bairro) + "</dd>" +
       "<dt>Distrito</dt><dd>" + campo(f.distrito) + "</dd>" +
-      "<dt>Referência</dt><dd>" + campo(f.referencia) + "</dd>" +
       "<dt>Cep</dt><dd>" + campo(f.cep) + "</dd>" +
       "</dl>" +
       '<a class="btn-rota" href="' + rota + '" target="_blank" rel="noopener">🧭 Como chegar</a>' +
