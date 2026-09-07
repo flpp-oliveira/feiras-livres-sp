@@ -156,7 +156,8 @@ def main():
 
     P.append('  </main>')
     P.append('  <footer class="rodape">')
-    P.append('    <p>Dados: Prefeitura de São Paulo / SMSUB (set/2024). '
+    P.append('    <p>Dados: <a href="https://prefeitura.sp.gov.br/web/sesana/w/feiras-livres-sp" '
+             'target="_blank" rel="noopener">Prefeitura de São Paulo</a>. '
              'Veja também o <a href="/">mapa interativo</a>.</p>')
     P.append('    <p><a href="/termos">Termos de uso</a> · '
              '<a href="/privacidade">Política de Privacidade</a></p>')
