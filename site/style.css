@@ -225,6 +225,11 @@ input[type="search"]:focus {
   border-radius: 12px;
   overflow: hidden;
 }
+/* reserva o espaco antes do JS popular os chips (dados so chegam depois do
+   primeiro paint) -- sem isso, o layout "pula" quando os chips aparecem
+   (CLS). Altura medida com os chips reais: 2 linhas (dias) e 1 linha (categoria). */
+#filtro-dias { min-height: 105px; }
+#filtro-categorias { min-height: 53px; }
 .chip {
   position: relative;
   display: flex;
