@@ -330,7 +330,7 @@
     todos.forEach(function (m) {
       var f = m.feira;
       // join() converte null/undefined em "" (evita casar a palavra "null")
-      var alvo = norm([f.logradouro, f.bairro, f.referencia, f.subprefeitura, f.distrito, zonaDe(f)].join(" "));
+      var alvo = norm([f.logradouro, f.bairro, f.subprefeitura, f.distrito, zonaDe(f)].join(" "));
       var pos = alvo.indexOf(q);
       if (pos === -1) return;
       resultados.push({ m: m, f: f, pos: pos, comecaComRua: norm(f.logradouro).indexOf(q) === 0 });
