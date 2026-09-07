@@ -44,6 +44,17 @@ def parse_via_numero(endereco):
         numero = 'S/N'
     return {'tipo_logradouro': tipo, 'logradouro': logradouro, 'numero': numero}
 
+# O nome da Subprefeitura no painel as vezes difere do nome canonico usado
+# no dicionario Subprefeitura->Zona (app.js e gerar_lista.py) -- sem isso, a
+# feira nao cai em zona nenhuma e some SILENCIOSAMENTE da lista/busca por zona
+# (o pino ainda aparece no mapa, so a classificacao por zona que falha).
+SUBPREF_FIX = {
+    'Aricanduva/Formosa /Carrão': 'Aricanduva/Formosa/Carrão',
+    'Capela Do Socorro': 'Capela do Socorro',
+    'São Miguel Paulista': 'São Miguel',
+    'Jaçanã/Tremenbé': 'Jaçanã/Tremembé',  # erro de digitação no painel da prefeitura
+}
+
 def in_sp(lat, lng):
     try: lat, lng = float(lat), float(lng)
     except: return False
@@ -52,18 +63,19 @@ def in_sp(lat, lng):
 pbi = list(csv.DictReader(open('pbi_feiras.csv', encoding='utf-8-sig')))
 
 cols = ['id', 'dia', 'categoria', 'tipo_logradouro', 'logradouro', 'numero',
-        'bairro', 'referencia', 'cep', 'subprefeitura', 'lat', 'lng', 'geocode_status']
+        'bairro', 'cep', 'subprefeitura', 'lat', 'lng', 'geocode_status']
 
 saida = []
 for p in pbi:
     if not in_sp(p['lat'], p['lng']):
         continue  # coordenada fora do municipio -> nao plota
     via = parse_via_numero(p['endereco_pbi'])
+    subprefeitura = SUBPREF_FIX.get(p['subprefeitura'], p['subprefeitura'])
     saida.append({
         'id': p['id'], 'dia': p['dia'], 'categoria': p['categoria'],
         'tipo_logradouro': via['tipo_logradouro'], 'logradouro': via['logradouro'],
-        'numero': via['numero'], 'bairro': p['bairro'], 'referencia': '',
-        'cep': p['cep'], 'subprefeitura': p['subprefeitura'],
+        'numero': via['numero'], 'bairro': p['bairro'],
+        'cep': p['cep'], 'subprefeitura': subprefeitura,
         'lat': p['lat'], 'lng': p['lng'], 'geocode_status': 'painel_prefeitura',
     })
 
