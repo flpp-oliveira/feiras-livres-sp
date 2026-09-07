@@ -97,7 +97,7 @@
   var map = L.map("map", { zoomControl: false, maxBoundsViscosity: 1.0 }).setView([-23.5505, -46.6333], 11);
   L.control.zoom({ position: "bottomright" }).addTo(map);
   L.tileLayer("https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, tiles style by <a href="https://www.hotosm.org/">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/">OpenStreetMap France</a>',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     subdomains: "abc",
     maxZoom: 19
   }).addTo(map);
