@@ -18,3 +18,8 @@ data/*.log
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# ---- Desenvolvimento local (wrangler pages dev) ----
+# segredo local do canal de reports e o banco D1 de teste desta maquina
+.dev.vars
+.wrangler/

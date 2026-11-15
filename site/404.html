@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0E4D33" />
+  <title>Página não encontrada — Feiras Livres SP</title>
+  <!-- Com este arquivo o Cloudflare Pages responde 404 de verdade a endereços
+       que não existem (antes, qualquer endereço abria o mapa com status 200). -->
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <style>
+    /* As mesmas cores do mapa: a página de erro não é outro produto. */
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #21251f; background: #f4f6f1; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    a:focus-visible { outline: 2px solid #0E4D33; outline-offset: 2px; }
+    .caixa {
+      max-width: 460px; background: #fff; border-radius: 16px; padding: 32px 28px;
+      box-shadow: 0 1px 3px rgba(28, 25, 23, .08), 0 10px 30px rgba(28, 25, 23, .12);
+    }
+    .marca { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .marca svg { flex-shrink: 0; }
+    .marca-nome { font-size: 1.4rem; font-weight: 800; letter-spacing: -.045em; color: #0E4D33; }
+    .marca-nome span { color: #FF7A2F; }
+    h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.25; margin: 0 0 10px; }
+    p { margin: 0 0 20px; color: #57534e; font-size: .95rem; }
+    .volta {
+      display: inline-block; padding: 11px 20px; border-radius: 999px;
+      background: #0E4D33; color: #fff;
+      text-decoration: none; font-weight: 700; font-size: .9rem;
+      box-shadow: 0 3px 10px rgba(14, 77, 51, .3);
+    }
+    .volta:hover { filter: brightness(1.08); }
+    .outros { margin: 18px 0 0; font-size: .82rem; }
+    .outros a { color: #0E4D33; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="caixa">
+    <div class="marca">
+      <svg viewBox="0 0 64 64" width="40" height="40" aria-hidden="true"><path d="M32 58C32 58 13 40.5 13 27A19 19 0 0 1 51 27C51 40.5 32 58 32 58Z" fill="#FF7A2F"></path><circle cx="32" cy="27" r="7.5" fill="#fff"></circle><path d="M32 9V4.5" stroke="#0E4D33" stroke-width="2.6" stroke-linecap="round"></path><path d="M33.5 9.5C35 3 42.5 0.5 49 2.5C46.5 9 40 11.5 33.5 9.5Z" fill="#3FA35B"></path></svg>
+      <span class="marca-nome">feiras livres <span>sp</span></span>
+    </div>
+    <h1>Esta página não existe</h1>
+    <p>O endereço digitado não corresponde a nada aqui. Pode ter sido um erro de digitação, ou um link antigo.</p>
+    <a class="volta" href="/">Ir para o mapa das feiras</a>
+    <p class="outros">Ou veja a <a href="/lista">lista completa por bairro</a>.</p>
+  </main>
+</body>
+</html>

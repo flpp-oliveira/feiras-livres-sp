@@ -2,20 +2,20 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; img-src 'self' data: https://*.openstreetmap.fr; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; img-src 'self' data: blob:; worker-src blob:; child-src blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://tiles.openfreemap.org; object-src 'none'; base-uri 'self'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#2b8a3e" />
+  <meta name="theme-color" content="#0E4D33" />
   <title>Feiras Livres de São Paulo — Mapa</title>
   <meta name="description" content="Mapa interativo com as 975 feiras livres de São Paulo: filtre por dia da semana e categoria, busque por bairro e veja as feiras mais perto de você." />
   <link rel="canonical" href="https://feiraslivresp.com.br/" />
 
   <!-- adianta DNS+TLS com o servidor dos tiles do mapa (melhora o LCP na 1ª visita) -->
-  <link rel="preconnect" href="https://tile-a.openstreetmap.fr" crossorigin />
-  <link rel="preconnect" href="https://tile-b.openstreetmap.fr" crossorigin />
+  <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
 
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="manifest.json" />
 
@@ -40,25 +40,39 @@
   <!-- Dados estruturados (schema.org) — nivel do app, sem despejar as feiras -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Feiras Livres de São Paulo","url":"https://feiraslivresp.com.br/","description":"Mapa interativo com as 975 feiras livres de São Paulo: dia, endereço, categoria e as mais perto de você.","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"pt-BR","isAccessibleForFree":true,"about":{"@type":"Thing","name":"Feiras livres de São Paulo"},"areaServed":{"@type":"City","name":"São Paulo"}}</script>
 
-  <link rel="stylesheet" href="fonts/fonts.css?v=61" />
-  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=61" />
-  <link rel="stylesheet" href="style.css?v=61" />
+  <link rel="stylesheet" href="fonts/fonts.css?v=65" />
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css?v=65" />
+  <link rel="stylesheet" href="style.css?v=65" />
 </head>
 <body>
   <div id="app">
     <aside id="sidebar">
       <header>
         <div class="marca">
-          <span class="marca-badge">🧺</span>
+          <svg class="marca-simbolo" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+            <path d="M32 58C32 58 13 40.5 13 27A19 19 0 0 1 51 27C51 40.5 32 58 32 58Z" fill="#FF7A2F"></path>
+            <circle cx="32" cy="27" r="7.5" fill="#0E4D33"></circle>
+            <path d="M32 9V4.5" stroke="#F7F4EC" stroke-width="2.6" stroke-linecap="round"></path>
+            <path d="M33.5 9.5C35 3 42.5 0.5 49 2.5C46.5 9 40 11.5 33.5 9.5Z" fill="#7BD389"></path>
+          </svg>
           <div class="marca-txt">
-            <h1>Feiras Livres <span>SP</span></h1>
-            <p class="sub">toda a cidade em um mapa</p>
+            <h1>feiras livres <span>sp</span></h1>
           </div>
         </div>
       </header>
 
+      <div class="field field-busca">
+        <label for="busca">Buscar</label>
+        <div class="busca-wrap">
+          <input type="search" id="busca" placeholder="bairro, rua, zona, distrito…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="busca-sugestoes" aria-autocomplete="list" />
+          <ul id="busca-sugestoes" class="busca-sugestoes" role="listbox" hidden></ul>
+        </div>
+        <!-- so no celular: abre a gaveta com os filtros de dia e categoria -->
+        <button id="toggle-sidebar" type="button" aria-expanded="false" aria-controls="gaveta-filtros">☰ Filtros</button>
+      </div>
+
       <div class="acoes">
-        <button id="hoje" type="button">
+        <button id="hoje" type="button" aria-pressed="false">
           <span class="acao-icone">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="5" width="18" height="16" rx="3"></rect>
@@ -68,7 +82,7 @@
           </span>
           <span class="acao-label">Feiras hoje</span>
         </button>
-        <button id="perto" type="button">
+        <button id="perto" type="button" aria-pressed="false">
           <span class="acao-icone">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"></path>
@@ -79,30 +93,24 @@
         </button>
       </div>
 
+      <div id="gaveta-filtros">
       <div class="field">
-        <label for="busca">Buscar</label>
-        <div class="busca-wrap">
-          <input type="search" id="busca" placeholder="bairro, rua, zona, distrito…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="busca-sugestoes" aria-autocomplete="list" />
-          <ul id="busca-sugestoes" class="busca-sugestoes" role="listbox" hidden></ul>
-        </div>
-      </div>
-
-      <div class="field">
-        <label>🗓️ Dia da semana</label>
+        <label>Dia da semana</label>
         <div id="filtro-dias" class="chips"></div>
       </div>
 
       <div class="field">
-        <label>🧺 Categoria</label>
+        <label>Categoria</label>
         <div id="filtro-categorias" class="chips"></div>
       </div>
 
       <footer>
-        <p><a class="link-lista" href="lista.html">📋 Ver a lista completa por bairro</a></p>
-        <p>Dados: <a href="https://prefeitura.sp.gov.br/web/sesana/w/feiras-livres-sp" target="_blank" rel="noopener">Prefeitura de São Paulo</a> — podem ter imprecisão.</p>
+        <p><a class="link-lista" href="lista.html">Ver a lista completa por bairro →</a></p>
+        <p>Dados: <a href="https://prefeitura.sp.gov.br/web/sesana/w/feiras-livres-sp" target="_blank" rel="noopener">Prefeitura de São Paulo</a>, base de <span id="data-base">setembro de 2026</span> — podem ter imprecisão.</p>
         <p class="legais"><a href="termos.html">Termos de uso</a> · <a href="privacidade.html">Privacidade</a></p>
         <p class="credito">Feito por <span>OpenX</span></p>
       </footer>
+      </div>
     </aside>
 
     <main id="map"></main>
@@ -116,7 +124,7 @@
     </div>
 
     <aside id="lista-perto" hidden aria-label="Feiras perto de você">
-      <header>
+      <header id="lp-cabecalho">
         <span id="lp-titulo"></span>
         <button id="lp-min" type="button" aria-label="Minimizar lista">–</button>
       </header>
@@ -125,10 +133,60 @@
 
     <div id="toast" role="status" aria-live="polite"></div>
 
-    <div id="aviso-dados" role="status" aria-live="polite" hidden>
-      <span class="aviso-icone">🧺</span>
+    <!-- Onde o que mudou sozinho e anunciado ao leitor de tela (ver `anuncia` no app.js) -->
+    <p class="so-leitor" id="anuncio" role="status" aria-live="polite"></p>
+
+    <!-- <dialog> nativo: o navegador ja prende o foco, fecha no Esc e anuncia o
+         papel de janela sozinho. -->
+    <dialog id="aviso-dados" class="caixa" aria-labelledby="aviso-titulo">
+      <h2 id="aviso-titulo">🧺 Antes de sair de casa</h2>
       <p>Os pinos são aproximados e podem conter imprecisão. Confirme antes de se deslocar.</p>
-      <button id="aviso-ok" type="button">Entendi</button>
+      <p class="caixa-sub">Achou um erro? Abra a feira no mapa e toque em <strong>Reportar erro</strong>.</p>
+      <div class="caixa-botoes">
+        <button id="aviso-ok" type="button" class="btn-primario">Entendi</button>
+      </div>
+    </dialog>
+
+    <dialog id="convite-localizacao" class="caixa" aria-labelledby="convite-titulo">
+      <h2 id="convite-titulo">📍 Ver as feiras perto de você?</h2>
+      <p>Ligando a localização, o mapa abre onde você está e lista as feiras mais próximas.</p>
+      <p class="caixa-sub">Ela é usada só no seu aparelho, para calcular as distâncias. Não é enviada nem guardada.</p>
+      <div class="caixa-botoes">
+        <button id="convite-nao" type="button" class="btn-secundario">Agora não</button>
+        <button id="convite-sim" type="button" class="btn-primario">Ligar localização</button>
+      </div>
+    </dialog>
+
+    <dialog id="reporte" class="caixa" aria-labelledby="reporte-titulo">
+      <form id="reporte-form" novalidate>
+        <h2 id="reporte-titulo">Reportar erro</h2>
+        <p class="caixa-sub" id="reporte-feira"></p>
+        <fieldset>
+          <legend>O que está errado?</legend>
+          <label><input type="radio" name="tipo" value="local_errado" /> O pino está no lugar errado</label>
+          <label><input type="radio" name="tipo" value="nao_existe" /> Essa feira não acontece mais aqui</label>
+          <label><input type="radio" name="tipo" value="dia_errado" /> O dia da semana está errado</label>
+          <label><input type="radio" name="tipo" value="outro" /> Outro problema</label>
+        </fieldset>
+        <div id="reporte-ponto" hidden>
+          <button id="reporte-marcar" type="button" class="btn-secundario">📍 Marcar o ponto certo no mapa</button>
+          <span id="reporte-ponto-status" class="caixa-sub"></span>
+        </div>
+        <label class="reporte-texto" for="reporte-detalhe">Detalhe <span class="caixa-sub">(opcional, até 500 caracteres)</span></label>
+        <textarea id="reporte-detalhe" name="texto" maxlength="500" rows="3" placeholder="Ex.: a feira é uma quadra para cima, na Rua X"></textarea>
+        <p class="caixa-sub">Não escreva dados pessoais. O envio é conferido à mão antes de mudar o mapa — veja a <a href="privacidade.html" target="_blank" rel="noopener">Privacidade</a>.</p>
+        <p id="reporte-msg" class="reporte-msg" role="status" aria-live="polite"></p>
+        <div class="caixa-botoes">
+          <button id="reporte-cancelar" type="button" class="btn-secundario">Cancelar</button>
+          <button id="reporte-enviar" type="submit" class="btn-primario">Enviar</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- faixa que aparece enquanto a pessoa marca o ponto certo no mapa -->
+    <div id="marcar-barra" role="status" hidden>
+      <span>Toque no mapa onde a feira acontece</span>
+      <button id="marcar-cancelar" type="button">Cancelar</button>
     </div>
 
     <div id="dica-localizacao" role="note" hidden>
@@ -149,12 +207,11 @@
     </button>
 
     <button id="colapsar-sidebar" type="button" aria-label="Colapsar filtros">‹</button>
-    <button id="toggle-sidebar" type="button" aria-label="Mostrar/ocultar filtros">☰ Filtros</button>
   </div>
 
-  <script src="vendor/leaflet/leaflet.js?v=61"></script>
-  <script src="feiras-data.js?v=61"></script>
-  <script src="app.js?v=61"></script>
+  <script src="vendor/maplibre/maplibre-gl.js?v=65"></script>
+  <script src="feiras-data.js?v=65"></script>
+  <script src="app.js?v=65"></script>
 
   <!-- Cloudflare Web Analytics (medição sem cookies; token é público por design) -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2eb060762d524d85ad7d70e2b67fa203"}'></script>

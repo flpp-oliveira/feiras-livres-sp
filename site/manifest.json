@@ -1,14 +1,14 @@
 {
   "name": "Feiras Livres de São Paulo",
   "short_name": "Feiras SP",
-  "description": "Mapa interativo com as 968 feiras livres de São Paulo: dia, endereço, categoria e as mais perto de você.",
+  "description": "Mapa interativo com as 975 feiras livres de São Paulo: dia, endereço, categoria e as mais perto de você.",
   "lang": "pt-BR",
   "dir": "ltr",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f4f6f1",
-  "theme_color": "#2b8a3e",
+  "theme_color": "#0E4D33",
   "categories": ["maps", "navigation", "utilities"],
   "icons": [
     { "src": "favicon-32x32.png", "sizes": "32x32", "type": "image/png", "purpose": "any" },

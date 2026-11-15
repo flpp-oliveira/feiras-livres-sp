@@ -68,35 +68,36 @@ def main():
              "img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; "
              'object-src \'none\'; base-uri \'self\'" />')
     P.append('  <meta name="viewport" content="width=device-width, initial-scale=1.0" />')
-    P.append('  <meta name="theme-color" content="#2b8a3e" />')
+    P.append('  <meta name="theme-color" content="#0E4D33" />')
     P.append('  <title>Lista de feiras livres de São Paulo por bairro e dia</title>')
     P.append('  <meta name="description" content="Lista completa das ' + str(total) +
              ' feiras livres de São Paulo, organizadas por zona e bairro, com endereço e dia da semana." />')
     P.append('  <link rel="canonical" href="https://feiraslivresp.com.br/lista" />')
     P.append('  <link rel="icon" href="favicon.ico" sizes="any" />')
     P.append('  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />')
+    P.append('  <link rel="icon" type="image/svg+xml" href="favicon.svg" />')
     P.append('  <link rel="apple-touch-icon" href="apple-touch-icon.png" />')
     P.append('  <link rel="stylesheet" href="fonts/fonts.css" />')
     P.append('  <style>')
     P.append("""    * { box-sizing: border-box; }
     body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #21251f; background: #f4f6f1; line-height: 1.5; }
-    header.top { background: linear-gradient(150deg, #35a44d, #1a6630); color: #fff; padding: 20px; }
+    header.top { background: #0E4D33; color: #fff; padding: 20px; }
     header.top .wrap, main, footer.rodape { max-width: 860px; margin: 0 auto; }
     header.top .wrap { display: flex; align-items: center; gap: 12px; }
-    .badge { width: 44px; height: 44px; flex-shrink: 0; display: grid; place-items: center; font-size: 24px;
-      background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.28); border-radius: 14px; }
-    header.top .marca-nome { font-family: "Fraunces", Georgia, serif; font-size: 1.35rem; font-weight: 600; }
+    .badge { flex-shrink: 0; display: block; }
+    header.top .marca-nome { font-size: 1.4rem; font-weight: 800; letter-spacing: -.045em; }
+    header.top .marca-nome span { color: #FF9A5C; }
     header.top a { color: #fff; font-weight: 600; font-size: .85rem; text-decoration: none; opacity: .92; }
     header.top a:hover { text-decoration: underline; }
     main { padding: 24px 20px 40px; }
-    main > h1.titulo { font-family: "Fraunces", Georgia, serif; font-size: 1.6rem; margin: 8px 0 6px; }
+    main > h1.titulo { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; margin: 8px 0 6px; }
     .intro { color: #57534e; margin: 0 0 20px; }
     nav.zonas { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
     nav.zonas a { background: #fff; border: 1.5px solid #e7e5df; border-radius: 999px; padding: 6px 14px;
-      text-decoration: none; color: #1d6b2f; font-weight: 600; font-size: .82rem; }
-    nav.zonas a:hover { border-color: #2b8a3e; background: #e9f6ec; }
+      text-decoration: none; color: #0E4D33; font-weight: 600; font-size: .82rem; }
+    nav.zonas a:hover { border-color: #1F7A4D; background: #e9f6ec; }
     section.zona { margin: 0 0 36px; }
-    section.zona > h2 { font-size: 1.25rem; color: #1d6b2f; border-bottom: 2px solid #e7e5df; padding-bottom: 6px; }
+    section.zona > h2 { font-size: 1.25rem; color: #0E4D33; border-bottom: 2px solid #e7e5df; padding-bottom: 6px; }
     section.zona > h2 .qtd { font-size: .8rem; color: #7a776f; font-weight: 600; }
     h3.bairro { font-size: 1rem; margin: 20px 0 6px; color: #21251f; }
     ul.feiras { list-style: none; margin: 0; padding: 0; }
@@ -104,16 +105,16 @@ def main():
     ul.feiras li:last-child { border-bottom: none; }
     .end { font-weight: 700; }
     .meta { color: #57534e; }
-    .dia { color: #1d6b2f; font-weight: 600; }
+    .dia { color: #0E4D33; font-weight: 600; }
     footer.rodape { padding: 24px 20px 40px; color: #7a776f; font-size: .8rem; }
-    footer.rodape a { color: #1d6b2f; }
-    a.voltar-topo { display: inline-block; margin-top: 8px; font-size: .8rem; color: #1d6b2f; text-decoration: none; }""")
+    footer.rodape a { color: #0E4D33; }
+    a.voltar-topo { display: inline-block; margin-top: 8px; font-size: .8rem; color: #0E4D33; text-decoration: none; }""")
     P.append('  </style>')
     P.append('</head>')
     P.append('<body>')
     P.append('  <header class="top"><div class="wrap">')
-    P.append('    <span class="badge">🧺</span>')
-    P.append('    <div style="flex:1"><span class="marca-nome">Feiras Livres SP</span></div>')
+    P.append('    <svg class="badge" viewBox="0 0 64 64" width="42" height="42" aria-hidden="true"><path d="M32 58C32 58 13 40.5 13 27A19 19 0 0 1 51 27C51 40.5 32 58 32 58Z" fill="#FF7A2F"></path><circle cx="32" cy="27" r="7.5" fill="#0E4D33"></circle><path d="M32 9V4.5" stroke="#F7F4EC" stroke-width="2.6" stroke-linecap="round"></path><path d="M33.5 9.5C35 3 42.5 0.5 49 2.5C46.5 9 40 11.5 33.5 9.5Z" fill="#7BD389"></path></svg>')
+    P.append('    <div style="flex:1"><span class="marca-nome">feiras livres <span>sp</span></span></div>')
     P.append('    <a href="/">← Ver no mapa</a>')
     P.append('  </div></header>')
     P.append('  <main>')

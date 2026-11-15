@@ -1,0 +1,16 @@
+# Configuração do projeto Cloudflare Pages deste site.
+#
+# Com este arquivo no repositório, o Pages lê a configuração DAQUI (inclusive
+# o banco D1 dos reports; ver README, "Publicação do canal de reports").
+#
+# O database_id identifica o banco na conta Cloudflare; não é credencial e
+# sozinho não dá acesso a nada — quem autentica é o token do wrangler.
+
+name = "feiras-livres-sp"
+compatibility_date = "2026-11-01"
+pages_build_output_dir = "site"
+
+[[d1_databases]]
+binding = "DB"                         # nome usado no código: env.DB
+database_name = "feiras-livres-reports"
+database_id = "d550e073-7b64-41cf-8eb5-7a1d8f125d87"   # criado em 2026-11-15 (wrangler d1 create)

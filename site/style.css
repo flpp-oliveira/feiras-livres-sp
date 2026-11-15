@@ -1,6 +1,7 @@
 :root {
-  --verde: #2b8a3e;
-  --verde-esc: #1d6b2f;
+  /* identidade "Fruta-pino": verde mata + laranja-pera (so no simbolo) */
+  --verde: #1F7A4D;
+  --verde-esc: #0E4D33;
   --verde-claro: #e9f6ec;
   --bg: #f4f6f1;
   --card: #ffffff;
@@ -41,9 +42,13 @@ button { font: inherit; color: inherit; }
   transition: width .22s ease, min-width .22s ease, padding .22s ease;
 }
 
+/* filtros + rodape: no computador a gaveta nao e uma caixa — os filhos
+   entram direto na coluna da barra; no celular ela abre pelo botao "Filtros" */
+#gaveta-filtros { display: contents; }
+
 /* colapso da sidebar (desktop) */
 #colapsar-sidebar {
-  position: absolute; top: 18px; left: calc(var(--sidebar-w) - 1px); z-index: 1050;
+  position: absolute; top: 11px; left: calc(var(--sidebar-w) - 1px); z-index: 1050; /* centro do cabecalho (62px) */
   width: 22px; height: 40px;
   border: 1px solid var(--borda); border-left: none;
   border-radius: 0 10px 10px 0;
@@ -59,39 +64,26 @@ button { font: inherit; color: inherit; }
 #app.sidebar-colapsada #colapsar-sidebar { left: 0; }
 
 /* marca / cabecalho */
-#sidebar header {
+#sidebar > header {
   margin: 0 -20px;
-  padding: 22px 20px 18px;
-  background: linear-gradient(150deg, #35a44d 0%, #1a6630 100%);
+  padding: 13px 20px;            /* compacto: so simbolo e nome */
+  background: var(--verde-esc);
   color: #fff;
   position: relative;
   overflow: hidden;
 }
-#sidebar header::after {          /* motivo decorativo sutil */
-  content: "";
-  position: absolute; right: -34px; top: -34px;
-  width: 128px; height: 128px; border-radius: 50%;
-  background: rgba(255, 255, 255, .07);
-}
-.marca { display: flex; align-items: center; gap: 12px; position: relative; z-index: 1; }
-.marca-badge {
-  width: 46px; height: 46px; flex-shrink: 0;
-  display: grid; place-items: center; font-size: 25px;
-  background: rgba(255, 255, 255, .15);
-  border: 1px solid rgba(255, 255, 255, .28);
-  border-radius: 15px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, .16);
-}
+.marca { display: flex; align-items: center; gap: 9px; position: relative; z-index: 1; }
+.marca-simbolo { flex-shrink: 0; display: block; }
+/* nome em minusculas, como na identidade: "feiras livres sp" */
 .marca h1 {
   margin: 0;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.4rem; font-weight: 600; line-height: 1.02;
-  letter-spacing: -.005em;
+  font-size: 1.55rem; font-weight: 800; line-height: 1;
+  letter-spacing: -.045em;
 }
-.marca h1 span { font-style: italic; font-weight: 500; opacity: .82; }
+.marca h1 span { color: #FF9A5C; }
 .marca .sub {
-  margin: 4px 0 0;
-  color: rgba(255, 255, 255, .82);
+  margin: 5px 0 0;
+  color: #B9D8C4;
   font-size: .74rem; letter-spacing: .01em;
 }
 
@@ -135,20 +127,12 @@ button { font: inherit; color: inherit; }
 
 /* estado ATIVO — bem destacado */
 .acoes button.ativo {
-  background: linear-gradient(135deg, #33a04a, #1d6b2f);
+  background: var(--verde-esc);
   border-color: var(--verde-esc);
   color: #fff;
   font-weight: 700;
-  box-shadow: 0 4px 14px rgba(43, 138, 62, .4);
+  box-shadow: 0 4px 14px rgba(14, 77, 51, .4);
   transform: translateY(-1px);
-}
-.acoes button.ativo::after {
-  content: "●";
-  position: absolute;
-  top: 5px;
-  right: 7px;
-  font-size: .5em;
-  color: #b3f0be;
 }
 .acoes button.ativo:hover { filter: brightness(1.08); }
 .acoes button.ativo .acao-icone { background: rgba(255, 255, 255, .25); color: #fff; }
@@ -175,14 +159,14 @@ input[type="search"] {
   width: 100%;
   background: var(--card);
   transition: border-color .15s, box-shadow .15s;
-  border-color: rgba(43, 138, 62, .3);
-  box-shadow: 0 0 0 3px rgba(43, 138, 62, .06);
+  border-color: rgba(14, 77, 51, .3);
+  box-shadow: 0 0 0 3px rgba(14, 77, 51, .06);
 }
 input[type="search"]::placeholder { color: #aca89e; }
 input[type="search"]:focus {
   outline: none;
   border-color: var(--verde);
-  box-shadow: 0 0 0 3px rgba(43, 138, 62, .15);
+  box-shadow: 0 0 0 3px rgba(14, 77, 51, .15);
 }
 
 /* sugestoes de busca — dropdown flutuante sob a caixa */
@@ -287,8 +271,11 @@ input[type="search"]:focus {
   border-top: 1px solid var(--borda);
   padding-top: 14px;
 }
+/* rodape compacto: o espaco da barra vai para a lista "perto" */
+#sidebar footer p { margin: 0 0 5px; }
+#sidebar footer p:last-child { margin-bottom: 0; }
 #sidebar footer .credito {
-  margin-top: 8px;
+  margin-top: 0;
   font-size: .68rem;
   letter-spacing: .02em;
 }
@@ -306,74 +293,100 @@ input[type="search"]:focus {
 /* ================= Mapa ================= */
 #map { flex: 1; height: 100%; background: #e8ece4; }
 
-/* pinos sao imagens pre-desenhadas (ver app.js) — hover so com filtro (nao mexe no transform do Leaflet) */
-img.leaflet-marker-icon { transition: filter .12s ease; }
-img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px rgba(0,0,0,.35)); }
-
-/* controles de zoom */
-.leaflet-touch .leaflet-control-zoom { border: none; box-shadow: var(--sombra); border-radius: 10px; overflow: hidden; }
-.leaflet-touch .leaflet-control-zoom a {
-  width: 36px; height: 36px; line-height: 36px;
-  color: var(--texto); font-weight: 600;
-  border-bottom: 1px solid var(--borda);
-}
-.leaflet-touch .leaflet-control-zoom a:hover { background: var(--verde-claro); color: var(--verde-esc); }
+/* controles de zoom (os pinos sao uma camada do mapa: ver app.js) */
+.maplibregl-ctrl-group:not(:empty) { border: none; box-shadow: var(--sombra); border-radius: 10px; overflow: hidden; }
+.maplibregl-ctrl-group button { width: 36px; height: 36px; }
+/* tudo que flutua sobre o mapa respeita a mesma margem de 12px da borda */
+.maplibregl-ctrl-bottom-right .maplibregl-ctrl-group,
+.maplibregl-ctrl-bottom-right .ctrl-local { margin: 0 12px 10px 0; }
+.maplibregl-ctrl-bottom-right .maplibregl-ctrl-group { margin-bottom: 12px; }
+.maplibregl-ctrl-bottom-right .maplibregl-ctrl-attrib { margin: 0 12px 12px 0; border-radius: 6px; }
+.maplibregl-ctrl-group button + button { border-top: 1px solid var(--borda); }
+.maplibregl-ctrl-group button:not(:disabled):hover { background-color: var(--verde-claro); }
 
 /* ================= Popup ================= */
-.leaflet-popup-content-wrapper {
-  border-radius: 14px;
-  box-shadow: 0 8px 30px rgba(28, 25, 23, .25);
+/* o MapLibre impoe Helvetica/Arial dentro do mapa: o popup e os creditos
+   voltam para a letra do site */
+.maplibregl-map { font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+.maplibregl-popup-content {
+  padding: 16px 16px 12px; border-radius: 16px;
+  font-family: inherit; font-size: .82rem; line-height: 1.4; color: var(--texto);
+  box-shadow: 0 14px 36px rgba(16, 21, 18, .18), 0 2px 6px rgba(16, 21, 18, .08);
 }
-.leaflet-popup-content { margin: 14px 16px; font-family: inherit; }
-.popup-feira h3 {
-  margin: 0 0 7px;
-  font-size: .98rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  color: var(--verde-esc);
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.maplibregl-popup-close-button {
+  top: 16px; right: 10px; width: 28px; height: 28px; border-radius: 50%; /* centrado na linha das etiquetas */
+  font-size: 0; color: #9a968c;          /* esconde o caractere "×": a tinta dele fica abaixo do centro */
+  display: grid; place-items: center;
+  transition: background .15s, color .15s;
 }
-.popup-feira .popup-emoji { font-size: 1.15rem; }
+/* o X desenhado, exatamente no meio do circulo (cor = currentColor, muda no hover) */
+.maplibregl-popup-close-button::before {
+  content: ""; width: 12px; height: 12px; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M1.5 1.5l9 9M10.5 1.5l-9 9' stroke='black' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M1.5 1.5l9 9M10.5 1.5l-9 9' stroke='black' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.maplibregl-popup-close-button:hover { background: #f1efe9; color: var(--texto); }
+/* nome da feira ao passar o mouse sobre o pino */
+.dica-feira { pointer-events: none; }
+.dica-feira .maplibregl-popup-content {
+  padding: 5px 10px; border-radius: 8px;
+  font-size: .76rem; font-weight: 600; color: var(--texto);
+  box-shadow: 0 2px 10px rgba(28, 25, 23, .22);
+}
+.popup-feira { width: 264px; }
+/* etiquetas de dia e tipo: como estavam, so alinhadas e com respiro */
 .popup-feira .badge {
   display: inline-block;
-  padding: 3px 9px;
+  padding: 4px 10px;
   border-radius: 999px;
   font-size: .7rem;
   color: #fff;
-  margin-bottom: 9px;
+  margin: 2px 4px 12px 0;
   font-weight: 700;
+  letter-spacing: .01em;
 }
 .popup-feira .badge-cat { background: #57534e; }
-.popup-feira dl {
+/* ficha em blocos: rotulo pequeno em cima, valor embaixo */
+.popup-feira .popup-info {
   margin: 0;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px 12px;
-  font-size: .82rem;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px;
 }
-.popup-feira dt { color: var(--cinza); font-weight: 600; }
-.popup-feira dd { margin: 0; }
+.popup-feira .popup-info .pi-largo { grid-column: span 2; }
+.popup-feira .popup-info dt { font-size: .72rem; color: #8f8b81; line-height: 1.3; }
+.popup-feira .popup-info dd { margin: 1px 0 0; font-size: .84rem; font-weight: 600; line-height: 1.3; }
+.popup-feira .popup-info dd.pi-rua { font-size: .88rem; font-weight: 700; }
+/* acoes: mesma altura, mesmo raio, icones de traco do mesmo tamanho */
+.popup-acoes { display: flex; gap: 8px; margin-top: 12px; }
+.btn-rota, .btn-compartilhar {
+  height: 40px; box-sizing: border-box;
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  border-radius: 11px;
+  font-size: .82rem; font-weight: 700; white-space: nowrap; text-decoration: none; cursor: pointer;
+  transition: background .15s, border-color .15s, filter .15s;
+}
 .btn-rota {
-  display: block;
-  margin-top: 12px;
-  padding: 9px;
-  background: linear-gradient(135deg, #33a04a, #1d6b2f);
-  color: #fff !important;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: .84rem;
-  font-weight: 700;
-  transition: filter .15s;
+  flex: 1.15; padding: 0 12px;
+  background: var(--verde-esc); color: #fff !important; border: none;
 }
-.btn-rota:hover { filter: brightness(1.1); }
+.btn-rota:hover { filter: brightness(1.15); }
+.btn-compartilhar {
+  flex: 1; padding: 0 12px;
+  border: 1.5px solid #e3e0d8; background: var(--card); color: var(--verde-esc);
+}
+.btn-compartilhar:hover { border-color: var(--verde); background: var(--verde-claro); }
+/* reportar: secundario, discreto, abaixo das acoes */
+.btn-reportar {
+  display: block; width: 100%; margin-top: 10px; padding: 3px 0;
+  border: none; background: none; color: #8f8b81;
+  font-size: .74rem; text-decoration: underline; cursor: pointer;
+}
+.btn-reportar:hover { color: var(--verde-esc); }
 
 /* ================= Painel "Perto de você" ================= */
 #lista-perto {
   position: absolute; top: 12px; right: 12px; z-index: 1100;
-  width: 306px; max-width: calc(100vw - 24px); max-height: calc(100% - 24px);
+  /* termina acima da pilha de controles do canto (localizacao + zoom + creditos) */
+  width: 306px; max-width: calc(100vw - 24px); max-height: calc(100% - 200px); min-height: 0;
   background: var(--card); border-radius: 14px; overflow: hidden;
   box-shadow: 0 10px 34px rgba(28, 25, 23, .28);
   display: flex; flex-direction: column;
@@ -381,7 +394,7 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 #lista-perto header {
   display: flex; align-items: center; gap: 8px;
   padding: 12px 14px;
-  background: linear-gradient(135deg, #33a04a, #1d6b2f);
+  background: var(--verde-esc);
   color: #fff;
 }
 #lista-perto header #lp-titulo { flex: 1; font-size: .88rem; font-weight: 600; }
@@ -398,15 +411,17 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 }
 #lp-min:hover { background: rgba(255,255,255,.35); }
 #lista-perto.minimizado #lp-itens { display: none; }
-#lp-itens { list-style: none; margin: 0; padding: 0; overflow-y: auto; max-height: 495px; }
+#lp-itens { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 0 1 auto; min-height: 0; }
 #lp-itens li {
   display: flex; align-items: flex-start; gap: 10px;
   padding: 10px 14px; border-bottom: 1px solid var(--borda); cursor: pointer;
   transition: background .12s;
 }
-/* alinha bolinha e distancia com a PRIMEIRA linha do nome (itens de 2 linhas) */
-#lp-itens .lp-dot { margin-top: 3px; }
-#lp-itens .lp-dist { margin-top: 1px; }
+/* bolinha, nome e distancia na mesma linha de 18px: a bolinha (10px) fica
+   centrada nela com 4px acima, e a distancia divide a mesma altura de linha.
+   Assim os tres alinham pela PRIMEIRA linha mesmo quando o nome quebra. */
+#lp-itens .lp-nome, #lp-itens .lp-dist { line-height: 18px; }
+#lp-itens .lp-dot { width: 10px; height: 10px; margin-top: 4px; }
 #lp-itens li:hover { background: var(--verde-claro); }
 #lp-itens li:last-child { border-bottom: none; }
 .lp-dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); }
@@ -417,18 +432,47 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.lp-sub { font-size: .72rem; color: var(--cinza); }
+.lp-sub { font-size: .72rem; line-height: 1.4; color: var(--cinza); }
 .lp-dist { font-size: .78rem; font-weight: 800; color: var(--verde); white-space: nowrap; }
 
-/* atribuicao discreta (OSM/CARTO obrigatorios por licenca) */
-.leaflet-control-attribution {
-  font-size: 10px; opacity: .6; background: rgba(255,255,255,.75) !important;
-  border-radius: 6px 0 0 0;
+/* no computador a lista mora na barra lateral (app.js, posicionaLista) e
+   veste a roupa da barra: titulo cinza em maiusculas como "Dia da semana",
+   contagem no formato dos filtros, caixa com a mesma borda. Sem faixa verde
+   e sem minimizar: quem liga e desliga e o proprio "Perto de mim". */
+@media (min-width: 761px) {
+  #sidebar #lista-perto {
+    position: static; width: auto; max-width: none; max-height: none;
+    flex: 1 1 0; min-height: 180px;
+    gap: 9px;                        /* mesmo respiro titulo-caixa dos filtros */
+    background: none; border-radius: 0; overflow: visible; box-shadow: none;
+  }
+  #sidebar #lista-perto header {
+    padding: 0; background: none; color: #a29e94;
+  }
+  #sidebar #lista-perto header #lp-titulo {
+    font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .11em;
+  }
+  #sidebar #lista-perto header #lp-titulo .lp-qtd {
+    margin-left: 6px; padding: 1px 7px;
+    background: rgba(0, 0, 0, .05); color: var(--cinza);
+    font-size: .62rem; font-weight: 800; letter-spacing: .02em;
+  }
+  #sidebar #lp-min, #sidebar .lp-emoji { display: none; }
+  #sidebar #lp-itens {
+    flex: 1 1 auto;
+    border: 1.5px solid var(--borda); border-radius: var(--radius);
+  }
+  #sidebar #lp-itens li { padding: 9px 12px; }
+  #sidebar #lista-perto.minimizado #lp-itens { display: block; }
 }
+
+/* atribuicao discreta (OpenFreeMap/OpenMapTiles/OSM obrigatorios por licenca) */
+.maplibregl-ctrl-attrib { font-size: 10px; }
+.maplibregl-ctrl-attrib:not(.maplibregl-compact) { background: rgba(255,255,255,.75); }
 
 /* ================= Voltar para localizacao ================= */
 #voltar-localizacao {
-  position: absolute; right: 10px; bottom: 106px; z-index: 1090;
+  /* mora na pilha de controles do MapLibre (app.js), logo acima do zoom */
   width: 36px; height: 36px; border-radius: 50%; border: none;
   /* desligado ele NAO e um botao inerte: e quem liga a localizacao. Branco com
      icone verde le como acionavel; o cinza antigo passava ideia de desabilitado. */
@@ -441,16 +485,16 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 #voltar-localizacao:hover { filter: brightness(.96); transform: scale(1.06); }
 #voltar-localizacao:active { transform: scale(.94); }
 #voltar-localizacao.ativo {
-  background: linear-gradient(135deg, #33a04a, #1d6b2f); color: #fff;
+  background: var(--verde-esc); color: #fff;
   box-shadow: 0 6px 18px rgba(29, 107, 47, .45), 0 2px 6px rgba(0,0,0,.2);
 }
 #voltar-localizacao.ativo:hover { filter: brightness(1.1); }
 #voltar-localizacao.ativo:active { box-shadow: 0 3px 10px rgba(29, 107, 47, .4); }
 
-/* dica que aponta pro botao de localizacao (primeira visita) */
-/* posicao vem do JS (posicionarDica): o alvo muda de botao entre desktop e mobile */
+/* dica que aponta pro botao "Perto de mim" (depois de recusar o convite) */
+/* posicao vem do JS (posicionarDica): ao lado do botao no computador, abaixo no celular */
 #dica-localizacao {
-  position: absolute; z-index: 1095;
+  position: absolute; z-index: 1170;
   display: flex; align-items: center; gap: 8px;
   max-width: 210px; padding: 9px 8px 9px 13px;
   background: #21251f; color: #fff;
@@ -459,15 +503,15 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
   opacity: 0;
   transition: opacity .25s ease, transform .25s ease;
 }
-#dica-localizacao.seta-dir { transform: translateX(8px); }   /* caixa a esquerda do alvo */
+#dica-localizacao.seta-cima { transform: translateY(8px); }  /* caixa abaixo do alvo */
 #dica-localizacao.seta-esq { transform: translateX(-8px); }  /* caixa a direita do alvo */
-#dica-localizacao.show { opacity: 1; transform: translateX(0); }
+#dica-localizacao.show { opacity: 1; transform: none; }
 #dica-localizacao::after {          /* setinha apontando pro botao */
   content: ""; position: absolute; top: 50%; margin-top: -6px;
   width: 12px; height: 12px; background: #21251f; transform: rotate(45deg);
   border-radius: 2px;
 }
-#dica-localizacao.seta-dir::after { right: -6px; }
+#dica-localizacao.seta-cima::after { top: -6px; margin-top: 0; left: 50%; margin-left: -6px; }
 #dica-localizacao.seta-esq::after { left: -6px; }
 /* icone em SVG, nao o caractere "x": a tinta do glifo fica 3px abaixo do centro
    da caixa de texto e o simbolo aparecia torto dentro do circulo */
@@ -479,7 +523,6 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 }
 #dica-fechar:hover { background: rgba(255, 255, 255, .3); }
 
-/* zoom do mapa: direita, na base (o botao de localizacao fica empilhado acima dele) */
 
 /* ================= Toast ================= */
 #toast {
@@ -494,32 +537,11 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
   transition: opacity .2s, transform .2s;
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-
-/* ================= Aviso sobre os dados (primeira visita) ================= */
-#aviso-dados {
-  position: fixed; left: 50%; bottom: 22px; z-index: 1200;
-  transform: translateX(-50%) translateY(16px);
-  display: flex; align-items: flex-start; gap: 11px;
-  width: min(520px, calc(100vw - 24px));
-  padding: 13px 15px;
-  background: var(--card);
-  border: 1.5px solid var(--borda);
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(28, 25, 23, .24);
-  opacity: 0;
-  transition: opacity .25s ease, transform .25s ease;
+/* no computador, centrado no mapa (a barra lateral ocupa a esquerda) */
+@media (min-width: 761px) {
+  #toast { left: calc(50% + var(--sidebar-w) / 2); }
+  #app.sidebar-colapsada #toast { left: 50%; }
 }
-#aviso-dados.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-#aviso-dados .aviso-icone { font-size: 1.2rem; line-height: 1.3; flex-shrink: 0; }
-#aviso-dados p { margin: 0; flex: 1; font-size: .8rem; line-height: 1.45; color: #57534e; }
-#aviso-ok {
-  flex-shrink: 0; align-self: center;
-  padding: 8px 16px; border: none; border-radius: 999px;
-  background: linear-gradient(135deg, #33a04a, #1d6b2f); color: #fff;
-  font-size: .8rem; font-weight: 700; cursor: pointer;
-  box-shadow: 0 3px 10px rgba(43, 138, 62, .3);
-}
-#aviso-ok:hover { filter: brightness(1.08); }
 
 /* ================= Estado vazio ================= */
 #vazio {
@@ -527,6 +549,7 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
   display: flex; align-items: center; justify-content: center;
   pointer-events: none;
 }
+#app.sidebar-colapsada #vazio { left: 0; }
 .vazio-card {
   pointer-events: auto;
   background: var(--card); border-radius: 16px; padding: 28px 34px;
@@ -537,13 +560,14 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 .vazio-card p { margin: 0 0 16px; font-size: .92rem; color: var(--cinza); }
 #vazio-limpar {
   padding: 10px 22px; border: none; border-radius: 999px;
-  background: linear-gradient(135deg, #33a04a, #1d6b2f); color: #fff;
+  background: var(--verde-esc); color: #fff;
   cursor: pointer; font-size: .88rem; font-weight: 700;
-  box-shadow: 0 4px 14px rgba(43,138,62,.35);
+  box-shadow: 0 4px 14px rgba(14,77,51,.35);
 }
 #vazio-limpar:hover { filter: brightness(1.08); }
 
 /* ================= Localizacao do usuario ================= */
+.user-dot, .ponto-sugerido { pointer-events: none; }
 .user-dot span {
   display: block; width: 18px; height: 18px; border-radius: 50%;
   background: #1e88e5; border: 3px solid #fff;
@@ -563,49 +587,217 @@ img.leaflet-marker-icon:hover { filter: brightness(1.12) drop-shadow(0 3px 6px r
 }
 #sidebar::-webkit-scrollbar-track, #lp-itens::-webkit-scrollbar-track { background: transparent; }
 
-/* ================= Toggle sidebar (mobile) ================= */
+/* ================= Janelas (<dialog>): aviso, convite e reporte ================= */
+dialog.caixa {
+  width: min(420px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: 22px 22px 18px;
+  border: none; border-radius: 16px;
+  background: var(--card); color: var(--texto);
+  box-shadow: 0 16px 48px rgba(28, 25, 23, .3);
+  overflow-y: auto;
+}
+dialog.caixa::backdrop { background: rgba(28, 25, 23, .45); }
+dialog.caixa h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem; font-weight: 800; line-height: 1.25; letter-spacing: -.02em;
+}
+dialog.caixa p { margin: 0 0 10px; font-size: .9rem; line-height: 1.5; color: #44483f; }
+dialog.caixa .caixa-sub, .caixa-sub { font-size: .78rem; color: var(--cinza); }
+dialog.caixa a { color: var(--verde-esc); }
+.caixa-botoes { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }
+.btn-primario, .btn-secundario {
+  padding: 10px 18px; border-radius: 999px;
+  font-size: .86rem; font-weight: 700; cursor: pointer;
+}
+.btn-primario {
+  border: none;
+  background: var(--verde-esc); color: #fff;
+  box-shadow: 0 3px 10px rgba(14, 77, 51, .3);
+}
+.btn-primario:hover { filter: brightness(1.08); }
+.btn-primario:disabled { opacity: .6; cursor: wait; }
+.btn-secundario {
+  border: 1.5px solid var(--borda);
+  background: var(--card); color: var(--verde-esc);
+}
+.btn-secundario:hover { border-color: var(--verde); background: var(--verde-claro); }
+
+/* ---- formulario de reporte ---- */
+#reporte fieldset { border: none; margin: 12px 0 10px; padding: 0; display: grid; gap: 6px; }
+#reporte legend { padding: 0; margin-bottom: 6px; font-size: .78rem; font-weight: 700; color: var(--cinza); }
+#reporte fieldset label {
+  display: flex; align-items: center; gap: 9px;
+  padding: 9px 10px;
+  border: 1.5px solid var(--borda); border-radius: 10px;
+  font-size: .88rem; cursor: pointer;
+}
+#reporte fieldset label:has(input:checked) { border-color: var(--verde); background: var(--verde-claro); }
+#reporte input[type="radio"] { margin: 0; accent-color: var(--verde); }
+#reporte-ponto { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 10px; }
+#reporte-ponto .btn-secundario { padding: 8px 14px; font-size: .82rem; }
+.reporte-texto { display: block; margin: 6px 0; font-size: .82rem; font-weight: 700; }
+#reporte textarea {
+  display: block; width: 100%; margin-bottom: 10px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--borda); border-radius: 10px;
+  font: inherit; font-size: .9rem; color: inherit;
+  resize: vertical;
+}
+dialog.caixa .reporte-msg { min-height: 1.3em; margin: 0; font-size: .84rem; font-weight: 600; }
+dialog.caixa .reporte-msg.erro { color: #b42318; }
+dialog.caixa .reporte-msg.ok { color: var(--verde-esc); }
+
+/* ---- marcar o ponto certo no mapa ---- */
+#marcar-barra {
+  position: absolute; top: 14px; left: 50%; z-index: 1250;
+  transform: translateX(-50%);
+  display: flex; align-items: center; gap: 12px;
+  max-width: calc(100vw - 24px);
+  padding: 9px 10px 9px 16px;
+  background: #21251f; color: #fff;
+  border-radius: 999px; box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+  font-size: .84rem; font-weight: 600;
+}
+#marcar-barra button {
+  flex-shrink: 0;
+  padding: 6px 13px; border: none; border-radius: 999px;
+  background: rgba(255, 255, 255, .18); color: #fff;
+  font-size: .8rem; font-weight: 700; cursor: pointer;
+}
+#marcar-barra button:hover { background: rgba(255, 255, 255, .3); }
+/* enquanto marca: os pinos deixam o toque passar e a lista sai da frente */
+#app.marcando .maplibregl-canvas-container.maplibregl-interactive,
+#app.marcando .maplibregl-canvas { cursor: crosshair !important; }
+#app.marcando #lista-perto,
+#app.marcando #dica-localizacao { display: none !important; }
+.ponto-sugerido span {
+  display: block; width: 22px; height: 22px; border-radius: 50%;
+  background: #d97706; border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, .35), 0 2px 8px rgba(0, 0, 0, .3);
+}
+
+/* ================= Acessibilidade ================= */
+/* Fica fora da vista mas DENTRO da arvore: display:none tiraria o elemento
+   tambem do leitor de tela, que e justamente quem deve le-lo. */
+.so-leitor {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0;
+  overflow: hidden; white-space: nowrap; clip-path: inset(50%);
+}
+/* foco visivel pelo teclado (o mouse nao dispara :focus-visible) */
+button:focus-visible, a:focus-visible, textarea:focus-visible,
+input[type="radio"]:focus-visible, [role="button"]:focus-visible {
+  outline: 2px solid var(--verde-esc); outline-offset: 2px;
+}
+/* dentro de caixas com overflow o contorno de fora seria cortado: vai por dentro */
+.chip:focus-visible, #lp-itens li:focus-visible, .busca-sugestoes li:focus-visible { outline-offset: -3px; }
+.chip.ativo:focus-visible, .acoes button.ativo:focus-visible { outline-color: #21251f; }
+/* movimento que respeita quem pediu para reduzi-lo */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ================= Botao "Filtros" (so no celular) ================= */
 #toggle-sidebar {
-  position: absolute; top: 12px; left: 12px; z-index: 1100;
-  display: none; padding: 9px 14px; border: none; border-radius: 999px;
-  background: linear-gradient(135deg, #33a04a, #1d6b2f); color: #fff;
-  font-size: .88rem; font-weight: 700; cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  display: none; flex-shrink: 0;
+  padding: 0 14px; border: none; border-radius: var(--radius);
+  background: var(--verde-esc); color: #fff;
+  font-size: .86rem; font-weight: 700; white-space: nowrap; cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 }
 
 @media (max-width: 760px) {
+  /* ---- barra do topo: a busca e os dois atalhos ficam SEMPRE a vista ----
+     A barra lateral deixa de ser uma tela escondida atras de um botao: vira
+     uma faixa transparente sobre o mapa. So os filtros de dia e categoria (e
+     o rodape) ficam recolhidos, na gaveta que o botao "Filtros" abre. */
   #sidebar {
-    position: absolute; top: 0; left: 0; height: 100%;
-    transform: translateX(-100%); transition: transform .22s ease;
-    box-shadow: 2px 0 18px rgba(0,0,0,.18);
+    position: absolute; top: 0; left: 0; right: 0;
+    width: auto; min-width: 0; height: auto; max-height: 100%;
+    padding: 12px 12px 0; gap: 8px;
+    background: transparent; border-right: none; overflow: visible;
+    pointer-events: none;            /* o vao entre os controles e mapa */
+    z-index: 1150;
   }
-  #app.sidebar-aberta #sidebar { transform: translateX(0); }
-  #toggle-sidebar { display: block; }
+  #sidebar > * { pointer-events: auto; }
+  /* a marca sai da vista, nao da arvore: o <h1> continua valendo */
+  #sidebar > header {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    overflow: hidden; white-space: nowrap; clip-path: inset(50%);
+  }
   #colapsar-sidebar { display: none; }
-  /* header desce pra nao ficar sob o botao "Filtros" */
-  #sidebar header { padding-top: 56px; }
+
+  .field-busca { order: 1; flex-direction: row; gap: 8px; }
+  .field-busca > label {
+    position: absolute; width: 1px; height: 1px; margin: -1px;
+    overflow: hidden; white-space: nowrap; clip-path: inset(50%);
+  }
+  .field-busca .busca-wrap { flex: 1; min-width: 0; }
+  .field-busca input[type="search"] {
+    height: 44px;
+    font-size: 16px;                 /* abaixo de 16px o iPhone da zoom ao focar */
+    border-color: transparent;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .2);
+  }
+  #toggle-sidebar { display: block; height: 44px; }
+
+  #sidebar .acoes { order: 2; }
+  .acoes button {
+    min-height: 44px;                /* mesma altura da busca e do "Filtros" */
+    border-color: transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
+  }
+
+  #gaveta-filtros {
+    order: 3;
+    display: none; flex-direction: column; gap: 16px;
+    max-height: calc(100dvh - 130px); overflow-y: auto;
+    padding: 14px;
+    background: var(--card); border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(28, 25, 23, .28);
+  }
+  #app.sidebar-aberta #gaveta-filtros { display: flex; }
+  #sidebar footer { margin-top: 0; }
+  #app.marcando #sidebar { display: none; }
+
   #vazio { left: 0; }
   #toast { transform: translateX(-50%) translateY(14px); }
   #toast.show { transform: translateX(-50%) translateY(0); }
-  /* no mobile a lista "perto" vira faixa no rodape: relocate + zoom sobem pro
-     topo-direita, alinhados e colados num cluster (zoom sem a margem do Leaflet) */
-  #voltar-localizacao { right: 16px; left: auto; bottom: auto; top: 64px; }
-  .leaflet-control-container .leaflet-bottom.leaflet-right { margin-bottom: 0; bottom: auto; top: 106px; right: 16px; position: absolute; }
-  .leaflet-control-container .leaflet-bottom.leaflet-right .leaflet-control-zoom { margin: 0; }
+  /* o aviso aparece acima da lista "perto", nunca por cima dela */
+  #toast { bottom: calc(var(--folha-h, 0px) + 16px); }
+  /* mapa livre no celular: sem o + e − (zoom com os dedos) e sem o botao de
+     localizacao, que repetia o "Perto de mim" da barra de cima */
+  .ctrl-local, .maplibregl-ctrl-group { display: none; }
+  /* o credito do mapa fica no rodape e sobe junto com a folha (--folha-h, do app.js) */
+  .maplibregl-ctrl-bottom-right { bottom: var(--folha-h, 0px); }
 
-  /* aviso vira faixa no rodape, com o botao ocupando a largura toda */
-  #aviso-dados {
-    left: 12px; right: 12px; width: auto;
-    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-    transform: translateY(16px);
-    flex-wrap: wrap;
-  }
-  #aviso-dados.show { transform: translateY(0); }
-  #aviso-ok { width: 100%; min-height: 44px; } /* alvo de toque confortavel */
+  /* janelas: botoes largos, alvo de toque confortavel */
+  .caixa-botoes button { flex: 1; min-height: 44px; }
+  #reporte textarea { font-size: 16px; }
+  #marcar-barra { top: 12px; }
 
-  /* painel vira faixa no rodape no mobile */
+  /* ---- a folha: tres paradas, arrastada pelo cabecalho (ver app.js) ---- */
   #lista-perto {
     top: auto; bottom: 0; right: 0; left: 0;
     width: 100%; max-width: 100%; border-radius: 16px 16px 0 0;
-    max-height: 45%;
+    max-height: none; height: 45%;
+    transition: height .22s ease;
+  }
+  #lista-perto.arrastando { transition: none; }
+  /* recolhida, a lista nao some: fica cortada pela altura, e volta ao arrastar */
+  #lista-perto.minimizado #lp-itens { display: block; }
+  #lp-itens { max-height: none; flex: 1; }
+  #lp-cabecalho {
+    position: relative; padding-top: 19px;
+    touch-action: none; cursor: grab; user-select: none;
+  }
+  #lp-cabecalho::before {            /* a alca */
+    content: ""; position: absolute; top: 7px; left: 50%;
+    width: 38px; height: 4px; margin-left: -19px; border-radius: 4px;
+    background: rgba(255, 255, 255, .55);
   }
 }
