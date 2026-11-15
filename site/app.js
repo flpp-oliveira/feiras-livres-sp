@@ -482,6 +482,19 @@
   });
   atualizarZoomMin();
 
+  // Creditos do mapa (o "i"): o MapLibre os abre sozinho ao carregar e so
+  // recolhe quando a pessoa arrasta o mapa. Aqui nascem fechados e abrem so no
+  // clique. Recolher = o mesmo que o MapLibre faz no arrasto (tirar a classe);
+  // no "idle" porque a classe pode chegar depois do "load", com a carta.
+  var creditoTocado = false; // quem ja abriu o "i" com a carta ainda chegando decide sozinho
+  map.getContainer().addEventListener("click", function (e) {
+    if (e.target.closest(".maplibregl-ctrl-attrib-button")) creditoTocado = true;
+  });
+  map.once("idle", function () {
+    var c = document.querySelector(".maplibregl-ctrl-attrib.maplibregl-compact");
+    if (c && !creditoTocado) c.classList.remove("maplibregl-compact-show");
+  });
+
   // ---- toast (mensagens rapidas) ----
   var toastTimer;
   function toast(msg, ms) {
