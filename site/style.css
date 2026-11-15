@@ -529,8 +529,11 @@ input[type="search"]:focus {
   position: fixed; left: 50%; bottom: 26px; z-index: 1300;
   transform: translateX(-50%) translateY(14px);
   background: rgba(28, 25, 23, .92);
-  color: #fff; padding: 11px 20px; border-radius: 999px;
-  font-size: .85rem; font-weight: 600;
+  color: #fff; padding: 11px 20px; border-radius: 22px;
+  font-size: .85rem; font-weight: 600; line-height: 1.35; text-align: center;
+  /* sem largura propria o aviso encolhia para metade da tela (left: 50%) e as
+     frases longas viravam uma pilula alta e estreita */
+  width: max-content; max-width: min(calc(100vw - 32px), 420px);
   box-shadow: 0 8px 24px rgba(0,0,0,.3);
   backdrop-filter: blur(4px);
   opacity: 0; pointer-events: none;
@@ -768,7 +771,7 @@ input[type="radio"]:focus-visible, [role="button"]:focus-visible {
   #toast { transform: translateX(-50%) translateY(14px); }
   #toast.show { transform: translateX(-50%) translateY(0); }
   /* o aviso aparece acima da lista "perto", nunca por cima dela */
-  #toast { bottom: calc(var(--folha-h, 0px) + 16px); }
+  #toast { bottom: calc(var(--folha-h, 0px) + 48px); } /* acima do credito do mapa */
   /* mapa livre no celular: sem o + e − (zoom com os dedos) e sem o botao de
      localizacao, que repetia o "Perto de mim" da barra de cima */
   .ctrl-local, .maplibregl-ctrl-group { display: none; }

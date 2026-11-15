@@ -484,12 +484,12 @@
 
   // ---- toast (mensagens rapidas) ----
   var toastTimer;
-  function toast(msg) {
+  function toast(msg, ms) {
     var t = document.getElementById("toast");
     t.textContent = msg;
     t.classList.add("show");
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () { t.classList.remove("show"); }, 3200);
+    toastTimer = setTimeout(function () { t.classList.remove("show"); }, ms || 3200);
   }
 
   // ---- estado dos filtros ----
@@ -861,6 +861,16 @@
   var RAIO = 2; // km considerado "perto"
   var MAX_LISTA = 30;
   var ZOOM_LOCALIZACAO = 14; // (escala do MapLibre) mesmo zoom usado ao achar a localizacao e ao focar um item da lista
+  var LONGE_KM = 30; // feira mais proxima alem disso: a pessoa esta fora da regiao
+
+  function feiraMaisProximaKm(lat, lng) {
+    var min = Infinity;
+    todos.forEach(function (m) {
+      var p = m.getLatLng(), d = distKm(lat, lng, p.lat, p.lng);
+      if (d < min) min = d;
+    });
+    return min;
+  }
 
   // leva o mapa ate a feira e abre o popup dela (itens da lista e link compartilhado)
   function focarFeira(m) {
@@ -1002,6 +1012,17 @@
     btnPerto.disabled = true; lblPerto.textContent = "Localizando…";
     navigator.geolocation.getCurrentPosition(function (pos) {
       btnPerto.disabled = false; lblPerto.textContent = "Perto de mim";
+      // Fora da capital a lista viraria "2461 km" e o mapa pararia na borda dos
+      // limites, sem a pessoa nem feira nenhuma a vista. Nenhum ponto da cidade
+      // fica a mais de ~20 km de uma feira (o pior e a ponta sul de Marsilac),
+      // e a Grande SP fica abaixo de 30 km: so quem esta longe cai aqui.
+      if (feiraMaisProximaKm(pos.coords.latitude, pos.coords.longitude) > LONGE_KM) {
+        if (userPos) desligarPerto();
+        if (dlgConvite.open) fechaDialogo(dlgConvite, "ligada");
+        // quem abre o site com a permissao ja dada nao precisa ouvir isso a cada visita
+        if (!auto) toast("Parece que você está fora de São Paulo. Este mapa mostra só as feiras livres da capital.", 6000);
+        return;
+      }
       setBotaoAtivo("perto", true);
       userPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
       if (userMarker) userMarker.remove();
