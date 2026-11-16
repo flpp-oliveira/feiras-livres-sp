@@ -240,6 +240,16 @@
     return s ? esc(s) : "N/A";
   }
 
+  // Horario por tipo, como a Prefeitura publica (pagina "Feiras Livres" da
+  // SESANA): tradicional 8h-14h, noturna 16h-21h. A organica pode ser de manha
+  // ou a noite e a planilha nao diz qual: o site avisa que varia.
+  function horarioDe(categoria) {
+    if (/notur/i.test(categoria || "")) return "16h às 21h";
+    if (/org/i.test(categoria || "")) return "Varia (manhã ou noite)";
+    return "8h às 14h";
+  }
+  function maiuscula(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+
   function popupHTML(f) {
     var rota = "https://www.google.com/maps/dir/?api=1&destination=" + f.lat + "," + f.lng;
     return '<div class="popup-feira">' +
@@ -249,6 +259,9 @@
       // largura toda, bairro e distrito lado a lado (dl > div e HTML valido)
       '<dl class="popup-info">' +
       '<div class="pi-largo"><dt>Rua</dt><dd class="pi-rua">' + campo(nomeFeira(f)) + "</dd></div>" +
+      (f.referencia ? '<div class="pi-largo"><dt>Referência</dt><dd>' + esc(maiuscula(f.referencia)) + "</dd></div>" : "") +
+      "<div><dt>Horário</dt><dd>" + esc(horarioDe(f.categoria)) + "</dd></div>" +
+      "<div><dt>Feirantes</dt><dd>" + (f.feirantes ? f.feirantes : "Não informado") + "</dd></div>" +
       "<div><dt>Bairro</dt><dd>" + campo(f.bairro) + "</dd></div>" +
       "<div><dt>Distrito</dt><dd>" + campo(f.distrito) + "</dd></div>" +
       "<div><dt>Cep</dt><dd>" + campo(f.cep) + "</dd></div>" +
@@ -901,7 +914,7 @@
     li.setAttribute("role", "button");
     li.innerHTML =
       // sem o emoji do tipo no nome: ele empurrava o texto e desalinhava a
-      // lista. O tipo so aparece quando foge da regra (929 de 975 sao tradicionais).
+      // lista. O tipo so aparece quando foge da regra (932 de 976 sao tradicionais).
       '<span class="lp-info"><span class="lp-nome">' + esc(nomeFeira(f)) + "</span>" +
       '<span class="lp-sub">' + [f.bairro, f.dia.replace(" Feira", ""), f.categoria === "Tradicional" ? "" : f.categoria]
         .filter(Boolean).map(esc).join(" · ") + "</span></span>" +

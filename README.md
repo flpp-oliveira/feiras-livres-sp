@@ -1,6 +1,6 @@
 # Feiras Livres de São Paulo — Mapa
 
-Mapa interativo com as **975 feiras livres** da cidade de São Paulo: dia da
+Mapa interativo com as **976 feiras livres** da cidade de São Paulo: dia da
 semana, endereço, categoria, bairro e subprefeitura. Busque por região, filtre
 por dia ou categoria, e veja as feiras mais perto de você.
 

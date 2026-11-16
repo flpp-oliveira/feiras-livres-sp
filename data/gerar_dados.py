@@ -16,12 +16,12 @@ import csv, json, math, os, sys
 SRC = 'feiras_geo.csv'
 CORRECOES = 'correcoes.csv'
 OUT = os.path.join('..', 'site', 'feiras-data.js')
-CAMPOS = ['id', 'dia', 'categoria', 'logradouro', 'numero', 'bairro',
+CAMPOS = ['id', 'dia', 'categoria', 'logradouro', 'numero', 'referencia', 'feirantes', 'bairro',
           'cep', 'subprefeitura', 'distrito', 'lat', 'lng']
 
-# Mes em que a base foi conferida com o painel da Prefeitura pela ultima vez.
-# ATUALIZAR sempre que feiras_geo.csv for regenerado: e a data que o site mostra.
-DATA_BASE = '2026-09'
+# Mes DOS DADOS da Prefeitura (a planilha "feiras-atualizado_out-26"), e nao o
+# mes em que foram baixados. ATUALIZAR junto com a planilha: e a data que o site mostra.
+DATA_BASE = '2026-10'
 
 # A cidade de Sao Paulo com folga: correcao fora disto e digito trocado.
 LAT_MIN, LAT_MAX, LNG_MIN, LNG_MAX = -24.1, -23.2, -47.0, -46.2
@@ -93,6 +93,10 @@ def main():
     for r in rows:
         o = {k: r.get(k, '') for k in CAMPOS}
         o['tipo'] = r.get('tipo_logradouro', '')  # "Rua", "Avenida"... (exibicao)
+        # quantidade de feirantes da planilha; 0/vazio = a Prefeitura nao informou
+        # (as feiras criadas em 2026 ainda vem sem): vira null e o site mostra "Nao informado"
+        f = (o.get('feirantes') or '').strip()
+        o['feirantes'] = int(f) if f.isdigit() and int(f) > 0 else None
         for c in ('lat', 'lng'):
             v = (o.get(c) or '').strip()
             o[c] = float(v) if v else None
