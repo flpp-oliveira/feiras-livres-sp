@@ -52,6 +52,55 @@ SUBPREF = {
 # CEPs conferidos nos Correios (ViaCEP) no pente fino de 11/2026: o CEP antigo era
 # de uma rua transversal ou de outro trecho da rua. Uma linha por feira, com o motivo.
 CEPS = 'ceps_corrigidos.csv'
+# Dia e categoria exatamente como o site os conhece (cores, filtros, "Feiras
+# hoje"). A planilha as vezes escreve diferente — a 1820-1 veio "DOMINGO", e no
+# site ela ficava cinza e sumia do filtro de domingo —, entao compara-se sem
+# caixa e sem acento. Valor que nao bate com nenhum = o script para e avisa.
+DIAS = ['Domingo', 'Segunda Feira', 'Terça Feira', 'Quarta Feira', 'Quinta Feira', 'Sexta Feira', 'Sábado']
+CATEGORIAS = ['Tradicional', 'Orgânica', 'Noturna']
+
+
+def chave(s):
+    s = unicodedata.normalize('NFD', str(s or '')).encode('ascii', 'ignore').decode()
+    return ' '.join(s.upper().replace('-', ' ').split())
+
+
+# Bairros estragados na regeneracao de 09/2026 (commit ce762c4, a partir do
+# painel da Prefeitura): a abreviacao "Sta"/"Sto" virou "Santa"/"Santo" ate no
+# meio da palavra ("Paulista" -> "PauliSanta") e "José" virou "JoSé". O nome certo
+# veio da base anterior (commit 2e4c9de), com os acentos de volta. Como o
+# bairro e reaproveitado de uma rodada para a outra, a correcao fica aqui e
+# vale sempre; a trava em bairro_suspeito() pega estrago novo do mesmo tipo.
+BAIRROS_CORRIGIDOS = {
+    'Bela ViSanta': 'Bela Vista', 'Vila Bela ViSanta': 'Vila Bela Vista',
+    'Jardim Boa ViSanta': 'Jardim Boa Vista', 'Jardim ViSanta Alegre': 'Jardim Vista Alegre',
+    'Itaim PauliSanta': 'Itaim Paulista', 'Jardim PauliSanta': 'Jardim Paulista',
+    'Planalto PauliSanta': 'Planalto Paulista', 'Brooklin PauliSanta': 'Brooklin Paulista',
+    'Lausane PauliSanta': 'Lausane Paulista', 'Lauzane PauliSanta': 'Lauzane Paulista',
+    'Burgo PauliSanta': 'Burgo Paulista', 'Jardim PauliSantana': 'Jardim Paulistana',
+    'Jardim PauliSantano': 'Jardim Paulistano', 'Parque PauliSantano': 'Parque Paulistano',
+    'Vila PauliSantania': 'Vila Paulistânia', 'Vila Divina PaSantora': 'Vila Divina Pastora',
+    'Vila GuSantavo': 'Vila Gustavo', 'Vila CriSantalia': 'Vila Cristália',
+    'Parque BriSantol': 'Parque Bristol', 'Vila AnaSantacio': 'Vila Anastácio',
+    'Vila ConSantancia': 'Vila Constância', 'Vila ConSantanca': 'Vila Constança',
+    'Jard M AuguSanto': 'Jard M Augusto', 'Vila TolSantoi': 'Vila Tolstoi',
+    'Jardim Da ConquiSanta': 'Jardim da Conquista',
+    'Vila São JoSé': 'Vila São José', 'Jardim São JoSé': 'Jardim São José',
+    'Jardim JoSé Maria': 'Jardim José Maria', 'Cid Pedro JoSé Nunes': 'Cidade Pedro José Nunes',
+    'JoSé Bonifacio': 'José Bonifácio',
+    'Conjunto Residencial JoSé Bonifacio': 'Conjunto Residencial José Bonifácio',
+    'GuaianaSés': 'Guaianases', 'GuaianaSés Cohab': 'Guaianases Cohab',
+    'Jardim EliSéo': 'Jardim Eliseo', 'Jardim RoSéli': 'Jardim Roseli',
+}
+
+
+def bairro_suspeito(b):
+    # caractere perdido na conversao, ou maiuscula no meio de uma palavra
+    return '�' in b or re.search(r'[a-zà-ÿ][A-ZÀ-Þ]', b)
+
+
+DIA_POR_CHAVE = {chave(d): d for d in DIAS}
+CATEGORIA_POR_CHAVE = {chave(c): c for c in CATEGORIAS}
 
 
 def titulo(s):
@@ -84,8 +133,12 @@ def main():
     faltam = sorted({str(r[8]).strip() for r in plan.values()} - set(SUBPREF))
     if faltam:
         sys.exit(f'subprefeitura sem nome no site (acrescente em SUBPREF): {faltam}')
+    estranhos = sorted({f'{fid}: dia {r[1]!r}' for fid, r in plan.items() if chave(r[1]) not in DIA_POR_CHAVE} |
+                       {f'{fid}: categoria {r[2]!r}' for fid, r in plan.items() if chave(r[2]) not in CATEGORIA_POR_CHAVE})
+    if estranhos:
+        sys.exit(f'dia ou categoria que o site nao conhece (ver DIAS/CATEGORIAS): {estranhos}')
 
-    saida, mudou_distrito = [], []
+    saida, mudou_distrito, bairros_suspeitos = [], [], []
     for fid, r in sorted(plan.items()):
         p = pos[fid]
         a = antiga.get(fid, {})
@@ -94,17 +147,24 @@ def main():
         distrito = next((n for n, poly in distritos if poly.contains(Point(lng, lat))), '')
         if a and a.get('distrito') and distrito and a['distrito'] != distrito:
             mudou_distrito.append((fid, a['distrito'], distrito))
+        bairro = a.get('bairro') or titulo(str(r[6] or ''))
+        bairro = BAIRROS_CORRIGIDOS.get(bairro, bairro)
+        if bairro_suspeito(bairro):
+            bairros_suspeitos.append((fid, bairro))
         saida.append({
-            'id': fid, 'dia': r[1], 'categoria': r[2],
+            'id': fid, 'dia': DIA_POR_CHAVE[chave(r[1])], 'categoria': CATEGORIA_POR_CHAVE[chave(r[2])],
             'tipo_logradouro': tipo, 'logradouro': logradouro, 'numero': numero(r[5]),
             'referencia': p['referencia_tratada'], 'feirantes': r[3] or '',
-            'bairro': a.get('bairro') or titulo(str(r[6] or '')),
+            'bairro': bairro,
             'cep': ceps.get(fid) or a.get('cep', ''),
             'subprefeitura': SUBPREF[str(r[8]).strip()],
             'lat': round(lat, 7), 'lng': round(lng, 7),
             'geocode_status': p['status'], 'distrito': distrito,
             'endereco_planilha': ' '.join(str(r[4] or '').split()),
         })
+
+    if bairros_suspeitos:
+        sys.exit(f'bairro com cara de estragado (corrija em BAIRROS_CORRIGIDOS): {bairros_suspeitos}')
 
     cols = list(saida[0].keys())
     with open(SAIDA, 'w', newline='', encoding='utf-8-sig') as fp:

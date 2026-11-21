@@ -23,3 +23,8 @@ Desktop.ini
 # segredo local do canal de reports e o banco D1 de teste desta maquina
 .dev.vars
 .wrangler/
+
+# ---- Testes ----
+# dependencias do Playwright (npm install em testes/) e as fotos de cada rodada
+testes/node_modules/
+testes/capturas/

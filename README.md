@@ -18,6 +18,9 @@ pela população, descrita adiante.
 |---|---|
 | `site/` | o site pronto (é o que o Cloudflare Pages publica) |
 | `site/404.html` | página de "não encontrada" — com ela o Pages responde 404 de verdade |
+| `site/app.js` | o mapa e a tela (módulo; carrega os de `site/js/`) |
+| `site/js/` | funções que não dependem da página nem do mapa: texto, dados de uma feira, distâncias, busca |
+| `testes/` | testes do site (ver "Testes"); fica fora de `site/` e não vai para o ar |
 | `data/feiras_geo.csv` | a base das feiras, a partir do painel da Prefeitura |
 | `data/gerar_dados.py` | gera `site/feiras-data.js` a partir da base e aplica `correcoes.csv` |
 | `data/gerar_lista.py` | gera `site/lista.html` |
@@ -48,6 +51,50 @@ Ao regenerar `data/feiras_geo.csv`, atualize também `DATA_BASE` em
 python gerar_dados.py
 python gerar_lista.py
 ```
+
+---
+
+## Testes
+
+Duas camadas, ambas rodadas a partir da raiz do projeto ou de `testes/`.
+
+**Funções e base** (só precisa do Node 22 ou mais novo, nada a instalar):
+
+```
+node --test "testes/*.test.mjs"
+```
+
+Cobrem busca, erro de digitação, horário, distância e a própria base: todo
+dia e categoria conhecidos, todo id único, toda feira numa zona, nenhum bairro
+estragado. Rode depois de regenerar a base.
+
+**O site no celular** (Playwright; na primeira vez, dentro de `testes/`:
+`npm install` e `npx playwright install chromium webkit`):
+
+```
+cd testes
+npm run celular
+```
+
+Com o site local rodando (`npx wrangler pages dev`, porta 8788), abre o site
+como um Android (Chrome) e como um iPhone (WebKit, o motor do Safari), toca num
+pino, busca, usa "Feiras hoje" num domingo e numa segunda, "Perto de mim" na
+Paulista e fora de SP, e um link `?feira=`. As fotos de cada passo ficam em
+`testes/capturas/`. `npm run celular -- --url https://feiraslivresp.com.br`
+testa o site no ar (o contador de visitas fica bloqueado: teste não conta como
+visita).
+
+**No Android de verdade**: com o celular no cabo USB, a "Depuração USB" ligada
+(Configurações → Sobre o telefone → toque 7 vezes em "Número da versão" →
+Opções do desenvolvedor) e o `adb` do Android platform-tools no PATH,
+`npm run celular -- --android` roda o mesmo roteiro no Chrome do celular. O
+site local chega ao celular pelo próprio cabo (`adb reverse`).
+
+### Versão dos arquivos (`?v=`)
+
+Ao mudar CSS ou JS, suba o número de `?v=` em **todos** os lugares de uma vez:
+`site/index.html` e os `import` de `site/app.js` e `site/js/*.js`. Sem isso o
+navegador pode juntar um arquivo novo com um módulo antigo guardado.
 
 ---
 

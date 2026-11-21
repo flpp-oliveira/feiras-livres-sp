@@ -1,97 +1,16 @@
 /* Mapa das Feiras Livres de São Paulo */
+// As funcoes que nao dependem da pagina nem do mapa ficam em js/ e tem testes
+// (testes/). O ?v= dos imports acompanha o do index.html: sem ele, o navegador
+// poderia juntar um app.js novo com um modulo antigo do cache.
+import { norm, esc, campo, maiuscula } from "./js/texto.js?v=72";
+import { ORDEM_DIAS, NOMES_JS, emojiCat, corDia, nomeFeira, horarioDe, slugDia, contar } from "./js/dados.js?v=72";
+import { distKm, fmtDist, limitesDe } from "./js/geo.js?v=72";
+import { montarIndices, criarBusca } from "./js/busca.js?v=72";
+
 (function () {
   "use strict";
 
   var FEIRAS = window.FEIRAS || [];
-
-  // cores por dia da semana
-  var CORES = {
-    "Domingo": "#e53935",
-    "Terça Feira": "#fb8c00",
-    "Quarta Feira": "#8e24aa",
-    "Quinta Feira": "#00897b",
-    "Sexta Feira": "#1e88e5",
-    "Sábado": "#6d4c41"
-  };
-  var ORDEM_DIAS = ["Domingo", "Terça Feira", "Quarta Feira", "Quinta Feira", "Sexta Feira", "Sábado"];
-  var NOMES_JS = ["Domingo", "Segunda Feira", "Terça Feira", "Quarta Feira", "Quinta Feira", "Sexta Feira", "Sábado"];
-
-  // emoji por tipo (categoria) de feira
-  var EMOJI = { "Tradicional": "🧺", "Orgânica": "🌱", "Noturna": "🌙" };
-  function emojiCat(c) { return EMOJI[c] || "🛒"; }
-  function corDia(dia) { return CORES[dia] || "#555"; }
-
-  // zona da cidade a partir da subprefeitura (classificacao aproximada)
-  var ZONA_POR_SUBPREF = {
-    "Sé": "Centro",
-    "Casa Verde/Cachoeirinha": "Zona Norte", "Freguesia/Brasilândia": "Zona Norte",
-    "Jaçanã/Tremembé": "Zona Norte", "Perus": "Zona Norte", "Pirituba/Jaraguá": "Zona Norte",
-    "Santana/Tucuruvi": "Zona Norte", "Vila Maria/Vila Guilherme": "Zona Norte",
-    "Butantã": "Zona Oeste", "Lapa": "Zona Oeste", "Pinheiros": "Zona Oeste",
-    "Campo Limpo": "Zona Sul", "Capela do Socorro": "Zona Sul", "Cidade Ademar": "Zona Sul",
-    "Ipiranga": "Zona Sul", "Jabaquara": "Zona Sul", "M'Boi Mirim": "Zona Sul",
-    "Parelheiros": "Zona Sul", "Santo Amaro": "Zona Sul", "Vila Mariana": "Zona Sul",
-    "Aricanduva/Formosa/Carrão": "Zona Leste", "Cidade Tiradentes": "Zona Leste",
-    "Ermelino Matarazzo": "Zona Leste", "Guaianases": "Zona Leste", "Itaim Paulista": "Zona Leste",
-    "Itaquera": "Zona Leste", "Mooca": "Zona Leste", "Penha": "Zona Leste",
-    "São Mateus": "Zona Leste", "São Miguel": "Zona Leste", "Sapopemba": "Zona Leste",
-    "Vila Prudente": "Zona Leste"
-  };
-  function zonaDe(f) { return ZONA_POR_SUBPREF[f.subprefeitura] || ""; }
-
-  // normaliza texto p/ busca sem acento ("sao" acha "São")
-  function norm(s) {
-    return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  }
-
-  // distancia de edicao (Levenshtein) -- usada so como fallback quando a
-  // busca exata (indexOf) nao acha nada, pra tolerar erro de digitacao
-  // ("Pinheros" -> "Pinheiros"). Tolerancia cresce com o tamanho da palavra:
-  // curta demais e quase tudo "parece" com quase tudo (muito ruido).
-  function levenshtein(a, b) {
-    var m = a.length, n = b.length;
-    if (!m) return n;
-    if (!n) return m;
-    var prev = new Array(n + 1), curr = new Array(n + 1);
-    for (var j = 0; j <= n; j++) prev[j] = j;
-    for (var i = 1; i <= m; i++) {
-      curr[0] = i;
-      for (j = 1; j <= n; j++) {
-        var custo = a[i - 1] === b[j - 1] ? 0 : 1;
-        curr[j] = Math.min(curr[j - 1] + 1, prev[j] + 1, prev[j - 1] + custo);
-      }
-      var tmp = prev; prev = curr; curr = tmp;
-    }
-    return prev[n];
-  }
-  function toleranciaFuzzy(len) {
-    if (len <= 3) return 0;   // palavra curta: so exata (senao vira ruido)
-    if (len <= 6) return 1;
-    return 2;
-  }
-  // menor distancia entre "q" e qualquer palavra de "alvo" (string com varias
-  // palavras separadas por espaco) -- null se nada ficar dentro da tolerancia
-  function distanciaFuzzyMin(q, alvo) {
-    var palavras = alvo.split(/\s+/).filter(Boolean);
-    var melhor = null;
-    for (var i = 0; i < palavras.length; i++) {
-      var p = palavras[i];
-      var tol = Math.min(toleranciaFuzzy(q.length), toleranciaFuzzy(p.length));
-      if (tol === 0) continue;
-      if (Math.abs(p.length - q.length) > tol) continue; // atalho, evita Levenshtein a toa
-      var d = levenshtein(q, p);
-      if (d <= tol && (melhor === null || d < melhor)) melhor = d;
-    }
-    return melhor;
-  }
-
-  // "Rua/Avenida... + nome + numero" (numero so quando existe e nao e "S/N")
-  function nomeFeira(f) {
-    var nome = ((f.tipo || "") + " " + (f.logradouro || "")).trim();
-    var num = (f.numero == null ? "" : String(f.numero)).trim();
-    if (num && num.toUpperCase() !== "S/N") nome += ", " + num;
-    return nome;
-  }
 
   // ---- mapa base ----
   // MapLibre + OpenFreeMap: a carta chega como dado (vetorial) e e desenhada
@@ -107,17 +26,6 @@
   function ehPoiDaCarta(id) { return /^poi_|^airport$|housenumber/i.test(id); }
   // quem pediu menos movimento no sistema nao ve o mapa deslizar
   var semMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  // caixa [[oeste, sul], [leste, norte]] com folga proporcional (como o pad do Leaflet)
-  function limitesDe(pontos, folga) {
-    var w = Infinity, s = Infinity, e = -Infinity, n = -Infinity;
-    pontos.forEach(function (p) {
-      if (p[0] < w) w = p[0]; if (p[0] > e) e = p[0];
-      if (p[1] < s) s = p[1]; if (p[1] > n) n = p[1];
-    });
-    var dx = (e - w) * folga, dy = (n - s) * folga;
-    return [[w - dx, s - dy], [e + dx, n + dy]];
-  }
 
   // pontos validos (lng, lat) — o mapa ja nasce enquadrado neles, sem o salto
   // de abrir num centro fixo e so depois enquadrar
@@ -228,27 +136,6 @@
   var ZOOM_PINS_NORMAIS = 12;
   var ESCALA_PIN_AFASTADO = 0.62;
   function escalaPins() { return map.getZoom() < ZOOM_PINS_NORMAIS ? ESCALA_PIN_AFASTADO : 1; }
-
-  function esc(s) {
-    return (s == null ? "" : String(s)).replace(/[&<>"]/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
-    });
-  }
-
-  function campo(v) {
-    var s = (v == null ? "" : String(v)).trim();
-    return s ? esc(s) : "N/A";
-  }
-
-  // Horario por tipo, como a Prefeitura publica (pagina "Feiras Livres" da
-  // SESANA): tradicional 8h-14h, noturna 16h-21h. A organica pode ser de manha
-  // ou a noite e a planilha nao diz qual: o site avisa que varia.
-  function horarioDe(categoria) {
-    if (/notur/i.test(categoria || "")) return "16h às 21h";
-    if (/org/i.test(categoria || "")) return "Varia (manhã ou noite)";
-    return "8h às 14h";
-  }
-  function maiuscula(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
 
   function popupHTML(f) {
     var rota = "https://www.google.com/maps/dir/?api=1&destination=" + f.lat + "," + f.lng;
@@ -458,16 +345,10 @@
     dicaHover.remove();
   });
 
-  // indices p/ busca por area (bairro/distrito/zona) -> pinos daquela area
-  var porBairro = {}, porDistrito = {}, porZona = {}, porId = {};
-  todos.forEach(function (m) {
-    var f = m.feira;
-    porId[f.id] = m;
-    if (f.bairro) (porBairro[f.bairro] = porBairro[f.bairro] || []).push(m);
-    if (f.distrito) (porDistrito[f.distrito] = porDistrito[f.distrito] || []).push(m);
-    var z = zonaDe(f);
-    if (z) (porZona[z] = porZona[z] || []).push(m);
-  });
+  // indices p/ busca por area (bairro/distrito/zona) e p/ achar a feira pelo id
+  var indices = montarIndices(todos);
+  var porId = indices.porId;
+  var buscador = criarBusca(todos, indices);
 
   // O mapa acompanha o tamanho da PROPRIA area, nao so o da janela: no celular
   // ele nascia medido antes de o layout assentar (339px numa tela de 375) e
@@ -562,7 +443,7 @@
   // O endereco acompanha os filtros: copiar o link (ou usar o "compartilhar" do
   // navegador) leva a outra pessoa a mesma vista. "hoje" nao vira um dia fixo:
   // quem abrir o link amanha ve as feiras do dia em que abriu.
-  function slug(v) { return norm(String(v).replace(" Feira", "")); }
+  var slug = slugDia;
   var enderecoTimer;
   function sincronizaEndereco() {
     // adiado: um clique passa por mais de um ouvinte antes de o estado assentar
@@ -631,19 +512,13 @@
     });
   }
 
-  function contar(campo) {
-    var c = {};
-    FEIRAS.forEach(function (f) { c[f[campo]] = (c[f[campo]] || 0) + 1; });
-    return c;
-  }
-
   var diasPresentes = ORDEM_DIAS.filter(function (d) {
     return FEIRAS.some(function (f) { return f.dia === d; });
   });
   var categorias = Array.from(new Set(FEIRAS.map(function (f) { return f.categoria; }))).sort();
 
-  montaChips("filtro-dias", diasPresentes, filtros.dias, true, null, contar("dia"));
-  montaChips("filtro-categorias", categorias, filtros.categorias, false, emojiCat, contar("categoria"));
+  montaChips("filtro-dias", diasPresentes, filtros.dias, true, null, contar(FEIRAS, "dia"));
+  montaChips("filtro-categorias", categorias, filtros.categorias, false, emojiCat, contar(FEIRAS, "categoria"));
 
   // se o usuario mexer nos chips de dia manualmente, "Feiras hoje" deixa de valer
   document.getElementById("filtro-dias").addEventListener("click", function (e) {
@@ -653,8 +528,6 @@
   // ---- busca com sugestoes clicaveis (rua, bairro, distrito, zona, etc.) ----
   var busca = document.getElementById("busca");
   var caixaSugestoes = document.getElementById("busca-sugestoes");
-  var MAX_SUGESTOES = 8;
-  var MAX_AREAS = 4;
 
   // navegacao por teclado nas sugestoes (setas + Enter)
   var idxRealce = -1;
@@ -672,71 +545,6 @@
     } else {
       busca.removeAttribute("aria-activedescendant");
     }
-  }
-
-  function buscarFeiras(termo) {
-    var q = norm(termo.trim());
-    if (!q) return [];
-    var resultados = [];
-    todos.forEach(function (m) {
-      var f = m.feira;
-      // join() converte null/undefined em "" (evita casar a palavra "null")
-      var alvo = norm([f.logradouro, f.bairro, f.subprefeitura, f.distrito, zonaDe(f)].join(" "));
-      var pos = alvo.indexOf(q);
-      if (pos === -1) return;
-      resultados.push({ m: m, f: f, pos: pos, comecaComRua: norm(f.logradouro).indexOf(q) === 0, fuzzy: false });
-    });
-    // nada bateu exato -> tenta tolerando erro de digitacao (so entao, pra
-    // nao competir/confundir com os resultados exatos, que sao mais confiaveis)
-    if (!resultados.length) {
-      todos.forEach(function (m) {
-        var f = m.feira;
-        var alvo = norm([f.logradouro, f.bairro, f.subprefeitura, f.distrito, zonaDe(f)].join(" "));
-        var d = distanciaFuzzyMin(q, alvo);
-        if (d === null) return;
-        resultados.push({ m: m, f: f, pos: 0, comecaComRua: false, fuzzy: true, dist: d });
-      });
-    }
-    resultados.sort(function (a, b) {
-      if (a.fuzzy !== b.fuzzy) return a.fuzzy ? 1 : -1;
-      if (a.fuzzy) return a.dist - b.dist;
-      if (a.comecaComRua !== b.comecaComRua) return a.comecaComRua ? -1 : 1;
-      if (a.pos !== b.pos) return a.pos - b.pos;
-      return a.f.logradouro.localeCompare(b.f.logradouro, "pt-BR");
-    });
-    return resultados.slice(0, MAX_SUGESTOES);
-  }
-
-  // zonas, distritos e bairros que batem com o termo -> "atalho" p/ ver a area toda
-  function buscarAreas(termo) {
-    var q = norm(termo.trim());
-    if (!q) return [];
-    var areas = [];
-    function addTipo(tipo, rotulo, mapa) {
-      Object.keys(mapa).forEach(function (label) {
-        if (norm(label).indexOf(q) !== -1) {
-          areas.push({ tipo: rotulo, label: label, marcadores: mapa[label] });
-        }
-      });
-    }
-    addTipo("zona", "Zona", porZona);
-    addTipo("distrito", "Distrito", porDistrito);
-    addTipo("bairro", "Bairro", porBairro);
-    if (!areas.length) {
-      function addTipoFuzzy(rotulo, mapa) {
-        Object.keys(mapa).forEach(function (label) {
-          var d = distanciaFuzzyMin(q, norm(label));
-          if (d !== null) areas.push({ tipo: rotulo, label: label, marcadores: mapa[label], dist: d });
-        });
-      }
-      addTipoFuzzy("Zona", porZona);
-      addTipoFuzzy("Distrito", porDistrito);
-      addTipoFuzzy("Bairro", porBairro);
-      areas.sort(function (a, b) { return a.dist - b.dist; });
-      return areas.slice(0, MAX_AREAS);
-    }
-    areas.sort(function (a, b) { return b.marcadores.length - a.marcadores.length; });
-    return areas.slice(0, MAX_AREAS);
   }
 
   function fecharSugestoes() {
@@ -763,8 +571,8 @@
   }
 
   function mostrarSugestoes(termo) {
-    var areas = buscarAreas(termo);
-    var resultados = buscarFeiras(termo);
+    var areas = buscador.areas(termo);
+    var resultados = buscador.feiras(termo);
     caixaSugestoes.innerHTML = "";
     idxRealce = -1;
     busca.removeAttribute("aria-activedescendant");
@@ -869,16 +677,6 @@
 
   // ---- perto de mim (toggle) ----
   var userMarker = null, userPos = null;
-  function distKm(la1, lo1, la2, lo2) {
-    var R = 6371, rad = Math.PI / 180;
-    var dLa = (la2 - la1) * rad, dLo = (lo2 - lo1) * rad;
-    var a = Math.sin(dLa / 2) * Math.sin(dLa / 2) +
-            Math.cos(la1 * rad) * Math.cos(la2 * rad) * Math.sin(dLo / 2) * Math.sin(dLo / 2);
-    return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  }
-  function fmtDist(km) {
-    return km < 1 ? Math.round(km * 1000) + " m" : km.toFixed(1).replace(".", ",") + " km";
-  }
   var painel = document.getElementById("lista-perto");
   var lpItens = document.getElementById("lp-itens");
   var lpTitulo = document.getElementById("lp-titulo");

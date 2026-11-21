@@ -1,0 +1,13 @@
+{
+  "name": "feiras-livres-sp-testes",
+  "private": true,
+  "description": "Testes do site. Fica fora de site/: nada daqui vai para o ar.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"*.test.mjs\"",
+    "celular": "node celular.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  }
+}
