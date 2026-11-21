@@ -141,4 +141,4 @@ rota o apaga dos reports com mais de 2 dias a cada envio.
 
 - Dados: Prefeitura de São Paulo — [Feiras Livres](https://prefeitura.sp.gov.br/web/sesana/w/feiras-livres-sp).
 - Mapa base: © OpenStreetMap, © OpenMapTiles, servido pelo [OpenFreeMap](https://openfreemap.org/) (vetorial, sem chave).
-  Biblioteca: [MapLibre GL JS](https://maplibre.org/) 4.7.1, copiada em `site/vendor/maplibre/`.
+  Biblioteca: [MapLibre GL JS](https://maplibre.org/) 5.24.1, copiada em `site/vendor/maplibre/`.

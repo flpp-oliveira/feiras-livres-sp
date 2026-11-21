@@ -13,7 +13,8 @@ Entradas:
   3. a base anterior (feiras_geo.csv): bairro, CEP e subprefeitura ja arrumados
      das feiras que continuam existindo;
   4. distritos.geojson: os 96 distritos oficiais (GeoSampa), para dizer em que
-     distrito cada ponto cai.
+     distrito cada ponto cai;
+  5. ceps_corrigidos.csv: CEPs conferidos nos Correios (pente fino de 11/2026).
 
 Uso (na pasta data/):
   python montar_base.py PLANILHA.xlsx ../revisao/posicoes_final.csv
@@ -29,9 +30,28 @@ SAIDA = 'feiras_geo.csv'
 TIPOS = {'Rua', 'Avenida', 'Praça', 'Travessa', 'Alameda', 'Estrada', 'Largo', 'Viaduto', 'Parque',
          'Viela', 'Calçadão', 'Passagem', 'Ladeira', 'Rodovia', 'Acesso', 'Via'}
 CONECT = {'de', 'da', 'do', 'das', 'dos', 'e'}
-SUBPREF = {  # nome da planilha (maiusculo, abreviado) -> nome usado no site
-    'FREGUESIA / BRASILANDIA': 'Freguesia/Brasilândia', 'PINHEIROS': 'Pinheiros',
+# nome da planilha (maiusculo, abreviado) -> nome usado no site. A subprefeitura
+# vem SEMPRE da planilha: e a Prefeitura quem diz qual subprefeitura cuida da feira
+# (a base antiga tinha 4 feiras de Vila Prudente marcadas como Sapopemba).
+# Subprefeitura nova na planilha = acrescentar aqui (o script para e avisa).
+SUBPREF = {
+    'ARICANDUVA I FORMOSA I CARRAO': 'Aricanduva/Formosa/Carrão', 'BUTANTA': 'Butantã',
+    'CAMPO LIMPO': 'Campo Limpo', 'CAPELA DO SOCORRO': 'Capela do Socorro',
+    'CASA VERDE / CACHOEIRINHA': 'Casa Verde/Cachoeirinha', 'CIDADE ADEMAR': 'Cidade Ademar',
+    'CIDADE TIRADENTES': 'Cidade Tiradentes', 'ERMELINO MATARAZZO': 'Ermelino Matarazzo',
+    'FREGUESIA / BRASILANDIA': 'Freguesia/Brasilândia', 'GUAIANASES': 'Guaianases',
+    'IPIRANGA': 'Ipiranga', 'ITAIM PAULISTA': 'Itaim Paulista', 'ITAQUERA': 'Itaquera',
+    'JABAQUARA': 'Jabaquara', 'JACANA / TREMENBE': 'Jaçanã/Tremembé', 'LAPA': 'Lapa',
+    'M BOI MIRIM': "M'Boi Mirim", 'MOOCA': 'Mooca', 'PARELHEIROS': 'Parelheiros', 'PENHA': 'Penha',
+    'PERUS': 'Perus', 'PINHEIROS': 'Pinheiros', 'PIRITUBA / JARAGUA': 'Pirituba/Jaraguá',
+    'SANTANA / TUCURUVI': 'Santana/Tucuruvi', 'SANTO AMARO': 'Santo Amaro', 'SAO MATEUS': 'São Mateus',
+    'SAO MIGUEL PAULISTA': 'São Miguel', 'SAPOPEMBA': 'Sapopemba', 'SE': 'Sé',
+    'V MARIA / VILA GUILHERME': 'Vila Maria/Vila Guilherme', 'VILA MARIANA': 'Vila Mariana',
+    'VILA PRUDENTE': 'Vila Prudente',
 }
+# CEPs conferidos nos Correios (ViaCEP) no pente fino de 11/2026: o CEP antigo era
+# de uma rua transversal ou de outro trecho da rua. Uma linha por feira, com o motivo.
+CEPS = 'ceps_corrigidos.csv'
 
 
 def titulo(s):
@@ -60,6 +80,10 @@ def main():
     antiga = {r['id']: r for r in csv.DictReader(open(BASE_ANTIGA, encoding='utf-8-sig'))}
     distritos = [(titulo(f['properties']['nm_distrito_municipal']), shape(f['geometry']))
                  for f in json.load(open('distritos.geojson', encoding='utf-8'))['features']]
+    ceps = {r['id']: r['cep'] for r in csv.DictReader(open(CEPS, encoding='utf-8-sig'), delimiter=';')}
+    faltam = sorted({str(r[8]).strip() for r in plan.values()} - set(SUBPREF))
+    if faltam:
+        sys.exit(f'subprefeitura sem nome no site (acrescente em SUBPREF): {faltam}')
 
     saida, mudou_distrito = [], []
     for fid, r in sorted(plan.items()):
@@ -75,8 +99,8 @@ def main():
             'tipo_logradouro': tipo, 'logradouro': logradouro, 'numero': numero(r[5]),
             'referencia': p['referencia_tratada'], 'feirantes': r[3] or '',
             'bairro': a.get('bairro') or titulo(str(r[6] or '')),
-            'cep': a.get('cep', ''),
-            'subprefeitura': a.get('subprefeitura') or SUBPREF.get(str(r[8]).strip(), titulo(str(r[8] or ''))),
+            'cep': ceps.get(fid) or a.get('cep', ''),
+            'subprefeitura': SUBPREF[str(r[8]).strip()],
             'lat': round(lat, 7), 'lng': round(lng, 7),
             'geocode_status': p['status'], 'distrito': distrito,
             'endereco_planilha': ' '.join(str(r[4] or '').split()),

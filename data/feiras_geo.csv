@@ -2,19 +2,19 @@
 1001-4,Domingo,Tradicional,Rua,Teixeira Leite,553,esquina com Rua São Paulo,120,Liberdade,01514-010,Sé,-23.5571922,-46.6285565,esquina,Liberdade,RUA TEIXEIRA LEITE C/ SAO PAULO
 1002-2,Domingo,Tradicional,Rua,Conselheiro Belisário,400,esquina com Rua Maria Marcolina,72,Brás,03012-000,Mooca,-23.5392536,-46.6160577,esquina,Bras,RUA CONSELHEIRO BELISARIO
 1003-0,Domingo,Tradicional,Rua,Inglês de Souza,400,Avenida Lins de Vasconcelos,138,Cambuci,01546-010,Sé,-23.5773851,-46.6224644,ajustado_na_rua,Cambuci,RUA INGLES DE SOUZA
-1004-9,Domingo,Tradicional,Rua,Fábia,701,entre Rua Aurélia e Rua Catão,66,Vila Romana,05046-000,Lapa,-23.52708,-46.6992808,entre_duas_esquinas,Lapa,RUA FABIA C AURELIA
+1004-9,Domingo,Tradicional,Rua,Fábia,701,entre Rua Aurélia e Rua Catão,66,Vila Romana,05051-030,Lapa,-23.52708,-46.6992808,entre_duas_esquinas,Lapa,RUA FABIA C AURELIA
 1005-7,Domingo,Tradicional,Rua,Bresser,2701,,90,Mooca,03162-030,Mooca,-23.5516041,-46.5998652,ajustado_na_rua,Mooca,RUA BRESSER
 1006-5,Domingo,Tradicional,Rua,Belarmino Matos,10,esquina com Viaduto Guadalajara,47,Quarta Parada,03062-030,Mooca,-23.543191,-46.5939388,esquina,Belem,RUA BELARMINO MATOS
 1007-3,Domingo,Tradicional,Rua,Agostinho Gomes,352,esquina com Rua dos Patriotas,73,Ipiranga,04206-000,Ipiranga,-23.5832745,-46.6044961,esquina,Ipiranga,RUA AGOSTINHO GOMES
 1008-1,Domingo,Tradicional,Rua,Tuiuti,2753,esquina com Praça Silvio Romero,83,Tatuapé,03307-005,Mooca,-23.5452272,-46.5743828,esquina,Tatuape,RUA TUIUTI
 1009-0,Domingo,Tradicional,Rua,Oliveira Melo,350,esquina com Rua Doutor Mário Vicente,21,Vila São JoSé,04271-000,Ipiranga,-23.5877702,-46.6150183,esquina,Ipiranga,RUA OLIVEIRA MELO
-1010-3,Domingo,Tradicional,Rua,Coronel Oscar Porto,429,esquina com Rua Sampaio Viana,95,Paraíso,04003-042,Vila Mariana,-23.5738834,-46.6467287,esquina,Vila Mariana,RUA CEL OSCAR PORTO
+1010-3,Domingo,Tradicional,Rua,Coronel Oscar Porto,429,esquina com Rua Sampaio Viana,95,Paraíso,04003-002,Vila Mariana,-23.5738834,-46.6467287,esquina,Vila Mariana,RUA CEL OSCAR PORTO
 1011-1,Domingo,Tradicional,Rua,Sebastião Pereira,553,Rua Jaguaribe e Alameda Barros,160,Santa Cecilia,01225-020,Sé,-23.5391544,-46.6491714,ja_na_rua,Santa Cecilia,RUA SEBASTIAO PEREIRA
 1012-0,Domingo,Tradicional,Rua,José Zappi,255,esquina com Rua Capitão Pacheco e Chaves,53,Vila Prudente,03128-140,Vila Prudente,-23.581157,-46.58533,esquina,Vila Prudente,RUA JOSE ZAPPI
 1013-8,Domingo,Tradicional,Rua,Teresa,615,Campo Largo e Manaus,55,Alto Da Mooca,03185-010,Mooca,-23.5650188,-46.5834169,ajustado_na_rua,Agua Rasa,RUA TEREZINA
 1014-6,Domingo,Tradicional,Avenida,Engenheiro Caetano Alvares,5200,esquina com Rua Voluntários da Pátria,166,Mandaqui,02413-100,Santana/Tucuruvi,-23.482749,-46.631942,esquina,Mandaqui,AV ENGENHEIRO CAETANO ALVARES
 1015-4,Domingo,Tradicional,Avenida,Inhaíba,250,esquina com Rua Vergueiro,49,Moinho Velho,04292-050,Ipiranga,-23.6116335,-46.6083478,esquina,Cursino,AV INHAIBA
-1016-2,Domingo,Tradicional,Rua,Doutor Vicente Giacaglini,50,esquina com Rua Costa Barros,82,Vila Bela,03203-000,Sapopemba,-23.597345,-46.565257,esquina,Vila Prudente,RUA DR VICENTE GIACAGLINI
+1016-2,Domingo,Tradicional,Rua,Doutor Vicente Giacaglini,50,esquina com Rua Costa Barros,82,Vila Bela,03203-000,Vila Prudente,-23.597345,-46.565257,esquina,Vila Prudente,RUA DR VICENTE GIACAGLINI
 1017-0,Domingo,Tradicional,Avenida,Lavandisca,644,Prx R Canarios Bairro Moema,105,Moema,04515-011,Vila Mariana,-23.6029085,-46.6641093,ajustado_na_rua,Moema,AV LAVANDISCA
 1018-9,Domingo,Tradicional,Rua,Vicente Soares,50,esquina com Rua Doutor João Batista Soares Faria,23,Santa Terezinha,02403-070,Santana/Tucuruvi,-23.495568,-46.62824,esquina,Santana,RUA VICENTE SOARES
 1019-7,Domingo,Tradicional,Avenida,Baruel,661,esquina com Avenida Casa Verde,47,Baruel,02522-000,Casa Verde/Cachoeirinha,-23.503636,-46.66136,esquina,Casa Verde,AV BARUEL
@@ -26,7 +26,7 @@
 1025-1,Domingo,Tradicional,Rua,Kaneda,300,Praça Cianorte,40,Jardim Japao,02132-030,Vila Maria/Vila Guilherme,-23.5037253,-46.5787307,ajustado_na_rua,Vila Maria,RUA KANEDA
 1026-0,Domingo,Tradicional,Rua,Benjamin Pereira,331,entre Elimo e Emil Figueiredo,123,Jacana,02274-001,Jaçanã/Tremembé,-23.4681114,-46.5903956,ajustado_na_rua,Jacana,RUA BENJAMIM PEREIRA
 1027-8,Domingo,Tradicional,Rua,dos Patis,335,Benedito Guedes Oliveira 226,39,Vila Bela ViSanta,02613-000,Casa Verde/Cachoeirinha,-23.4713426,-46.6612358,ajustado_na_rua,Cachoeirinha,RUA DOS PATIS
-1028-6,Domingo,Tradicional,Rua,Carneiro da Cunha,608,esquina com Rua Visconde de Inhaúma,212,Vila Da Saude,04144-000,Vila Mariana,-23.6182309,-46.6354979,esquina,Saude,RUA CARNEIRO DA CUNHA
+1028-6,Domingo,Tradicional,Rua,Carneiro da Cunha,608,esquina com Rua Visconde de Inhaúma,212,Vila Da Saude,04144-001,Vila Mariana,-23.6182309,-46.6354979,esquina,Saude,RUA CARNEIRO DA CUNHA
 1029-4,Domingo,Tradicional,Rua,Ibiapaba,252,Rua Manoel Jacinto,8,Vila Sônia,05625-020,Butantã,-23.5928014,-46.7296822,ja_na_rua,Vila Sonia,RUA IBIAPABA
 1030-8,Domingo,Tradicional,Avenida,Trumain,500,entre Avenida Henrique Morize e Praça Libéria,87,Vila Formosa,03366-000,Aricanduva/Formosa/Carrão,-23.565615,-46.535787,entre_duas_esquinas,Vila Formosa,AV TRUMAIN C/ HENRIQUE MORIZE
 1031-6,Domingo,Tradicional,Rua,Comendador Gil Pinheiro,325,Viaduto Vila Carrao,79,Vila Califórnia,03406-000,Aricanduva/Formosa/Carrão,-23.5414937,-46.545343,ajustado_na_rua,Carrao,RUA COMEN GIL PINHEIRO
@@ -47,7 +47,7 @@
 1046-4,Domingo,Tradicional,Rua,Buenópolis,117,S/inform,89,Vila Diva,03161-010,Mooca,-23.5751884,-46.5641235,ja_na_rua,Agua Rasa,RUA BUENOPOLIS
 1047-2,Domingo,Tradicional,Rua,Professor Assis Veloso,820,Estrada Sao Paulo Rio,109,Jardim São Vicente,08021-470,São Miguel,-23.5027066,-46.4312757,ajustado_na_rua,Sao Miguel,AV PROF ASSIS VELOSO
 1048-0,Domingo,Tradicional,Avenida,José Joaquim Seabra,1186,Estrada de Cotia,87,Vila Tiradentes,05364-000,Butantã,-23.5692617,-46.7541259,ja_na_rua,Rio Pequeno,RUA JOSE JOAQUIM SEABRA
-1049-9,Domingo,Tradicional,Rua,Professora Alzira de Oliveira Gilioli,177,Centro Esportivo Municipal,69,Vila Rica,03905-100,Aricanduva/Formosa/Carrão,-23.5815158,-46.5152833,ja_na_rua,Aricanduva,RUA PROF ALZIRA DE O GILIOLI
+1049-9,Domingo,Tradicional,Rua,Professora Alzira de Oliveira Gilioli,177,Centro Esportivo Municipal,69,Vila Rica,03905-090,Aricanduva/Formosa/Carrão,-23.5815158,-46.5152833,ja_na_rua,Aricanduva,RUA PROF ALZIRA DE O GILIOLI
 1050-2,Domingo,Tradicional,Rua,Tosltoi de Carvalho,1000,esquina com Avenida Sapopemba,81,Sapopemba,03269-020,Sapopemba,-23.5957915,-46.5241373,esquina,Sapopemba,RUA DR TOLSTOI DE CARVALHO
 1051-0,Domingo,Tradicional,Rua,Mere Maria Arais de Sion,100,esquina com Avenida Coronel Sezefredo Fagundes,19,Vila Nova Mazzei,02343-030,Santana/Tucuruvi,-23.466627,-46.6035855,esquina,Tucuruvi,RUA MERE MARIE ANNAIS DO SION
 1052-9,Domingo,Tradicional,Rua,Canedos,1000,,59,Vila GuSantavo,02252-010,Santana/Tucuruvi,-23.480361,-46.5900177,ja_na_rua,Tucuruvi,RUA CANEDOS
@@ -105,9 +105,9 @@
 1114-2,Domingo,Tradicional,Rua,Luís Antônio Martins,21,próximo a Instituto Butanta,18,Butantã,05539-060,Butantã,-23.5757548,-46.7234008,ja_na_rua,Butanta,RUA LUIS ANTONIO MARTINS
 1115-0,Domingo,Tradicional,Rua,Serra dos Dois Irmãos,10,esquina com Avenida Dom Rodrigo Sanches,29,Jardim Das Rosas,05890-300,Campo Limpo,-23.661973,-46.788529,esquina,Capao Redondo,RUA SERRA DOS DOIS IRMAOS
 1117-7,Domingo,Tradicional,Avenida,Antonelo da Messina,100,esquina com Rua Baltazar Águila,74,Vila Zilda,02318-000,Jaçanã/Tremembé,-23.444688,-46.590174,esquina,Tremembe,AV ANTONELO DA MESSINA
-1118-5,Domingo,Tradicional,Rua,Carlos Nahas,1,esquina com Avenida Carlos Lacerda,30,Jardim Rosana,05789-000,Campo Limpo,-23.6462362,-46.7792177,esquina,Campo Limpo,RUA CARLOS NAHAS C/ CARLOS LACERDA
+1118-5,Domingo,Tradicional,Rua,Carlos Nahas,1,esquina com Avenida Carlos Lacerda,30,Jardim Rosana,05795-160,Campo Limpo,-23.6462362,-46.7792177,esquina,Campo Limpo,RUA CARLOS NAHAS C/ CARLOS LACERDA
 1119-3,Domingo,Tradicional,Rua,Manoel da Costa Dantas,99,travessa da Estrada do M'Boi Mirim,27,Jardim Ranieri,04942-000,M'Boi Mirim,-23.6950646,-46.7793888,revisado_baixa,Jardim Angela,RUA MANOEL DA COSTA DANTAS
-1121-5,Domingo,Tradicional,Rua,Maria Benedita Rodrigues,42,Rua Maria Benedita Goncalves,20,Parque Santo Antonio,05851-300,M'Boi Mirim,-23.6625903,-46.7539979,ajustado_na_rua,Jardim Sao Luis,RUA MARIA BENEDITA RODRIGUES
+1121-5,Domingo,Tradicional,Rua,Maria Benedita Rodrigues,42,Rua Maria Benedita Goncalves,20,Parque Santo Antonio,05851-280,M'Boi Mirim,-23.6625903,-46.7539979,ajustado_na_rua,Jardim Sao Luis,RUA MARIA BENEDITA RODRIGUES
 1123-1,Domingo,Tradicional,Rua,Rainha das Missões,70,próximo a Igreja Vila Missionaria,12,Vila Missionaria,04430-010,Cidade Ademar,-23.686258,-46.647981,ajustado_na_rua,Cidade Ademar,RUA RAINHA DAS MISSOES
 1124-0,Domingo,Tradicional,Rua,Xavier Palmerim,35,travessa da Avenida Maria Luiza Americano,30,Parque Savoy City,08275-340,Itaquera,-23.5762245,-46.4849224,ja_na_rua,Parque do Carmo,RUA XAVIER PALMERIM
 1125-8,Domingo,Tradicional,Rua,Cachoeira Manganal,37,Depois Estacao Itaim,41,Itaim PauliSanta,08190-350,São Miguel,-23.4840203,-46.3889616,ja_na_rua,Jardim Helena,RUA CACHOEIRA MANGAVAL
@@ -120,7 +120,7 @@
 1133-9,Domingo,Tradicional,Rua,Oscar Freire,2400,esquina com Avenida Doutor Arnaldo,56,Sumare,05409-012,Pinheiros,-23.550081,-46.679412,esquina,Perdizes,RUA OSCAR FREIRE
 1134-7,Domingo,Tradicional,Praça,Bom Pastor,265,entre Rua Giovani Quadri e Rua Giacomo Quiri,72,Itaquera,08255-500,Itaquera,-23.5478192,-46.4343841,revisado_alta,Jose Bonifacio,PÇ BOM PASTOR
 1135-5,Domingo,Tradicional,Rua,Penaforte,55,Rua Nossa Senhora da Concordia,16,Jardim PauliSantana,02318-260,Jaçanã/Tremembé,-23.4515073,-46.5960907,ja_na_rua,Tremembe,RUA PENAFORTE
-1138-0,Domingo,Tradicional,Praça,dos Horticultores,415,S/inf,44,Eng Goulart,03723-040,Penha,-23.5018044,-46.5161802,revisado_alta,Cangaiba,PÇ DO HORTICULTORES
+1138-0,Domingo,Tradicional,Praça,dos Horticultores,415,S/inf,44,Eng Goulart,03726-040,Penha,-23.5018044,-46.5161802,revisado_alta,Cangaiba,PÇ DO HORTICULTORES
 1139-8,Domingo,Tradicional,Estrada,do Capoeirão,8,próximo a Ao SESC,12,Jardim Colonial,04821-310,Capela do Socorro,-23.7257234,-46.685237,ajustado_na_rua,Cidade Dutra,ES DO CAPOEIRAO
 1141-0,Domingo,Tradicional,Rua,Pastoril de Almenara,50,esquina com Estrada das Taipas,86,Parque Pan Americano,02993-040,Pirituba/Jaraguá,-23.4494571,-46.7347969,esquina,Jaragua,RUA PASTORIL DE ALMENARA
 1142-8,Domingo,Tradicional,Rua,Criúva,12,travessa da Antigo Atalho Mogiana,65,Vila Progresso,08245-300,São Miguel,-23.513159,-46.433083,ajustado_na_rua,Sao Miguel,RUA CRIUVA
@@ -177,15 +177,15 @@
 1246-7,Domingo,Tradicional,Rua,Beija-Flor,S/N,,9,Vila Vargem Grande,04895-280,Parelheiros,-23.8637862,-46.7126846,ja_na_rua,Parelheiros,RUA BEIJA FLOR
 1248-3,Domingo,Tradicional,Rua,Doutor Adhemar Ferreira de Carvalho,100,Vila Yolanda,34,Vila Yolanda Ii,08473-410,Cidade Tiradentes,-23.5799049,-46.3874128,ja_na_rua,Cidade Tiradentes,RUA DR ADEMAR FERREIRA DE CARVALHO
 1251-3,Domingo,Tradicional,Rua,Jerônimo Dias Ribeiro,50,esquina com Rua Doutor João Otaviano Pereira,19,Jardim São Paulo,08461-560,Guaianases,-23.559134,-46.400135,esquina,Guaianases,RUA JERONIMO DIAS RIBEIRO
-1253-0,Domingo,Tradicional,Rua,B10,S/N,próximo ao Supermercado Negreiros,,Cidade Tiradentes,,Guaianases,-23.6010108,-46.3985497,revisado_baixa,Cidade Tiradentes,RUA B10
+1253-0,Domingo,Tradicional,Rua,B10,S/N,próximo ao Supermercado Negreiros,,Cidade Tiradentes,,Guaianases,-23.5792134,-46.4157321,revisado_media,Cidade Tiradentes,RUA B10
 1254-8,Domingo,Tradicional,Rua,Araripira,25,,10,Jardim Do Recanto,02877-000,Freguesia/Brasilândia,-23.451723,-46.682361,ja_na_rua,Brasilandia,RUA ARARIPIRA
-1260-2,Domingo,Tradicional,Rua,Anna Papini Guaranha,1000,esquina com Avenida Zaki Narchi,71,Carandiru,02049-010,Vila Maria/Vila Guilherme,-23.510412,-46.6191381,esquina,Santana,RUA ANNA PAPINI GUARANHA
-1262-9,Domingo,Tradicional,Rua,Forte do Guará,10,,8,Parelheiros,04865-170,Parelheiros,-23.7831064,-46.7133899,ja_na_rua,Parelheiros,RUA FORTE DO GUARA
+1260-2,Domingo,Tradicional,Rua,Anna Papini Guaranha,1000,esquina com Avenida Zaki Narchi,71,Carandiru,02049-005,Vila Maria/Vila Guilherme,-23.510412,-46.6191381,esquina,Santana,RUA ANNA PAPINI GUARANHA
+1262-9,Domingo,Tradicional,Rua,Forte do Guará,10,,8,Parelheiros,04865-100,Parelheiros,-23.7831064,-46.7133899,ja_na_rua,Parelheiros,RUA FORTE DO GUARA
 1264-5,Domingo,Tradicional,Rua,Linaria,80,CDHU Itaim Paulista,9,Itaim PauliSanta,08142-189,Itaim Paulista,-23.5131972,-46.3852385,ajustado_na_rua,Itaim Paulista,RUA LINARIA
 1267-0,Domingo,Tradicional,Rua,Ponte da Amizade,S/N,CDHU Jardim Iguatemi,14,Jardim Iguatemi,08371-420,São Mateus,-23.5949839,-46.4202029,revisado_alta,Iguatemi,AV PONTE DA AMIZADE
 1268-8,Domingo,Tradicional,Rua,Antônio da Costa Barbosa,89,esquina com Rua José Ramon Urtiza,17,Vila Andrade,05717-220,Campo Limpo,-23.6340609,-46.7283401,esquina,Vila Andrade,RUA ANTONIO DA COSTA BARBOSA
 1270-0,Domingo,Tradicional,Rua,Raimunda Pereira de Ada Silva,10,,14,Jardim Varginha,04857-010,Capela do Socorro,-23.7843272,-46.683145,ja_na_rua,Grajau,RUA RAIMUNDA P DE ALENCAR DA SILVA
-1274-2,Domingo,Tradicional,Rua,Gaspar Sardinha,50,,14,Lageado,08460-000,Guaianases,-23.5449276,-46.393223,ja_na_rua,Lajeado,RUA GASPAR SARDINHA
+1274-2,Domingo,Tradicional,Rua,Gaspar Sardinha,50,,14,Lageado,08450-480,Guaianases,-23.5449276,-46.393223,ja_na_rua,Lajeado,RUA GASPAR SARDINHA
 1278-5,Domingo,Tradicional,Rua,Manoel Homem de Andrade,10,,6,Jardim Santo Antonio,05723-400,Campo Limpo,-23.6428451,-46.7331542,ja_na_rua,Vila Andrade,RUA MANUEL HOMEM DE ANDRADE
 1312-9,Domingo,Tradicional,Rua,Cidade de Rio Pardo,5,,13,Vila Andrade,05727-180,Campo Limpo,-23.6291498,-46.739549,ja_na_rua,Vila Andrade,RUA CIDADE DO RIO PARDO
 1360-9,Domingo,Tradicional,Rua,Afonso Lopes Vieira,582,Avenida Inajar de Souza,146,Vila Dionisia,02671-100,Casa Verde/Cachoeirinha,-23.4647236,-46.6647334,ajustado_na_rua,Cachoeirinha,RUA AFONSO LOPES VIEIRA
@@ -196,15 +196,15 @@
 1432-0,Domingo,Orgânica,Rua,Ricardo Casanova,120,entre Rua Pedro Alexandrino e Rua Gil de Oliveira,,Vila Matilde,03511-020,Penha,-23.5351352,-46.529125,entre_duas_esquinas,Vila Matilde,RUA RICARDO CASANOVA
 1488-5,Domingo,Tradicional,Rua,Lagoa de Dentro,2,Avenida Doutor Assis Ribeiro - Altura do N 5. 200,,Vila Silvia,03820-290,Penha,-23.492957,-46.5057339,ja_na_rua,Cangaiba,RUA LAGOA DENTRO
 1493-1,Domingo,Tradicional,Rua,Nello Bini,86,,6,Jardim Analia Franco,03337-050,Aricanduva/Formosa/Carrão,-23.556548,-46.5606443,ja_na_rua,Vila Formosa,RUA NELLO BINI
-1761-2,Domingo,Tradicional,Rua,Cachoeira das Jangadas,222,,4,Conjunto Habitacional Inacio Monteiro,08472-080,Cidade Tiradentes,-23.5705318,-46.4009467,ja_na_rua,Cidade Tiradentes,"RUA CACHOEIRA DAS JANGADAS, 15"
+1761-2,Domingo,Tradicional,Rua,Cachoeira das Jangadas,222,,4,Conjunto Habitacional Inacio Monteiro,08472-115,Cidade Tiradentes,-23.5705318,-46.4009467,ja_na_rua,Cidade Tiradentes,"RUA CACHOEIRA DAS JANGADAS, 15"
 1820-1,DOMINGO,Tradicional,Rua,Túllio Mugnaini,S/N,,2,Jardim Avenida,05798-330,Campo Limpo,-23.6588391,-46.7672955,ja_na_rua,Capao Redondo,RUA TULLIO MUGNAINI
 1849-0,Domingo,Tradicional,Avenida,Nadir Dias de Figueiredo,1253,,2,Vila Maria Baixa,02110-000,Vila Maria/Vila Guilherme,-23.5141268,-46.5951664,ja_na_rua,Vila Maria,AV NADIR DIAS DE FIGUEIREDO
 1854-6,Domingo,Tradicional,Rua,Atuaí,1026,,50,Vila Matilde,03646-000,Penha,-23.5308866,-46.5287601,ajustado_na_rua,Penha,RUA ATUAI
 1892-9,Domingo,Tradicional,Rua,Carvaxi,10,,,Parque Reboucas,05735-040,Campo Limpo,-23.6259637,-46.7481307,ajustado_na_rua,Campo Limpo,RUA CARVAXI
 1924-0,Domingo,Tradicional,Avenida,do Anastácio,2148,esquina com Rua Pelopia,7,Pirituba,05119-000,Pirituba/Jaraguá,-23.4895263,-46.7377182,esquina,Sao Domingos,AV DO ANASTACIO
 1959-3,Domingo,Tradicional,Rua,João de Siqueira Afonso,S/N,esquina com Rua Manuel da Mota Coutinho,,Lageado,08452-000,Guaianases,-23.5420871,-46.3931325,esquina,Lajeado,RUA JOAO DE SIQUEIRA AFONSO
-3000-7,Terça Feira,Orgânica,Rua,Valter Gazarra,1300,Parque Ceret,20,Jardim Analia Franco,03337-000,Aricanduva/Formosa/Carrão,-23.5585943,-46.5586541,ja_na_rua,Vila Formosa,RUA WALTER GAZARRA
-3001-5,Terça Feira,Tradicional,Rua,Santo Antônio,22,esquina com Rua São Vicente,93,Bela ViSanta,01330-050,Sé,-23.556454,-46.647981,esquina,Bela Vista,RUA SANTO ANTONIO
+3000-7,Terça Feira,Orgânica,Rua,Valter Gazarra,1300,Parque Ceret,20,Jardim Analia Franco,03337-055,Aricanduva/Formosa/Carrão,-23.5585943,-46.5586541,ja_na_rua,Vila Formosa,RUA WALTER GAZARRA
+3001-5,Terça Feira,Tradicional,Rua,Santo Antônio,22,esquina com Rua São Vicente,93,Bela ViSanta,01314-000,Sé,-23.556454,-46.647981,esquina,Bela Vista,RUA SANTO ANTONIO
 3003-1,Terça Feira,Tradicional,Rua,Stéfano,1000,travessa da Rua Stefano,82,Cambuci,01521-030,Sé,-23.563013,-46.618862,revisado_alta,Cambuci,RUA STEFANO
 3004-0,Terça Feira,Tradicional,Praça,Charles Miller,S/N,Estadio M P Machado Carvalho,44,Pacaembu,01234-010,Sé,-23.544473,-46.6650073,ajustado_na_rua,Consolacao,PÇ CHARLES MULLER
 3005-8,Terça Feira,Tradicional,Rua,Guimarães Passos,304,Comeca Rua Machado de Assis,46,Aclimacao,04107-030,Vila Mariana,-23.579643,-46.6332749,ja_na_rua,Vila Mariana,RUA GUIMARAES PASSOS
@@ -228,7 +228,7 @@
 3023-6,Terça Feira,Tradicional,Rua,Brigadeiro Amilcar Veloso Pederneiras,200,esquina com Avenida Padre Arlindo Vieira,76,Vila Das Merces,04173-000,Ipiranga,-23.637173,-46.6077,esquina,Sacoma,RUA BRIG AMILCAR V PEDERNEIRAS
 3024-4,Terça Feira,Tradicional,Rua,Mateus Gomes,50,Tatuape,62,Tatuapé,03089-060,Mooca,-23.5309609,-46.5622836,ajustado_na_rua,Tatuape,RUA MATEUS GOMES
 3025-2,Terça Feira,Tradicional,Rua,Quedas,567,Avenida Luiz Mazzei,51,Vila Mazzei,02082-030,Vila Maria/Vila Guilherme,-23.4959344,-46.6051431,ja_na_rua,Vila Guilherme,RUA QUEDAS
-3026-0,Terça Feira,Tradicional,Praça,Oscar da Silva,500,esquina com Rua Maria Cândida,115,Vila Guilherme,02067-000,Vila Maria/Vila Guilherme,-23.506641,-46.601595,esquina,Vila Guilherme,PÇ OSCAR DA SILVA
+3026-0,Terça Feira,Tradicional,Praça,Oscar da Silva,500,esquina com Rua Maria Cândida,115,Vila Guilherme,02067-070,Vila Maria/Vila Guilherme,-23.506641,-46.601595,esquina,Vila Guilherme,PÇ OSCAR DA SILVA
 3027-9,Terça Feira,Tradicional,Rua,Indiana,1428,próximo à Avenida Santo Amaro,65,Santo Amaro,04562-002,Pinheiros,-23.6062742,-46.6898308,revisado_alta,Itaim Bibi,RUA INDIANA
 3029-5,Terça Feira,Tradicional,Avenida,Boschetti,234,esquina com Rua Sá Campelo,67,Vila GuSantavo,02205-000,Vila Maria/Vila Guilherme,-23.4907045,-46.5939154,esquina,Vila Medeiros,AV BOSCHETTI
 3030-9,Terça Feira,Tradicional,Avenida,Doutor Benedito Estevam dos Santos,1200,Praça Vista Alegre,21,Vila Maria,02136-000,Vila Maria/Vila Guilherme,-23.498727,-46.5826174,ja_na_rua,Vila Maria,AV BENEDITO ESTEVAO DOS SANTOS
@@ -251,7 +251,7 @@
 3048-1,Terça Feira,Tradicional,Rua,Francisco de Oliveira Braga,132,Rua Olivia de Oliveira,38,Vila Nova Granada,03659-090,Penha,-23.5221358,-46.5135093,ja_na_rua,Penha,RUA FRANCISCO DE OLIVEIRA BRAGA
 3049-0,Terça Feira,Tradicional,Rua,Assis Valente,666,esquina com Rua Gil Ribeiro,35,Vila Guilhermina,03543-020,Penha,-23.5334892,-46.5144854,esquina,Vila Matilde,RUA ASSIS VALENTE C GIL RIBEIRO
 3050-3,Terça Feira,Tradicional,Rua,Municipal,1213,Seven Boysfabrica de Biscoito,107,Tres Maria,03661-000,Penha,-23.5270676,-46.4976022,ja_na_rua,Penha,RUA MUNICIPAL
-3051-1,Terça Feira,Tradicional,Rua,Ivoturucaia,411,Salao de Festa Nordestao,60,Vila Curuca Velha,08030-040,Itaim Paulista,-23.4975302,-46.4250401,ajustado_na_rua,Vila Curuca,RUA IVOTURUCAIA
+3051-1,Terça Feira,Tradicional,Rua,Ivoturucaia,411,Salao de Festa Nordestao,60,Vila Curuca Velha,08030-070,Itaim Paulista,-23.4975302,-46.4250401,ajustado_na_rua,Vila Curuca,RUA IVOTURUCAIA
 3052-0,Terça Feira,Tradicional,Rua,João Bizarro da Nave,50,próximo a Ao Largo Santa Clara,96,Vila Ema,03351-100,Mooca,-23.5717557,-46.5687269,ja_na_rua,Agua Rasa,RUA DR JOAO BIZARRO DA NAVE
 3053-8,Terça Feira,Tradicional,Rua,João Batista Fanton,3,travessa da Rua Santa Terezinha,21,Vila Fonton,05203-180,Perus,-23.4086553,-46.750343,ja_na_rua,Perus,RUA JOAO BATISTIA FANTON
 3054-6,Terça Feira,Tradicional,Rua,Tereza Bortolo,300,Cemiterio Tremembe,22,Jardim Tremembe,02352-150,Jaçanã/Tremembé,-23.4556906,-46.594747,ja_na_rua,Tremembe,RUA TEREZA BORTOLO
@@ -264,7 +264,7 @@
 3063-5,Terça Feira,Tradicional,Rua,Flor da Cachoeira,48,esquina com Rua Teixeira Soares,17,Vila Piaui,05109-220,Lapa,-23.501707,-46.760167,esquina,Jaguara,RUA FLOR CACHOEIRA E S DO TEIXEIRA
 3064-3,Terça Feira,Tradicional,Rua,Matias Teixeira,200,travessa da Rua Itaborai,15,Bosque Da Saude,04136-170,Ipiranga,-23.6109806,-46.6233719,ja_na_rua,Cursino,RUA MATIAS TEIXEIRA
 3065-1,Terça Feira,Tradicional,Praça,Benedito Calixto,100,Card Arco Verde C Teod Sampaio,85,Pinheiros,05406-040,Pinheiros,-23.5582849,-46.6805842,ajustado_na_rua,Jardim Paulista,PÇ BENEDITO CALIXTO
-3067-8,Terça Feira,Tradicional,Rua,Doutor João Toniolo,39,,66,Jardim São JoSé,02932-000,Pirituba/Jaraguá,-23.487233,-46.714103,revisado_media,Pirituba,RUA DR JOAO TONIOLO
+3067-8,Terça Feira,Tradicional,Rua,Doutor João Toniolo,39,,66,Jardim São JoSé,02969-000,Pirituba/Jaraguá,-23.487233,-46.714103,revisado_media,Pirituba,RUA DR JOAO TONIOLO
 3070-8,Terça Feira,Tradicional,Rua,Mont'Alverne,200,entre Rua Caritiana e Peacaba,45,Vila Santa Eulalia,04265-060,Ipiranga,-23.5855237,-46.6169505,ja_na_rua,Ipiranga,RUA MONTE ALVERNE
 3071-6,Terça Feira,Tradicional,Rua,Frederico Penteado Júnior,20,Avenida Casa Verde Altura 2816,10,Casa Verde,02517-100,Casa Verde/Cachoeirinha,-23.5062025,-46.6662884,ja_na_rua,Casa Verde,RUA FREDERICO PENTEADO JUNIOR
 3073-2,Terça Feira,Tradicional,Rua,Capitão Mor Passos,225,esquina com Rua Cachoeira,31,Pari,03024-010,Mooca,-23.527469,-46.6154073,esquina,Pari,RUA CAP MOR PASSOS
@@ -285,7 +285,7 @@
 3093-7,Terça Feira,Tradicional,Avenida,Mendonça e Vasconcelos,300,travessa da Estrada Sapopemba Altura 21000,57,Jardim Ester,08330-260,São Mateus,-23.6220279,-46.4645691,ajustado_na_rua,Sao Rafael,AV MENDONCA E VASCONCELOS
 3094-5,Terça Feira,Tradicional,Rua,Estevão Dias Vergara,100,esquina com Avenida Maria Luiza Americano,50,Jardim Nsra Do Carmo,08275-120,Itaquera,-23.57005,-46.479716,esquina,Parque do Carmo,RUA ESTEVAO DIAS VERGARA
 3095-3,Terça Feira,Tradicional,Rua,Frei Antônio Faggiano,41,esquina com Rua Antônio Capuzzi,62,Itaquera,08255-140,Itaquera,-23.5529385,-46.4337765,esquina,Jose Bonifacio,RUA FREI ANTONIO FAGGIANO
-3097-0,Terça Feira,Tradicional,Rua,Rio Hipiaugui,1,Jardim Planalto Vila Prudente,65,Jardim Planalto,03982-045,Sapopemba,-23.6089872,-46.514301,ja_na_rua,Sapopemba,RUA RIO HIPIAUGUI
+3097-0,Terça Feira,Tradicional,Rua,Rio Hipiaugui,1,Jardim Planalto Vila Prudente,65,Jardim Planalto,03982-000,Sapopemba,-23.6089872,-46.514301,ja_na_rua,Sapopemba,RUA RIO HIPIAUGUI
 3098-8,Terça Feira,Tradicional,Rua,José da Penha,100,Ponto Final Onibus Jardim Danfer,41,Jardim Danfer,03729-150,Penha,-23.5039559,-46.5057467,ja_na_rua,Cangaiba,RUA JOSE DA PENHA
 3099-6,Terça Feira,Tradicional,Avenida,Itaim,150,Estacao Itaim Paulista,27,Itaim PauliSanta,08110-650,Itaim Paulista,-23.491934,-46.3912905,ajustado_na_rua,Itaim Paulista,AV ITAIM
 3100-3,Terça Feira,Tradicional,Rua,Rosário Scamardi,5,travessa da Rua Rosario Escarnadi,35,Jardim Jangadeiro,05883-000,Campo Limpo,-23.6815242,-46.7812092,ja_na_rua,Capao Redondo,RUA ROSARIO SCAMARTI
@@ -305,7 +305,7 @@
 3129-1,Terça Feira,Tradicional,Rua,Gil Eanes,44,,24,Campo Belo,04601-040,Santo Amaro,-23.6179083,-46.6801481,ajustado_na_rua,Campo Belo,RUA GIL EANES
 3132-1,Terça Feira,Tradicional,Rua,Henrique Roschel Christi,344,,19,Jardim Dos Alamos,04883-255,Parelheiros,-23.8089255,-46.737235,ja_na_rua,Parelheiros,RUA HENRIQUE ROSCHEL CHRISTI
 3134-8,Terça Feira,Tradicional,Rua,Cachoeira de Minas,50,,8,Jardim Santa Adelia,03973-050,São Mateus,-23.6170901,-46.4792409,ja_na_rua,Sao Mateus,RUA CACHOEIRA DE MINAS
-3135-6,Terça Feira,Tradicional,Rua,Higino Pellegrini,S/N,,,Agua Branca,05001-100,Lapa,-23.5266418,-46.6766074,ja_na_rua,Barra Funda,RUA HIGINO PELLEGRINI
+3135-6,Terça Feira,Tradicional,Rua,Higino Pellegrini,S/N,,,Agua Branca,05003-060,Lapa,-23.5266418,-46.6766074,ja_na_rua,Barra Funda,RUA HIGINO PELLEGRINI
 3137-2,Terça Feira,Tradicional,Rua,Professor Tamandaré Toledo,100,,103,Jardim PauliSanta,04532-020,Pinheiros,-23.5835467,-46.6749261,ajustado_na_rua,Itaim Bibi,RUA PROF TAMANDARE DE TOLEDO
 3139-9,Terça Feira,Tradicional,Rua,Bartolomeu Quadros,10,,16,Cangaiba,03714-000,Penha,-23.5104957,-46.5434221,ajustado_na_rua,Cangaiba,RUA BARTOLOMEU QUADROS
 3140-2,Terça Feira,Tradicional,Rua,Flor de Pelicano,50,esquina com Estrada do Imperador,30,Jardim Casa Pintada,08230-820,Itaquera,-23.5137909,-46.4464514,esquina,Vila Jacui,RUA FLOR DE PELICANO
@@ -323,7 +323,7 @@
 3160-7,Terça Feira,Noturna,Rua,Rodolpho Barbosa de Castro,50,,4,Parque Guarani,08235-420,Itaquera,-23.516489,-46.4608897,ja_na_rua,Itaquera,RUA RODOLFO BARBOSA DE CASTRO
 3162-3,Terça Feira,Tradicional,Avenida,Sapopemba,15600,esquina com Rua Júlio César Moreira,16,São Mateus,03989-000,São Mateus,-23.620507,-46.466959,esquina,Sao Rafael,AV SAPOPEMBA
 3164-0,Terça Feira,Tradicional,Rua,Dronsfield,263,Doze de Out e Martim Tenorio,20,Lapa,05074-000,Lapa,-23.5188508,-46.7051563,ja_na_rua,Lapa,RUA DRONSFIELD
-3230-1,Terça Feira,Tradicional,Praça,Torquato Plaza,152,,5,Sapopemba,03271-050,Sapopemba,-23.5989889,-46.5164685,revisado_media,Sapopemba,PÇ TORQUATO PLAZA
+3230-1,Terça Feira,Tradicional,Praça,Torquato Plaza,152,,5,Sapopemba,03922-190,Sapopemba,-23.5989889,-46.5164685,revisado_media,Sapopemba,PÇ TORQUATO PLAZA
 3235-2,Terça Feira,Tradicional,Rua,Miguel Ângelo Lapena,150,,10,São Miguel,08010-040,São Miguel,-23.4920873,-46.4418506,ja_na_rua,Sao Miguel,RUA MIGUEL ANGELO LAPENA
 3324-3,Terça Feira,Tradicional,Rua,Desembargador Fausto Whitaker Machado Alvim,3,,1,Itaim PauliSanta,08130-350,Itaim Paulista,-23.5030371,-46.3659241,ja_na_rua,Itaim Paulista,RUA DESEM FAUSTO WHITAKER M ALVIM
 3400-2,Terça Feira,Tradicional,Rua,General José de Almeida Botelho,100,,9,Mandaqui,02422-090,Santana/Tucuruvi,-23.4710994,-46.6362458,ajustado_na_rua,Mandaqui,RUA GENERAL JOSE ALMEIDA BOTELHO
@@ -331,7 +331,7 @@
 3402-9,Terça Feira,Tradicional,Rua,Tiúba,230,Abast,1,Vila Manchester,03443-015,Aricanduva/Formosa/Carrão,-23.5422771,-46.5360525,ja_na_rua,Carrao,RUA TIUBA
 3489-4,Terça Feira,Noturna,Rua,Inácio Preto de Morais,1,,14,Vila Plana,05731-340,Campo Limpo,-23.6404516,-46.7461901,ja_na_rua,Vila Andrade,RUA INACIO PRETO DE MORAIS
 3744-3,Terça Feira,Noturna,Calçadão,da Estação Dom Bosco (CPTM),1133,,7,Itaquera,08215-545,Itaquera,-23.54192,-46.44936,revisado_media,Itaquera,Calcadão Estação CPTM Dom Bosco
-3789-3,Terça Feira,Noturna,Rua,Pedro Ribeiro,1,,11,Santana,02085-000,Santana/Tucuruvi,-23.4984182,-46.6132685,ja_na_rua,Vila Guilherme,RUA RUA PEDRO RIBEIRO
+3789-3,Terça Feira,Noturna,Rua,Pedro Ribeiro,1,,11,Santana,02046-001,Santana/Tucuruvi,-23.4984182,-46.6132685,ja_na_rua,Vila Guilherme,RUA RUA PEDRO RIBEIRO
 3815-6,Terça Feira,Noturna,Rua,Antônio Bartolomeu,S/N,,7,Vila Perus,05204-200,Perus,-23.405896,-46.753757,ajustado_na_rua,Perus,RUA ANTONIO BARTOLOMEU
 3835-0,Terça Feira,Orgânica,Praça,Antônio Eneas Matias,S/N,esquina com Rua Pascoal de Miranda,,Itaim PauliSanta,08120-090,Itaim Paulista,-23.5007522,-46.3974495,esquina,Itaim Paulista,PÇ ANTONIO ENEAS MATIAS
 3869-5,Terça Feira,Noturna,Rua,José de Salcedo,65,,,Parque Flamengo,05783-120,Campo Limpo,-23.6419662,-46.7669296,ja_na_rua,Campo Limpo,RUA JOSE DE SALCEDO
@@ -346,9 +346,9 @@
 4005-3,Quarta Feira,Tradicional,Rua,Vidal de Negreiros,50,esquina com Avenida Cruzeiro do Sul,69,Caninde,03033-050,Mooca,-23.53004,-46.625462,esquina,Pari,RUA VIDAL DE NEGREIROS
 4007-0,Quarta Feira,Tradicional,Rua,Professor Macedo Soares,276,travessa da Avenida Lins de Vasconcelos,55,Jardim Da Gloria,04113-090,Vila Mariana,-23.5843648,-46.6243311,ajustado_na_rua,Vila Mariana,RUA PROFESSOR MACEDO SOARES
 4008-8,Quarta Feira,Tradicional,Rua,Eça de Queiroz,276,próximo a Avenida 23 de Maio,83,Vila Mariana,04011-031,Vila Mariana,-23.5790767,-46.6436439,ajustado_na_rua,Vila Mariana,RUA ECA DE QUEIROZ
-4009-6,Quarta Feira,Tradicional,Rua,Guinle,250,entre Rua Frederico Von Martius e Rua Mariano Procópio,80,Vila Monumento,01548-010,Ipiranga,-23.5764269,-46.6124047,entre_duas_esquinas,Ipiranga,RUA GUINLE C/ FREDERICO V MARTIUS
+4009-6,Quarta Feira,Tradicional,Rua,Guinle,250,entre Rua Frederico Von Martius e Rua Mariano Procópio,80,Vila Monumento,01548-040,Ipiranga,-23.5764269,-46.6124047,entre_duas_esquinas,Ipiranga,RUA GUINLE C/ FREDERICO V MARTIUS
 4010-0,Quarta Feira,Tradicional,Rua,Madre de Deus,604,travessa da Rua Visconde de Inhumirim,73,Mooca,03119-000,Mooca,-23.5619888,-46.5968625,ja_na_rua,Mooca,RUA MADRE DE DEUS
-4011-8,Quarta Feira,Tradicional,Rua,Cayowaá,2008,esquina com Rua Heitor Penteado,114,Sumarezinho,01258-011,Lapa,-23.546993,-46.689937,esquina,Perdizes,RUA CAYOWAA
+4011-8,Quarta Feira,Tradicional,Rua,Cayowaá,2008,esquina com Rua Heitor Penteado,114,Sumarezinho,01258-010,Lapa,-23.546993,-46.689937,esquina,Perdizes,RUA CAYOWAA
 4012-6,Quarta Feira,Tradicional,Praça,Roberto Gomes Pedrosa,520,Praça Roberto Gomes Pedrosa,28,Itaim Bibi,05653-070,Butantã,-23.5982813,-46.7198842,ja_na_rua,Morumbi,PÇ ROBERTO GOMES PEDROSA
 4013-4,Quarta Feira,Tradicional,Rua,Tavares Bastos,901,esquina com Rua Barão do Bananal,78,Vila Pompeia,05012-020,Lapa,-23.533202,-46.688515,esquina,Perdizes,RUA TAVARES BASTOS
 4015-0,Quarta Feira,Tradicional,Rua,Doutor Gabriel Piza,400,esquina com Rua Doutor Zuquim,57,Santana,02036-011,Santana/Tucuruvi,-23.502074,-46.6224046,esquina,Santana,RUA GABRIEL PIZZA
@@ -357,7 +357,7 @@
 4018-5,Quarta Feira,Tradicional,Rua,Galiléia,430,esquina com Rua José Rangel de Carmargo,31,Parque Peruche,02530-000,Casa Verde/Cachoeirinha,-23.500796,-46.6577241,esquina,Casa Verde,RUA GALILEIA
 4019-3,Quarta Feira,Tradicional,Avenida,Antônio Munhoz Bonilha,235,travessa da Avenida Deputado Emílio Carlos,57,Vila Carolina,02725-000,Casa Verde/Cachoeirinha,-23.5018618,-46.6845499,revisado_alta,Limao,RUA ANTONIO MUNHOS BONILHA
 4020-7,Quarta Feira,Tradicional,Rua,Ministro Salgado Filho,485,esquina com Rua Paulo de Lima Correa,51,Vila Oratorio,03193-020,Mooca,-23.5744384,-46.5777425,esquina,Agua Rasa,RUA MIN SALGADO FILHO
-4022-3,Quarta Feira,Tradicional,Rua,Sebastião Barbosa,333,esquina com Rua Bento Manuel,44,Tatuapé,03334-040,Mooca,-23.5538116,-46.5737048,esquina,Agua Rasa,RUA SEBASTIAO BARBOSA
+4022-3,Quarta Feira,Tradicional,Rua,Sebastião Barbosa,333,esquina com Rua Bento Manuel,44,Tatuapé,03334-050,Mooca,-23.5538116,-46.5737048,esquina,Agua Rasa,RUA SEBASTIAO BARBOSA
 4023-1,Quarta Feira,Tradicional,Rua,Airi,437,esquina com Praça Barão de Itaqui,18,Tatuapé,03310-010,Mooca,-23.5401229,-46.56867,esquina,Tatuape,RUA AIRI
 4024-0,Quarta Feira,Tradicional,Avenida,Bem-te-vi,104,entre Alameda Jauaperi e Avenida Ibirapuera,132,Indianopolis,04524-030,Vila Mariana,-23.6079532,-46.6682058,entre_duas_esquinas,Moema,AV BENTEVI C JAUAPERI
 4025-8,Quarta Feira,Tradicional,Rua,Lino Guedes,109,esquina com Rua Vergueiro,12,Moinho Velho,04288-120,Ipiranga,-23.609217,-46.611884,esquina,Cursino,RUA LINO GUEDES
@@ -375,7 +375,7 @@
 4037-1,Quarta Feira,Tradicional,Rua,Pedro Alegretti,512,Avenida Amador B. Veiga (cemiterio),36,Penha,03610-010,Penha,-23.5174857,-46.5404483,ja_na_rua,Penha,RUA PEDRO ALEGRETTI
 4038-0,Quarta Feira,Tradicional,Rua,Maria Carlota,20,esquina com Avenida Amador Bueno da Veiga,29,Penha,03647-000,Penha,-23.521526,-46.529047,esquina,Penha,RUA MARIA CARLOTA
 4039-8,Quarta Feira,Tradicional,Rua,Durvalina,151,esquina com Praça Dom Duarte Leopoldo,64,Vila Matilde,03511-050,Penha,-23.53514,-46.527647,esquina,Vila Matilde,RUA DURVALINA
-4040-1,Quarta Feira,Tradicional,Rua,São Valentim,120,próximo a Largo de Vila Carrao,102,Vila Carrao,03445-000,Aricanduva/Formosa/Carrão,-23.5487026,-46.5297726,ja_na_rua,Carrao,RUA SAO VALENTIM
+4040-1,Quarta Feira,Tradicional,Rua,São Valentim,120,próximo a Largo de Vila Carrao,102,Vila Carrao,03446-040,Aricanduva/Formosa/Carrão,-23.5487026,-46.5297726,ja_na_rua,Carrao,RUA SAO VALENTIM
 4041-0,Quarta Feira,Tradicional,Rua,Maragogipe,320,travessa da Rua Pretoria,55,Vila Formosa,03412-050,Aricanduva/Formosa/Carrão,-23.5589265,-46.5505172,ja_na_rua,Vila Formosa,RUA MARAGOJIPE
 4042-8,Quarta Feira,Tradicional,Rua,Boaventura Rodrigues da Silva,200,Cartorio Ermelino Matarazzo,160,Ponte Raza,03801-120,Ermelino Matarazzo,-23.505757,-46.490251,revisado_alta,Ermelino Matarazzo,RUA BOAVENTURA R DA SILVA
 4043-6,Quarta Feira,Tradicional,Rua,Tsutomo Henni,720,esquina com Rua Ernesto Bainha Lopes,69,Vila Jacui,08060-350,São Miguel,-23.50337,-46.453891,entre_duas_esquinas,Vila Jacui,RUA TSUTOMU HENNI
@@ -384,7 +384,7 @@
 4046-0,Quarta Feira,Tradicional,Rua,Agostinho Rodrigues Filho,363,Rua Leandro Duque e Tetsual,37,Vila Mariana,04026-040,Vila Mariana,-23.6001335,-46.6479055,ajustado_na_rua,Saude,AL AGOSTINHO RODRIGUES FILHO
 4047-9,Quarta Feira,Tradicional,Rua,Pitinga,396,esquina com Rua das Giestas,55,Vila Bela,03146-030,Vila Prudente,-23.5963876,-46.5735499,esquina,Vila Prudente,RUA PITINGA
 4048-7,Quarta Feira,Tradicional,Rua,Lauro Muller,12,Centro Esportivo Pelezao,63,Vila Hamburguesa,05302-060,Lapa,-23.5292489,-46.7255533,ajustado_na_rua,Vila Leopoldina,RUA LAURO MULLER
-4049-5,Quarta Feira,Tradicional,Rua,Doutor Carlos Bastos Aranha,258,S/infor,85,Vila Nilo,02276-000,Jaçanã/Tremembé,-23.4631461,-46.5811215,ja_na_rua,Jacana,RUA DR CARLOS BASTOS ARANHA
+4049-5,Quarta Feira,Tradicional,Rua,Doutor Carlos Bastos Aranha,258,S/infor,85,Vila Nilo,02278-010,Jaçanã/Tremembé,-23.4631461,-46.5811215,ja_na_rua,Jacana,RUA DR CARLOS BASTOS ARANHA
 4050-9,Quarta Feira,Tradicional,Rua,Barão Jaceguai,1768,esquina com Rua Demóstenes,68,Santo Amaro,04606-004,Santo Amaro,-23.617553,-46.672309,esquina,Campo Belo,RUA BARAO DE JACEGUAI
 4051-7,Quarta Feira,Tradicional,Rua,Paulino Vital de Morais,50,Et Av Elias Maase R C Orsolini,111,Capao Redondo,05855-000,Campo Limpo,-23.6599363,-46.766316,ajustado_na_rua,Capao Redondo,RUA PAULINO VITAL DE MORAES
 4052-5,Quarta Feira,Tradicional,Rua,Alexandre Dumas,1200,Avenida Santo Amaro Alt. 5000,52,Chac Santo Antonio,04717-002,Santo Amaro,-23.6331396,-46.7024602,ja_na_rua,Santo Amaro,RUA ALEXANDRE DUMAS
@@ -402,22 +402,22 @@
 4064-9,Quarta Feira,Tradicional,Rua,Padre Pedro Magnoni,511,Ponto Final Onibus Vila Ema,31,Vila Ema,03286-070,Vila Prudente,-23.5917121,-46.5357158,ja_na_rua,Sao Lucas,RUA PDE PEDRO MAGNONI
 4065-7,Quarta Feira,Tradicional,Rua,Benedito Leal,334,Estacao R. F. F. Artur Alvim,31,Artur Alvim,03567-060,Penha,-23.5386168,-46.4882901,ja_na_rua,Artur Alvim,RUA BENEDITO LEAL
 4066-5,Quarta Feira,Tradicional,Rua,Pedro Marigliani,10,travessa da Doutor Joao Batista B de Lima,29,Chac Inglesa,05141-010,Pirituba/Jaraguá,-23.4943311,-46.7306433,ja_na_rua,Pirituba,RUA PEDRO MARIGLIANI
-4067-3,Quarta Feira,Tradicional,Avenida,Antenor Navarro,420,esquina com Avenida Jardim Japão,117,Jardim Brásil,02224-100,Vila Maria/Vila Guilherme,-23.486348,-46.578196,esquina,Vila Medeiros,RUA ANTENOR NAVARRO
+4067-3,Quarta Feira,Tradicional,Avenida,Antenor Navarro,420,esquina com Avenida Jardim Japão,117,Jardim Brásil,02224-000,Vila Maria/Vila Guilherme,-23.486348,-46.578196,esquina,Vila Medeiros,RUA ANTENOR NAVARRO
 4068-1,Quarta Feira,Tradicional,Rua,Santa Rosa de Lima,310,Avenida V Artur da Nova Alt N 1842,157,Parque PauliSantano,08080-000,São Miguel,-23.4840668,-46.4295972,ja_na_rua,Jardim Helena,RUA SANTA ROSA DE LIMA
 4069-0,Quarta Feira,Tradicional,Rua,Luminárias,100,esquina com Rua Heitor Penteado,41,Jardim Das Bandeiras,05439-000,Pinheiros,-23.5476873,-46.6879519,esquina,Perdizes,RUA LUMINARIAS
 4070-3,Quarta Feira,Tradicional,Avenida,Doutor Ivan Maia de Vasconcelos,183,Praça Solano Cunha,101,Jardim Triana,03552-130,Penha,-23.5367358,-46.5061702,ja_na_rua,Vila Matilde,RUA IVAN MAIA VASCONCELOS
 4071-1,Quarta Feira,Tradicional,Rua,Domiziano Rossi,50,Maria Cursi C Aureliano Arruda,118,São Mateus,03966-030,São Mateus,-23.5974774,-46.4793337,ja_na_rua,Sao Mateus,RUA DOMIZIANO ROSSI
 4072-0,Quarta Feira,Tradicional,Avenida,Monsenhor Agnelo,305,P Final On Vila Progresso,81,Vila Progresso,08240-670,São Miguel,-23.5190058,-46.4357367,ja_na_rua,Sao Miguel,AV MONS AGNELO
 4074-6,Quarta Feira,Tradicional,Rua,Padre Artur Somensi,48,esquina com Rua Lira,43,Vila Beatriz,05443-030,Pinheiros,-23.5529808,-46.6967115,esquina,Alto de Pinheiros,RUA PDE ARTUR SOMENSI
-4075-4,Quarta Feira,Tradicional,Rua,Montreal,26,,46,Parque São Luis,02832-050,Freguesia/Brasilândia,-23.481038,-46.6943367,ja_na_rua,Freguesia do O,RUA MONTREAL
+4075-4,Quarta Feira,Tradicional,Rua,Montreal,26,,46,Parque São Luis,02832-080,Freguesia/Brasilândia,-23.481038,-46.6943367,ja_na_rua,Freguesia do O,RUA MONTREAL
 4076-2,Quarta Feira,Tradicional,Avenida,Batista Maciel,313,Ruas Zike Tuma e Antonio Campo,39,Jardim Ubirajara,04459-110,Cidade Ademar,-23.6919907,-46.6698942,ja_na_rua,Pedreira,AV BATISTA MACIEL
 4077-0,Quarta Feira,Tradicional,Rua,José Bonifácio Filho,100,Avenida Frutuoso,62,Cid Dutra,04813-060,Capela do Socorro,-23.7185143,-46.6890959,ja_na_rua,Cidade Dutra,RUA JOSE BONIFACIO FILHO
 4078-9,Quarta Feira,Tradicional,Rua,Visconde de Santa Isabel,120,Margens da Av Cupece,66,Cid Ademar,04385-090,Cidade Ademar,-23.6631589,-46.6582765,ajustado_na_rua,Cidade Ademar,RUA VISCONDE DE STA ISABEL
 4079-7,Quarta Feira,Tradicional,Rua,Pensilvânia,610,esquina com Rua Califórnia,67,Cid Moncoes,04564-002,Pinheiros,-23.6127773,-46.6851861,esquina,Itaim Bibi,RUA PENSYLVANIA
 4080-0,Quarta Feira,Tradicional,Avenida,Brás de Abreu,32,travessa da Avenida Pedro de Avos,42,Jardim Miriam,04419-090,Cidade Ademar,-23.6795612,-46.6403683,ajustado_na_rua,Cidade Ademar,RUA BRAS DE ABREU
-4081-9,Quarta Feira,Tradicional,Rua,Arraial dos Couros,19,Ponto Final do Onibus J S Luis,55,Jardim São Luiz,05843-200,M'Boi Mirim,-23.6526376,-46.7378921,ja_na_rua,Jardim Sao Luis,RUA ARRAIAL DOS COUROS
+4081-9,Quarta Feira,Tradicional,Rua,Arraial dos Couros,19,Ponto Final do Onibus J S Luis,55,Jardim São Luiz,05843-140,M'Boi Mirim,-23.6526376,-46.7378921,ja_na_rua,Jardim Sao Luis,RUA ARRAIAL DOS COUROS
 4083-5,Quarta Feira,Tradicional,Rua,Cristóvão Pereira,1650,Atraz do Jumbo,99,Campo Belo,04620-012,Santo Amaro,-23.6249661,-46.6687175,ajustado_na_rua,Campo Belo,RUA CRISTOVAO PEREIRA
-4084-3,Quarta Feira,Tradicional,Rua,Hiléia Amazônica,420,travessa da Estrada Oratorio,74,Jardim Guairaca,03245-000,Sapopemba,-23.6040607,-46.5381325,ja_na_rua,Sao Lucas,RUA HILEIA AMAZONICA
+4084-3,Quarta Feira,Tradicional,Rua,Hiléia Amazônica,420,travessa da Estrada Oratorio,74,Jardim Guairaca,03245-000,Vila Prudente,-23.6040607,-46.5381325,ja_na_rua,Sao Lucas,RUA HILEIA AMAZONICA
 4085-1,Quarta Feira,Tradicional,Rua,Amoipira,50,esquina com Avenida Nossa Senhora do Sabará,45,Vila Isa,04689-070,Santo Amaro,-23.668517,-46.689448,esquina,Campo Grande,RUA AMOIPIRA
 4086-0,Quarta Feira,Tradicional,Rua,Thereza Maia Pinto,5,travessa da Estrada de Itapecerica,50,Vila Prell,05780-390,Campo Limpo,-23.6484844,-46.7539076,ja_na_rua,Jardim Sao Luis,RUA THEREZA MAIA PINTO
 4087-8,Quarta Feira,Tradicional,Rua,Padre Marcigaglia,50,esquina com Avenida Agenor Couto de Magalhães,12,Jardim Regina,05174-100,Pirituba/Jaraguá,-23.474185,-46.741596,esquina,Pirituba,RUA PDE MARCIGAGLIA
@@ -434,7 +434,7 @@
 4101-7,Quarta Feira,Tradicional,Rua,Maria do Carmo Sene,128,travessa da Avenida Pauliceia,19,Vila Pauliceia,02301-110,Santana/Tucuruvi,-23.488543,-46.6123614,ajustado_na_rua,Santana,RUA MARIA DO CARMO SENE
 4103-3,Quarta Feira,Tradicional,Rua,Agostinho de Paiva,230,Joao Cruz e Luis de Boulogne,33,Jardim Macedonia,05894-230,Campo Limpo,-23.6518747,-46.7901425,ja_na_rua,Capao Redondo,RUA AGOSTINHO PAIVA
 4105-0,Quarta Feira,Tradicional,Rua,Flor de Santa Cruz,55,Fabrica de Tintas Pilot,70,Vila Verde,08230-450,Itaquera,-23.5190922,-46.4495512,ajustado_na_rua,Itaquera,RUA FLOR DE SANTA CRUZ
-4106-8,Quarta Feira,Tradicional,Rua,Diogo Gonçalves Laco,10,S/ref.,66,Jardim Romano,08191-000,São Miguel,-23.480488,-46.386439,revisado_media,Jardim Helena,RUA DIOGO GONCALVES LACO
+4106-8,Quarta Feira,Tradicional,Rua,Diogo Gonçalves Laco,10,S/ref.,66,Jardim Romano,08191-150,São Miguel,-23.480488,-46.386439,revisado_media,Jardim Helena,RUA DIOGO GONCALVES LACO
 4107-6,Quarta Feira,Tradicional,Avenida,José Borges do Canto,8,Final On. Itaim Paulista,61,Jardim Camargo Velho,08142-010,Itaim Paulista,-23.5069384,-46.3920378,ajustado_na_rua,Itaim Paulista,AV JOSE BORGES DO CANTO
 4109-2,Quarta Feira,Tradicional,Avenida,dos Pequis,321,esquina com Avenida Monsenhor Antônio Castro,64,Jardim Vila Formosa,03470-050,Aricanduva/Formosa/Carrão,-23.5716397,-46.5242251,esquina,Aricanduva,AV DOS PEQUIS
 4110-6,Quarta Feira,Tradicional,Rua,Ernesto Juliano,50,Vila Sao Carlo Vila Prudente,23,Vila São Carlos,03159-090,Mooca,-23.5784061,-46.5685756,ajustado_na_rua,Agua Rasa,RUA ERNESTO GIULIANO
@@ -449,7 +449,7 @@
 4125-4,Quarta Feira,Tradicional,Rua,Ribeirão do Salto,100,Sem Informacao,23,Lausane PauliSanta,02473-020,Santana/Tucuruvi,-23.4789065,-46.6517859,ja_na_rua,Cachoeirinha,RUA RIBEIRAO DO SALTO
 4128-9,Quarta Feira,Tradicional,Rua,Gonçalves de Barros,50,,23,Jardim Pirituba,02943-000,Pirituba/Jaraguá,-23.4776,-46.726897,ja_na_rua,Pirituba,RUA GONCALVES DE BARROS
 4132-7,Quarta Feira,Tradicional,Avenida,Luiz José Costa Leandro,50,,86,Cid Tiradentes Cohab,08471-200,Cidade Tiradentes,-23.601468,-46.4009588,ja_na_rua,Cidade Tiradentes,AV LUIS JOSE COSTA (LEANDRO)
-4133-5,Quarta Feira,Tradicional,Praça,Antônio José de Araújo,60,,15,Palmas Do Tremembe,02344-090,Santana/Tucuruvi,-23.46852,-46.60999,revisado_alta,Tucuruvi,PÇ ANTONIO JOSE DE ARAUJO
+4133-5,Quarta Feira,Tradicional,Praça,Antônio José de Araújo,60,,15,Palmas Do Tremembe,02344-120,Santana/Tucuruvi,-23.46852,-46.60999,revisado_alta,Tucuruvi,PÇ ANTONIO JOSE DE ARAUJO
 4134-3,Quarta Feira,Tradicional,Rua,Henri Lacordaire,100,,33,Jardim Santa Francisca,04844-660,Capela do Socorro,-23.7587431,-46.7067838,ja_na_rua,Grajau,RUA HENRY LACORDAIRE
 4135-1,Quarta Feira,Tradicional,Rua,Pandiá Calógeras,37,esquina com Rua Conselheiro Furtado,40,Liberdade,01525-020,Sé,-23.5638049,-46.6325355,esquina,Liberdade,RUA PANDIA CALOGERAS
 4136-0,Quarta Feira,Tradicional,Rua,José Greef Borba,8,entre Rua Frei Fabiano de Cristo e Rua S. Zacaro,1,Jardim Nazare,08150-130,Itaim Paulista,-23.51577,-46.4142782,revisado_alta,Vila Curuca,RUA JOSE GREEF BORBA
@@ -473,17 +473,17 @@
 4181-5,Quarta Feira,Tradicional,Rua,Inácio Moreira,100,Rua Castelo de Leca,14,Jardim Soares,08460-300,Guaianases,-23.551907,-46.4012419,ja_na_rua,Guaianases,RUA INACIO MOREIRA
 4184-0,Quarta Feira,Tradicional,Rua,dos Guarinos,100,,3,Vila Elisa,02219-160,Vila Maria/Vila Guilherme,-23.4961945,-46.5908671,ajustado_na_rua,Vila Medeiros,RUA DOS GUARINOS
 4186-6,Quarta Feira,Tradicional,Avenida,Elísio Cordeiro de Siqueira,30,Jardim Santo Elias,148,Jaridm,05136-000,Pirituba/Jaraguá,-23.5066799,-46.7473797,ja_na_rua,Sao Domingos,AV ELISIO CORDEIRO DE SIQUEIRA
-4188-2,Quarta Feira,Tradicional,Rua,Maria da Costa Bezerra,30,,3,Parelheiros,04850-050,Parelheiros,-23.7941435,-46.7346909,ja_na_rua,Parelheiros,RUA MARIA DA COSTA BEZERRA
-4189-0,Quarta Feira,Tradicional,Rua,Antônio Gandini,100,esquina com Rua Sabbado D'Ângelo,9,Itaquera,08215-290,Itaquera,-23.5417744,-46.4467384,esquina,Itaquera,RUA ANTONIO GANDINE
-4194-7,Quarta Feira,Tradicional,Praça,Benito Nicoletti,253,esquina com Rua Reims,17,Parque Souza Aranha,02517-010,Casa Verde/Cachoeirinha,-23.508363,-46.66283,esquina,Casa Verde,PÇ BENITO NICOLETTI
+4188-2,Quarta Feira,Tradicional,Rua,Maria da Costa Bezerra,30,,3,Parelheiros,04880-050,Parelheiros,-23.7941435,-46.7346909,ja_na_rua,Parelheiros,RUA MARIA DA COSTA BEZERRA
+4189-0,Quarta Feira,Tradicional,Rua,Antônio Gandini,100,esquina com Rua Sabbado D'Ângelo,9,Itaquera,08215-460,Itaquera,-23.5417744,-46.4467384,esquina,Itaquera,RUA ANTONIO GANDINE
+4194-7,Quarta Feira,Tradicional,Praça,Benito Nicoletti,253,esquina com Rua Reims,17,Parque Souza Aranha,02517-021,Casa Verde/Cachoeirinha,-23.508363,-46.66283,esquina,Casa Verde,PÇ BENITO NICOLETTI
 4198-0,Quarta Feira,Tradicional,Rua,Benedito Galvão,S/N,esquina com Praça Albino Francisco de Figueiredo,,Vila Carrao,03433-030,Aricanduva/Formosa/Carrão,-23.560186,-46.536734,esquina,Carrao,RUA BENEDITO GALVAO
 4202-1,Quarta Feira,Tradicional,Rua,Ingaí,50,,14,Vila Prudente,03132-080,Vila Prudente,-23.5819996,-46.5848727,ja_na_rua,Vila Prudente,RUA INGAI
-4219-6,Quarta Feira,Tradicional,Praça,Floriano Peixoto,100,esquina com Rua Tiago Luiz,13,Santo Amaro,04750-000,Santo Amaro,-23.6515347,-46.7073477,revisado_alta,Santo Amaro,PÇ FLORIANO PEIXOTO
+4219-6,Quarta Feira,Tradicional,Praça,Floriano Peixoto,100,esquina com Rua Tiago Luiz,13,Santo Amaro,04751-030,Santo Amaro,-23.6515347,-46.7073477,revisado_alta,Santo Amaro,PÇ FLORIANO PEIXOTO
 4244-7,Quarta Feira,Tradicional,Rua,Daniel Bernardo,10,,2,Vila Americana,08010-100,São Miguel,-23.4936194,-46.4418496,ja_na_rua,Sao Miguel,RUA DANIEL BERNARDO
 4264-1,Quarta Feira,Tradicional,Rua,Professor Doutor Abrahão Berezin,410,,2,Barra Funda,01156-060,Lapa,-23.5258883,-46.6703863,ja_na_rua,Barra Funda,RUA PROFESSOR ABRAHAO BEREZIN
 4306-0,Quarta Feira,Tradicional,Rua,Forte William,3,,17,Vila Andrade,05704-110,Campo Limpo,-23.6298829,-46.7198974,ajustado_na_rua,Vila Andrade,RUA FORTE WILLIAM
 4380-0,Quarta Feira,Noturna,Rua,Paulo Marques,10,Avenida Governador Carvalho Pinto,20,Vila Vidal,03616-210,Penha,-23.5146107,-46.5265347,ja_na_rua,Penha,RUA PAULO MARQUES
-4386-9,Quarta Feira,Tradicional,Travessa,São Gabriel da Cachoeira,386,,9,Jardim Iris,05144-085,Pirituba/Jaraguá,-23.5003959,-46.7192732,ja_na_rua,Pirituba,TV SAO GABRIEL DA CACHOEIRA
+4386-9,Quarta Feira,Tradicional,Travessa,São Gabriel da Cachoeira,386,,9,Jardim Iris,05144-095,Pirituba/Jaraguá,-23.5003959,-46.7192732,ja_na_rua,Pirituba,TV SAO GABRIEL DA CACHOEIRA
 4390-7,Quarta Feira,Tradicional,Rua,Andréa Feliciani,10,esquina com Rua César Diaz,45,Artur Alvim,03591-020,Penha,-23.5507605,-46.4807088,esquina,Artur Alvim,RUA ANDREA FELICIANI
 4400-8,Quarta Feira,Tradicional,Rua,Adutora do Rio Claro,15,Adutora Rio Claro,38,Vila Regente Feijo,03924-300,Sapopemba,-23.573535,-46.5662613,ja_na_rua,Agua Rasa,RUA ADUTORA DO RIO CLARO
 4401-6,Quarta Feira,Noturna,Rua,Augustin Luberti,100,Abast,6,Fazenda Juta,03977-409,Sapopemba,-23.6175608,-46.4879165,ajustado_na_rua,Sapopemba,RUA AUGUSTIN LUBERTI
@@ -533,7 +533,7 @@
 5033-4,Quinta Feira,Tradicional,Rua,Dentista Barreto,120,esquina com Avenida Conselheiro Carrão,84,Vila Carrao,03420-000,Aricanduva/Formosa/Carrão,-23.5459924,-46.5434133,esquina,Carrao,RUA DENTISTA BARRETO
 5034-2,Quinta Feira,Tradicional,Rua,Pirambóia,450,esquina com Rua Xiririca,74,Vila Santa Izabel,03425-030,Aricanduva/Formosa/Carrão,-23.5534377,-46.5397848,esquina,Carrao,RUA PIRAMBOIA
 5035-0,Quinta Feira,Tradicional,Rua,Doutor José Cassio Soares,100,Parque Sao Lucas Vila Prudente,62,Parque São Lucas,03240-020,Vila Prudente,-23.5970356,-46.545929,ja_na_rua,Sao Lucas,RUA DR JOSE CASSIO SOARES
-5036-9,Quinta Feira,Tradicional,Rua,Aliança Liberal,500,Rua Guaipa,27,Vila Leopoldina,05088-020,Lapa,-23.522293,-46.726833,ajustado_na_rua,Vila Leopoldina,RUA ALIANCA LIBERAL
+5036-9,Quinta Feira,Tradicional,Rua,Aliança Liberal,500,Rua Guaipa,27,Vila Leopoldina,05088-000,Lapa,-23.522293,-46.726833,ajustado_na_rua,Vila Leopoldina,RUA ALIANCA LIBERAL
 5037-7,Quinta Feira,Tradicional,Rua,Augusto Gil,207,Pt Final Onibus V Dionizia,69,Vila Nova Cachoeirinha,02670-070,Casa Verde/Cachoeirinha,-23.4660453,-46.6657457,ja_na_rua,Cachoeirinha,RUA AUGUSTO GIL
 5038-5,Quinta Feira,Tradicional,Rua,Columbia,100,travessa da Rua Parapua Altura 1500,49,Vila Brásilandia,02844-040,Freguesia/Brasilândia,-23.4728618,-46.6894496,ajustado_na_rua,Brasilandia,RUA COLUMBIA
 5039-3,Quinta Feira,Tradicional,Avenida,Miguel de Castro,1023,,124,Vila Zatt,02950-000,Pirituba/Jaraguá,-23.4774667,-46.7191141,ja_na_rua,Pirituba,AV MIGUEL DE CASTRO
@@ -547,15 +547,15 @@
 5047-4,Quinta Feira,Tradicional,Avenida,Alberto Byington,500,esquina com Praça Cosmorama,64,Vila Maria,02127-000,Vila Maria/Vila Guilherme,-23.5068665,-46.5891176,esquina,Vila Maria,AV ALBERTO BYINGTON
 5048-2,Quinta Feira,Tradicional,Rua,Manuel Gaya,26,esquina com Avenida Coronel Sezefredo Fagundes,131,Vila Mazzei,02313-000,Jaçanã/Tremembé,-23.4626623,-46.6032465,esquina,Tremembe,RUA MANOEL GAYA
 5049-0,Quinta Feira,Tradicional,Rua,Mata Machado,50,esquina com Rua Antenas,85,Vila Califórnia,03215-000,Vila Prudente,-23.60495,-46.5588915,esquina,Vila Prudente,AV MATA MACHADO
-5050-4,Quinta Feira,Tradicional,Rua,Moinho Velho,135,esquina com Rua João Cordeiro,19,Vila Nigri,02832-080,Freguesia/Brasilândia,-23.4905146,-46.7058526,esquina,Freguesia do O,RUA MOINHO VELHO
+5050-4,Quinta Feira,Tradicional,Rua,Moinho Velho,135,esquina com Rua João Cordeiro,19,Vila Nigri,02929-000,Freguesia/Brasilândia,-23.4905146,-46.7058526,esquina,Freguesia do O,RUA MOINHO VELHO
 5052-0,Quinta Feira,Tradicional,Rua,João Cachoeira,1600,esquina com Rua Doutor Fadio Haidar,34,Vila Olimpia,04535-008,Pinheiros,-23.595782,-46.674294,esquina,Itaim Bibi,RUA JOAO CACHOEIRA C/ DR F HAIDAR
 5053-9,Quinta Feira,Tradicional,Rua,Elias de Sousa Pinto,37,esquina com Armando Pereira,37,Vila Albertina,02357-060,Jaçanã/Tremembé,-23.4486499,-46.6127288,ja_na_rua,Tremembe,RUA ELIAS DE SOUZA PINTO
 5054-7,Quinta Feira,Tradicional,Rua,André Natale,98,esquina com Rua Pinheiro de Ulhoa Cintra,72,Jardim Popular,03670-020,Ermelino Matarazzo,-23.515505,-46.506382,esquina,Ponte Rasa,RUA ANDRE NATALE
 5055-5,Quinta Feira,Tradicional,Rua,Sandoval Ferreira Cabral,50,Port 034/94,24,Vila Jaguara,05135-330,Pirituba/Jaraguá,-23.4989884,-46.7492459,ajustado_na_rua,Sao Domingos,RUA SANDOVAL FERREIRA CABRAL
-5056-3,Quinta Feira,Tradicional,Rua,Solidônio Leite,50,Vila Diva Vila Prudente,40,Vila Diva,03275-000,Sapopemba,-23.5778197,-46.5570196,ja_na_rua,Sao Lucas,RUA SOLIDONIO LEITE
-5057-1,Quinta Feira,Tradicional,Rua,Eugênio de Medeiros,200,Paes Leme C Sumidouro,33,Pinheiros,05425-010,Pinheiros,-23.5694978,-46.7002591,ja_na_rua,Pinheiros,RUA EUGENIO DE MEDEIROS
+5056-3,Quinta Feira,Tradicional,Rua,Solidônio Leite,50,Vila Diva Vila Prudente,40,Vila Diva,03275-000,Vila Prudente,-23.5778197,-46.5570196,ja_na_rua,Sao Lucas,RUA SOLIDONIO LEITE
+5057-1,Quinta Feira,Tradicional,Rua,Eugênio de Medeiros,200,Paes Leme C Sumidouro,33,Pinheiros,05425-000,Pinheiros,-23.5694978,-46.7002591,ja_na_rua,Pinheiros,RUA EUGENIO DE MEDEIROS
 5058-0,Quinta Feira,Tradicional,Avenida,Ouro Verde de Minas,100,travessa da Avenida Rio das Pedras,102,Vila Iv Centenario,03937-090,São Mateus,-23.5888607,-46.5016655,ajustado_na_rua,Sao Mateus,AV OURO VERDE DE MINAS
-5059-8,Quinta Feira,Tradicional,Rua,Conde de Porto Alegre,100,esquina com Rua Bernardino de Campos,31,Campo Belo,04606-000,Santo Amaro,-23.6268353,-46.6779022,esquina,Campo Belo,RUA CONDE DE PORTO ALEGRE
+5059-8,Quinta Feira,Tradicional,Rua,Conde de Porto Alegre,100,esquina com Rua Bernardino de Campos,31,Campo Belo,04608-000,Santo Amaro,-23.6268353,-46.6779022,esquina,Campo Belo,RUA CONDE DE PORTO ALEGRE
 5060-1,Quinta Feira,Tradicional,Rua,Realengo,132,esquina com Rua Caminha de Amorim,32,Vila Ida,05451-030,Pinheiros,-23.543958,-46.704522,esquina,Alto de Pinheiros,RUA REALENGO
 5061-0,Quinta Feira,Tradicional,Rua,Soldado José Vicente de Paula,200,esquina com Avenida Serafim Gonçalves Pereira,12,Vila Maria,02180-020,Vila Maria/Vila Guilherme,-23.521315,-46.568131,esquina,Vila Maria,RUA SOLD JOSE VICENTE DE PAULA
 5062-8,Quinta Feira,Tradicional,Rua,Luis Carlos Fachini,50,esquina com Avenida Engenheiro Armando de Arruda Pereira,39,Vila Facchini,04324-160,Jabaquara,-23.656578,-46.636443,esquina,Jabaquara,RUA LUIZ CARLOS FACCHINI
@@ -575,7 +575,7 @@
 5078-4,Quinta Feira,Tradicional,Avenida,Celso dos Santos,90,Avenida Yervant Kissajikian/p Ozeda,23,Santo Amaro,04658-240,Cidade Ademar,-23.6645495,-46.6705686,ja_na_rua,Cidade Ademar,AV CELSO DOS SANTOS
 5079-2,Quinta Feira,Tradicional,Rua,Tenente Godofredo Cerqueira Leite,213,Avenida Sapopemba (alt. 11000),89,Jardim Sapopemba,03977-000,Sapopemba,-23.6161922,-46.4980266,ajustado_na_rua,Sapopemba,RUA TTE GODOFREDO CERQUEIRA LEITE
 5080-6,Quinta Feira,Tradicional,Rua,Moacir Dantas Itapicuru,135,Pt Final On Sao Miguel,114,Cid Nova S Miguel,08042-290,São Miguel,-23.5117306,-46.4338165,ajustado_na_rua,Sao Miguel,AV MOACIR DANTAS ITAPICURU
-5081-4,Quinta Feira,Tradicional,Rua,Luca Marenzio,130,travessa da Alameda Comd Antunes dos Santos,93,Jardim Vaz De Lima,05833-350,M'Boi Mirim,-23.6712023,-46.7590172,ja_na_rua,Jardim Sao Luis,RUA LUCA DE MARENZIO
+5081-4,Quinta Feira,Tradicional,Rua,Luca Marenzio,130,travessa da Alameda Comd Antunes dos Santos,93,Jardim Vaz De Lima,05833-190,M'Boi Mirim,-23.6712023,-46.7590172,ja_na_rua,Jardim Sao Luis,RUA LUCA DE MARENZIO
 5082-2,Quinta Feira,Tradicional,Rua,Padre Alarico Zacarias,21,esquina com Avenida Engenheiro Heitor Antônio Eiras Garcia,22,Vila Maria Luiza,05371-020,Butantã,-23.58565,-46.755527,esquina,Rio Pequeno,RUA PDE ALARICO ZACARIAS
 5083-0,Quinta Feira,Tradicional,Rua,Ananaí,37,Pt Final On V N Curuca,35,Vila Nova Curaca,08032-370,Itaim Paulista,-23.5165274,-46.4231884,ja_na_rua,Vila Curuca,RUA ANANAI
 5084-9,Quinta Feira,Tradicional,Rua,Belchior Félix,30,Port 029/96,13,Parque Fig Grande,04914-120,M'Boi Mirim,-23.675981,-46.7478259,ja_na_rua,Jardim Sao Luis,RUA BELCHIOR FELIX
@@ -625,10 +625,10 @@
 5185-3,Quinta Feira,Noturna,Rua,Irituia,20,CDHU,7,Vila Caiuba,05202-160,Perus,-23.4013414,-46.7473117,ja_na_rua,Perus,RUA IRITUA
 5186-1,Quinta Feira,Tradicional,Rua,Valter Gazarra,362,Rua Emilia Marengo,63,Vila Gomes Cardim,03337-055,Aricanduva/Formosa/Carrão,-23.5583224,-46.5588845,ja_na_rua,Vila Formosa,RUA VALTER GAZARRA
 5187-0,Quinta Feira,Orgânica,Rua,São Benedito,1406,esquina com Rua Alexandre Dumas,15,Santo Amaro,04735-003,Santo Amaro,-23.6380266,-46.694157,esquina,Santo Amaro,RUA SAO BENEDITO
-5188-8,Quinta Feira,Noturna,Avenida,Ribeirão Itaquera,7,esquina com Estrada Itaquera-Guaianases,16,GuaianaSés,08410-310,Guaianases,-23.543587,-46.4227799,esquina,Guaianases,AV RIBEIRAO ITAQUERA
+5188-8,Quinta Feira,Noturna,Avenida,Ribeirão Itaquera,7,esquina com Estrada Itaquera-Guaianases,16,GuaianaSés,08420-500,Guaianases,-23.543587,-46.4227799,esquina,Guaianases,AV RIBEIRAO ITAQUERA
 5291-4,Quinta Feira,Tradicional,Praça,Malvin Jones,1405,,10,Lapa,05072-040,Lapa,-23.5203676,-46.7016825,ajustado_na_rua,Lapa,PÇ MELVIM JONES
 5380-5,Quinta Feira,Tradicional,Avenida,Engenheiro Caetano Alvares,10000,Mandaqui,116,Santana,02413-200,Santana/Tucuruvi,-23.472738,-46.626137,ja_na_rua,Mandaqui,AV ENGENHEIRO CAETANO ALVARES
-5390-2,Quinta Feira,Tradicional,Praça,Padre Pedro Balint,1,próximo ao Sacomã,2,Ipiranga,04230-040,Ipiranga,-23.60169,-46.59975,revisado_alta,Ipiranga,PÇ PEDRO BALINT
+5390-2,Quinta Feira,Tradicional,Praça,Padre Pedro Balint,1,próximo ao Sacomã,2,Ipiranga,04233-025,Ipiranga,-23.60169,-46.59975,revisado_alta,Ipiranga,PÇ PEDRO BALINT
 5401-1,Quinta Feira,Tradicional,Rua,Carlo Albacini,100,Abast,9,JoSé Bonifacio,08253-650,Itaquera,-23.5554664,-46.4399389,ja_na_rua,Jose Bonifacio,RUA CARLOS ALBACINI
 5402-0,Quinta Feira,Tradicional,Praça,Flávio José Amadeu,427,,2,Vila Matilde,03512-020,Penha,-23.5417362,-46.5286187,revisado_baixa,Vila Matilde,PÇ FLAVIO JOSE AMADEU
 5408-9,Quinta Feira,Tradicional,Rua,Inácio Preto de Morais,50,,11,Vila Andrade,05731-340,Campo Limpo,-23.6403486,-46.7461247,ja_na_rua,Vila Andrade,RUA INACIO PRETO DE MORAES
@@ -638,9 +638,9 @@
 5886-6,Quinta Feira,Noturna,Praça,Brasil,S/N,,3,Itaquera,08253-015,Itaquera,-23.545774,-46.435864,revisado_baixa,Jose Bonifacio,PÇ BRASIL
 5942-0,Quinta Feira,Noturna,Calçadão,da Estação José Bonifácio (CPTM),1159,,6,Conjunto Residencial JoSé Bonifacio,08253-015,Itaquera,-23.53967,-46.43186,revisado_media,Jose Bonifacio,Calcadão Estação CPTM José Bonifácio
 5960-9,Quinta Feira,Tradicional,Rua,Rosa Galvão Bueno Trigueirinho,1180,,4,Jurubatuba,04696-080,Santo Amaro,-23.6714058,-46.7014297,ja_na_rua,Campo Grande,RUA ROSA GALVAO TRIGUEIRINHO
-5978-1,Quinta Feira,Noturna,Rua,Pablo Picasso,1,,21,Perdizes,05033-120,Lapa,-23.5199493,-46.6831353,ja_na_rua,Barra Funda,RUA PABLO PICASSO
+5978-1,Quinta Feira,Noturna,Rua,Pablo Picasso,1,,21,Perdizes,05036-160,Lapa,-23.5199493,-46.6831353,ja_na_rua,Barra Funda,RUA PABLO PICASSO
 5982-0,Quinta Feira,Noturna,Rua,Frei Anibal Genova,190,,17,Cidade Tiradentes,08490-550,Cidade Tiradentes,-23.5845219,-46.4063855,revisado_baixa,Cidade Tiradentes,RUA FREI ANIBAL GENOVA
-6000-3,Sexta Feira,Tradicional,Avenida,Ipiranga,700,,23,Sé,01041-000,Sé,-23.543013,-46.6410422,ajustado_na_rua,Republica,AV IPIRANGA
+6000-3,Sexta Feira,Tradicional,Avenida,Ipiranga,700,,23,Sé,01040-000,Sé,-23.543013,-46.6410422,ajustado_na_rua,Republica,AV IPIRANGA
 6001-1,Sexta Feira,Tradicional,Rua,Vitório Emanuel,312,travessa da Rua Lavapes,61,Cambuci,01528-030,Sé,-23.5653913,-46.6261374,ajustado_na_rua,Liberdade,RUA VITORIO EMANUEL
 6002-0,Sexta Feira,Tradicional,Rua,Dom Bosco,100,Baixos Vd Alcantara Machado,27,Cambuci,03105-020,Sé,-23.5553798,-46.6213478,ja_na_rua,Cambuci,RUA DOM BOSCO
 6003-8,Sexta Feira,Tradicional,Rua,Maria José,129,entre Rua Fortaleza e Avenida Brigadeiro Luís Antônio,125,Bela ViSanta,01324-010,Sé,-23.5594343,-46.6429754,entre_duas_esquinas,Bela Vista,RUA MARIA JOSE C/ FORTALEZA
@@ -668,7 +668,7 @@
 6026-7,Sexta Feira,Tradicional,Alameda,dos Anapurús,1690,esquina com Rua Chaves,53,Vila Helena,04087-006,Vila Mariana,-23.6127552,-46.6632454,ajustado_na_rua,Moema,AL DOS ANAPURUS
 6027-5,Sexta Feira,Tradicional,Rua,Santa Catarina,284,Hospital Municipal do Tatuape,43,Tatuapé,03086-025,Mooca,-23.530257,-46.5683612,ajustado_na_rua,Tatuape,RUA SANTA CATARINA
 6028-3,Sexta Feira,Tradicional,Rua,Estevão Furquim,428,esquina com Rua Pedroso Xavier,29,Nossa Sénhora Do O,02733-000,Freguesia/Brasilândia,-23.4983071,-46.6957082,esquina,Freguesia do O,RUA ESTEVAO FURQUIM
-6029-1,Sexta Feira,Tradicional,Praça,Maria Helena Borelli Palma,355,S/infor,8,Vila Rui Barbosa,03732-040,Penha,-23.512397,-46.531976,ajustado_na_rua,Cangaiba,PÇ MARIA HELENA BONELLI PALMA
+6029-1,Sexta Feira,Tradicional,Praça,Maria Helena Borelli Palma,355,S/infor,8,Vila Rui Barbosa,03732-145,Penha,-23.512397,-46.531976,ajustado_na_rua,Cangaiba,PÇ MARIA HELENA BONELLI PALMA
 6030-5,Sexta Feira,Tradicional,Rua,Edgar de Sousa,82,Port 10/94,52,Vila Aricanduva,03502-010,Penha,-23.5374852,-46.5460519,ja_na_rua,Vila Matilde,RUA EDGARD DE SOUZA
 6033-0,Sexta Feira,Tradicional,Rua,Deodoro de Campos,100,esquina com Rua Tupiritama,8,Jabaquara,04336-010,Jabaquara,-23.660661,-46.6433815,esquina,Jabaquara,RUA DEODORO DE CAMPOS
 6034-8,Sexta Feira,Tradicional,Avenida,General Francisco Morazan,200,próximo a Distrito Policial,61,Vila Sônia,05626-010,Butantã,-23.5937437,-46.7313608,ajustado_na_rua,Vila Sonia,AV GAL FRANCISCO MORAZAN
@@ -686,7 +686,7 @@
 6046-1,Sexta Feira,Tradicional,Rua,Hélio Vessoni,100,esquina com Avenida Pires do Rio,94,Vila Sinha,08020-220,São Miguel,-23.505328,-46.443007,esquina,Sao Miguel,RUA HELIO VESSONI
 6047-0,Sexta Feira,Tradicional,Rua,Municipal,10,Seven Boys (fabrica Biscoito),53,Vila Re,03661-000,Penha,-23.5214554,-46.5076949,ajustado_na_rua,Penha,RUA MUNICIPAL
 6048-8,Sexta Feira,Tradicional,Rua,Conceição Veloso,91,esquina com Rua Manoel de Paiva,108,Vila Mariana,04110-120,Vila Mariana,-23.5848522,-46.6349741,esquina,Vila Mariana,RUA CONCEICAO VELOSO
-6049-6,Sexta Feira,Tradicional,Rua,Professor Raul Pederneiras,100,travessa da Via Anchieta,12,Vila Conde Do Pinhal,04205-040,Ipiranga,-23.6195357,-46.6005679,ja_na_rua,Sacoma,RUA PROF RAUL PEDERNEIRAS
+6049-6,Sexta Feira,Tradicional,Rua,Professor Raul Pederneiras,100,travessa da Via Anchieta,12,Vila Conde Do Pinhal,04250-040,Ipiranga,-23.6195357,-46.6005679,ja_na_rua,Sacoma,RUA PROF RAUL PEDERNEIRAS
 6050-0,Sexta Feira,Tradicional,Rua,Antônio Gomes de Oliveira,458,Paralela A Av Faud,48,Vila Mirian,02965-000,Freguesia/Brasilândia,-23.4828221,-46.7077401,ja_na_rua,Freguesia do O,RUA ANTONIO GOMES DE OLIVEIRA
 6051-8,Sexta Feira,Tradicional,Rua,João Rodrigues Pires,200,Vila Guarani e Vila Prudente,89,Vila Guarani,03280-050,Vila Prudente,-23.5821494,-46.5374109,ja_na_rua,Sao Lucas,RUA JOAO RODRIGUES PIRES
 6052-6,Sexta Feira,Tradicional,Rua,Ursa Menor,286,Estrada do Iguatemi,141,Jardim Santa Adelia,08330-490,São Mateus,-23.6117515,-46.4724459,ajustado_na_rua,Sao Mateus,RUA URSA MENOR
@@ -709,9 +709,9 @@
 6070-4,Sexta Feira,Tradicional,Rua,Nazário Pagano,24,Patio Asfaltado,20,Jardim Monjolo,02961-030,Freguesia/Brasilândia,-23.4905292,-46.6980033,ja_na_rua,Freguesia do O,RUA NAZARIO PAGANO
 6071-2,Sexta Feira,Tradicional,Rua,Albertina Vieira da Silva Gordo,50,Ponto Final do Onibus V Aurora,4,Vila Aurora,02410-000,Santana/Tucuruvi,-23.4756101,-46.6235728,ja_na_rua,Mandaqui,RUA ALBERTINA VIEIRA DA S GORDO
 6072-0,Sexta Feira,Tradicional,Rua,Raphael di Sandro,100,próximo a A Estacao de Perus,112,Perus,05204-160,Perus,-23.4095743,-46.7568888,ja_na_rua,Perus,RUA RAPHAEL DI SANDRO
-6073-9,Sexta Feira,Tradicional,Avenida,Atos Tomás Ferracciú,50,travessa da Avenida Elias Maas,80,Capao Redondo,05861-000,Campo Limpo,-23.6708217,-46.7702827,ajustado_na_rua,Capao Redondo,AV ATHOS THOMAZ FERRACIO
+6073-9,Sexta Feira,Tradicional,Avenida,Atos Tomás Ferracciú,50,travessa da Avenida Elias Maas,80,Capao Redondo,05861-020,Campo Limpo,-23.6708217,-46.7702827,ajustado_na_rua,Capao Redondo,AV ATHOS THOMAZ FERRACIO
 6074-7,Sexta Feira,Tradicional,Rua,Antônio de Pinho de Azevedo,691,Margens da Avenida Cupece,121,Cid Ademar,04386-020,Cidade Ademar,-23.6676753,-46.649757,ja_na_rua,Cidade Ademar,RUA ANTONIO DE PINHO AZEVEDO
-6075-5,Sexta Feira,Tradicional,Rua,Comendador Elias Zarzur,1800,esquina com Rua Américo Brasiliense,35,Santo Amaro,04736-002,Santo Amaro,-23.6372535,-46.6920509,esquina,Santo Amaro,RUA COMEN ELIAS ZARZUR
+6075-5,Sexta Feira,Tradicional,Rua,Comendador Elias Zarzur,1800,esquina com Rua Américo Brasiliense,35,Santo Amaro,04736-003,Santo Amaro,-23.6372535,-46.6920509,esquina,Santo Amaro,RUA COMEN ELIAS ZARZUR
 6076-3,Sexta Feira,Tradicional,Avenida,João Batista di Vitoriano,150,Jardim Consorcio,13,Jardim Consorcio,04436-000,Santo Amaro,-23.6698342,-46.6733902,ja_na_rua,Campo Grande,RUA JOAO BATISTA DI VITORIANO
 6077-1,Sexta Feira,Tradicional,Avenida,Anacé,50,travessa da Avenida das Colinas,106,Jardim Umarizal,05755-090,Campo Limpo,-23.617115,-46.7571537,ja_na_rua,Campo Limpo,AV ANACE
 6078-0,Sexta Feira,Tradicional,Rua,dos Aniquis,80,entre Rua dos Carataís e Estrada do Alvarenga,89,Pedreira,04474-000,Cidade Ademar,-23.6981471,-46.6475558,entre_duas_esquinas,Pedreira,RUA DOS ANIQUIS E DOS CARATAIS
@@ -724,7 +724,7 @@
 6086-0,Sexta Feira,Tradicional,Rua,Olegário Maciel,20,El Rey e Poema e Trova,56,Jardim São Carlos,08062-320,São Miguel,-23.5174561,-46.4738251,ja_na_rua,Vila Jacui,RUA OLEGARIO MACIEL
 6087-9,Sexta Feira,Tradicional,Rua,Dário Costa Matos,45,P. Final Onibus Jardim S. Carlos,56,Ermelino Matarazzo,03805-090,Ermelino Matarazzo,-23.5049688,-46.4821688,ja_na_rua,Ermelino Matarazzo,RUA DARIO COSTA MATOS
 6089-5,Sexta Feira,Tradicional,Avenida,Doutor Guilherme de Abreu Sodré,1414,Estrada do Iguatemi,157,GuaianaSés Cohab,08490-010,Cidade Tiradentes,-23.566693,-46.4066381,ja_na_rua,Cidade Tiradentes,AV DR GUILHERME DE ABREU SODRE
-6091-7,Sexta Feira,Tradicional,Rua,Núbia,50,travessa da Avenida Cibele de Carvalho,23,Vila TolSantoi,03267-090,Sapopemba,-23.602676,-46.5287225,ja_na_rua,Sao Lucas,RUA NUBIA
+6091-7,Sexta Feira,Tradicional,Rua,Núbia,50,travessa da Avenida Cibele de Carvalho,23,Vila TolSantoi,03267-090,Vila Prudente,-23.602676,-46.5287225,ja_na_rua,Sao Lucas,RUA NUBIA
 6092-5,Sexta Feira,Tradicional,Rua,Pedro Luís de Sousa,22,Praça Jdim Brasilia,78,Jardim Brásilia,03584-040,Itaquera,-23.5601472,-46.4942911,ja_na_rua,Cidade Lider,RUA PEDRO LUIZ DE SOUZA
 6093-3,Sexta Feira,Tradicional,Avenida,da Moenda Velha,12,,59,Jardim São Bento Novo,05880-330,M'Boi Mirim,-23.686689,-46.7906465,revisado_alta,Jardim Angela,AV MOENDA VELHA GOMES PEDROSA
 6095-0,Sexta Feira,Tradicional,Rua,Serra de Itabaiana,87,travessa da Rua Primavera de Caiena,49,Parque Santa Madalena,03981-040,Sapopemba,-23.6124403,-46.5199884,ja_na_rua,Sapopemba,RUA SERRA DE ITABAIANA
@@ -735,7 +735,7 @@
 6100-0,Sexta Feira,Tradicional,Rua,Osvaldo Névola,10,travessa da Avenida Mateo Bei,57,São Matheus,03946-000,São Mateus,-23.5939347,-46.4895765,ajustado_na_rua,Sao Mateus,RUA OSVALDO NEVOLA
 6101-8,Sexta Feira,Tradicional,Rua,Gastão Raul de Forton Bousquet,50,Gastao Raul Fourton Bousquet,28,Jardim Ipe,05797-000,Campo Limpo,-23.6553264,-46.7733347,ja_na_rua,Capao Redondo,RUA GASTAO RAUL DE FONTON BOSQUET
 6104-2,Sexta Feira,Tradicional,Rua,Isaac Albeniz,20,esquina com Rua Franco Alfano,10,Morumbi,05710-050,Butantã,-23.608489,-46.746467,esquina,Vila Sonia,RUA ISAAC ALBENIZ C/ FRANCO ALFANO
-6105-0,Sexta Feira,Tradicional,Rua,São Felix do Piauí,1057,travessa da Rua F Xavier Ant D Julia,73,Vila Carmosina,08290-030,Itaquera,-23.5522345,-46.455221,ja_na_rua,Itaquera,RUA SAO FELIX DO PIAUI
+6105-0,Sexta Feira,Tradicional,Rua,São Felix do Piauí,1057,travessa da Rua F Xavier Ant D Julia,73,Vila Carmosina,08295-055,Itaquera,-23.5522345,-46.455221,ja_na_rua,Itaquera,RUA SAO FELIX DO PIAUI
 6106-9,Sexta Feira,Tradicional,Rua,Sílvio Cervelini,5,próximo a Igreja Velha S. Miguel,24,São Miguel,08011-240,São Miguel,-23.496133,-46.450211,ja_na_rua,Sao Miguel,RUA SILVIO CERVELLINI
 6107-7,Sexta Feira,Tradicional,Avenida,Flamingo,302,Pt Final On Curuca Velha,141,Vila Curuca Nova,08031-000,Itaim Paulista,-23.5109772,-46.4211436,ja_na_rua,Vila Curuca,AV FLAMINGO
 6108-5,Sexta Feira,Tradicional,Rua,Romildo Finozzi,354,Estrada Barreira Grande Altura 3120,65,Jardim Iva,03910-040,Aricanduva/Formosa/Carrão,-23.5841899,-46.5150798,ajustado_na_rua,Aricanduva,RUA ROMILDO FINOZZI
@@ -761,22 +761,22 @@
 6173-5,Sexta Feira,Tradicional,Rua,Manoel Bacelar,50,Rua Confissao,22,Jardim Helian,08265-120,Itaquera,-23.5778535,-46.4534129,ja_na_rua,Parque do Carmo,RUA MANOEL BACELAR
 6174-3,Sexta Feira,Tradicional,Rua,Conceição de Monte Alegre,355,Altura do N Ciquenta e Quatro,11,Cidade Moncoes,04563-060,Pinheiros,-23.610924,-46.6916953,ajustado_na_rua,Itaim Bibi,RUA CONCEICAO DE MONTE ALEGRE
 6176-0,Sexta Feira,Tradicional,Largo,do Rosário,10,,1,Penha De Franca,03634-020,Penha,-23.5253643,-46.5488279,revisado_alta,Penha,PÇ DO ROSARIO
-6203-0,Sexta Feira,Tradicional,Praça,Dilva Gomes Martins,124,Praça do Morcegão,2,Penha,03590-080,Penha,-23.5457057,-46.4827291,revisado_alta,Artur Alvim,PÇ DILVA GOMES
+6203-0,Sexta Feira,Tradicional,Praça,Dilva Gomes Martins,124,Praça do Morcegão,2,Penha,03590-110,Penha,-23.5457057,-46.4827291,revisado_alta,Artur Alvim,PÇ DILVA GOMES
 6350-9,Sexta Feira,Tradicional,Avenida,Engenheiro Luís Gomes Cardim Sangirardi,640,esquina com Sangirardi,108,Aclimacao,04112-080,Vila Mariana,-23.579296,-46.629116,revisado_alta,Vila Mariana,RUA ENG LUIZ GOMES C SANGIRARDI
 6360-6,Sexta Feira,Tradicional,Avenida,Professor Alceu Maynard Araújo,30,,97,Varzea De Baixo,04726-160,Santo Amaro,-23.6350898,-46.7104217,ja_na_rua,Santo Amaro,AV PROF ALCEU MAYNARD ARAUJO
-6370-3,Sexta Feira,Tradicional,Praça,Gomes Figueiredo,200,esquina com Rua Vianópolis,47,Vila Maria,02131-000,Vila Maria/Vila Guilherme,-23.504009,-46.582557,esquina,Vila Maria,PÇ GOMES FIGUEIREDO
+6370-3,Sexta Feira,Tradicional,Praça,Gomes Figueiredo,200,esquina com Rua Vianópolis,47,Vila Maria,02131-060,Vila Maria/Vila Guilherme,-23.504009,-46.582557,esquina,Vila Maria,PÇ GOMES FIGUEIREDO
 6380-0,Sexta Feira,Tradicional,Rua,José Piza,100,,52,Parada De Taipas,02815-010,Pirituba/Jaraguá,-23.4471068,-46.7162033,ajustado_na_rua,Jaragua,RUA JOSE PIZZA
-6390-8,Sexta Feira,Tradicional,Praça,Danilo José Fernandes,516,Penha,11,Penha,03608-010,Penha,-23.5154559,-46.5440374,revisado_baixa,Penha,PÇ DANILO JOSE FERNANDES
+6390-8,Sexta Feira,Tradicional,Praça,Danilo José Fernandes,516,Penha,11,Penha,03608-110,Penha,-23.5154559,-46.5440374,revisado_baixa,Penha,PÇ DANILO JOSE FERNANDES
 6400-9,Sexta Feira,Tradicional,Rua,José Pereira Falcão,S/N,,12,Jardim Marisa,05108-100,Pirituba/Jaraguá,-23.5081968,-46.7585829,ja_na_rua,Jaguara,RUA JOSE PEREIRA FALCAO
 6401-7,Sexta Feira,Tradicional,Rua,Morro do Frade,S/N,,,Jardim Da ConquiSanta,08341-180,Sapopemba,-23.60406,-46.4501611,ja_na_rua,Iguatemi,RUA MORRO DO FRADE
 6402-5,Sexta Feira,Orgânica,Praça,Ciro Pontes,50,,3,Mooca,03166-030,Mooca,-23.5529288,-46.5994946,ja_na_rua,Mooca,PÇ CIRO PONTES
 6711-3,Sexta Feira,Noturna,Rua,Benjamin Pereira,331,,11,Jacana,02274-001,Jaçanã/Tremembé,-23.4681114,-46.5903956,ajustado_na_rua,Jacana,RUA BENJAMIM PEREIRA
 6755-5,Sexta Feira,Tradicional,Largo,São José do Belém,50,,3,Belenzinho,03057-040,Mooca,-23.54117,-46.5947382,ja_na_rua,Belem,LG SAO JOSE DO BELEM
-6797-0,Sexta Feira,Noturna,Praça,Torquato Plaza,152,,4,Vila Grimaldi,03271-050,Sapopemba,-23.5989889,-46.5164685,revisado_media,Sapopemba,PÇ TORQUATO PLAZA
+6797-0,Sexta Feira,Noturna,Praça,Torquato Plaza,152,,4,Vila Grimaldi,03922-190,Sapopemba,-23.5989889,-46.5164685,revisado_media,Sapopemba,PÇ TORQUATO PLAZA
 6847-0,Sexta Feira,Tradicional,Avenida,Marcondes de Brito,484,,2,Chacara Séis De Outubro,03509-000,Penha,-23.535832,-46.5337331,ja_na_rua,Vila Matilde,AV MARCONDES DE BRITO
 6881-0,Sexta Feira,Noturna,Rua,Itamira,351,,,Vila Andrade,05716-080,Campo Limpo,-23.6264334,-46.7339086,ja_na_rua,Vila Andrade,RUA ITAMIRA
 6892-6,Sexta Feira,Tradicional,Rua,Bruno Bertucci,200,,5,Freguesia Do O,02910-100,Freguesia/Brasilândia,-23.5035359,-46.7000774,ajustado_na_rua,Freguesia do O,RUA Rua Bruno Bertucci
-6912-4,Sexta Feira,Noturna,Praça,Júlio César de Campos,110,,,Parelheiros,04890-360,Parelheiros,-23.828294,-46.730894,ja_na_rua,Parelheiros,PÇ Júlio César de Campos
+6912-4,Sexta Feira,Noturna,Praça,Júlio César de Campos,110,,,Parelheiros,04890-320,Parelheiros,-23.828294,-46.730894,ja_na_rua,Parelheiros,PÇ Júlio César de Campos
 6918-3,Sexta Feira,Tradicional,Rua,Monsenhor Lourenço Giordano,676,,2,Parque PauliSantano,08080-330,São Miguel,-23.4846384,-46.4252876,ja_na_rua,Jardim Helena,RUA MONS LOURENCO GIORDANO
 6934-5,Sexta Feira,Orgânica,Praça,General Gentil Falcão,70,Rua Irma Gabriela,,Cidade Moncoes,04571-150,Pinheiros,-23.6050399,-46.6936242,ajustado_na_rua,Itaim Bibi,PÇ GAL GENTIL FALCAO
 6936-1,Sexta Feira,Tradicional,Rua,da Matriz,32,,7,Santo Amaro,04746-000,Santo Amaro,-23.6543864,-46.7070764,ja_na_rua,Santo Amaro,RUA MATRIZ
@@ -786,13 +786,13 @@
 7003-3,Sábado,Tradicional,Rua,Mendes Gonçalves,100,esquina com Rua Silva Teles,131,Pari,03027-010,Mooca,-23.5333458,-46.6138738,esquina,Pari,RUA MENDES GONCALVES
 7004-1,Sábado,Tradicional,Rua,Adolfo Gordo,129,esquina com Alameda Eduardo Prado,114,Barra Funda,01217-020,Sé,-23.5317372,-46.6510119,esquina,Santa Cecilia,RUA ADOLFO GORDO
 7005-0,Sábado,Tradicional,Rua,Jaraguá,129,esquina com Rua Neves de Carvalho,92,Bom Retiro,01129-000,Sé,-23.5240338,-46.6467158,esquina,Bom Retiro,RUA JARAGUA
-7006-8,Sábado,Tradicional,Rua,França Pinto,1200,próximo a Instituto Biologico,67,Vila Mariana,04016-035,Vila Mariana,-23.589416,-46.647563,ajustado_na_rua,Vila Mariana,RUA FRANCA PINTO
+7006-8,Sábado,Tradicional,Rua,França Pinto,1200,próximo a Instituto Biologico,67,Vila Mariana,04016-005,Vila Mariana,-23.589416,-46.647563,ajustado_na_rua,Vila Mariana,RUA FRANCA PINTO
 7007-6,Sábado,Tradicional,Rua,Tabajaras,100,esquina com Rua Ezequiel Ramos,51,Mooca,03121-010,Mooca,-23.5640299,-46.6002392,esquina,Mooca,RUA TABAJARAS
 7008-4,Sábado,Tradicional,Rua,Helade,80,Albuquerque Munis e Santa Catari,80,Vila Santa Catarina,04634-000,Santo Amaro,-23.6404882,-46.6667488,ajustado_na_rua,Campo Belo,RUA HELADE
 7009-2,Sábado,Tradicional,Rua,Valentim Magalhães,156,esquina com Rua do Oratório,47,Vila Leste,03184-090,Mooca,-23.565743,-46.588828,esquina,Agua Rasa,RUA VALENTIM MAGALHAES
 7010-6,Sábado,Tradicional,Rua,Serra de Jairé,832,Paralela Av Alvaro Ramos,92,Alto Da Mooca,03175-001,Mooca,-23.5498188,-46.5845369,ja_na_rua,Belem,RUA SERRA DE JAIRE
 7011-4,Sábado,Tradicional,Rua,Engenheiro Reynaldo Cajado,215,esquina com Rua Irmã Carolina,13,Belenzinho,03061-030,Mooca,-23.5382773,-46.5830591,esquina,Belem,RUA ENG REINALDO CAJADO
-7012-2,Sábado,Tradicional,Rua,Marieta da Silva,400,travessa da Rua Chico Pontes,73,Vila Guilherme,02066-031,Vila Maria/Vila Guilherme,-23.5077726,-46.6048753,ja_na_rua,Vila Guilherme,RUA MARIETA DA SILVA
+7012-2,Sábado,Tradicional,Rua,Marieta da Silva,400,travessa da Rua Chico Pontes,73,Vila Guilherme,02066-030,Vila Maria/Vila Guilherme,-23.5077726,-46.6048753,ja_na_rua,Vila Guilherme,RUA MARIETA DA SILVA
 7013-0,Sábado,Tradicional,Rua,Araritaguaba,200,esquina com Avenida Guilherme Cotching,122,Vila Maria Baixa,02122-010,Vila Maria/Vila Guilherme,-23.5125759,-46.5852879,esquina,Vila Maria,RUA ARARITAGUABA
 7015-7,Sábado,Tradicional,Rua,São Luís do Paraitinga,24,esquina com Rua Poá,84,Vila Zelina,03152-070,Vila Prudente,-23.590655,-46.582772,esquina,Vila Prudente,RUA SAO LUIS DO PARAITINGA
 7016-5,Sábado,Tradicional,Rua,Bonifácio de Abreu,50,esquina com Avenida Pedro Bueno,9,Parque Jabaquara,04358-120,Santo Amaro,-23.637934,-46.655615,esquina,Campo Belo,RUA BONIFACIO DE ABREU
@@ -826,7 +826,7 @@
 7045-9,Sábado,Tradicional,Rua,Paulino de Brito,700,esquina com Avenida Jardim Japão,129,Jardim Brásil,02223-010,Vila Maria/Vila Guilherme,-23.479228,-46.582165,esquina,Vila Medeiros,RUA PAULINO DE BRITO
 7046-7,Sábado,Tradicional,Rua,Sebastião de Freitas,246,Avenida Guapira Alt. 1800,16,Vila ConSantanca,02256-010,Santana/Tucuruvi,-23.4750173,-46.5873154,ja_na_rua,Tucuruvi,RUA SEBASTIAO DE FREITAS
 7047-5,Sábado,Tradicional,Alameda,Subtenente Francisco Hierro,300,esquina com Rua Sebastião Garcia,118,Parque Novo Mundo,02187-040,Vila Maria/Vila Guilherme,-23.5148041,-46.565489,revisado_alta,Vila Maria,AL SUB TENENTE FRANCISCO HIERRO
-7048-3,Sábado,Tradicional,Avenida,José Maria Whitaker,1780,entre Sena Madureira,69,Vila Clementino,04057-000,Vila Mariana,-23.6155892,-46.6436322,ajustado_na_rua,Saude,AV JOSE MARIA WITAKER
+7048-3,Sábado,Tradicional,Avenida,José Maria Whitaker,1780,entre Sena Madureira,69,Vila Clementino,04057-000,Vila Mariana,-23.6104819,-46.6455061,revisado_media,Saude,AV JOSE MARIA WITAKER
 7049-1,Sábado,Tradicional,Rua,Francisco Barreto,100,Jardim Primavera,30,Jardim Primavera,04812-140,Capela do Socorro,-23.7123199,-46.6877737,ja_na_rua,Cidade Dutra,RUA FRANCISCO BARRETO
 7050-5,Sábado,Tradicional,Rua,Tales de Mileto,392,esquina com Avenida Águia de Haia,157,Cid A E Carvalho,03693-020,Penha,-23.535546,-46.4742667,esquina,Artur Alvim,RUA TALES DE MILETO
 7051-3,Sábado,Tradicional,Rua,Albino de Moraes,20,Avenida Juntas Provisorias,49,Vila Carioca,04223-120,Ipiranga,-23.6017784,-46.5919048,ajustado_na_rua,Ipiranga,RUA ALBINO DE MORAES
@@ -851,7 +851,7 @@
 7070-0,Sábado,Tradicional,Rua,Antônio Vaz,38,travessa da Estrada Guarapiranga,63,Jardim Vergueiro,05818-240,M'Boi Mirim,-23.6672684,-46.7308727,ja_na_rua,Jardim Sao Luis,RUA ANTONIO VAZ
 7071-8,Sábado,Tradicional,Avenida,Claudio Franchi,49,Avenida Professor Francisco Morato,97,Butantã,05633-000,Butantã,-23.5991301,-46.7395341,ajustado_na_rua,Vila Sonia,AV CLAUDIO FRANCHI
 7072-6,Sábado,Tradicional,Rua,Bela Vista,702,travessa da Doutor Jose A Bustamante,60,Vila Uniao,04709-001,Santo Amaro,-23.6317269,-46.6947075,ja_na_rua,Santo Amaro,RUA BELA VISTA
-7073-4,Sábado,Tradicional,Rua,Otávio Tarquínio de Sousa,1000,esquina com Rua Gil Eanes,72,Piraquara,04613-002,Santo Amaro,-23.6124748,-46.6751484,esquina,Campo Belo,RUA OTAVIO TARQUINIO DE SOUZA
+7073-4,Sábado,Tradicional,Rua,Otávio Tarquínio de Sousa,1000,esquina com Rua Gil Eanes,72,Piraquara,04613-003,Santo Amaro,-23.6124748,-46.6751484,esquina,Campo Belo,RUA OTAVIO TARQUINIO DE SOUZA
 7074-2,Sábado,Tradicional,Rua,Joaquim Neves Monteiro,228,esquina com Avenida Nossa Senhora do Sabará,86,Santo Amaro,04456-205,Santo Amaro,-23.68671,-46.680833,esquina,Campo Grande,RUA JOAQUIM NEVES MONTEIRO
 7075-0,Sábado,Tradicional,Avenida,Carlos Oberhuber,123,Estrada do Paralheiros,155,Santo Amaro,04836-130,Capela do Socorro,-23.7407032,-46.7067693,ja_na_rua,Cidade Dutra,AV CARLOS OBHERUBER
 7076-9,Sábado,Tradicional,Rua,Bernardino Estazione,12,travessa da Estrada de Itapecerica da Serra,46,Vila Das Belezas,05840-030,M'Boi Mirim,-23.6445565,-46.7394347,ja_na_rua,Jardim Sao Luis,RUA BERNARDINO ESTAZIONE
@@ -874,7 +874,7 @@
 7102-1,Sábado,Tradicional,Rua,Laudelino Vieira de Campos,50,Avenida Raimundo P Magalhaes,22,Jardim Da Felicidade,05143-020,Pirituba/Jaraguá,-23.4964402,-46.7254828,ajustado_na_rua,Pirituba,RUA LAUDELINO VIEIRA DE CAMPOS
 7103-0,Sábado,Tradicional,Rua,Joaquim Miguel Dutra,237,travessa da Estrada do Lageado 5600,98,Jardim Celia,08430-450,Guaianases,-23.5290942,-46.4185529,ajustado_na_rua,Lajeado,RUA JOAQUIM MIGUEL DUTRA
 7104-8,Sábado,Tradicional,Rua,Doutor Paulo Ribeiro Coelho,10,Rua Maria R Balbino/otavio Prosa,10,Jardim Antonia,05374-000,Butantã,-23.5758822,-46.7614748,ja_na_rua,Rio Pequeno,RUA DR PAULO RIBEIRO COELHO
-7106-4,Sábado,Tradicional,Avenida,Padre Francisco de Toledo,10,início na Avenida Lider COHAB Itaquera,186,Itaquera Cohab I,03590-000,Penha,-23.549619,-46.484372,ja_na_rua,Artur Alvim,RUA PDE FRANCISCO DE TOLEDO
+7106-4,Sábado,Tradicional,Avenida,Padre Francisco de Toledo,10,início na Avenida Lider COHAB Itaquera,186,Itaquera Cohab I,03590-120,Penha,-23.549619,-46.484372,ja_na_rua,Artur Alvim,RUA PDE FRANCISCO DE TOLEDO
 7107-2,Sábado,Tradicional,Rua,Juca de Azevedo,50,esquina com Rua José Neves,9,Jardim Marajoara,04654-015,Cidade Ademar,-23.659639,-46.677384,esquina,Cidade Ademar,RUA JUCA DE AZEVEDO
 7108-0,Sábado,Tradicional,Rua,Victória Marconato Zonta,214,travessa da Avenida Sapopemba Altura 12000,91,Jardim Sapopemba,03975-090,Sapopemba,-23.6089546,-46.4927939,ajustado_na_rua,Sapopemba,RUA VICTORIA MARCONATO ZONTA
 7109-9,Sábado,Tradicional,Rua,Mauro de Araújo Ribeiro,46,próximo a Viaduto Jaragua,45,Cid D Abril,05182-000,Pirituba/Jaraguá,-23.4533459,-46.748558,ajustado_na_rua,Jaragua,RUA MAURO ARAUJO RIBEIRO
@@ -888,7 +888,7 @@
 7122-6,Sábado,Tradicional,Rua,Luis Stolb,35,esquina com Rua Gomes de Amorim,36,Jardim Vilas Boas,04416-060,Cidade Ademar,-23.674993,-46.641909,esquina,Cidade Ademar,RUA LUIS STOLB
 7123-4,Sábado,Tradicional,Rua,Herbert Spencer,50,próximo a Avenida Giovani Gronchi,53,Paraizopolis,05663-010,Campo Limpo,-23.6162276,-46.7202317,ja_na_rua,Vila Andrade,RUA HERBERT SPENCER
 7125-0,Sábado,Tradicional,Rua,Jairo Pinto de Araújo,166,Corrego Agua das Pedras,23,Jardim Ana Maria,02844-170,Freguesia/Brasilândia,-23.4689274,-46.68531,ajustado_na_rua,Brasilandia,RUA JAIRO PINTO ARAUJO
-7126-9,Sábado,Tradicional,Rua,Guiratinga,610,Avenida Itaborai,13,Chac Inglesa,04141-001,Vila Mariana,-23.6081967,-46.6291033,ja_na_rua,Saude,RUA GUIRATINGA
+7126-9,Sábado,Tradicional,Rua,Guiratinga,610,Avenida Itaborai,13,Chac Inglesa,04141-000,Vila Mariana,-23.6081967,-46.6291033,ja_na_rua,Saude,RUA GUIRATINGA
 7127-7,Sábado,Tradicional,Avenida,Anastácio de Trancoso,3,,73,Jardim Nelia,08142-020,Itaim Paulista,-23.5095551,-46.3849026,ja_na_rua,Itaim Paulista,RUA ANASTACIO TRANCOSO
 7128-5,Sábado,Tradicional,Rua,Antônio Leite Penteado,318,Avenida Wenceslau Guimaraes,122,Jardim Veronia,03816-000,Ermelino Matarazzo,-23.4877882,-46.4871916,ajustado_na_rua,Ermelino Matarazzo,RUA ANTONIO LEITE PENTEADO
 7132-3,Sábado,Tradicional,Avenida,do Arvoreiro,100,Conj Hab Parque das Arvores,53,Capela Do Socorro,04824-010,Capela do Socorro,-23.7268814,-46.6984036,ja_na_rua,Cidade Dutra,AV DO ARVOREIRO
@@ -907,15 +907,15 @@
 7158-7,Sábado,Tradicional,Rua,Marco Arurélio Marliani,10,,16,Jardim Almeida Prado,04854-170,Capela do Socorro,-23.7729161,-46.6899236,ja_na_rua,Grajau,RUA MARCO AURELIO MARILAN
 7159-5,Sábado,Tradicional,Rua,Pedroso da Silva,10,,22,Chac Tres Meninas,08080-040,São Miguel,-23.483912,-46.43289,ajustado_na_rua,Jardim Helena,AV PEDROSO DA SILVA
 7161-7,Sábado,Tradicional,Rua,Camargo e Leme,100,esquina com Rua Tajapuru,22,Vila São Geraldo,08460-480,Guaianases,-23.5548466,-46.3967754,esquina,Guaianases,RUA CAMARGO LEME
-7162-5,Sábado,Tradicional,Alameda,Ribeirão Preto,537,,20,Cerqueira Cesar,01331-000,Sé,-23.561794,-46.652048,ajustado_na_rua,Bela Vista,ALAMEDA RIBEIRAO PRETO
-7170-6,Sábado,Tradicional,Praça,Monsenhor Escrivá,20,,25,Jardim São JoSé,02968-000,Pirituba/Jaraguá,-23.4850589,-46.7099232,revisado_alta,Pirituba,PÇ MONSENHOR ESCRIVA
+7162-5,Sábado,Tradicional,Alameda,Ribeirão Preto,537,,20,Cerqueira Cesar,01331-001,Sé,-23.561794,-46.652048,ajustado_na_rua,Bela Vista,ALAMEDA RIBEIRAO PRETO
+7170-6,Sábado,Tradicional,Praça,Monsenhor Escrivá,20,,25,Jardim São JoSé,02968-015,Pirituba/Jaraguá,-23.4850589,-46.7099232,revisado_alta,Pirituba,PÇ MONSENHOR ESCRIVA
 7171-4,Sábado,Tradicional,Rua,Campos da Vinha,50,,9,Jardim Santa Terezinha,03572-090,Itaquera,-23.574228,-46.501078,revisado_alta,Cidade Lider,RUA CAMPO DE VINHA
 7173-0,Sábado,Tradicional,Rua,Rafael Frederico,70,esquina com Avenida São Miguel,10,Vila Ponte Rasa,03880-040,Ermelino Matarazzo,-23.5074568,-46.4884061,esquina,Ponte Rasa,RUA RAFAEL FREDERICO
 7184-6,Sábado,Tradicional,Avenida,Caxingui,1000,esquina com Avenida Vital Brasil,9,Jardim Raposo Tavares,05579-001,Butantã,-23.5695351,-46.7141191,esquina,Butanta,AV CAXINGUI
 7192-7,Sábado,Tradicional,Rua,Nascer do Sol,100,,30,Santa Etelvina Cohab,08485-020,Cidade Tiradentes,-23.59121,-46.4166764,ja_na_rua,Cidade Tiradentes,AV NASCER DO SOL
 7196-0,Sábado,Tradicional,Rua,Manoel Pereira Rosa,28,,21,Jardim Fontalis,02360-001,Jaçanã/Tremembé,-23.4399586,-46.5772787,ja_na_rua,Tremembe,RUA MANOEL PEREIRA ROSA
 7198-6,Sábado,Tradicional,Rua,Christiano Lobe,100,Ruas 24g e 28g,83,Cid Tiradentes Cohab,08475-340,Cidade Tiradentes,-23.5923271,-46.400573,ja_na_rua,Cidade Tiradentes,RUA CRISTIANO LOBE
-7200-1,Sábado,Tradicional,Rua,Interativa,8,,22,Jardim PauliSantano,02820-040,Pirituba/Jaraguá,-23.4480951,-46.708655,ja_na_rua,Jaragua,RUA INTERATIVA
+7200-1,Sábado,Tradicional,Rua,Interativa,8,,22,Jardim PauliSantano,02820-020,Pirituba/Jaraguá,-23.4480951,-46.708655,ja_na_rua,Jaragua,RUA INTERATIVA
 7203-6,Sábado,Tradicional,Rua,Presidente Félix Paiva,150,K 22 5 Via Anchieta,11,Jardim Jaragua,05265-050,Perus,-23.4510185,-46.7887752,ajustado_na_rua,Anhanguera,RUA PRESIDENTE FELIX PAIVA
 7205-2,Sábado,Tradicional,Rua,Francisco da Cruz Mellão,213,,18,Horto Do Ype,05782-351,Campo Limpo,-23.6525459,-46.7698,ajustado_na_rua,Campo Limpo,RUA FRANCISCO DA CRUZ MELLAO
 7207-9,Sábado,Tradicional,Rua,Bento Freitas,50,Altura do N Quatro Dois Zero,8,Republica,01220-000,Sé,-23.5422897,-46.6454737,ajustado_na_rua,Republica,RUA BENTO FREITAS
@@ -944,16 +944,16 @@
 7246-0,Sábado,Tradicional,Rua,Alexandre Silva,100,,12,Jardim Brásilia,02859-010,Freguesia/Brasilândia,-23.4415485,-46.7078834,ja_na_rua,Brasilandia,RUA ALEXANDRE SILVA
 7248-6,Sábado,Tradicional,Acesso,Uirapuru do Sertão,S/N,,3,Parelheiros,04864-090,Parelheiros,-23.769539,-46.722863,ja_na_rua,Parelheiros,RUA UIRAPURU DO SERTAO
 7252-4,Sábado,Tradicional,Rua,Reims,50,,47,Casa Verde,02517-010,Casa Verde/Cachoeirinha,-23.5085127,-46.6619439,ja_na_rua,Casa Verde,RUA REIMS
-7256-7,Sábado,Noturna,Rua,Cachoeira de Minas,10,,1,São Mateus,03971-010,São Mateus,-23.617049,-46.4788729,ja_na_rua,Sao Mateus,RUA CACHOEIRA DE MINAS
+7256-7,Sábado,Noturna,Rua,Cachoeira de Minas,10,,1,São Mateus,03973-050,São Mateus,-23.617049,-46.4788729,ja_na_rua,Sao Mateus,RUA CACHOEIRA DE MINAS
 7263-0,Sábado,Tradicional,Rua,André Lens,300,CDHU Jardim Sao Luiza,2,Jardim São Luiz,05862-130,M'Boi Mirim,-23.6656397,-46.762509,ja_na_rua,Capao Redondo,RUA ANDRE LENS
 7265-6,Sábado,Tradicional,Rua,da Lagoa Feia,303,,15,Vila Carmosina,08290-410,Itaquera,-23.5564289,-46.4533454,ja_na_rua,Parque do Carmo,RUA LAGOA FEIA
 7267-2,Sábado,Orgânica,Parque,Burle Marx,200,"Avenida Dona Helena Pereira de Moraes, 200",6,Vila Andrade,05707-400,Campo Limpo,-23.63222,-46.7215,revisado_alta,Vila Andrade,PQ BURLE MARX
 7268-0,Sábado,Tradicional,Rua,Rodolfo Albino Silva,25,Favela Sao Jose e Pq Central,10,GuaianaSés,08420-580,Guaianases,-23.5486549,-46.4249062,ajustado_na_rua,Guaianases,RUA RODOLFO ALBINO SILVA
-7269-9,Sábado,Tradicional,Avenida,Afonso Penteado,2019,próximo à Avenida Cláudio Augusto Fernandes,5,Parque Do Carmo,08270-001,São Mateus,-23.5779772,-46.4806246,revisado_baixa,Parque do Carmo,AV AFONSO PENTEADO
+7269-9,Sábado,Tradicional,Avenida,Afonso Penteado,2019,próximo à Avenida Cláudio Augusto Fernandes,5,Parque Do Carmo,03962-120,São Mateus,-23.60973,-46.4805869,revisado_media,Sao Mateus,AV AFONSO PENTEADO
 7270-2,Sábado,Tradicional,Avenida,Mateo Bei,1900,esquina com Rua Doutor Edmur Whitaker,4,São Mateus,03949-100,São Mateus,-23.6083575,-46.4779214,esquina,Sao Mateus,AV MATEO BEI
 7271-0,Sábado,Orgânica,Rua,Curitiba,290,Abastprox Parque Ibirapuera,29,Paraíso,04005-030,Vila Mariana,-23.5825675,-46.6529908,ja_na_rua,Moema,RUA CURITIBA
 7272-9,Sábado,Noturna,Rua,Antônio Neto Caldeira,125,,15,Vila Antonieta,03475-040,Aricanduva/Formosa/Carrão,-23.573902,-46.518088,revisado_alta,Aricanduva,RUA ANTONIO CALDEIRA
-7293-1,Sábado,Tradicional,Praça,Floriano Peixoto,80,esquina com Rua Tiago Luiz,17,Santo Amaro,04750-010,Santo Amaro,-23.6513486,-46.7073947,revisado_alta,Santo Amaro,PÇ FLORIANO PEIXOTO
+7293-1,Sábado,Tradicional,Praça,Floriano Peixoto,80,esquina com Rua Tiago Luiz,17,Santo Amaro,04751-030,Santo Amaro,-23.6513486,-46.7073947,revisado_alta,Santo Amaro,PÇ FLORIANO PEIXOTO
 7319-9,Sábado,Tradicional,Rua,Anatole de Baudot,200,,13,Vila Suzana,05641-100,Campo Limpo,-23.6169863,-46.7401311,ajustado_na_rua,Vila Andrade,RUA ANATOLE DE BAUDOT
 7370-9,Sábado,Tradicional,Avenida,David Domingues Ferreira,S/N,próximo ao Viaduto Jacu-Pêssego,,Itaquera,08210-610,Itaquera,-23.5354697,-46.4540865,revisado_alta,Itaquera,RUA DAVID D FERREIRA
 7380-6,Sábado,Tradicional,Rua,Utaro Kanai,432,esquina com Rua Festa Chinesa,33,Jardim São Paulo,08465-000,Guaianases,-23.566455,-46.400118,esquina,Guaianases,AV UTARO KANAI C/ FESTA CHINESA
@@ -964,7 +964,7 @@
 7481-0,Sábado,Tradicional,Rua,Preta,10,,18,Jardim Iris,05144-060,Pirituba/Jaraguá,-23.5034638,-46.7153981,ja_na_rua,Pirituba,RUA PRETA
 7715-1,Sábado,Tradicional,Rua,Cabral de Ataíde,S/N,,4,Lajeado,08451-120,Guaianases,-23.5377348,-46.3989467,ja_na_rua,Lajeado,RUA CABRAL DE ATAIDE
 7726-7,Sábado,Tradicional,Rua,Margarida Cardoso dos Santos,50,,2,Cid São Mateus,03961-010,São Mateus,-23.6003187,-46.480673,ja_na_rua,Sao Mateus,RUA MARGARIDA CARDOSO DOS SANTOS
-7806-9,Sábado,Tradicional,Rua,Pablo Picasso,1,,12,Perdizes,05033-120,Lapa,-23.5199493,-46.6831353,ja_na_rua,Barra Funda,RUA PABLO PICASSO
+7806-9,Sábado,Tradicional,Rua,Pablo Picasso,1,,12,Perdizes,05036-160,Lapa,-23.5199493,-46.6831353,ja_na_rua,Barra Funda,RUA PABLO PICASSO
 7846-8,Sábado,Tradicional,Rua,Flor do Espírito Santo,10,,2,Vila Jacui,08050-080,São Miguel,-23.5147289,-46.4545564,ajustado_na_rua,Vila Jacui,RUA FLOR DO ESPIRITO SANTO
 7882-4,Sábado,Tradicional,Rua,Miguel Masi Neto,657,,,Jardim Das Palmas,05749-330,Campo Limpo,-23.6186771,-46.7479831,ja_na_rua,Vila Andrade,RUA MIGUEL MASI NETO
 7920-0,Sábado,Tradicional,Rua,João Felisberto Moreira,12,,7,Vila Jacui,08060-140,São Miguel,-23.499637,-46.4518375,ja_na_rua,Vila Jacui,RUA JOAO FELISBERTO MOREIRA
