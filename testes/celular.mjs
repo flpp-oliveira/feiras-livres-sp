@@ -104,7 +104,9 @@ const CENARIOS = [
     await esperaMapa(page);
     await page.locator("#busca").tap();
     await page.locator("#busca").fill("pinheros");
-    await page.locator("#busca-sugestoes li").first().waitFor({ state: "visible", timeout: 5000 });
+    // com erro de digitacao a busca consulta o servico de enderecos (bloqueado
+    // aqui): espera a resposta, e ficam as sugestoes daqui
+    await page.locator("#busca-sugestoes li:not(.buscando)").first().waitFor({ state: "visible", timeout: 8000 });
     await foto(page, ap, "4-busca");
     const primeira = await page.locator("#busca-sugestoes li").first().textContent();
     if (!/pinheiros/i.test(primeira)) throw new Error("primeira sugestão: " + primeira);
@@ -178,6 +180,38 @@ const CENARIOS = [
     if (!/fora de São Paulo/.test(t)) throw new Error("aviso: " + t);
   }],
 
+  ["reportar erro: marcar o ponto no mapa", async (page, ap) => {
+    await pulaJanelas(page.context());
+    await page.goto(URL_BASE + "/?feira=1001-4");
+    await esperaMapa(page);
+    await page.locator(".popup-feira .btn-reportar").waitFor({ state: "visible", timeout: 8000 });
+    await page.locator(".popup-feira .btn-reportar").tap();
+    await page.locator("#reporte").waitFor({ state: "visible", timeout: 3000 });
+    await page.locator('input[name="tipo"][value="local_errado"]').check();
+    await page.locator("#reporte-marcar").tap();
+    await page.locator("#marcar-barra").waitFor({ state: "visible", timeout: 3000 });
+    await page.waitForFunction(() => window.__mapa.loaded());
+    const caixa = await page.locator("#map").boundingBox();
+    await page.touchscreen.tap(caixa.x + caixa.width / 2 + 30, caixa.y + caixa.height / 2 + 40);
+    await page.locator("#reporte").waitFor({ state: "visible", timeout: 3000 });
+    const status = await page.locator("#reporte-ponto-status").textContent();
+    if (!/Ponto marcado/.test(status)) throw new Error("ponto não marcado: " + status);
+    await foto(page, ap, "10-reporte");
+    // Envia so no site local (o banco D1 local, de teste). No ar, isso criaria
+    // um report falso no banco de verdade.
+    if (!URL_BASE.startsWith("http://localhost")) return "ponto marcado (sem enviar: site no ar)";
+    await page.locator("#reporte-enviar").tap();
+    // "Enviando…" usa o mesmo estilo do sucesso: espera a resposta de fato
+    await page.waitForFunction(() => {
+      var t = document.getElementById("reporte-msg").textContent;
+      return t && !/Enviando/.test(t);
+    }, null, { timeout: 10000 });
+    const msg = await page.locator("#reporte-msg").textContent();
+    await foto(page, ap, "10-reporte-enviado");
+    if (!/Obrigado/.test(msg)) throw new Error("envio: " + msg);
+    return "ponto marcado e enviado ao banco local";
+  }],
+
   ["link de uma feira abre a ficha dela", async (page, ap) => {
     await pulaJanelas(page.context());
     await page.goto(URL_BASE + "/?feira=1001-4");
@@ -188,6 +222,49 @@ const CENARIOS = [
     if (!/Teixeira Leite/.test(rua)) throw new Error("abriu outra feira: " + rua);
     return rua;
   }],
+  ["busca por dia vira filtro", async (page, ap) => {
+    await pulaJanelas(page.context());
+    await page.goto(URL_BASE + "/");
+    await esperaMapa(page);
+    await page.locator("#busca").tap();
+    await page.locator("#busca").fill("feira de sábado");
+    const acao = page.locator("#busca-sugestoes li.acao");
+    await acao.waitFor({ state: "visible", timeout: 5000 });
+    await foto(page, ap, "11-busca-dia");
+    await acao.tap();
+    await page.waitForFunction(() => location.search.includes("dia=sabado"), null, { timeout: 3000 })
+      .catch(() => { throw new Error("endereço sem dia=sabado: " + page.url()); });
+    const sab = page.locator('#filtro-dias .chip[data-valor="Sábado"]');
+    if (!(await sab.evaluate(c => c.classList.contains("ativo")))) throw new Error("o chip Sábado não ligou");
+    await foto(page, ap, "11-busca-dia-filtro");
+    return await page.locator("#toggle-sidebar").textContent();
+  }],
+
+  ["busca por um lugar sem feira (endereço simulado)", async (page, ap) => {
+    await pulaJanelas(page.context());
+    // o servico de enderecos responde daqui: o teste nao depende da internet
+    await page.route(/photon\.komoot\.io/, r => r.fulfill({ contentType: "application/json", body: JSON.stringify({ features: [
+      { properties: { type: "house", osm_key: "railway", osm_value: "stop", name: "Santa Cruz", street: "Rua Domingos de Morais", district: "Vila Mariana", city: "São Paulo" },
+        geometry: { coordinates: [-46.6366725, -23.5990533] } }
+    ] }) }));
+    await page.goto(URL_BASE + "/");
+    await esperaMapa(page);
+    await page.locator("#busca").tap();
+    await page.locator("#busca").fill("metrô santa cruz");
+    const lugar = page.locator("#busca-sugestoes li.lugar").first();
+    await lugar.waitFor({ state: "visible", timeout: 6000 });
+    await foto(page, ap, "12-busca-lugar");
+    await lugar.tap();
+    await page.locator("#lista-perto").waitFor({ state: "visible", timeout: 5000 });
+    const titulo = await page.locator("#lp-titulo").textContent();
+    if (!/Santa Cruz/.test(titulo)) throw new Error("título da lista: " + titulo);
+    if (!(await page.locator("#lp-itens li").count())) throw new Error("lista sem feiras");
+    await page.waitForTimeout(600);
+    await foto(page, ap, "12-busca-lugar-lista");
+    await page.locator("#lp-fechar").tap();
+    await page.locator("#lista-perto").waitFor({ state: "hidden", timeout: 3000 });
+    return titulo.trim();
+  }],
 ];
 
 async function rodaCenarios(nomeAparelho, novoContexto) {
@@ -197,6 +274,9 @@ async function rodaCenarios(nomeAparelho, novoContexto) {
     // o contador de visitas do Cloudflare fica de fora: teste nao e visita (e
     // ele recusa localhost, o que o WebKit registra como erro da pagina)
     await context.route(/cloudflareinsights\.com/, r => r.abort());
+    // servico de enderecos: so o cenario que o simula responde (page.route
+    // vem antes deste); os outros nao saem para a internet
+    await context.route(/photon\.komoot\.io|viacep\.com\.br/, r => r.abort());
     const page = context.pages()[0] || await context.newPage();
     const erros = [];
     page.on("pageerror", e => erros.push(e.message));

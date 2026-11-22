@@ -10,6 +10,14 @@ O mapa roda inteiramente no navegador: o desenho, os filtros e a busca não
 dependem de servidor. A única parte com back-end é o envio de reports de erro
 pela população, descrita adiante.
 
+A busca entende rua (com ou sem "rua"/"av"), bairro, zona, CEP, abreviações
+("jd", "vl", "sto"), palavras em qualquer ordem, erro de digitação, e também dia
+e tipo ("sábado", "orgânica", "hoje", "fim de semana"), que viram filtro. Quando
+o que se digitou não é de feira nenhuma (a rua de casa, um CEP, "metrô Santa
+Cruz"), ela procura o lugar no [Photon](https://photon.komoot.io)
+(OpenStreetMap) ou no [ViaCEP](https://viacep.com.br) e mostra as feiras mais
+próximas dele (`site/js/lugares.js`; ver a página de Privacidade).
+
 ---
 
 ## O que há aqui
@@ -18,8 +26,8 @@ pela população, descrita adiante.
 |---|---|
 | `site/` | o site pronto (é o que o Cloudflare Pages publica) |
 | `site/404.html` | página de "não encontrada" — com ela o Pages responde 404 de verdade |
-| `site/app.js` | o mapa e a tela (módulo; carrega os de `site/js/`) |
-| `site/js/` | funções que não dependem da página nem do mapa: texto, dados de uma feira, distâncias, busca |
+| `site/app.js` | liga as partes do site, na ordem certa (a lista de módulos e a regra da casa estão no topo dele) |
+| `site/js/` | uma parte do site por módulo: mapa, filtros, busca, "perto de mim", janelas, reporte… e as funções puras (texto, dados, distâncias, busca), que têm testes |
 | `testes/` | testes do site (ver "Testes"); fica fora de `site/` e não vai para o ar |
 | `data/feiras_geo.csv` | a base das feiras, a partir do painel da Prefeitura |
 | `data/gerar_dados.py` | gera `site/feiras-data.js` a partir da base e aplica `correcoes.csv` |
@@ -52,6 +60,9 @@ python gerar_dados.py
 python gerar_lista.py
 ```
 
+O `feiras-data.js` muda, então suba a versão dos arquivos (`cd testes && npm
+run versao`; ver "Versão dos arquivos").
+
 ---
 
 ## Testes
@@ -64,9 +75,12 @@ Duas camadas, ambas rodadas a partir da raiz do projeto ou de `testes/`.
 node --test "testes/*.test.mjs"
 ```
 
-Cobrem busca, erro de digitação, horário, distância e a própria base: todo
+Cobrem a busca (dezenas de jeitos de escrever a mesma coisa), erro de
+digitação, horário, distância e a própria base: todo
 dia e categoria conhecidos, todo id único, toda feira numa zona, nenhum bairro
-estragado. Rode depois de regenerar a base.
+estragado. E a montagem dos arquivos: a mesma versão `?v=` em todos, todo
+módulo pré-carregado, nenhum arquivo mudado sem versão nova. Rode depois de
+regenerar a base e antes de publicar.
 
 **O site no celular** (Playwright; na primeira vez, dentro de `testes/`:
 `npm install` e `npx playwright install chromium webkit`):
@@ -78,8 +92,9 @@ npm run celular
 
 Com o site local rodando (`npx wrangler pages dev`, porta 8788), abre o site
 como um Android (Chrome) e como um iPhone (WebKit, o motor do Safari), toca num
-pino, busca, usa "Feiras hoje" num domingo e numa segunda, "Perto de mim" na
-Paulista e fora de SP, e um link `?feira=`. As fotos de cada passo ficam em
+pino, busca (com erro de digitação, por dia e por um lugar sem feira, com o
+serviço de endereços simulado), usa "Feiras hoje" num domingo e numa segunda,
+"Perto de mim" na Paulista e fora de SP, e um link `?feira=`. As fotos de cada passo ficam em
 `testes/capturas/`. `npm run celular -- --url https://feiraslivresp.com.br`
 testa o site no ar (o contador de visitas fica bloqueado: teste não conta como
 visita).
@@ -92,9 +107,21 @@ site local chega ao celular pelo próprio cabo (`adb reverse`).
 
 ### Versão dos arquivos (`?v=`)
 
-Ao mudar CSS ou JS, suba o número de `?v=` em **todos** os lugares de uma vez:
-`site/index.html` e os `import` de `site/app.js` e `site/js/*.js`. Sem isso o
-navegador pode juntar um arquivo novo com um módulo antigo guardado.
+Os arquivos que o `index.html` chama com `?v=` (JS, CSS, dados, MapLibre)
+ficam **1 ano** no cache do navegador (`site/_headers`): quem volta ao site
+não baixa nem pergunta nada de novo. Por isso, **toda mudança num deles
+precisa de um `?v=` novo** — inclusive regenerar a base (`feiras-data.js`).
+Sem isso, quem já visitou continuaria com o arquivo velho.
+
+Não precisa lembrar: o teste `testes/estrutura.test.mjs` compara o conteúdo
+desses arquivos com o registrado em `testes/versao-arquivos.json` e falha se
+algo mudou sem versão nova. Para subir a versão em todos os lugares de uma vez
+(`index.html`, `app.js` e os `import` de `site/js/`) e registrar:
+
+```
+cd testes
+npm run versao
+```
 
 ---
 

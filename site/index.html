@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; img-src 'self' data: blob:; worker-src blob:; child-src blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://tiles.openfreemap.org; object-src 'none'; base-uri 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; img-src 'self' data: blob:; worker-src blob:; child-src blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://tiles.openfreemap.org https://photon.komoot.io https://viacep.com.br; object-src 'none'; base-uri 'self'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0E4D33" />
   <title>Feira livre perto de mim hoje — mapa das 976 feiras de SP</title>
@@ -40,14 +40,24 @@
   <!-- Dados estruturados (schema.org) — nivel do app, sem despejar as feiras -->
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"feiras livres sp","alternateName":["Feiras Livres SP","Feiras Livres de São Paulo"],"url":"https://feiraslivresp.com.br/","inLanguage":"pt-BR"},{"@type":"WebApplication","name":"Feiras Livres de São Paulo","url":"https://feiraslivresp.com.br/","description":"Mapa interativo com as 976 feiras livres de São Paulo: dia, endereço, categoria e as mais perto de você.","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"pt-BR","isAccessibleForFree":true,"about":{"@type":"Thing","name":"Feiras livres de São Paulo"},"areaServed":{"@type":"City","name":"São Paulo"}}]}</script>
 
-  <link rel="stylesheet" href="fonts/fonts.css?v=72" />
-  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css?v=72" />
-  <link rel="stylesheet" href="style.css?v=72" />
+  <link rel="stylesheet" href="fonts/fonts.css?v=74" />
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css?v=74" />
+  <link rel="stylesheet" href="style.css?v=74" />
   <!-- os modulos do app.js chegam junto com ele, e nao so depois que ele e lido -->
-  <link rel="modulepreload" href="js/texto.js?v=72" />
-  <link rel="modulepreload" href="js/dados.js?v=72" />
-  <link rel="modulepreload" href="js/geo.js?v=72" />
-  <link rel="modulepreload" href="js/busca.js?v=72" />
+  <link rel="modulepreload" href="js/texto.js?v=74" />
+  <link rel="modulepreload" href="js/dados.js?v=74" />
+  <link rel="modulepreload" href="js/geo.js?v=74" />
+  <link rel="modulepreload" href="js/busca.js?v=74" />
+  <link rel="modulepreload" href="js/estado.js?v=74" />
+  <link rel="modulepreload" href="js/pagina.js?v=74" />
+  <link rel="modulepreload" href="js/mapa.js?v=74" />
+  <link rel="modulepreload" href="js/filtros.js?v=74" />
+  <link rel="modulepreload" href="js/lugares.js?v=74" />
+  <link rel="modulepreload" href="js/caixa-busca.js?v=74" />
+  <link rel="modulepreload" href="js/perto.js?v=74" />
+  <link rel="modulepreload" href="js/barra.js?v=74" />
+  <link rel="modulepreload" href="js/janelas.js?v=74" />
+  <link rel="modulepreload" href="js/reporte.js?v=74" />
 </head>
 <body>
   <div id="app">
@@ -69,7 +79,7 @@
       <div class="field field-busca">
         <label for="busca">Buscar</label>
         <div class="busca-wrap">
-          <input type="search" id="busca" placeholder="bairro, rua, zona, distrito…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="busca-sugestoes" aria-autocomplete="list" />
+          <input type="search" id="busca" placeholder="rua, bairro, CEP ou dia…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="busca-sugestoes" aria-autocomplete="list" />
           <ul id="busca-sugestoes" class="busca-sugestoes" role="listbox" hidden></ul>
         </div>
         <!-- so no celular: abre a gaveta com os filtros de dia e categoria -->
@@ -132,6 +142,7 @@
       <header id="lp-cabecalho">
         <span id="lp-titulo"></span>
         <button id="lp-min" type="button" aria-label="Minimizar lista">–</button>
+        <button id="lp-fechar" type="button" aria-label="Fechar a lista deste lugar" hidden>×</button>
       </header>
       <ul id="lp-itens"></ul>
     </aside>
@@ -214,9 +225,9 @@
     <button id="colapsar-sidebar" type="button" aria-label="Colapsar filtros">‹</button>
   </div>
 
-  <script src="vendor/maplibre/maplibre-gl.js?v=72"></script>
-  <script src="feiras-data.js?v=72"></script>
-  <script type="module" src="app.js?v=72"></script>
+  <script src="vendor/maplibre/maplibre-gl.js?v=74"></script>
+  <script src="feiras-data.js?v=74"></script>
+  <script type="module" src="app.js?v=74"></script>
 
   <!-- Cloudflare Web Analytics (medição sem cookies; token é público por design) -->
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2eb060762d524d85ad7d70e2b67fa203"}'></script>

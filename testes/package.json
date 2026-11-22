@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node --test \"*.test.mjs\"",
-    "celular": "node celular.mjs"
+    "celular": "node celular.mjs",
+    "versao": "node versao.mjs"
   },
   "devDependencies": {
     "playwright": "1.65.0"

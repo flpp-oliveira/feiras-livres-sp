@@ -6,3 +6,21 @@
   Referrer-Policy: no-referrer
   Strict-Transport-Security: max-age=15552000; includeSubDomains
   Permissions-Policy: geolocation=(self), camera=(), microphone=()
+
+# Arquivos chamados com ?v= pelo index.html: 1 ano no cache, sem perguntar de
+# novo ao servidor. Mudou o arquivo, muda o ?v= (e com ele o endereço) — o
+# teste testes/estrutura.test.mjs barra a mudança sem versão nova. Ver README,
+# "Versão dos arquivos". As páginas (.html) continuam sem esse cache: são elas
+# que trazem o ?v= novo.
+/app.js
+  Cache-Control: public, max-age=31536000, immutable
+/feiras-data.js
+  Cache-Control: public, max-age=31536000, immutable
+/style.css
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/fonts.css
+  Cache-Control: public, max-age=31536000, immutable
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -21,10 +21,8 @@ export function campo(v) {
 
 export function maiuscula(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
 
-// distancia de edicao (Levenshtein) -- usada so como fallback quando a
-// busca exata (indexOf) nao acha nada, pra tolerar erro de digitacao
-// ("Pinheros" -> "Pinheiros"). Tolerancia cresce com o tamanho da palavra:
-// curta demais e quase tudo "parece" com quase tudo (muito ruido).
+// distancia de edicao (Levenshtein) -- a busca usa so quando a palavra nao
+// existe na cidade, pra tolerar erro de digitacao ("Pinheros" -> "Pinheiros")
 export function levenshtein(a, b) {
   var m = a.length, n = b.length;
   if (!m) return n;
@@ -42,24 +40,11 @@ export function levenshtein(a, b) {
   return prev[n];
 }
 
+// quantos erros aceitar numa palavra desse tamanho. Curta demais e quase tudo
+// "parece" com quase tudo; ate 8 letras, um erro so ("augusta" nao vira
+// "Augustin").
 export function toleranciaFuzzy(len) {
-  if (len <= 3) return 0;   // palavra curta: so exata (senao vira ruido)
-  if (len <= 6) return 1;
+  if (len <= 3) return 0;
+  if (len <= 8) return 1;
   return 2;
-}
-
-// menor distancia entre "q" e qualquer palavra de "alvo" (string com varias
-// palavras separadas por espaco) -- null se nada ficar dentro da tolerancia
-export function distanciaFuzzyMin(q, alvo) {
-  var palavras = alvo.split(/\s+/).filter(Boolean);
-  var melhor = null;
-  for (var i = 0; i < palavras.length; i++) {
-    var p = palavras[i];
-    var tol = Math.min(toleranciaFuzzy(q.length), toleranciaFuzzy(p.length));
-    if (tol === 0) continue;
-    if (Math.abs(p.length - q.length) > tol) continue; // atalho, evita Levenshtein a toa
-    var d = levenshtein(q, p);
-    if (d <= tol && (melhor === null || d < melhor)) melhor = d;
-  }
-  return melhor;
 }

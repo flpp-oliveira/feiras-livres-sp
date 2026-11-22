@@ -195,7 +195,17 @@ input[type="search"]:focus {
   cursor: default; color: var(--cinza); font-size: .82rem; justify-content: center;
 }
 .busca-sugestoes li.vazio:hover { background: transparent; }
-.busca-sugestoes li.area.divisor { border-bottom: 1px dashed var(--borda); border-radius: 9px 9px 0 0; margin-bottom: 4px; }
+.busca-sugestoes li.divisor { border-bottom: 1px dashed var(--borda); border-radius: 9px 9px 0 0; margin-bottom: 4px; }
+/* "Procurando o endereço…": a reticencia respira enquanto o servico responde */
+.busca-sugestoes li.buscando { animation: respira 1.2s ease-in-out infinite; }
+@keyframes respira { 50% { opacity: .45; } }
+/* "Só as feiras de sábado": diz o filtro que a busca entendeu */
+.busca-sugestoes li.nota {
+  cursor: default; padding: 4px 10px 6px; font-size: .72rem; font-weight: 700; color: var(--verde);
+}
+.busca-sugestoes li.nota:hover { background: transparent; }
+.sug-icone { flex-shrink: 0; width: 20px; text-align: center; font-size: 1rem; line-height: 1; }
+.busca-sugestoes li.acao .lp-nome { color: var(--verde-esc); }
 .lp-dot.area {
   background: var(--verde); border-radius: 4px;
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--verde) 18%, transparent);
@@ -410,6 +420,13 @@ input[type="search"]:focus {
   line-height: 1; transition: background .15s;
 }
 #lp-min:hover { background: rgba(255,255,255,.35); }
+#lp-fechar {
+  background: rgba(255,255,255,.2); border: none; color: #fff;
+  width: 26px; height: 26px; border-radius: 50%; cursor: pointer; font-size: 1.1rem;
+  line-height: 1; transition: background .15s;
+}
+#lp-fechar:hover { background: rgba(255,255,255,.35); }
+#lp-fechar[hidden] { display: none; }
 #lista-perto.minimizado #lp-itens { display: none; }
 #lp-itens { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 0 1 auto; min-height: 0; }
 #lp-itens li {
@@ -458,6 +475,8 @@ input[type="search"]:focus {
     font-size: .62rem; font-weight: 800; letter-spacing: .02em;
   }
   #sidebar #lp-min, #sidebar .lp-emoji { display: none; }
+  #sidebar #lp-fechar { width: 22px; height: 22px; background: rgba(0, 0, 0, .05); color: var(--cinza); }
+  #sidebar #lp-fechar:hover { background: rgba(0, 0, 0, .1); }
   #sidebar #lp-itens {
     flex: 1 1 auto;
     border: 1.5px solid var(--borda); border-radius: var(--radius);
@@ -570,7 +589,13 @@ input[type="search"]:focus {
 #vazio-limpar:hover { filter: brightness(1.08); }
 
 /* ================= Localizacao do usuario ================= */
-.user-dot, .ponto-sugerido { pointer-events: none; }
+.user-dot, .ponto-sugerido, .lugar-dot { pointer-events: none; }
+/* o lugar escolhido na busca: um ponto escuro, diferente da pessoa (azul) */
+.lugar-dot span {
+  display: block; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--verde-esc); border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(14, 77, 51, .3), 0 2px 8px rgba(0, 0, 0, .3);
+}
 .user-dot span {
   display: block; width: 18px; height: 18px; border-radius: 50%;
   background: #1e88e5; border: 3px solid #fff;
