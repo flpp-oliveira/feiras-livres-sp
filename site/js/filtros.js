@@ -4,12 +4,12 @@
 // Ao mudar, aplica nos pinos e avisa "filtros" (quem mais depende disso, como
 // a lista "perto de mim", ouve o aviso).
 
-import { norm } from "./texto.js?v=74";
-import { ORDEM_DIAS, NOMES_JS, corDia, slugDia, contar } from "./dados.js?v=74";
-import { estado, passa, avisar } from "./estado.js?v=74";
-import { toast, anuncia, setBotaoAtivo } from "./pagina.js?v=74";
-import { todos, mostraPinos, feiraDoPopup, fechaPopup } from "./mapa.js?v=74";
-import { limpaBusca } from "./caixa-busca.js?v=74";
+import { norm } from "./texto.js?v=76";
+import { ORDEM_DIAS, NOMES_JS, corDia, slugDia, contar } from "./dados.js?v=76";
+import { estado, passa, avisar } from "./estado.js?v=76";
+import { toast, anuncia, setBotaoAtivo } from "./pagina.js?v=76";
+import { todos, mostraPinos, feiraDoPopup, fechaPopup } from "./mapa.js?v=76";
+import { limpaBusca } from "./caixa-busca.js?v=76";
 
 var filtros = estado.filtros;
 // true enquanto os chips sao clicados por codigo (nao pelo usuario)

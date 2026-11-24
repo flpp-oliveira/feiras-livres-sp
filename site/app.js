@@ -20,16 +20,17 @@
 // O ?v= de todos os imports é o mesmo do index.html: sem ele, o navegador
 // poderia juntar um arquivo novo com um módulo antigo do cache (há um teste
 // que confere).
-import { estado } from "./js/estado.js?v=74";
-import { toast } from "./js/pagina.js?v=74";
-import { montarIndices, criarBusca } from "./js/busca.js?v=74";
-import { iniciaMapa, todos } from "./js/mapa.js?v=74";
-import { iniciaFiltros, aplicar, aplicarFiltrosDoEndereco, limparTudo, sincronizaEndereco } from "./js/filtros.js?v=74";
-import { iniciaCaixaBusca } from "./js/caixa-busca.js?v=74";
-import { iniciaPerto, focarFeira, pedirLocalizacaoNoInicio } from "./js/perto.js?v=74";
-import { iniciaBarra } from "./js/barra.js?v=74";
-import { iniciaJanelas, jaViuAviso, mostrarAvisoDados, convidarLocalizacao } from "./js/janelas.js?v=74";
-import { iniciaReporte } from "./js/reporte.js?v=74";
+import { estado } from "./js/estado.js?v=76";
+import { toast } from "./js/pagina.js?v=76";
+import { montarIndices, criarBusca } from "./js/busca.js?v=76";
+import { iniciaMapa, todos } from "./js/mapa.js?v=76";
+import { iniciaFiltros, aplicar, aplicarFiltrosDoEndereco, limparTudo, sincronizaEndereco } from "./js/filtros.js?v=76";
+import { iniciaCaixaBusca } from "./js/caixa-busca.js?v=76";
+import { iniciaPerto, focarFeira, pedirLocalizacaoNoInicio } from "./js/perto.js?v=76";
+import { iniciaBarra } from "./js/barra.js?v=76";
+import { iniciaJanelas, jaViuAviso, mostrarAvisoDados, convidarLocalizacao } from "./js/janelas.js?v=76";
+import { iniciaReporte } from "./js/reporte.js?v=76";
+import { iniciaContagem } from "./js/contagem.js?v=76";
 
 var FEIRAS = window.FEIRAS || [];
 
@@ -41,6 +42,7 @@ iniciaPerto();
 iniciaBarra();
 iniciaJanelas();
 iniciaReporte();
+iniciaContagem();
 
 // data da base (gerada junto com os dados): o rodape ja traz o texto fixo,
 // que so e trocado se o arquivo de dados trouxer outra data

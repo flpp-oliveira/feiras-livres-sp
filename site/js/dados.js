@@ -1,7 +1,7 @@
 // O que se sabe de uma feira a partir dos campos dela: cor do dia, emoji do
 // tipo, zona, nome e horário. Sem página nem mapa: testável no Node.
 
-import { norm } from "./texto.js?v=74";
+import { norm } from "./texto.js?v=76";
 
 // cores por dia da semana
 export var CORES = {

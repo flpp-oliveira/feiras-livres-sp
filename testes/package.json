@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --test \"*.test.mjs\"",
     "celular": "node celular.mjs",
-    "versao": "node versao.mjs"
+    "versao": "node versao.mjs",
+    "relatorio": "node relatorio.mjs"
   },
   "devDependencies": {
     "playwright": "1.65.0"

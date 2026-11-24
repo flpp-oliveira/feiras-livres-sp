@@ -9,16 +9,20 @@
 //    verdade (busca.js, procurarLugar): enquanto ele responde, "Procurando o
 //    endereço…" e nada mais, para a lista não pular debaixo do dedo;
 //  - as áreas (zona, distrito, bairro) e as feiras.
+//
+// A busca que termina sem resposta daqui fica anotada (registro-busca.js) e
+// vai, anônima, quando as sugestões fecham.
 
-import { esc } from "./texto.js?v=74";
-import { nomeFeira } from "./dados.js?v=74";
-import { descreverIntencao } from "./busca.js?v=74";
-import { buscarLugares } from "./lugares.js?v=74";
-import { ZOOM_LOCALIZACAO, irPara, enquadra } from "./mapa.js?v=74";
-import { fechaGaveta } from "./barra.js?v=74";
-import { toast } from "./pagina.js?v=74";
-import { aplicarIntencao } from "./filtros.js?v=74";
-import { ativarPerto, mostrarLugar } from "./perto.js?v=74";
+import { esc } from "./texto.js?v=76";
+import { nomeFeira } from "./dados.js?v=76";
+import { descreverIntencao } from "./busca.js?v=76";
+import { buscarLugares } from "./lugares.js?v=76";
+import { ZOOM_LOCALIZACAO, irPara, enquadra } from "./mapa.js?v=76";
+import { fechaGaveta } from "./barra.js?v=76";
+import { toast } from "./pagina.js?v=76";
+import { aplicarIntencao } from "./filtros.js?v=76";
+import { ativarPerto, mostrarLugar } from "./perto.js?v=76";
+import { anotar, esquecer, enviarPendente, iniciaRegistroBusca } from "./registro-busca.js?v=76";
 
 var busca = document.getElementById("busca");
 var caixaSugestoes = document.getElementById("busca-sugestoes");
@@ -56,6 +60,7 @@ function cancelaLugar() {
 
 function fecharSugestoes() {
   cancelaLugar();
+  enviarPendente();
   caixaSugestoes.hidden = true;
   caixaSugestoes.innerHTML = "";
   busca.setAttribute("aria-expanded", "false");
@@ -136,6 +141,16 @@ function mostra(itens) {
   busca.setAttribute("aria-expanded", "true");
 }
 
+// o que a busca mostrou no fim: sem feira de verdade, fica anotado
+function anotaResultado(termo, r, lugares) {
+  // o tipo diz o que a pessoa viu: um endereço oferecido, só nomes parecidos,
+  // ou nada (o erro de digitação se vê no próprio termo)
+  if (lugares && lugares.length) anotar(termo, "endereco");
+  else if (!r.areas.length && !r.feiras.length) anotar(termo, "nada");
+  else if (r.aproximado) anotar(termo, "parecido");
+  else esquecer();
+}
+
 // as sugestoes daqui (areas e feiras), na ordem de sempre
 function itensLocais(r) {
   var it = r.intencao, itens = [];
@@ -157,7 +172,9 @@ function itensLocais(r) {
 function mostrarSugestoes(termo) {
   cancelaLugar();
   seq = 0;
-  if (!termo.trim()) { fecharSugestoes(); return; }
+  // apagou a busca: desistiu, nada vai
+  if (!termo.trim()) { esquecer(); fecharSugestoes(); return; }
+  esquecer();
   var r = buscador.buscar(termo, new Date());
   var it = r.intencao;
 
@@ -185,6 +202,7 @@ function mostrarSugestoes(termo) {
 
   var locais = itensLocais(r);
   if (!r.procurarLugar) {
+    anotaResultado(termo, r);
     mostra(locais.length ? locais : [aviso("Nenhuma feira encontrada")]);
     return;
   }
@@ -193,7 +211,7 @@ function mostrarSugestoes(termo) {
   // de a lista aparecer (os parecidos vem depois dos lugares)
   var chave = it.cep || it.textoLugar;
   var pronto = lugaresPorTexto[chave];
-  if (pronto) { mostraComLugares(pronto, locais); return; }
+  if (pronto) { mostraComLugares(pronto, locais, termo, r); return; }
   mostra([aviso("Procurando o endereço…", "vazio buscando")]);
   esperaLugar = setTimeout(function () {
     var ctrl = pedidoLugar = new AbortController();
@@ -201,17 +219,19 @@ function mostrarSugestoes(termo) {
       if (ctrl.signal.aborted) return;
       pedidoLugar = null;
       lugaresPorTexto[chave] = res;
-      mostraComLugares(res, locais);
+      mostraComLugares(res, locais, termo, r);
     }, function () {
       if (pedidoLugar !== ctrl) return; // a pessoa seguiu digitando
       pedidoLugar = null;
       // fora do ar ou lento: fica o que a busca daqui achou
+      anotaResultado(termo, r);
       mostra(locais.length ? locais : [aviso("Nenhuma feira encontrada")]);
     });
   }, ESPERA_LUGAR_MS);
 }
 
-function mostraComLugares(res, locais) {
+function mostraComLugares(res, locais, termo, r) {
+  anotaResultado(termo, r, res.lugares);
   var itens = res.lugares.map(function (l) {
     return opcao("lugar", "📍", l.nome, (l.sub ? l.sub + " · " : "") + "ver as feiras mais perto", function () { irParaLugar(l); });
   });
@@ -229,6 +249,7 @@ function mostraComLugares(res, locais) {
 // novoBuscador: o de criarBusca() (busca.js)
 export function iniciaCaixaBusca(novoBuscador) {
   buscador = novoBuscador;
+  iniciaRegistroBusca();
   var t;
   busca.addEventListener("input", function () {
     clearTimeout(t);

@@ -267,6 +267,36 @@ const CENARIOS = [
   }],
 ];
 
+CENARIOS.push(["busca sem resposta é anotada, sem número", async (page, ap) => {
+  await pulaJanelas(page.context());
+  await page.goto(URL_BASE + "/");
+  await esperaMapa(page);
+  await page.locator("#busca").tap();
+  await page.locator("#busca").fill("xyzqw plimpo 45");
+  await page.locator("#busca-sugestoes li:not(.buscando)").first().waitFor({ state: "visible", timeout: 10000 });
+  if (page.context().buscas.length) throw new Error("foi antes de fechar: " + page.context().buscas[0]);
+  await page.locator("#busca").press("Escape");
+  for (let i = 0; i < 20 && !page.context().buscas.length; i++) await page.waitForTimeout(100);
+  const corpo = JSON.parse(page.context().buscas[0] || "null");
+  if (!corpo || corpo.termo !== "xyzqw plimpo #" || corpo.tipo !== "nada") throw new Error("registro: " + JSON.stringify(corpo));
+  return JSON.stringify(corpo);
+}]);
+
+CENARIOS.push(["toques nos botões são contados, só os totais", async (page, ap) => {
+  await pulaJanelas(page.context());
+  await page.goto(URL_BASE + "/?feira=1001-4");
+  await esperaMapa(page);
+  await page.locator(".popup-feira .btn-compartilhar").waitFor({ state: "visible", timeout: 8000 });
+  await page.locator(".popup-feira .btn-compartilhar").tap();
+  // a página sai da tela: os totais da visita vão de uma vez
+  await page.evaluate(() => dispatchEvent(new PageTransitionEvent("pagehide")));
+  for (let i = 0; i < 20 && !page.context().contagens.length; i++) await page.waitForTimeout(100);
+  const corpo = JSON.parse(page.context().contagens[0] || "null");
+  const ev = corpo && corpo.eventos;
+  if (!ev || ev.ficha_aberta !== 1 || ev.compartilhar !== 1) throw new Error("contagem: " + JSON.stringify(corpo));
+  return JSON.stringify(ev);
+}]);
+
 async function rodaCenarios(nomeAparelho, novoContexto) {
   console.log(`\n${nomeAparelho}`);
   for (const [nome, fn] of CENARIOS) {
@@ -277,6 +307,21 @@ async function rodaCenarios(nomeAparelho, novoContexto) {
     // servico de enderecos: so o cenario que o simula responde (page.route
     // vem antes deste); os outros nao saem para a internet
     await context.route(/photon\.komoot\.io|viacep\.com\.br/, r => r.abort());
+    // registro das buscas sem resposta: nunca chega ao banco (no ar, seria uma
+    // busca falsa no banco de verdade). Sem sendBeacon o site usa fetch, que o
+    // teste intercepta com certeza; o corpo fica em context.buscas.
+    context.buscas = [];
+    context.contagens = [];
+    await context.addInitScript(() => { Navigator.prototype.sendBeacon = function () { return false; }; });
+    await context.route(/\/api\/busca/, r => {
+      context.buscas.push(r.request().postData());
+      r.fulfill({ status: 204 });
+    });
+    // a contagem dos botoes, idem
+    await context.route(/\/api\/contagem/, r => {
+      context.contagens.push(r.request().postData());
+      r.fulfill({ status: 204 });
+    });
     const page = context.pages()[0] || await context.newPage();
     const erros = [];
     page.on("pageerror", e => erros.push(e.message));

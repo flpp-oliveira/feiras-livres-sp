@@ -1,8 +1,8 @@
 // A barra lateral dos filtros: no celular é uma gaveta que abre pelo botão
 // "☰ Filtros"; no computador pode ser recolhida pela setinha.
 
-import { map } from "./mapa.js?v=74";
-import { fecharDica } from "./janelas.js?v=74";
+import { map } from "./mapa.js?v=76";
+import { fecharDica } from "./janelas.js?v=76";
 
 var elApp = document.getElementById("app");
 var btnToggle = document.getElementById("toggle-sidebar");

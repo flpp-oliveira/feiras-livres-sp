@@ -22,8 +22,8 @@
 // Cada item recebido é um "marcador" do app: { feira: <registro da base>, ... }.
 // O que volta aponta para esses mesmos objetos.
 
-import { norm, levenshtein, toleranciaFuzzy } from "./texto.js?v=74";
-import { zonaDe, NOMES_JS } from "./dados.js?v=74";
+import { norm, levenshtein, toleranciaFuzzy } from "./texto.js?v=76";
+import { zonaDe, NOMES_JS } from "./dados.js?v=76";
 
 export var MAX_SUGESTOES = 8;
 export var MAX_AREAS = 4;

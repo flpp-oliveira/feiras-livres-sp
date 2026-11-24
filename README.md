@@ -7,8 +7,8 @@ por dia ou categoria, e veja as feiras mais perto de você.
 **[feiraslivresp.com.br](https://feiraslivresp.com.br)**
 
 O mapa roda inteiramente no navegador: o desenho, os filtros e a busca não
-dependem de servidor. A única parte com back-end é o envio de reports de erro
-pela população, descrita adiante.
+dependem de servidor. O back-end se resume ao envio de reports de erro pela
+população e ao registro anônimo das buscas sem resposta, descritos adiante.
 
 A busca entende rua (com ou sem "rua"/"av"), bairro, zona, CEP, abreviações
 ("jd", "vl", "sto"), palavras em qualquer ordem, erro de digitação, e também dia
@@ -34,7 +34,9 @@ próximas dele (`site/js/lugares.js`; ver a página de Privacidade).
 | `data/gerar_lista.py` | gera `site/lista.html` |
 | `data/correcoes.csv` | pontos corrigidos à mão a partir dos reports analisados |
 | `functions/api/report.js` | a API que recebe os reports de erro |
-| `schema.sql` | a tabela onde os reports são gravados |
+| `functions/api/busca.js` | a API que soma, anônimas, as buscas sem resposta |
+| `functions/api/contagem.js` | a API que soma quantas vezes cada botão foi usado por dia |
+| `schema.sql` | as tabelas dos reports e das buscas |
 | `wrangler.toml` | configuração do Cloudflare Pages (banco D1 dos reports) |
 
 ---
@@ -210,6 +212,55 @@ análise. O código de conexão (`ip_hash`) não precisa de limpeza à mão: a p
 rota o apaga dos reports com mais de 2 dias a cada envio.
 
 ---
+
+## Uso do site: botões e buscas
+
+Tudo feito aqui, sem ferramenta de análise de terceiros: os números ficam no
+banco D1 da nossa conta, só como totais por dia, sem cookie e sem nada que
+identifique ou siga uma pessoa. Para ver o resumo (só leitura):
+
+```
+cd testes
+npm run relatorio
+npm run relatorio -- --dias 7
+```
+
+### Quantas vezes cada botão é usado
+
+`site/js/contagem.js` junta os toques de cada visita ("Como chegar", "Compartilhar",
+"Perto de mim", chips, sugestões da busca, report…; a lista com o que cada nome
+quer dizer está em `EVENTOS`) e manda só os totais quando a página sai da tela.
+`functions/api/contagem.js` soma no dia (tabela `contagens`) e esquece o envio.
+Conta só toque de verdade: o site também liga chips sozinho (um filtro pedido na
+busca), e isso não entra. Para contar um botão novo: o nome em `EVENTOS` (site)
+e em `EVENTOS` (functions; os testes conferem que são iguais) e o seletor em
+`ALVOS`, ou `marcar("nome")` no código quando não for um toque.
+
+A cota diária de gravações do D1 gratuito é da conta inteira (os reports
+dependem dela também). Por isso as tabelas de contagem são `WITHOUT ROWID`
+(cada soma grava uma linha) e cada rota tem um teto de envios por dia: 3.000
+para os botões (o site recebe poucas centenas de visitas por dia) e 3.000 para
+as buscas.
+
+### O que as pessoas buscam e não acham
+
+Para a busca aprender palavras novas, a busca que termina sem resposta vai,
+anônima, para `POST /api/busca` (`site/js/registro-busca.js` →
+`functions/api/busca.js`). Vai só o termo final (nada enquanto a pessoa digita;
+nada se ela apaga), sem acento e com todo número trocado por `#` ("rua harmonia
+#"). Não há IP nem horário: a tabela `buscas` soma quantas vezes cada termo
+apareceu por dia, em três tipos:
+
+- `nada`: nenhuma feira, área ou endereço;
+- `parecido`: só nomes parecidos (erro de digitação ou palavra que a busca não conhece);
+- `endereco`: nenhuma feira com o nome, mas o serviço de endereços achou o lugar.
+
+A primeira busca de cada dia apaga as de mais de 1 ano.
+
+As mais frequentes aparecem no `npm run relatorio`.
+
+O que vale virar palavra da busca entra em `site/js/busca.js` (abreviações,
+dias, tipos) com um teste em `testes/funcoes.test.mjs`.
 
 ## Créditos
 

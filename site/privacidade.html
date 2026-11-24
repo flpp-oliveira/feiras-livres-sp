@@ -56,7 +56,8 @@
       <p><strong>Em resumo:</strong> este site não pede cadastro, não coleta seus dados pessoais e não usa cookies de rastreamento.</p>
       <p>Quando você ativa a opção de ver as feiras perto de você, <strong>sua localização é usada apenas dentro do seu navegador</strong> para calcular distâncias. Ela não é enviada para nenhum servidor, não é armazenada e não é compartilhada com ninguém.</p>
       <p>A busca procura as feiras dentro do seu navegador. Só quando ela não acha nada, o <strong>texto digitado</strong> (um endereço, um CEP, um ponto de referência) é consultado num serviço público de endereços, sem nada que identifique você.</p>
-      <p>O único envio de informação para nós é o <strong>report de erro</strong>, que é opcional: se você avisar que uma feira está no lugar errado, guardamos só o que você escreveu sobre a feira — sem nome, sem e-mail e sem o seu IP.</p>
+      <p>Quando a busca não acha o que você digitou, guardamos <strong>só aquelas palavras, sem números</strong>, para melhorar a busca. E contamos quantas vezes cada botão do site é usado por dia, <strong>só o total</strong>. Nada disso diz quem buscou ou quem tocou.</p>
+      <p>O outro envio de informação para nós é o <strong>report de erro</strong>, que é opcional: se você avisar que uma feira está no lugar errado, guardamos só o que você escreveu sobre a feira — sem nome, sem e-mail e sem o seu IP.</p>
     </div>
 
     <h2>1. Quem é o responsável</h2>
@@ -81,12 +82,25 @@
     </ul>
 
     <h2>4. Busca de endereços</h2>
-    <p>A busca do mapa procura as feiras <strong>dentro do seu navegador</strong>: nada do que você digita é enviado a nós. Quando ela não encontra o que foi digitado (por exemplo, a sua rua, um CEP, uma estação ou um shopping), o site procura esse lugar para mostrar as feiras mais próximas dele. Sobre essa consulta:</p>
+    <p>A busca do mapa procura as feiras <strong>dentro do seu navegador</strong>. Quando ela não encontra o que foi digitado (por exemplo, a sua rua, um CEP, uma estação ou um shopping), o site procura esse lugar para mostrar as feiras mais próximas dele. Sobre essa consulta:</p>
     <ul>
       <li>vai <strong>apenas o texto digitado</strong> — sem o seu nome, sem a sua localização e sem a página de onde ele saiu;</li>
       <li>é feita a serviços públicos e gratuitos: o <a href="https://photon.komoot.io" rel="noopener">Photon</a> (da Komoot, com dados do OpenStreetMap), para endereços e pontos de referência, e o <a href="https://viacep.com.br" rel="noopener">ViaCEP</a>, para CEP. Como em qualquer acesso à internet, esses serviços recebem o endereço IP de quem consulta, segundo as políticas de privacidade deles;</li>
-      <li>nada dessa consulta é guardado por nós;</li>
+      <li>nada dessa consulta é guardado por nós, além do registro descrito logo abaixo;</li>
       <li>evite digitar na busca algo que você não queira enviar a esses serviços, como o número exato da sua casa.</li>
+    </ul>
+    <p>Para a busca aprender as palavras que ela ainda não entende, guardamos as <strong>buscas que terminam sem resposta</strong>: as que não acham nenhuma feira, as que só acham nomes parecidos e as de lugares sem feira (uma estação, um shopping). Sobre esse registro:</p>
+    <ul>
+      <li>vai só o texto, depois que você termina de buscar; o que você apaga antes não vai;</li>
+      <li>antes de sair do seu navegador, <strong>todo número é retirado</strong> (o número da casa, o CEP, um telefone), assim como acentos e qualquer palavra com @;</li>
+      <li>não guardamos IP, nem código dele, nem horário, nem nada que ligue a busca a você: só o texto e quantas vezes ele apareceu em cada dia;</li>
+      <li>cada registro é apagado depois de 1 ano.</li>
+    </ul>
+    <p>Também contamos <strong>quantas vezes cada botão do site é usado</strong> (por exemplo, "Como chegar", "Compartilhar", "Perto de mim", os filtros), para saber o que é útil e o que pode melhorar. Sobre essa contagem:</p>
+    <ul>
+      <li>guardamos só o total de cada botão por dia ("Como chegar: 37 vezes em 22/11"), sem cookie e sem nenhum identificador seu ou do seu aparelho;</li>
+      <li>não guardamos IP, horário, a feira que você abriu nem a ordem em que tocou nos botões: não dá para saber o que uma pessoa fez no site;</li>
+      <li>os totais ficam no mesmo banco dos reports, na nossa conta da Cloudflare, e não são repassados a ninguém.</li>
     </ul>
 
     <h2>5. Cookies e o que fica no seu navegador</h2>

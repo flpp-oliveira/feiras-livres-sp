@@ -13,7 +13,7 @@
 // lerPhoton e escolherDoCep são só a conta (testáveis no Node); buscarLugares
 // é a parte que vai à rede.
 
-import { norm } from "./texto.js?v=74";
+import { norm } from "./texto.js?v=76";
 
 // a cidade de Sao Paulo, com folga: oeste, sul, leste, norte
 export var CAIXA_SP = [-46.83, -24.01, -46.36, -23.36];

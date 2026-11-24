@@ -2,10 +2,10 @@
 // ligar a localização e a dica que aponta o botão "Perto de mim" para quem
 // recusou o convite.
 
-import { estado } from "./estado.js?v=74";
-import { mqEstreito, abreDialogo, fechaDialogo, fechaNoVeu } from "./pagina.js?v=74";
-import { map } from "./mapa.js?v=74";
-import { ativarPerto } from "./perto.js?v=74";
+import { estado } from "./estado.js?v=76";
+import { mqEstreito, abreDialogo, fechaDialogo, fechaNoVeu } from "./pagina.js?v=76";
+import { map } from "./mapa.js?v=76";
+import { ativarPerto } from "./perto.js?v=76";
 
 // ---- aviso sobre a qualidade dos dados (uma vez por navegador) ----
 // Mostrar a cada visita puniria justamente quem volta — e quem volta ja leu.

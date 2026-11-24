@@ -1,5 +1,9 @@
--- Banco D1 do site — só a tabela de reports de erro enviados pela população.
--- Não guarda nada além disso; o mapa em si é 100% estático.
+-- Banco D1 do site: os reports de erro enviados pela população, a contagem
+-- anônima das buscas que o mapa não soube responder e quantas vezes cada botão
+-- foi usado por dia. Não guarda nada além disso; o mapa em si é 100% estático.
+--
+-- As tabelas de contagem são WITHOUT ROWID: a chave é a própria linha, e cada
+-- soma grava uma linha só (a cota diária de gravações é da conta inteira).
 --
 -- Aplicar com:
 --   wrangler d1 execute feiras-livres-reports --local --file=schema.sql    (nesta máquina)
@@ -23,3 +27,34 @@ CREATE TABLE IF NOT EXISTS reports (
 
 CREATE INDEX IF NOT EXISTS idx_reports_feira ON reports(feira);
 CREATE INDEX IF NOT EXISTS idx_reports_criado_em ON reports(criado_em);
+
+-- Buscas sem resposta (functions/api/busca.js): só o termo, sem número e sem
+-- nada de quem buscou, somado por dia. Some depois de 365 dias.
+CREATE TABLE IF NOT EXISTS buscas (
+  termo TEXT NOT NULL,              -- sem acento, números viram "#" ("rua harmonia #")
+  tipo TEXT NOT NULL,               -- nada | parecido | endereco
+  dia TEXT NOT NULL,                -- "2026-11-22" (UTC)
+  vezes INTEGER NOT NULL DEFAULT 1,
+  PRIMARY KEY (termo, tipo, dia)
+) WITHOUT ROWID;
+
+-- quantas buscas o dia já recebeu: o teto contra abuso lê só esta linha
+CREATE TABLE IF NOT EXISTS buscas_dia (
+  dia TEXT PRIMARY KEY,
+  n INTEGER NOT NULL DEFAULT 0
+) WITHOUT ROWID;
+
+-- Botões usados (functions/api/contagem.js): só o total por dia, sem nada de
+-- quem tocou. Os nomes estão em site/js/contagem.js (EVENTOS).
+CREATE TABLE IF NOT EXISTS contagens (
+  evento TEXT NOT NULL,             -- como_chegar, compartilhar, perto_de_mim…
+  dia TEXT NOT NULL,                -- "2026-11-22" (UTC)
+  vezes INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (evento, dia)
+) WITHOUT ROWID;
+
+-- quantos envios de contagem o dia já recebeu (o teto contra abuso)
+CREATE TABLE IF NOT EXISTS contagens_dia (
+  dia TEXT PRIMARY KEY,
+  n INTEGER NOT NULL DEFAULT 0
+) WITHOUT ROWID;

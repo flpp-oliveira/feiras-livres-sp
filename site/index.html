@@ -40,24 +40,26 @@
   <!-- Dados estruturados (schema.org) — nivel do app, sem despejar as feiras -->
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"feiras livres sp","alternateName":["Feiras Livres SP","Feiras Livres de São Paulo"],"url":"https://feiraslivresp.com.br/","inLanguage":"pt-BR"},{"@type":"WebApplication","name":"Feiras Livres de São Paulo","url":"https://feiraslivresp.com.br/","description":"Mapa interativo com as 976 feiras livres de São Paulo: dia, endereço, categoria e as mais perto de você.","applicationCategory":"TravelApplication","operatingSystem":"Web","inLanguage":"pt-BR","isAccessibleForFree":true,"about":{"@type":"Thing","name":"Feiras livres de São Paulo"},"areaServed":{"@type":"City","name":"São Paulo"}}]}</script>
 
-  <link rel="stylesheet" href="fonts/fonts.css?v=74" />
-  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css?v=74" />
-  <link rel="stylesheet" href="style.css?v=74" />
+  <link rel="stylesheet" href="fonts/fonts.css?v=76" />
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css?v=76" />
+  <link rel="stylesheet" href="style.css?v=76" />
   <!-- os modulos do app.js chegam junto com ele, e nao so depois que ele e lido -->
-  <link rel="modulepreload" href="js/texto.js?v=74" />
-  <link rel="modulepreload" href="js/dados.js?v=74" />
-  <link rel="modulepreload" href="js/geo.js?v=74" />
-  <link rel="modulepreload" href="js/busca.js?v=74" />
-  <link rel="modulepreload" href="js/estado.js?v=74" />
-  <link rel="modulepreload" href="js/pagina.js?v=74" />
-  <link rel="modulepreload" href="js/mapa.js?v=74" />
-  <link rel="modulepreload" href="js/filtros.js?v=74" />
-  <link rel="modulepreload" href="js/lugares.js?v=74" />
-  <link rel="modulepreload" href="js/caixa-busca.js?v=74" />
-  <link rel="modulepreload" href="js/perto.js?v=74" />
-  <link rel="modulepreload" href="js/barra.js?v=74" />
-  <link rel="modulepreload" href="js/janelas.js?v=74" />
-  <link rel="modulepreload" href="js/reporte.js?v=74" />
+  <link rel="modulepreload" href="js/texto.js?v=76" />
+  <link rel="modulepreload" href="js/dados.js?v=76" />
+  <link rel="modulepreload" href="js/geo.js?v=76" />
+  <link rel="modulepreload" href="js/busca.js?v=76" />
+  <link rel="modulepreload" href="js/estado.js?v=76" />
+  <link rel="modulepreload" href="js/pagina.js?v=76" />
+  <link rel="modulepreload" href="js/mapa.js?v=76" />
+  <link rel="modulepreload" href="js/filtros.js?v=76" />
+  <link rel="modulepreload" href="js/lugares.js?v=76" />
+  <link rel="modulepreload" href="js/registro-busca.js?v=76" />
+  <link rel="modulepreload" href="js/contagem.js?v=76" />
+  <link rel="modulepreload" href="js/caixa-busca.js?v=76" />
+  <link rel="modulepreload" href="js/perto.js?v=76" />
+  <link rel="modulepreload" href="js/barra.js?v=76" />
+  <link rel="modulepreload" href="js/janelas.js?v=76" />
+  <link rel="modulepreload" href="js/reporte.js?v=76" />
 </head>
 <body>
   <div id="app">
@@ -225,11 +227,13 @@
     <button id="colapsar-sidebar" type="button" aria-label="Colapsar filtros">‹</button>
   </div>
 
-  <script src="vendor/maplibre/maplibre-gl.js?v=74"></script>
-  <script src="feiras-data.js?v=74"></script>
-  <script type="module" src="app.js?v=74"></script>
+  <script src="vendor/maplibre/maplibre-gl.js?v=76"></script>
+  <script src="feiras-data.js?v=76"></script>
+  <script type="module" src="app.js?v=76"></script>
 
-  <!-- Cloudflare Web Analytics (medição sem cookies; token é público por design) -->
-  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2eb060762d524d85ad7d70e2b67fa203"}'></script>
+  <!-- Cloudflare Web Analytics (medição sem cookies; token é público por design).
+       "spa": false: o filtro troca o endereço (?dia=sabado) sem abrir página nova,
+       e sem isto cada troca contava como uma página vista. -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2eb060762d524d85ad7d70e2b67fa203", "spa": false}'></script>
 </body>
 </html>

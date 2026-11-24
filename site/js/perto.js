@@ -6,14 +6,14 @@
 // Cruz", um CEP): mostrarLugar. Com os dois, vale o lugar, até fechar a lista
 // (o x do cabeçalho) ou ligar o "Perto de mim" de novo.
 
-import { esc } from "./texto.js?v=74";
-import { nomeFeira } from "./dados.js?v=74";
-import { distKm, fmtDist } from "./geo.js?v=74";
-import { estado, passa, ouvir } from "./estado.js?v=74";
-import { mqEstreito, toast, setBotaoAtivo } from "./pagina.js?v=74";
-import { ZOOM_LOCALIZACAO, todos, irPara, marcadorDe } from "./mapa.js?v=74";
-import { fechaGaveta } from "./barra.js?v=74";
-import { fecharDica, fechaConvitePorqueLigou } from "./janelas.js?v=74";
+import { esc } from "./texto.js?v=76";
+import { nomeFeira } from "./dados.js?v=76";
+import { distKm, fmtDist } from "./geo.js?v=76";
+import { estado, passa, ouvir } from "./estado.js?v=76";
+import { mqEstreito, toast, setBotaoAtivo } from "./pagina.js?v=76";
+import { ZOOM_LOCALIZACAO, todos, irPara, marcadorDe } from "./mapa.js?v=76";
+import { fechaGaveta } from "./barra.js?v=76";
+import { fecharDica, fechaConvitePorqueLigou } from "./janelas.js?v=76";
 
 var RAIO = 2; // km considerado "perto"
 var MAX_LISTA = 30;

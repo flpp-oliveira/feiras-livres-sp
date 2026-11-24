@@ -5,11 +5,12 @@
 //
 // Abre quando alguém avisa "reportar" (o botão da ficha da feira, em mapa.js).
 
-import { nomeFeira } from "./dados.js?v=74";
-import { ouvir } from "./estado.js?v=74";
-import { abreDialogo, fechaDialogo } from "./pagina.js?v=74";
-import { map, irPara, marcadorDe, fechaPopup } from "./mapa.js?v=74";
-import { fechaGaveta } from "./barra.js?v=74";
+import { nomeFeira } from "./dados.js?v=76";
+import { ouvir } from "./estado.js?v=76";
+import { abreDialogo, fechaDialogo } from "./pagina.js?v=76";
+import { map, irPara, marcadorDe, fechaPopup } from "./mapa.js?v=76";
+import { fechaGaveta } from "./barra.js?v=76";
+import { marcar } from "./contagem.js?v=76";
 
 var elApp = document.getElementById("app");
 var dlgReporte = document.getElementById("reporte");
@@ -110,6 +111,7 @@ function enviar(e) {
         return;
       }
       mensagemReporte("Obrigado! O report foi registrado e será conferido.");
+      marcar("report_enviado");
       btnEnviar.hidden = true;
       btnCancelarReporte.textContent = "Fechar";
     })

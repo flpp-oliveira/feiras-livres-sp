@@ -35,7 +35,7 @@ const LAT_MIN = -24.1, LAT_MAX = -23.2, LON_MIN = -47.0, LON_MAX = -46.2;
 // valendo.
 const SITES = ["feiraslivresp.com.br", "feiras-livres-sp.pages.dev"];
 const ORIGENS_LOCAIS = new Set(["http://localhost:8788", "http://127.0.0.1:8788"]);
-function origemPermitida(origem) {
+export function origemPermitida(origem) {
   if (!origem) return true;
   if (ORIGENS_LOCAIS.has(origem)) return true;
   try {

@@ -14,6 +14,10 @@ import { corDia, emojiCat, zonaDe, nomeFeira, horarioDe, slugDia, contar, NOMES_
 import { distKm, fmtDist, limitesDe } from "../site/js/geo.js";
 import { montarIndices, criarBusca, interpretar, descreverIntencao, palavras, MAX_SUGESTOES, MAX_AREAS } from "../site/js/busca.js";
 import { lerPhoton, escolherDoCep, urlPhoton } from "../site/js/lugares.js";
+import { termoAnonimo } from "../site/js/registro-busca.js";
+import { EVENTOS as EVENTOS_SITE, ALVOS } from "../site/js/contagem.js";
+import { EVENTOS as EVENTOS_SERVIDOR, lerEventos, onRequestPost as postContagem, MAX_POR_DIA as MAX_CONTAGEM } from "../functions/api/contagem.js";
+import { termoAnonimo as termoAnonimoServidor, onRequestPost as postBusca, MAX_POR_DIA } from "../functions/api/busca.js";
 
 // a base de verdade, como o navegador a recebe (window.FEIRAS = [...])
 const ctx = { window: {} };
@@ -373,4 +377,117 @@ test("a consulta ao Photon fica presa à cidade", () => {
   assert.equal(u.hostname, "photon.komoot.io");
   assert.equal(u.searchParams.get("q"), "metrô santa cruz");
   assert.equal(u.searchParams.get("bbox"), "-46.83,-24.01,-46.36,-23.36");
+});
+
+// ---- registro anônimo das buscas sem resposta ----
+
+test("o termo registrado não leva número, e-mail nem acento", () => {
+  const casos = [
+    ["Rua Harmonia, 123", "rua harmonia #"],
+    ["  METRÔ   Santa-Cruz ", "metro santa cruz"],
+    ["04101-300", ""],                       // só CEP: nada a aprender
+    ["cep 04101-300 vila", "cep # vila"],
+    ["fulano@gmail.com feira", "feira"],
+    ["tel 11 99999-0000", "tel #"],
+    ["a", ""], ["", ""], [null, ""],
+    ["x".repeat(200), "x".repeat(60)]
+  ];
+  for (const [q, esperado] of casos) {
+    assert.equal(termoAnonimo(q), esperado, String(q));
+    assert.equal(termoAnonimoServidor(q), esperado, "servidor: " + q);
+  }
+});
+
+// um banco D1 de mentira: guarda o que a rota grava
+function bancoFalso(nHoje) {
+  const g = { buscas: [], dia: nHoje, apagou: false };
+  const prep = (sql) => ({
+    bind(...args) { return { sql, args, first: async () => (g.dia == null ? null : { n: g.dia }) }; }
+  });
+  return {
+    g,
+    DB: {
+      prepare: prep,
+      batch: async (cmds) => {
+        for (const c of cmds) {
+          if (/INSERT INTO buscas \(/.test(c.sql)) g.buscas.push(c.args);
+          if (/INSERT INTO buscas_dia/.test(c.sql)) g.dia = (g.dia || 0) + 1;
+          if (/DELETE/.test(c.sql)) g.apagou = true;
+        }
+      }
+    }
+  };
+}
+const pedido = (corpo, origem) => new Request("https://feiraslivresp.com.br/api/busca", {
+  method: "POST", body: typeof corpo === "string" ? corpo : JSON.stringify(corpo),
+  headers: origem ? { Origin: origem } : {}
+});
+
+test("a rota grava só o termo limpo, e recusa o que não serve", async () => {
+  const b = bancoFalso(null);
+  let r = await postBusca({ request: pedido({ termo: "Rua Harmonia 123", tipo: "endereco" }, "https://feiraslivresp.com.br"), env: b });
+  assert.equal(r.status, 204);
+  assert.deepEqual(b.g.buscas[0].slice(0, 2), ["rua harmonia #", "endereco"]);
+  assert.ok(b.g.apagou, "a primeira do dia limpa as antigas");
+
+  for (const [corpo, origem, status] of [
+    [{ termo: "pinheros", tipo: "nada" }, "https://outro-site.com", 403],
+    [{ termo: "04101-300", tipo: "nada" }, null, 400],
+    [{ termo: "pinheros", tipo: "qualquer" }, null, 400],
+    ["não é json", null, 400],
+    [{ termo: "x".repeat(600), tipo: "nada" }, null, 413]
+  ]) {
+    r = await postBusca({ request: pedido(corpo, origem), env: bancoFalso(null) });
+    assert.equal(r.status, status, JSON.stringify(corpo).slice(0, 40));
+  }
+});
+
+test("passou do teto do dia, a rota recusa sem gravar", async () => {
+  const b = bancoFalso(MAX_POR_DIA);
+  const r = await postBusca({ request: pedido({ termo: "pinheros", tipo: "parecido" }), env: b });
+  assert.equal(r.status, 429);
+  assert.equal(b.g.buscas.length, 0);
+});
+
+// ---- contagem dos botões ----
+
+test("site e servidor conhecem os mesmos botões", () => {
+  assert.deepEqual(Object.keys(EVENTOS_SITE).sort(), [...EVENTOS_SERVIDOR].sort());
+  for (const [, ev] of ALVOS) assert.ok(ev in EVENTOS_SITE, ev);
+});
+
+test("contagem: só nomes conhecidos, números inteiros e com teto", () => {
+  assert.deepEqual(lerEventos({ eventos: { como_chegar: 2, inventado: 5, compartilhar: "3", perto_de_mim: 0, filtro_dia: 999 } }),
+    [["como_chegar", 2], ["filtro_dia", 20]]);
+  assert.deepEqual(lerEventos({ eventos: [1, 2] }), []);
+  assert.deepEqual(lerEventos(null), []);
+});
+
+function bancoContagem(nHoje) {
+  const g = { linhas: [], dia: nHoje };
+  return {
+    g,
+    DB: {
+      prepare: (sql) => ({ bind: (...args) => ({ sql, args, first: async () => (g.dia == null ? null : { n: g.dia }) }) }),
+      batch: async (cmds) => { for (const c of cmds) if (/INSERT INTO contagens \(/.test(c.sql)) g.linhas.push(c.args); }
+    }
+  };
+}
+const pedidoContagem = (corpo, origem) => new Request("https://feiraslivresp.com.br/api/contagem", {
+  method: "POST", body: JSON.stringify(corpo), headers: origem ? { Origin: origem } : {}
+});
+
+test("a rota de contagem soma o que serve e recusa o resto", async () => {
+  let b = bancoContagem(null);
+  let r = await postContagem({ request: pedidoContagem({ eventos: { como_chegar: 1, ficha_aberta: 3 } }, "https://feiraslivresp.com.br"), env: b });
+  assert.equal(r.status, 204);
+  assert.deepEqual(b.g.linhas.map(l => [l[0], l[2]]), [["como_chegar", 1], ["ficha_aberta", 3]]);
+  r = await postContagem({ request: pedidoContagem({ eventos: { inventado: 1 } }), env: bancoContagem(null) });
+  assert.equal(r.status, 400);
+  r = await postContagem({ request: pedidoContagem({ eventos: { como_chegar: 1 } }, "https://outro-site.com"), env: bancoContagem(null) });
+  assert.equal(r.status, 403);
+  b = bancoContagem(MAX_CONTAGEM);
+  r = await postContagem({ request: pedidoContagem({ eventos: { como_chegar: 1 } }), env: b });
+  assert.equal(r.status, 429);
+  assert.equal(b.g.linhas.length, 0);
 });

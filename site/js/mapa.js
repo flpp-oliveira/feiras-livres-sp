@@ -2,11 +2,12 @@
 // o mouse, os movimentos e o tamanho. Só este arquivo fala com o MapLibre; as
 // outras partes pedem coisas ao mapa pelas funções exportadas aqui.
 
-import { esc, campo, maiuscula } from "./texto.js?v=74";
-import { emojiCat, corDia, nomeFeira, horarioDe } from "./dados.js?v=74";
-import { limitesDe } from "./geo.js?v=74";
-import { estado, avisar } from "./estado.js?v=74";
-import { mqEstreito, semMovimento, temMouse } from "./pagina.js?v=74";
+import { esc, campo, maiuscula } from "./texto.js?v=76";
+import { emojiCat, corDia, nomeFeira, horarioDe } from "./dados.js?v=76";
+import { limitesDe } from "./geo.js?v=76";
+import { estado, avisar } from "./estado.js?v=76";
+import { mqEstreito, semMovimento, temMouse } from "./pagina.js?v=76";
+import { marcar } from "./contagem.js?v=76";
 
 // mesmo zoom usado ao achar a localizacao e ao focar uma feira (escala do MapLibre)
 export var ZOOM_LOCALIZACAO = 14;
@@ -170,6 +171,7 @@ export function abrePopup(m) {
   if (rep) rep.onclick = function () { avisar("reportar", m.feira); };
   p.on("close", function () { if (popupAtual === p) popupAtual = null; });
   popupAtual = p;
+  marcar("ficha_aberta");
 }
 
 // ---- link de cada feira (?feira=1001-4) ----
